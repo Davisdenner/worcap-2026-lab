@@ -1,0 +1,9 @@
+xarray
+zarr
+gcsfs
+pandas
+numpy
+matplotlib
+jupyter
+ipykernel
+scikit-learn

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados
+data/raw/*
+data/interim/*
+data/processed/*
+
+# Modelos
+*.pkl
+*.joblib
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
