@@ -21,7 +21,7 @@ data/processed/*
 *.pkl
 *.joblib
 
-# Arquivos tempor·rios
+# Arquivos tempor√°rios
 *.tmp
 *.log
 
