@@ -1,0 +1,42 @@
+{
+  "selected": "atlantic_0.3_1",
+  "ranking": [
+    {
+      "model": "atlantic_0.3_1",
+      "rmse": 1.7654876854022135,
+      "second_year_rmse": 1.8049323364278498,
+      "folds_improved": 4,
+      "years_improved": 7
+    },
+    {
+      "model": "atlantic_0.3_0.5",
+      "rmse": 1.7666321116090107,
+      "second_year_rmse": 1.806228095369467,
+      "folds_improved": 4,
+      "years_improved": 7
+    },
+    {
+      "model": "submission07",
+      "rmse": 1.7680744865276206,
+      "second_year_rmse": 1.8079009237001853,
+      "folds_improved": 0,
+      "years_improved": 0
+    },
+    {
+      "model": "atlantic_3_0.5",
+      "rmse": 1.7696388941959367,
+      "second_year_rmse": 1.8083806780942238,
+      "folds_improved": 0,
+      "years_improved": 1
+    },
+    {
+      "model": "atlantic_3_1",
+      "rmse": 1.773035286280877,
+      "second_year_rmse": 1.8107647057922243,
+      "folds_improved": 0,
+      "years_improved": 0
+    }
+  ],
+  "holdout_evaluated": false,
+  "caveat": "Reused retrospective development blocks and cross-fitted blend weights; not independent test."
+}

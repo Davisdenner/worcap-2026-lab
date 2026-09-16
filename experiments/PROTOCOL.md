@@ -1,5 +1,42 @@
 # WORCAP: protocolo de desenvolvimento
 
+## Referência atual após retorno público da S09
+
+**S09, público 1,72957**, informado pelo usuário, passa a ser a referência para
+as próximas candidatas: 75% S06 + 25% PLS16, apenas dados oficiais. Nenhum
+novo experimento foi iniciado com o relato do score. A restrição abaixo continua
+vigente; as menções à S06 registram a referência anterior à rodada 9.
+
+## Restrição vigente — somente dados fornecidos pela organização
+
+Por decisão explícita do usuário após S08, as próximas candidatas devem usar
+exclusivamente os arquivos oficiais e atributos derivados deles. Não usar NOAA
+ou outras fontes externas, nem modelos pré-treinados em dados externos.
+Também não usar previsões, resíduos, pseudoalvos ou combinações de S07/S08
+como entradas ou base de correção: essas versões incorporam informação externa.
+Bibliotecas de software não são fontes de dados; seu uso continua sujeito às licenças.
+
+A referência compatível passa a ser **S06, público 1,74505**. S07 (1,73550)
+continua sendo o melhor resultado histórico registrado, mas não é a base da
+nova linha restrita. Preservar arquivos e scores anteriores para rastreabilidade;
+esta decisão não declara irregularidade nem altera submissões já enviadas.
+
+O próximo experimento proposto é a correção não linear de S06, com previsões
+históricas fora do treino, atmosfera local/regional e memória causal derivadas
+somente dos arquivos oficiais. Verificar a proveniência de cada cache utilizado.
+Nenhuma chuva oculta de 2023/2024 pode entrar no desenvolvimento, inclusive
+arquivos preparatórios fora do pacote oficial. 2021–2022 já foi avaliado.
+Esta atualização registra a restrição; não executa treino ou upload.
+
+## Atualização após a rodada 8
+
+O bloco 2021–2022 foi aberto **uma única vez** para comparar S07 e a candidata
+S08 já congelada. S08 melhorou o RMSE agregado e os dois anos individualmente.
+Ele não é mais um holdout intocado para futuras rodadas. Não ajustar modelos
+nesse período e continuar chamando seu resultado de teste independente.
+Protocolo e valores: [rodada 8](ROUND8.md).
+O texto abaixo preserva o protocolo original das primeiras rodadas.
+
 ## Objetivo e métrica
 
 Prever precipitação média mensal em mm/dia em toda a grade oficial (301 × 261).

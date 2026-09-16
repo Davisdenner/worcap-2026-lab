@@ -1,6 +1,24 @@
 {
   "observations": [
     {
+      "submission_file": "submissions/submission_09.csv",
+      "public_rmse": 1.72957,
+      "accepted": true,
+      "source": "Score S09 informado pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Novo melhor score público confirmado, usando exclusivamente dados oficiais. Ganho de 0,01548 sobre S06 e de 0,00593 sobre S07. Diferença de 0,00036 para o último score de líder informado (1,72921), sem reconfirmação da classificação atual. Não inferir resultado privado. Nenhum novo treino ou envio iniciado com esse relato."
+    },
+    {
+      "submission_file": "submissions/submission_08.csv",
+      "public_rmse": 1.74606,
+      "accepted": true,
+      "source": "Score S08 informado pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Piora de 0,01056 (aproximadamente 0,6085%) sobre S07. Apesar do ganho histórico e da checagem 2021-2022, o ganho não se repetiu no público. S07 permanece melhor score público confirmado. Não inferir resultado privado ou posição atual sem novo relato."
+    },
+    {
       "submission_file": "submissions/submission_07.csv",
       "public_rmse": 1.73550,
       "accepted": true,

@@ -1,4 +1,28 @@
-# Modelo de referência — S07
+# Modelo de referência — S09, somente dados oficiais
+
+## S09 aceita — público 1,72957
+
+Resultado informado pelo usuário: novo melhor score público, 0,01548 abaixo
+de S06 e 0,00593 abaixo de S07. Classificação atual não reconfirmada; privado
+desconhecido. Modelos e metadados originais de geração permanecem preservados.
+
+Combinação de 75% da S06 com 25% de PLS16 treinada apenas nos arquivos oficiais.
+PCA64 da atmosfera atual e média de três meses, interações sazonais, seleção
+supervisionada PLS16 usando 32 EOFs de chuva do treino e regressão ridge 0,3
+para toda a grade. Treino final 1981–2022, climatologia de 60 anos; nenhuma informação externa.
+O corretor por árvores também foi testado, mas não compõe a candidata selecionada.
+[Protocolo](../experiments/ROUND9.md), [resultados](../reports/competition/round9/RESULTS.md)
+e [CSV](../submissions/submission_09.csv). O usuário fez o upload e informou
+o ganho público. S09 passa a ser a referência da linha somente oficial.
+
+## Histórico — referência anterior S06
+
+Por decisão do usuário após S08, a nova linha usa exclusivamente os arquivos
+da organização. **S06, público 1,74505**, foi a referência anterior compatível.
+S07/S08 usam NOAA e ficam preservadas apenas como histórico, sem compor
+as novas previsões ou seus alvos de correção. [Protocolo vigente](../experiments/PROTOCOL.md).
+
+## Histórico — S07, melhor score público registrado
 
 Resultado mais recente confirmado: **S07, público 1,73550**, segundo lugar
 informado pelo usuário; líder 1,72921. Diferença: 0,00629.

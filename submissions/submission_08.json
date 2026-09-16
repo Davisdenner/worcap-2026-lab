@@ -1,0 +1,169 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\submissions\\submission_08.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 7.191e-05,
+  "max_prediction": 108.46642947,
+  "id_order": "official template",
+  "official_template_verified": true,
+  "uploaded": false,
+  "model": "atlantic_0.3_1",
+  "development_selection": {
+    "selected": "atlantic_0.3_1",
+    "ranking": [
+      {
+        "model": "atlantic_0.3_1",
+        "rmse": 1.7654876854022135,
+        "second_year_rmse": 1.8049323364278498,
+        "folds_improved": 4,
+        "years_improved": 7
+      },
+      {
+        "model": "atlantic_0.3_0.5",
+        "rmse": 1.7666321116090107,
+        "second_year_rmse": 1.806228095369467,
+        "folds_improved": 4,
+        "years_improved": 7
+      },
+      {
+        "model": "submission07",
+        "rmse": 1.7680744865276206,
+        "second_year_rmse": 1.8079009237001853,
+        "folds_improved": 0,
+        "years_improved": 0
+      },
+      {
+        "model": "atlantic_3_0.5",
+        "rmse": 1.7696388941959367,
+        "second_year_rmse": 1.8083806780942238,
+        "folds_improved": 0,
+        "years_improved": 1
+      },
+      {
+        "model": "atlantic_3_1",
+        "rmse": 1.773035286280877,
+        "second_year_rmse": 1.8107647057922243,
+        "folds_improved": 0,
+        "years_improved": 0
+      }
+    ],
+    "holdout_evaluated": false,
+    "caveat": "Reused retrospective development blocks and cross-fitted blend weights; not independent test."
+  },
+  "final_holdout": {
+    "protocol": {
+      "candidate": "atlantic_0.3_1",
+      "reference": "submission07",
+      "years": [
+        2021,
+        2022
+      ],
+      "cutoff": "2021-01-01",
+      "criterion": "Lower pooled RMSE and lower RMSE in both individual years than frozen S07",
+      "no_post_holdout_parameter_tuning": true,
+      "blend_weights": "round4 final_weights fitted on development 2013-2020 only"
+    },
+    "reference": {
+      "rmse": 1.8377457994235853,
+      "year1_rmse": 1.8329123134236192,
+      "year2_rmse": 1.8425666060954597,
+      "monthly_rmse": [
+        2.023422396199105,
+        2.1588818377473022,
+        1.6332039970393997,
+        2.061655340119656,
+        1.96952401890726,
+        1.628818124604504,
+        1.4938888568663815,
+        1.3412181370232197,
+        1.3452466488986434,
+        1.5603718085934632,
+        1.894696076099459,
+        2.4990114573885314,
+        1.8164056435787934,
+        1.9488468961133307,
+        2.5299026099141826,
+        1.818883582218036,
+        1.736427838207343,
+        1.831391461282329,
+        1.4313284427826347,
+        1.193439565466058,
+        1.4667710049530165,
+        1.5331807225056708,
+        2.532691499580436,
+        1.7820718326629859
+      ]
+    },
+    "candidate": {
+      "rmse": 1.8341103953831694,
+      "year1_rmse": 1.8272189413833395,
+      "year2_rmse": 1.8409760523035494,
+      "monthly_rmse": [
+        2.000195849320347,
+        2.156895779412817,
+        1.6225303011435481,
+        2.0388286497491053,
+        1.97024114711145,
+        1.629479896113415,
+        1.4924139824515839,
+        1.343124871687449,
+        1.3339064331896657,
+        1.5580627984102335,
+        1.8977323935702046,
+        2.4991490386679756,
+        1.817340051730714,
+        1.9500814744967543,
+        2.520352057084422,
+        1.8177966476477765,
+        1.724750617351302,
+        1.835632400833661,
+        1.4319957235393286,
+        1.1936357122156198,
+        1.4640397768273437,
+        1.5337486055359513,
+        2.5352123705371548,
+        1.7791638911625072
+      ]
+    },
+    "passed": true,
+    "warning": "2021-2022 is now consumed as final validation, no longer an untouched holdout"
+  },
+  "public_score": null,
+  "training_targets_end": "2022-12",
+  "csv_sha256": "841656331dc1edc3a1437127b70b0aa75c497dd385401cc506b4a4f4d936c180",
+  "script_sha256": "a3427b36adf0efd660cf0b62f972bc3647fa04a727796364b4a2a157ad370914",
+  "external_sources": [
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+      "retrieved_utc": "2026-09-15T22:32:16.594203+00:00",
+      "sha256": "bedcd0683c07f7ccb2ae358a90cb39d57413dcc8881027e0c30a1811f6d58012",
+      "fields": "Raw monthly SST for Nino1+2, Nino3, Nino4, Nino3.4. Published anomaly columns ignored.",
+      "temporal_policy": "Latest predictor month is target minus two months; only dates through 2024-10 consumed.",
+      "vintage_limitation": "Current revised historical SST, not archived real-time releases. Extra lag is not a vintage guarantee."
+    },
+    {
+      "url": "https://psl.noaa.gov/data/correlation/tna.data",
+      "retrieved_utc": "2026-09-16T00:16:36.463660+00:00",
+      "sha256": "387c4125f377e57bcb683a849aefcd76da7d7f3cdcb2ac68ab086ceadf300e8b",
+      "source": "NOAA Physical Sciences Laboratory",
+      "index": "TNA",
+      "temporal_policy": "Only target-minus-two months or older; maximum consumed month 2024-10.",
+      "vintage_limitation": "Revised historical series, not archived real-time releases."
+    },
+    {
+      "url": "https://psl.noaa.gov/data/correlation/tsa.data",
+      "retrieved_utc": "2026-09-16T00:16:37.068968+00:00",
+      "sha256": "700c0dffda0f19c1254ba482808b345eaa0538f5bf09fc3bc025f46a5fbe3a69",
+      "source": "NOAA Physical Sciences Laboratory",
+      "index": "TSA",
+      "temporal_policy": "Only target-minus-two months or older; maximum consumed month 2024-10.",
+      "vintage_limitation": "Revised historical series, not archived real-time releases."
+    }
+  ]
+}

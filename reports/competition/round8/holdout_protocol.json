@@ -1,0 +1,12 @@
+{
+  "candidate": "atlantic_0.3_1",
+  "reference": "submission07",
+  "years": [
+    2021,
+    2022
+  ],
+  "cutoff": "2021-01-01",
+  "criterion": "Lower pooled RMSE and lower RMSE in both individual years than frozen S07",
+  "no_post_holdout_parameter_tuning": true,
+  "blend_weights": "round4 final_weights fitted on development 2013-2020 only"
+}

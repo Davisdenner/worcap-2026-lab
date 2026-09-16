@@ -1,0 +1,104 @@
+{
+  "selected": "pls16_0.25",
+  "reference_rmse": 1.7888938162482435,
+  "reference_second_year_rmse": 1.807350181137077,
+  "ranking": [
+    {
+      "model": "pls16_0.25",
+      "rmse": 1.7809880718368176,
+      "relative_gain": 0.0044193480572291,
+      "second_year_rmse": 1.7968714114104627,
+      "blocks_improved": 6,
+      "years_improved": 10,
+      "months_improved": 88,
+      "worst_annual_relative_change": 0.002201527258892888,
+      "passed": true,
+      "historical_correction_rms": 0.12151500411799057
+    },
+    {
+      "model": "pls8_0.5",
+      "rmse": 1.7811418151083396,
+      "relative_gain": 0.004333404850245248,
+      "second_year_rmse": 1.7969584353425645,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 77,
+      "worst_annual_relative_change": 0.00845601442407884,
+      "passed": false,
+      "historical_correction_rms": 0.2007645850382772
+    },
+    {
+      "model": "pls16_0.5",
+      "rmse": 1.7813555879415084,
+      "relative_gain": 0.004213904837876092,
+      "second_year_rmse": 1.795049416795739,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 75,
+      "worst_annual_relative_change": 0.007413206519207183,
+      "passed": false,
+      "historical_correction_rms": 0.24303000823598114
+    },
+    {
+      "model": "pls8_0.25",
+      "rmse": 1.7821972452615675,
+      "relative_gain": 0.003743414464208006,
+      "second_year_rmse": 1.7991553862823302,
+      "blocks_improved": 5,
+      "years_improved": 11,
+      "months_improved": 88,
+      "worst_annual_relative_change": 0.003144276773966004,
+      "passed": true,
+      "historical_correction_rms": 0.1003822925191386
+    },
+    {
+      "model": "tree15_0.5",
+      "rmse": 1.7851697969926796,
+      "relative_gain": 0.002081744160407517,
+      "second_year_rmse": 1.8041901059454326,
+      "blocks_improved": 4,
+      "years_improved": 9,
+      "months_improved": 84,
+      "worst_annual_relative_change": 0.0059828833111348345,
+      "passed": false,
+      "historical_correction_rms": 0.15520173197096337
+    },
+    {
+      "model": "tree15_0.25",
+      "rmse": 1.785349335841326,
+      "relative_gain": 0.001981381105308544,
+      "second_year_rmse": 1.8038512232839892,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 97,
+      "worst_annual_relative_change": 0.0017553366366123146,
+      "passed": false,
+      "historical_correction_rms": 0.0776308084498047
+    },
+    {
+      "model": "tree7_0.5",
+      "rmse": 1.7858244217710344,
+      "relative_gain": 0.001715805851264185,
+      "second_year_rmse": 1.806075466848287,
+      "blocks_improved": 5,
+      "years_improved": 8,
+      "months_improved": 83,
+      "worst_annual_relative_change": 0.004956412388826603,
+      "passed": false,
+      "historical_correction_rms": 0.1348778867096348
+    },
+    {
+      "model": "tree7_0.25",
+      "rmse": 1.7860898254527828,
+      "relative_gain": 0.001567443953348402,
+      "second_year_rmse": 1.8052640874233186,
+      "blocks_improved": 6,
+      "years_improved": 10,
+      "months_improved": 93,
+      "worst_annual_relative_change": 0.0013687428004789393,
+      "passed": false,
+      "historical_correction_rms": 0.06747488129432956
+    }
+  ],
+  "caveat": "Forward-fitted parameters; reused development and retrospective architecture selection, not independent test"
+}

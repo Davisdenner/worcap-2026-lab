@@ -4,11 +4,32 @@ Repositório dos experimentos da competição de previsão de precipitação sob
 América do Sul. O objetivo é prever a chuva média do mês seguinte, em mm/dia,
 usando os dados oficiais ERA5.
 
-## Estado após o resultado da S07
+**Diretriz atual: somente dados fornecidos pela organização.** A referência
+para os próximos experimentos é **S09 (1,72957)**. S07/S08 incorporam NOAA e
+permanecem no histórico, sem uso direto ou indireto nas novas candidatas.
+[Protocolo vigente](experiments/PROTOCOL.md). Nenhuma submissão anterior foi removida.
+
+## S09 aceita — novo melhor score público: 1,72957
+
+Score informado pelo usuário. Ganho de 0,01548 sobre S06 e 0,00593 sobre S07,
+usando apenas os dados oficiais. A classificação atual e o score privado não
+foram verificados. Nenhum novo treino ou envio foi iniciado com esse retorno.
+
+[submission_09.csv](submissions/submission_09.csv) combina 75% S06 e 25% PLS16.
+Desenvolvimento 2009–2020: RMSE 1,788894 → 1,780988, ganho de 0,442%, melhora nos
+seis blocos. Confirmação 2021–2022, já utilizada anteriormente: 1,841795 → 1,834766,
+com ganho nos dois anos. Esses números não são scores do Kaggle nem usam o
+mesmo protocolo da tabela histórica abaixo. O upload foi feito pelo usuário.
+[Experimento](experiments/ROUND9.md) e
+[resultados detalhados](reports/competition/round9/RESULTS.md).
+
+## Histórico — estado após o resultado da S08
 
 **Melhor submissão nossa: `submission_07.csv`, RMSE público 1,73550.**
 O usuário informou segundo lugar e líder com 1,72921; não houve consulta
-independente ao leaderboard. A avaliação reservada de 2021–2022 não foi executada.
+independente ao leaderboard. Na rodada 8, 2021–2022 foi usado pela primeira vez
+para uma checagem final: S08 melhorou o agregado e os dois anos contra S07,
+sem ajustes posteriores. Esse período não é mais um holdout intocado.
 
 | Versão | Solução | RMSE local, 2013–2020 | RMSE público, 2023 |
 | --- | --- | ---: | ---: |
@@ -19,6 +40,10 @@ independente ao leaderboard. A avaliação reservada de 2021–2022 não foi exe
 | **S05** | Mistura experimental regional e não linear | **1,775177** | **1,74613** |
 | **S06** | Memória atmosférica na regressão local sazonal | **1,772788** | **1,74505** |
 | **S07** | Modos atmosféricos com informação oceânica da NOAA | **1,768074** | **1,73550** |
+| S08 | Adição dos índices do Atlântico tropical | 1,765488 | 1,74606 |
+
+S08 piorou o público em 0,01056 sobre S07, apesar de melhorar nos períodos
+históricos avaliados. S07 permanece melhor submissão pública confirmada.
 
 S05 melhorou o público em 0,00293 sobre S04, mas não passou pelo critério de
 estabilidade histórica. S06 passou pelo critério histórico e melhorou o público

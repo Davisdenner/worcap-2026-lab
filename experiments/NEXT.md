@@ -1,5 +1,75 @@
 # Retomada após S04 em 15/09/2026
 
+## Retorno mais recente — S09 aceita com 1,72957
+
+Usuário confirmou **S09 em 1,72957**, novo melhor público e nova referência
+com dados exclusivamente oficiais. Ganho de 0,01548 sobre S06 (cerca de 0,887%)
+e 0,00593 sobre S07. Distância de 0,00036 para o último score do líder informado,
+1,72921; não assumir classificação atual. Score privado desconhecido.
+Preservar S09, modelos, protocolo congelado e metadados de geração. O retorno
+foi registrado separadamente no ledger e manifesto. Nenhum novo treino ou upload
+iniciado com esse relato. Não ajustar pesos exclusivamente à distância do líder.
+Se não houve outros envios, restam dois dos três anteriormente informados;
+confirmar o saldo antes de planejar novas submissões. As seções abaixo são histórico.
+
+## Rodada 9 concluída — S09 disponível, público desconhecido
+
+Gerada `submissions/submission_09.csv`: **75% S06 + 25% PLS16**, somente dados
+oficiais. Oito candidatas avaliadas segundo o [protocolo congelado](ROUND9.md).
+S06-forward reconstrói pesos apenas com blocos anteriores. Desenvolvimento
+2009–2020: **1,788894 → 1,780988** (ganho de 0,442%), melhora em 6/6 blocos,
+10/12 anos e 88/144 meses. Árvores não passaram pelo critério de promoção.
+Confirmação previamente consumida 2021–2022: **1,841795 → 1,834766**, melhora
+nos dois anos, sem ajustes posteriores. Não alegar holdout inédito.
+[Resultados completos](../reports/competition/round9/RESULTS.md).
+
+Auditoria dos caches oficiais aprovada; nenhum artefato NOAA usado. Reconstrução
+final S06: diferença máxima de 6,42e-8. RMS da mudança em 2023: 0,115285, abaixo de
+duas vezes o histórico de 0,121515. CSV validado independentemente: 1.885.464 IDs
+na ordem oficial, valores finitos/não negativos, hash e 130 coordenadas conferidos.
+36 testes passaram. Nenhum upload realizado. Os três envios informados pelo
+usuário não foram consumidos por esta execução. Aguardar decisão/score do usuário;
+S06 (1,74505) continua referência pública com dados oficiais. Não prometer 1,70.
+As próximas seções preservam o histórico anterior.
+
+## Diretriz mais recente — somente dados oficiais
+
+Usuário decidiu excluir dados externos das próximas candidatas. Usar **S06
+(1,74505)** como referência compatível, não S07/S08. O plano de correção não
+linear deve ser adaptado para S06, usando apenas atmosfera, contexto espacial
+e histórico causal oficiais. Não aproveitar previsões/resíduos de modelos NOAA
+nem misturá-los ao novo modelo. Auditar a origem dos caches antes de treinar.
+[Restrição e protocolo](PROTOCOL.md). Preservar os artefatos anteriores e seus
+scores, sem exclusão ou alteração no Kaggle. Nenhum novo treino/CSV/upload
+foi executado ao registrar a preferência. Os trechos abaixo são histórico.
+
+## Estado atual — auditoria S08 concluída, três envios restantes
+
+S07 permanece a referência pública em **1,73550**. Auditoria não identificou
+erro de exportação nem de reprodução da combinação S08. A mudança em 2023
+foi 2,04 vezes maior que a histórica; ganhos mensais ocorreram em 67/120 meses.
+Não confundir a localização das mudanças com a localização dos erros ocultos.
+Misturas convexas positivas das previsões S07/S08 também pioram o público,
+assumindo RMSE uniforme sobre todo 2023, conforme o protocolo informado.
+[Diagnóstico e critérios para os próximos envios](../reports/competition/s08_diagnostic/RESULTS.md).
+Não houve novo treino, CSV ou upload nesta auditoria. Antes de nova candidata,
+pré-definir testes de robustez temporal e magnitude das correções; não ajustar
+pesos diretamente ao feedback público. 2021–2022 já foi consumido na S08.
+As seções seguintes são histórico, não autorização para executar novas rodadas.
+
+## Rodada 8 — estado mais recente
+
+S08 incorpora Atlântico tropical ao modelo de S07. Desenvolvimento 1,765488,
+melhor em quatro blocos e sete anos. Após congelar a candidata, 2021–2022 foi
+aberto pela primeira vez: 1,837746 → 1,834110, com melhora em ambos os anos.
+Nenhum ajuste após a abertura. **2021–2022 não é mais holdout intocado.**
+[Rodada 8](ROUND8.md). Usuário confirmou S08 em **1,74606**, piora de 0,01056
+sobre S07. Não promover S08 como melhor pública. Investigar o desencontro entre
+validação e público antes de outra mudança, sem assumir sua causa ou usar o
+score público isolado para ajustar pesos. Nenhum novo treino iniciado com esse relato.
+S07 (1,73550) continua referência pública. Não há upload ou execução agendada.
+Os trechos abaixo que descrevem 2021–2022 como intocado são histórico anterior.
+
 ## Último retorno do usuário — S07 aceita
 
 S07 atingiu **1,73550**, segundo lugar; líder informado **1,72921**.

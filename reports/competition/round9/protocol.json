@@ -1,0 +1,28 @@
+{
+  "protocol_sha256": "1cbad7d94285f3f7e757829b6e63302b9215829bcb4005032d45269c3fb437e5",
+  "only_official_data": true,
+  "seed_years": [
+    2005,
+    2007
+  ],
+  "development_years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "confirmation_year": 2021,
+  "confirmation_previously_consumed": true,
+  "model_candidates": [
+    "tree7_0.25",
+    "tree7_0.5",
+    "tree15_0.25",
+    "tree15_0.5",
+    "pls8_0.25",
+    "pls8_0.5",
+    "pls16_0.25",
+    "pls16_0.5"
+  ]
+}

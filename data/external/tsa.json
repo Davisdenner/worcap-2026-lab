@@ -1,0 +1,9 @@
+{
+  "url": "https://psl.noaa.gov/data/correlation/tsa.data",
+  "retrieved_utc": "2026-09-16T00:16:37.068968+00:00",
+  "sha256": "700c0dffda0f19c1254ba482808b345eaa0538f5bf09fc3bc025f46a5fbe3a69",
+  "source": "NOAA Physical Sciences Laboratory",
+  "index": "TSA",
+  "temporal_policy": "Only target-minus-two months or older; maximum consumed month 2024-10.",
+  "vintage_limitation": "Revised historical series, not archived real-time releases."
+}
