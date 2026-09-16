@@ -1,6 +1,15 @@
 {
   "observations": [
     {
+      "submission_file": "submissions/submission_10.csv",
+      "public_rmse": 1.71895,
+      "accepted": true,
+      "source": "Score S10 informado pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Novo melhor público confirmado, somente dados oficiais. Ganho de 0,01062 sobre S09. Faltam 0,01895 para 1,70. Supera o último score de líder informado (1,72921) por 0,01026, mas a classificação atual não foi reconfirmada. Privado desconhecido. Nenhum novo treino ou envio iniciado com esse relato."
+    },
+    {
       "submission_file": "submissions/submission_09.csv",
       "public_rmse": 1.72957,
       "accepted": true,

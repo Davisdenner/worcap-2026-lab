@@ -1,5 +1,157 @@
 # Retomada após S04 em 15/09/2026
 
+## Rodada 15 concluída — organização S10 e recalibração conjunta
+
+Referência consolidada em [S10_BASELINE.md](../docs/S10_BASELINE.md): composição,
+scores, hashes e limitações. Índices de código, resultados e protocolo geral
+atualizados para S10 e para o fato de 2021–2022 já ter sido avaliado.
+
+Cinco componentes recalibrados conjuntamente: S02, regional com memória,
+local sazonal com memória, PLS continental e tropical estendido por S09 fora
+do trópico. Prior reproduz S10. Doze grupos existentes, pesos não negativos,
+soma1 e variação máxima de 0,10 por componente. Quatro lambdas: 0,1; 0,3; 1; 3.
+Calibração só com blocos completos anteriores ao corte e prior também causal.
+
+Melhor joint1: **1,774622**, contra **1,775343** da S10 em 2009–2020; ganho
+**0,041%**, 4/6 blocos, 6/12 anos e 81/144 meses melhores. Não passou pelos
+critérios de ganho, blocos e anos. Não afrouxar limites ou ajustar pesos pelo
+leaderboard. Nenhuma confirmação adicional 2021–2022, calibração final, CSV S11
+ou upload. S10 e seus modelos intactos; 61 testes passaram.
+[Protocolo](ROUND15.md), [resultados](../reports/competition/round15/RESULTS.md)
+e [verificação](../reports/competition/round15/verification.json).
+
+Último público S10 informado:1,71895; líder:1,71488. Último saldo informado:
+um envio hoje. A execução não consumiu envios; não assumir que saldo/ranking
+continuarão iguais em outro momento. Nenhuma próxima rodada iniciada.
+Não recomendar envio desta recalibração. Abaixo, histórico.
+
+## Rodada 14 concluída — hipótese física não confirmada
+
+Quatro candidatas com proxies de transporte/convergência de umidade em 850 hPa,
+derivados exclusivamente dos arquivos oficiais. Famílias flux e fluxconv,
+PCA16 ou PCA32, concatenadas às entradas S10. PLS32 reajustado, pesos mantidos.
+Produtos das médias mensais não são fluxos instantâneos ou integrados na coluna.
+Pressão superficial e vizinhança mascaram novos indicadores abaixo do terreno;
+unidades ERA5 padrão assumidas a partir das faixas, ausentes dos atributos NetCDF.
+
+Todas pioraram o agregado 2009–2020. Melhor fluxconv32: **1,775455** contra
+**1,775343** da S10, piora relativa de 0,0063%; só 3/6 blocos, 5/12 anos e
+67/144 meses melhores. Hipótese não confirmada nesta configuração, sem concluir
+que todo atributo físico seja inútil. Não ajustar parâmetros após observar resultados.
+
+Nenhuma confirmação adicional 2021–2022, treino final, CSV S11 ou upload.
+S10 (público 1,71895) permanece intacta. Último líder informado 1,71488 e saldo
+de um envio hoje; esta rodada não consumiu envios, não assumir saldo atualizado
+em outro momento. Auditoria, reprodução do controle S10 e 56 testes passaram;
+exportação sem aprovação bloqueada e verificada.
+[Protocolo](ROUND14.md), [resultados](../reports/competition/round14/RESULTS.md)
+e [verificação](../reports/competition/round14/verification.json).
+
+Não recomendar envio das candidatas físicas. Nenhuma nova rodada iniciada;
+evitar busca interminável nos mesmos anos ou inferir ganho público dos ajustes.
+As seções seguintes preservam o histórico.
+
+## Rodada 13 concluída — preservar S10 e o envio restante
+
+Kernel Ridge gaussiano substituindo somente a regressão de saída do componente
+tropical S10: quatro configurações, parâmetros e gates congelados previamente.
+PLS32, representação atmosférica, climatologia e pesos preservados. Treino direto
+com todos os pares anteriores ao corte, sem usar correções residuais reprovadas.
+
+Melhor `rbf_h2_a0.3`: RMSE 2009–2020 **1,775343 → 1,773881**, ganho **0,082%**;
+4/6 blocos, 7/12 anos e 86/144 meses melhores. Falhou nos critérios de ganho
+(mínimo 0,3%), blocos (mínimo 5) e anos (mínimo 9). As outras três pioraram o RMSE
+agrupado. Não ajustar largura, regularização ou pesos depois desses resultados.
+
+Não houve nova pontuação de 2021–2022, treino final, CSV S11 ou upload. S10
+(público 1,71895) intacta; último líder informado 1,71488, diferença 0,00407.
+Último saldo informado: um envio hoje; esta execução não consumiu envios.
+Auditoria e controle linear aprovados, 51 testes passaram, bloqueio de exportação
+sem aprovação verificado. [Protocolo](ROUND13.md),
+[resultados](../reports/competition/round13/RESULTS.md) e
+[verificação](../reports/competition/round13/verification.json).
+
+Recomendação: manter S10 hoje, sem gastar o envio nessas candidatas. Não fazer
+busca interminável nos mesmos períodos; não inferir que arquitetura mais complexa
+garantirá melhora. Nenhuma próxima rodada foi iniciada. Abaixo, histórico.
+
+## Rodada 12 concluída — preservar o último envio informado
+
+Contexto atualizado pelo usuário: S10 **1,71895**, líder **1,71488**, diferença
+0,00407; um envio disponível hoje no início desta rodada. Não consultado no
+Kaggle, nem assumir que esse saldo ou liderança persistirão em outro dia.
+
+Seis correções PLS dos resíduos S10, apenas dados oficiais, foram testadas.
+Melhor `residual8_0.25`: RMSE 2009–2020 **1,775343 → 1,772613**, ganho **0,154%**,
+5/6 blocos, 9/12 anos e 87/144 meses melhores, pior perda anual 0,465%.
+Não atingiu o mínimo pré-fixado de 0,3%. Nenhuma promoção; não afrouxar critérios.
+2021–2022 não foi novamente pontuado. Sem treino final, CSV S11 ou upload.
+S10 e seus modelos continuam intactos. Auditoria e 47 testes passaram; bloqueio
+de confirmação/exportação sem aprovação conferido.
+[Protocolo](ROUND12.md), [resultados](../reports/competition/round12/RESULTS.md)
+e [verificação](../reports/competition/round12/verification.json).
+
+Não usar esta candidata para gastar o envio por pressão de prazo. Não aumentar
+pesos com base no público nem estender a busca depois dos resultados desta rodada.
+Uma nova hipótese requer nova rodada explicitamente definida; não foi iniciada.
+As seções abaixo são histórico.
+
+## Retorno mais recente — S10 aceita com 1,71895
+
+Usuário confirmou o score público S10: **1,71895**, novo melhor com somente
+dados oficiais. Ganho de 0,01062 sobre S09 (0,614%); faltam 0,01895 para 1,70.
+Supera o último score de líder informado (1,72921), mas não afirmar liderança
+atual sem reconfirmação. Resultado privado desconhecido. Preservar S10 e usar
+como nova referência. Não aumentar pesos com base somente no retorno público.
+Score registrado no ledger e manifesto, sem alterar snapshots de geração.
+Nenhum treino, nova candidata ou envio iniciado com esse relato. Confirmar
+classificação e saldo de envios antes de planejar outra rodada. Abaixo, histórico.
+
+## Rodada 11 concluída — S10 pronta para envio manual
+
+Gerada `submissions/submission_10.csv`, candidata `fine32_0.25`. O número da
+rodada é 11, mas o arquivo é S10 porque a rodada anterior não exportou CSV.
+Somente dados oficiais. PLS32 tropical, contexto continental64 e regional64
+com filtro5/passo4 (1°); saídas na grade original. Mistura de 25% com S09 ao
+norte de 10°S, transição linear desde 15°S e preservação exata ao sul de 15°S.
+
+Quatro candidatas e um controle avaliados. Desenvolvimento 2009–2020:
+**1,780988 → 1,775343** (0,317%); 6/6 blocos, 9/12 anos e 85/144 meses melhores;
+pior perda anual 0,251%. Única candidata aprovada. Confirmação reutilizada
+2021–2022: **1,834766 → 1,830283**, ambos os anos melhores, sem ajustes posteriores.
+RMS da mudança: histórico 0,118107, 2023 0,132353, 2024 0,138975, dentro do limite.
+
+Controle regional antigo PLS16/peso25: 1,776961; equivalente fino: 1,776491.
+O ganho isolado da resolução é pequeno nesse controle; não atribuir todo o ganho
+da candidata PLS32 à resolução. Nenhuma previsão de score 1,70 é sustentada.
+
+CSV: 1.885.464 linhas, IDs/ordem oficiais, valores finitos/não negativos, hash,
+130 coordenadas e reconstrução integral pelo modelo salvo conferidos. 44 testes
+passaram. Nenhum upload. Aguardar score do usuário antes de outra rodada ou de
+promover referência pública; S09 (1,72957) permanece a melhor confirmada.
+[Protocolo](ROUND11.md), [resultados](../reports/competition/round11/RESULTS.md)
+e [reconstrução](../reports/competition/round11/verification.json).
+As seções abaixo preservam o histórico.
+
+## Rodada 10 concluída — sem nova submissão
+
+Correção PLS dos resíduos históricos da S09 implementada e avaliada em seis
+candidatas, somente com dados oficiais. Melhor: PLS8 com intensidade 25%,
+RMSE 2009–2020 **1,780988 → 1,777298** (0,207%). Melhorou 6/6 blocos,
+11/12 anos e 84/144 meses, mas não atingiu o mínimo pré-fixado de 0,3%.
+Não reduzir esse limite depois do resultado. Nenhuma candidata promovida;
+2021–2022 não foi novamente pontuado, não houve treino final, CSV S10 ou upload.
+S09 (público 1,72957) permanece a referência. Auditoria passou e 40 testes passaram.
+[Protocolo congelado](ROUND10.md) e [resultados](../reports/competition/round10/RESULTS.md).
+
+O diagnóstico histórico atribui 63,1% do erro quadrático à faixa de 10°S a
+15°N, incluindo todos os pontos da grade nessa faixa, não apenas terra.
+Isso não localiza os erros ocultos de 2023/2024. Hipótese para uma próxima
+rodada, ainda não executada: representação atmosférica regional mais detalhada,
+comparada à S09 na grade completa, com poucos parâmetros e protocolo próprio
+definido antes de medir resultados. Não presumir que o ganho possível seja
+suficiente para 1,70. Não reutilizar dados ou previsões NOAA.
+
 ## Retorno mais recente — S09 aceita com 1,72957
 
 Usuário confirmou **S09 em 1,72957**, novo melhor público e nova referência

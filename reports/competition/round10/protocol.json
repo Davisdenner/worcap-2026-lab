@@ -1,0 +1,30 @@
+{
+  "protocol_sha256": "7b6911e8ea9d324ed7fcece05c5e477aca39207d9be94d7e2f4166c5809c2a0c",
+  "official_only": true,
+  "s09_sha256": "3acf387d07ebf7d9977122d9c41465472236d66f16ad740bd273cead307800ff",
+  "counts": [
+    2,
+    4,
+    8
+  ],
+  "fractions": [
+    0.25,
+    0.5
+  ],
+  "ridge": 1.0,
+  "seed": 20260916,
+  "development": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "seed_blocks": [
+    2005,
+    2007
+  ],
+  "confirmation": 2021,
+  "confirmation_previously_consumed": true
+}

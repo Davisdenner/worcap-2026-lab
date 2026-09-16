@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "official_only": true,
+  "inherited_audit_sha256": "f2c81298e948492db7843117f6e15e0730108ee663f1df54ee0be8cc57b99039",
+  "s09_csv_sha256": "3acf387d07ebf7d9977122d9c41465472236d66f16ad740bd273cead307800ff",
+  "coarse_sha256": "a3168b2eb4976607f40f8b4ef34b760212181b691f6074927a7d6431e3b6567e",
+  "all_official_cache_values_equal": true,
+  "prior_model_artifacts_unchanged": true
+}

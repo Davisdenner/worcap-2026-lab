@@ -1,0 +1,80 @@
+{
+  "selected": null,
+  "reference_rmse": 1.7809880718368176,
+  "reference_second_year_rmse": 1.7968714114104627,
+  "ranking": [
+    {
+      "model": "residual8_0.25",
+      "rmse": 1.7772982705183369,
+      "relative_gain": 0.0020717720555395447,
+      "second_year_rmse": 1.7932359939293214,
+      "blocks_improved": 6,
+      "years_improved": 11,
+      "months_improved": 84,
+      "worst_annual_relative_change": 0.003852775727248403,
+      "passed": false,
+      "historical_correction_rms": 0.09211393080141642
+    },
+    {
+      "model": "residual4_0.25",
+      "rmse": 1.7781337928429464,
+      "relative_gain": 0.0016026379058943219,
+      "second_year_rmse": 1.7949334568951643,
+      "blocks_improved": 5,
+      "years_improved": 10,
+      "months_improved": 92,
+      "worst_annual_relative_change": 0.003907346269161671,
+      "passed": false,
+      "historical_correction_rms": 0.08102343284454196
+    },
+    {
+      "model": "residual8_0.5",
+      "rmse": 1.7783275072027114,
+      "relative_gain": 0.0014938699905846509,
+      "second_year_rmse": 1.7944057176962933,
+      "blocks_improved": 3,
+      "years_improved": 8,
+      "months_improved": 76,
+      "worst_annual_relative_change": 0.011292557745639531,
+      "passed": false,
+      "historical_correction_rms": 0.18387839115106586
+    },
+    {
+      "model": "residual2_0.25",
+      "rmse": 1.7788391615071977,
+      "relative_gain": 0.0012065832239985808,
+      "second_year_rmse": 1.7949061452241255,
+      "blocks_improved": 5,
+      "years_improved": 10,
+      "months_improved": 87,
+      "worst_annual_relative_change": 0.0038246422055847606,
+      "passed": false,
+      "historical_correction_rms": 0.07319307184257898
+    },
+    {
+      "model": "residual4_0.5",
+      "rmse": 1.7789323608299352,
+      "relative_gain": 0.0011542531021907498,
+      "second_year_rmse": 1.7968056584731775,
+      "blocks_improved": 4,
+      "years_improved": 7,
+      "months_improved": 76,
+      "worst_annual_relative_change": 0.010485149957076612,
+      "passed": false,
+      "historical_correction_rms": 0.16174717966560023
+    },
+    {
+      "model": "residual2_0.5",
+      "rmse": 1.7796829027956083,
+      "relative_gain": 0.0007328342406377475,
+      "second_year_rmse": 1.7960303128926467,
+      "blocks_improved": 3,
+      "years_improved": 7,
+      "months_improved": 79,
+      "worst_annual_relative_change": 0.01004345291083264,
+      "passed": false,
+      "historical_correction_rms": 0.14622760850234545
+    }
+  ],
+  "caveat": "Reused development; fixed S09 architecture chosen retrospectively, not independent test"
+}

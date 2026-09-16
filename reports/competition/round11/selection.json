@@ -1,0 +1,73 @@
+{
+  "selected": "fine32_0.25",
+  "reference_rmse": 1.7809880718368176,
+  "ranking": [
+    {
+      "model": "fine32_0.25",
+      "rmse": 1.7753428173112618,
+      "relative_gain": 0.003169731799345321,
+      "second_year_rmse": 1.788461955055948,
+      "blocks_improved": 6,
+      "years_improved": 9,
+      "months_improved": 85,
+      "worst_annual_relative_change": 0.002511234615522273,
+      "eligible": true,
+      "passed": true,
+      "historical_correction_rms": 0.11810729917763994
+    },
+    {
+      "model": "fine16_0.5",
+      "rmse": 1.776240353973758,
+      "relative_gain": 0.002665777462598662,
+      "second_year_rmse": 1.7892919425671918,
+      "blocks_improved": 6,
+      "years_improved": 8,
+      "months_improved": 82,
+      "worst_annual_relative_change": 0.007938694048070571,
+      "eligible": true,
+      "passed": false,
+      "historical_correction_rms": 0.1738162241856519
+    },
+    {
+      "model": "fine16_0.25",
+      "rmse": 1.7764912421983352,
+      "relative_gain": 0.0025249072184097,
+      "second_year_rmse": 1.790864504194804,
+      "blocks_improved": 6,
+      "years_improved": 9,
+      "months_improved": 88,
+      "worst_annual_relative_change": 0.002682887669639422,
+      "eligible": true,
+      "passed": false,
+      "historical_correction_rms": 0.08690811209282595
+    },
+    {
+      "model": "coarse16_0.25",
+      "rmse": 1.7769614036810173,
+      "relative_gain": 0.0022609180934307638,
+      "second_year_rmse": 1.791187443757324,
+      "blocks_improved": 6,
+      "years_improved": 10,
+      "months_improved": 86,
+      "worst_annual_relative_change": 0.0044379292608878185,
+      "eligible": false,
+      "passed": false,
+      "historical_correction_rms": 0.08689544250964565
+    },
+    {
+      "model": "fine32_0.5",
+      "rmse": 1.7775444844420698,
+      "relative_gain": 0.0019335263661796054,
+      "second_year_rmse": 1.788472423838393,
+      "blocks_improved": 4,
+      "years_improved": 7,
+      "months_improved": 77,
+      "worst_annual_relative_change": 0.009034161915560723,
+      "eligible": true,
+      "passed": false,
+      "historical_correction_rms": 0.2362145983552799
+    }
+  ],
+  "reused_periods": true,
+  "confirmation_previously_consumed": true
+}

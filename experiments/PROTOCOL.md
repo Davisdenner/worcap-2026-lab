@@ -1,6 +1,15 @@
 # WORCAP: protocolo de desenvolvimento
 
-## Referência atual após retorno público da S09
+## Referência atual — S10, público 1,71895
+
+Somente dados oficiais. Composição, resultados, hashes e limitações reunidos
+em [S10_BASELINE.md](../docs/S10_BASELINE.md). CSV, modelos e snapshots de geração
+devem ser preservados. A rodada15 testa recalibração conjunta com pesos causais
+e protocolo próprio; não altera a referência pública sem novo resultado confirmado.
+2021–2022 já foi utilizado e não é holdout inédito. Os experimentos anteriores
+e critérios antigos abaixo são histórico, não autorizações para retreinar.
+
+## Histórico — retorno público da S09
 
 **S09, público 1,72957**, informado pelo usuário, passa a ser a referência para
 as próximas candidatas: 75% S06 + 25% PLS16, apenas dados oficiais. Nenhum

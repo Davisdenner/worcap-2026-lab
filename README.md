@@ -5,11 +5,77 @@ América do Sul. O objetivo é prever a chuva média do mês seguinte, em mm/dia
 usando os dados oficiais ERA5.
 
 **Diretriz atual: somente dados fornecidos pela organização.** A referência
-para os próximos experimentos é **S09 (1,72957)**. S07/S08 incorporam NOAA e
+para os próximos experimentos é **S10 (1,71895)**. S07/S08 incorporam NOAA e
 permanecem no histórico, sem uso direto ou indireto nas novas candidatas.
 [Protocolo vigente](experiments/PROTOCOL.md). Nenhuma submissão anterior foi removida.
 
-## S09 aceita — novo melhor score público: 1,72957
+**Referência consolidada:** [S10 — composição, resultados e integridade](docs/S10_BASELINE.md).
+Os registros abaixo preservam a sequência histórica; uma candidata local não
+substitui a melhor pública sem resultado confirmado pelo usuário.
+
+## Rodada 15 concluída — S10 organizada e preservada
+
+Quatro níveis de regularização da combinação conjunta dos cinco componentes
+foram avaliados com pesos aprendidos somente em blocos anteriores. Melhor RMSE
+histórico: **1,775343 → 1,774622**, ganho de 0,041%, com melhora em 4/6 blocos e
+6/12 anos. Não atingiu os critérios pré-fixados; nenhum CSV S11 ou upload.
+S10 intacta, documentação consolidada e índices atualizados. Auditoria e 61 testes
+passaram. [Resultados](reports/competition/round15/RESULTS.md) e
+[protocolo](experiments/ROUND15.md).
+
+## Rodada 14 concluída — atributos físicos sem ganho
+
+Quatro candidatas com transporte/convergência de umidade derivados dos arquivos
+oficiais foram avaliadas. Todas pioraram o RMSE agrupado; melhor resultado
+**1,775455**, contra **1,775343** da S10. Hipótese não confirmada nesta configuração.
+Nenhum CSV S11 ou upload; S10 intacta. Auditoria e 56 testes passaram, incluindo
+fórmula esférica, máscara de pressão e causalidade.
+[Resultados](reports/competition/round14/RESULTS.md) e [protocolo](experiments/ROUND14.md).
+
+## Rodada 13 concluída — kernel tropical não aprovado
+
+Quatro versões não lineares do componente tropical avaliadas, mantendo os pesos
+e a representação da S10. Melhor RMSE histórico: **1,775343 → 1,773881**,
+ganho de 0,082%, com melhora em 4/6 blocos e 7/12 anos. Abaixo dos critérios
+pré-fixados; nenhum CSV S11 ou upload. S10 e seus modelos permanecem intactos.
+Auditoria, reprodução do controle linear e 51 testes passaram.
+[Resultados](reports/competition/round13/RESULTS.md) e [protocolo](experiments/ROUND13.md).
+
+## Rodada 12 concluída — sem nova submissão
+
+Seis correções residuais da S10 avaliadas com dados oficiais. Melhor resultado
+histórico: **1,775343 → 1,772613**, ganho de 0,154%, abaixo do mínimo pré-fixado
+de 0,3%. Nenhuma candidata aprovada, nenhum CSV S11 ou upload. S10 preservada.
+Auditoria e 47 testes passaram. O usuário informou líder com 1,71488 e um envio
+restante hoje; esta rodada não consumiu esse envio.
+[Resultados](reports/competition/round12/RESULTS.md) e [protocolo](experiments/ROUND12.md).
+
+## S10 aceita — novo melhor público: 1,71895
+
+Score informado pelo usuário: melhora de 0,01062 sobre S09 (cerca de 0,614%).
+Faltam 0,01895 para 1,70. A classificação atual e o privado não foram verificados.
+CSV, modelos e metadados de geração preservados; retorno registrado no ledger.
+
+[submission_10.csv](submissions/submission_10.csv) adiciona à S09 um modelo
+tropical com entradas atmosféricas de 1°, contexto continental e PLS32.
+Peso de 25% ao norte de 10°S, transição de 15°S a 10°S; ao sul, S09 preservada.
+Somente dados oficiais. Desenvolvimento: **1,780988 → 1,775343** (0,317%),
+melhora nos seis blocos. Confirmação já utilizada 2021–2022:
+**1,834766 → 1,830283**, melhora nos dois anos. Não são scores do Kaggle.
+Arquivo e reprodução conferidos; 44 testes passaram na geração. Upload feito
+pelo usuário. S10 passa a ser a referência; nenhum novo treino ou envio iniciado
+com esse retorno.
+[Protocolo](experiments/ROUND11.md) e [resultados](reports/competition/round11/RESULTS.md).
+
+## Histórico — rodada 10 concluída sem exportação
+
+Seis correções PLS dos resíduos da S09 foram testadas somente com dados oficiais.
+A melhor reduziu o RMSE histórico de 1,780988 para 1,777298 (0,207%), abaixo
+do mínimo pré-fixado de 0,3%. Nenhuma candidata promovida; nenhum CSV S10 ou
+upload. Auditoria aprovada e 40 testes passaram.
+[Resultados](reports/competition/round10/RESULTS.md) e [próxima hipótese](experiments/NEXT.md).
+
+## Histórico — S09 aceita com 1,72957
 
 Score informado pelo usuário. Ganho de 0,01548 sobre S06 e 0,00593 sobre S07,
 usando apenas os dados oficiais. A classificação atual e o score privado não
@@ -59,7 +125,8 @@ Os scores públicos foram informados pelo usuário; a fonte está no registro
 | Caminho | Conteúdo |
 | --- | --- |
 | [docs/DIARIO_2026-09-14.md](docs/DIARIO_2026-09-14.md) | O que fizemos, resultados e decisões do dia |
-| [docs/MODELO_ATUAL.md](docs/MODELO_ATUAL.md) | Referência S04 e composição histórica da S03 |
+| [docs/S10_BASELINE.md](docs/S10_BASELINE.md) | S10: composição, métricas, hashes e limites da evidência |
+| [docs/MODELO_ATUAL.md](docs/MODELO_ATUAL.md) | Referência atual e histórico dos modelos |
 | [docs/REPRODUCAO.md](docs/REPRODUCAO.md) | Ambiente, dependências e sequência de execução |
 | [experiments/NEXT.md](experiments/NEXT.md) | Roteiro para retomar amanhã |
 | [experiments/PROTOCOL.md](experiments/PROTOCOL.md) | Validação temporal e regras de uso dos dados |

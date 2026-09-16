@@ -1,0 +1,56 @@
+{
+  "selected": null,
+  "reference_rmse": 1.7753428173112618,
+  "ranking": [
+    {
+      "model": "fluxconv32",
+      "rmse": 1.7754550530665425,
+      "relative_gain": -6.321920148955051e-05,
+      "second_year_rmse": 1.7880971703348474,
+      "blocks_improved": 3,
+      "years_improved": 5,
+      "months_improved": 67,
+      "worst_annual_relative_change": 0.0015081874386404515,
+      "passed": false,
+      "historical_correction_rms": 0.03920962454163885
+    },
+    {
+      "model": "flux32",
+      "rmse": 1.7757148834181329,
+      "relative_gain": -0.00020957423165990363,
+      "second_year_rmse": 1.7881091007879506,
+      "blocks_improved": 2,
+      "years_improved": 7,
+      "months_improved": 65,
+      "worst_annual_relative_change": 0.0018899543105075356,
+      "passed": false,
+      "historical_correction_rms": 0.042351542436702576
+    },
+    {
+      "model": "fluxconv16",
+      "rmse": 1.7757370569089586,
+      "relative_gain": -0.00022206392695123256,
+      "second_year_rmse": 1.7885643438132384,
+      "blocks_improved": 1,
+      "years_improved": 3,
+      "months_improved": 70,
+      "worst_annual_relative_change": 0.0014593560227318392,
+      "passed": false,
+      "historical_correction_rms": 0.03361681812051603
+    },
+    {
+      "model": "flux16",
+      "rmse": 1.7758081464955882,
+      "relative_gain": -0.00026210666457715526,
+      "second_year_rmse": 1.7887022333374767,
+      "blocks_improved": 2,
+      "years_improved": 3,
+      "months_improved": 64,
+      "worst_annual_relative_change": 0.0012924190871639318,
+      "passed": false,
+      "historical_correction_rms": 0.033988549437975794
+    }
+  ],
+  "reused_periods": true,
+  "confirmation_previously_consumed": true
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "all_grid_predictions_reconstructed": true,
+  "south_unchanged": true,
+  "final_artifact_hashes_verified": true,
+  "csv_sha256": "57862493c62936b291c03cff3bd4c53fd486ab38a08108f908a8f74b5aada46e",
+  "rows": 1885464
+}

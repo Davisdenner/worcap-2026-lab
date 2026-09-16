@@ -1,5 +1,18 @@
 # Pipelines executados
 
+Referência pública atual: **S10, 1,71895**. Consulte a
+[composição consolidada](../docs/S10_BASELINE.md). Os scripts antigos são
+dependências congeladas; não editar para experimentar nem sobrescrever modelos.
+
+| Pipeline atual | Função |
+| --- | --- |
+| [round9.py](round9.py) | S09 oficial e pesos históricos com cortes temporais |
+| [round11.py](round11.py) | Componente tropical fino e geração da S10 |
+| [round12.py](round12.py) | Reconstrução das bases S10; correção residual rejeitada |
+| [round15.py](round15.py) | Recalibração conjunta dos cinco componentes, sem upload |
+
+## Pipelines iniciais e dependências
+
 | Arquivo | Função | Dependências locais principais |
 | --- | --- | --- |
 | [competition.py](competition.py) | Auditoria, cache, climatologias, ridge anual e resumo inicial | NetCDF oficiais |

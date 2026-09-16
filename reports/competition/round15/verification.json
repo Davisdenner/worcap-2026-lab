@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "weight_sets_verified": 24,
+  "forward_only_calibration": true,
+  "convexity_and_bounds_verified": true,
+  "all_development_predictions_reconstructed": true,
+  "confirmation_and_export_blocked": true,
+  "no_new_submission": true,
+  "no_final_calibration": true,
+  "s10_artifacts_unchanged": true
+}

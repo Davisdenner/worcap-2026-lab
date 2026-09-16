@@ -1,0 +1,80 @@
+{
+  "selected": null,
+  "reference_rmse": 1.7753428173112618,
+  "ranking": [
+    {
+      "model": "residual8_0.25",
+      "rmse": 1.772613080366894,
+      "relative_gain": 0.0015375830052372086,
+      "second_year_rmse": 1.7861664627557583,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 87,
+      "worst_annual_relative_change": 0.004651240467129059,
+      "passed": false,
+      "historical_correction_rms": 0.08947825916330085
+    },
+    {
+      "model": "residual4_0.25",
+      "rmse": 1.7735966401723444,
+      "relative_gain": 0.0009835718047750408,
+      "second_year_rmse": 1.788143878677946,
+      "blocks_improved": 5,
+      "years_improved": 8,
+      "months_improved": 79,
+      "worst_annual_relative_change": 0.004966891352974567,
+      "passed": false,
+      "historical_correction_rms": 0.07996210884389862
+    },
+    {
+      "model": "residual2_0.25",
+      "rmse": 1.7737518757840198,
+      "relative_gain": 0.0008961320099581949,
+      "second_year_rmse": 1.787154431036433,
+      "blocks_improved": 5,
+      "years_improved": 10,
+      "months_improved": 82,
+      "worst_annual_relative_change": 0.005184854352791701,
+      "passed": false,
+      "historical_correction_rms": 0.07283914707514147
+    },
+    {
+      "model": "residual8_0.5",
+      "rmse": 1.7743554009846636,
+      "relative_gain": 0.0005561834688883049,
+      "second_year_rmse": 1.7883727856879772,
+      "blocks_improved": 3,
+      "years_improved": 8,
+      "months_improved": 76,
+      "worst_annual_relative_change": 0.012818926645786988,
+      "passed": false,
+      "historical_correction_rms": 0.1786515994603649
+    },
+    {
+      "model": "residual2_0.5",
+      "rmse": 1.775133384851702,
+      "relative_gain": 0.00011796733426228112,
+      "second_year_rmse": 1.7888902132714302,
+      "blocks_improved": 4,
+      "years_improved": 6,
+      "months_improved": 76,
+      "worst_annual_relative_change": 0.012843312040444754,
+      "passed": false,
+      "historical_correction_rms": 0.14553055229137585
+    },
+    {
+      "model": "residual4_0.5",
+      "rmse": 1.775418940911969,
+      "relative_gain": -4.287825425319802e-05,
+      "second_year_rmse": 1.7915891987379136,
+      "blocks_improved": 5,
+      "years_improved": 7,
+      "months_improved": 74,
+      "worst_annual_relative_change": 0.012719268160774178,
+      "passed": false,
+      "historical_correction_rms": 0.15964278725836298
+    }
+  ],
+  "reused_periods": true,
+  "confirmation_previously_consumed": true
+}

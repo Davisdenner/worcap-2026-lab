@@ -1,0 +1,36 @@
+{
+  "protocol_sha256": "1bea2302fd6d6ed14ec351ea5c0cdc05b286f01ac52ee40a94cda514d3e6394f",
+  "script_sha256": "5ead85bec208696718bf2b28377d8ec7c96a8380f96ccfcecb5daf7536c0f0f2",
+  "dependencies": {
+    "round9.py": "203fc22d2a1a93359a595a84b064706dd1318994fcfd962180a0db61305d867f",
+    "round10.py": "640e35b73652ea380f6adc9905a3df52203a561c22236a49d3ed4f3caa590417",
+    "round11.py": "785777d35bcf571b8c2943f6f538f8ab907c0bfdbcd611f7a27a1713306b3167",
+    "round12.py": "91503c0240386d4586d37d3c489078f764bcac792fcd2db3160261b87aedc204",
+    "round2.py": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+    "round3.py": "6c0f9a0968e930007bbab96d4d33e3d16bddaf60890da909f40c40eb45c309fd",
+    "round4.py": "ad8c2f466fe2cdcdc7f5daeacc0c02e421303f1b45f3048c548049b4cee1501f",
+    "competition.py": "52221cff17e1c9137b4b4ef44962a1210ffd6b141670e2934bb7f3293da96154",
+    "submission.py": "e33b8c5889df0039bb53e9f04f822d348e902eda854cf473bf5a545703e0581d"
+  },
+  "configurations": {
+    "flux16": [
+      "flux",
+      16
+    ],
+    "flux32": [
+      "flux",
+      32
+    ],
+    "fluxconv16": [
+      "fluxconv",
+      16
+    ],
+    "fluxconv32": [
+      "fluxconv",
+      32
+    ]
+  },
+  "official_only": true,
+  "reference": "S10",
+  "seed": 20260918
+}

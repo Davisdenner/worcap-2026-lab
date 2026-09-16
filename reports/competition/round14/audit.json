@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "official_only": true,
+  "inherited_audit_sha256": "66f70236820271510718f013249645e287cb41e2c3928dccc7efad69f98c3e55",
+  "moisture_sha256": "31cee656cbada1df22081434ecef5e3821f606fb9b29b105e98530ae1a72db07",
+  "field_order": [
+    "monthly_q_times_u",
+    "monthly_q_times_v",
+    "convergence_times_1e6"
+  ],
+  "shape": [
+    1019,
+    3,
+    36,
+    66
+  ],
+  "usable_full_grid_fraction": 0.9413046566678482,
+  "original_nc_spot_checks": 8,
+  "all_source_cache_values_previously_rechecked": true,
+  "units_assumed_era5_standard": true,
+  "monthly_single_level_proxy_not_column_flux": true
+}

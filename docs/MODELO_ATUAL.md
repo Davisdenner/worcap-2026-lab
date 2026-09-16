@@ -1,6 +1,41 @@
-# Modelo de referência — S09, somente dados oficiais
+# Modelo de referência — S10, somente dados oficiais
 
-## S09 aceita — público 1,72957
+Composição, métricas e integridade reunidas em [S10_BASELINE.md](S10_BASELINE.md).
+Rodada15 sem promoção: recalibração conjunta ganhou apenas 0,041% no agregado,
+com melhora em 4/6 blocos e 6/12 anos. S10 permanece intacta; nenhum CSV S11.
+[Resultados](../reports/competition/round15/RESULTS.md).
+
+Rodada 14 sem promoção: atributos de transporte/convergência derivados dos
+dados oficiais não melhoraram o RMSE total em nenhuma das quatro candidatas.
+S10 intacta; nenhum CSV S11. [Resultados](../reports/competition/round14/RESULTS.md).
+
+Rodada 13 encerrada sem promoção: melhor kernel tropical ganhou 0,082%, mas
+melhorou apenas 4/6 blocos e 7/12 anos. Pesos S10 preservados durante a comparação.
+Nenhum CSV S11 ou upload. [Resultados](../reports/competition/round13/RESULTS.md).
+
+Rodada 12 encerrada sem promoção: melhor correção residual ganhou 0,154% no
+desenvolvimento, abaixo do mínimo de 0,3%. S10 permanece intacta; nenhum CSV
+S11 gerado. [Resultados](../reports/competition/round12/RESULTS.md).
+
+## S10 aceita — público 1,71895
+
+Score informado pelo usuário. Melhora de 0,01062 sobre S09; nova referência
+pública. Classificação atual não reconfirmada, privado desconhecido.
+
+Rodada 11 aprovada nos critérios históricos: S09 combinada com PLS32 tropical,
+usando PCA64 regional de campos amostrados a 1° e PCA64 continental da S09.
+Peso tropical de 25%, transição de 15°S a 10°S e S09 intacta ao sul. Sem NOAA.
+Desenvolvimento: 1,780988 → 1,775343; confirmação reutilizada: 1,834766 → 1,830283.
+CSV conferido; upload feito pelo usuário. Modelos e metadados de geração
+preservados; nenhum novo treino iniciado com o retorno. [S10](../submissions/submission_10.csv),
+[protocolo](../experiments/ROUND11.md) e [resultados](../reports/competition/round11/RESULTS.md).
+
+Rodada 10 encerrada sem promoção: o melhor corretor PLS residual ganhou
+0,207% no desenvolvimento, abaixo do mínimo de 0,3% fixado previamente.
+S09 permaneceu inalterada; nenhum CSV foi gerado naquela rodada.
+[Resultados da rodada 10](../reports/competition/round10/RESULTS.md).
+
+## Histórico — S09 aceita com 1,72957
 
 Resultado informado pelo usuário: novo melhor score público, 0,01548 abaixo
 de S06 e 0,00593 abaixo de S07. Classificação atual não reconfirmada; privado

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "official_only": true,
+  "fine_sha256": "1d5c4560a1c7a0c35cada1cfefd8a330769a1721d2340e0cfe5d9643b65539a5",
+  "previous_audit_sha256": "6c2f6ef129485ff8d1ac91448594f4e79d7ab50f787b1786d46f703476c098a8",
+  "full_feature_comparison": true
+}

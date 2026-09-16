@@ -1,0 +1,56 @@
+{
+  "selected": null,
+  "reference_rmse": 1.7753428173112618,
+  "ranking": [
+    {
+      "model": "joint1",
+      "rmse": 1.77462175958609,
+      "relative_gain": 0.00040615126168352944,
+      "second_year_rmse": 1.7880527883948367,
+      "blocks_improved": 4,
+      "years_improved": 6,
+      "months_improved": 81,
+      "worst_annual_relative_change": 0.0016988236299935178,
+      "passed": false,
+      "historical_correction_rms": 0.05199000584232577
+    },
+    {
+      "model": "joint3",
+      "rmse": 1.7749599555807072,
+      "relative_gain": 0.0002156550987343353,
+      "second_year_rmse": 1.7881535050375008,
+      "blocks_improved": 4,
+      "years_improved": 7,
+      "months_improved": 82,
+      "worst_annual_relative_change": 0.0007068175640723151,
+      "passed": false,
+      "historical_correction_rms": 0.023715557635093653
+    },
+    {
+      "model": "joint0.3",
+      "rmse": 1.7749643127005006,
+      "relative_gain": 0.00021320085736142858,
+      "second_year_rmse": 1.7889307723977497,
+      "blocks_improved": 4,
+      "years_improved": 5,
+      "months_improved": 78,
+      "worst_annual_relative_change": 0.0025514852196526494,
+      "passed": false,
+      "historical_correction_rms": 0.0685460206493706
+    },
+    {
+      "model": "joint0.1",
+      "rmse": 1.7752518119545369,
+      "relative_gain": 5.126072318961672e-05,
+      "second_year_rmse": 1.7893047438887808,
+      "blocks_improved": 3,
+      "years_improved": 6,
+      "months_improved": 75,
+      "worst_annual_relative_change": 0.0030444178476534134,
+      "passed": false,
+      "historical_correction_rms": 0.07662593422260579
+    }
+  ],
+  "reused_periods": true,
+  "confirmation_previously_consumed": true
+}

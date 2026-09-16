@@ -1,6 +1,41 @@
 # Submissões
 
-## S09 aceita — público 1,72957, informado pelo usuário
+Referência organizada: [S10_BASELINE.md](../docs/S10_BASELINE.md). Rodada15 não
+gerou S11: nenhuma recalibração conjunta passou pelos critérios. Nenhum upload;
+CSV e modelos S10 intactos. [Resultados](../reports/competition/round15/RESULTS.md).
+
+Rodada 14 não gerou S11: nenhuma candidata com atributos físicos superou S10
+no RMSE histórico agrupado. Nenhum upload, arquivos anteriores preservados.
+[Resultados](../reports/competition/round14/RESULTS.md).
+
+Rodada 13 também não gerou S11: as quatro candidatas de kernel tropical falharam
+nos critérios de promoção. S10 intacta e nenhum envio consumido.
+[Resultados](../reports/competition/round13/RESULTS.md).
+
+Rodada 12 não gerou S11: nenhuma correção residual da S10 passou pelos critérios
+pré-fixados. Nenhum upload realizado; envio restante informado foi preservado.
+[Resultados](../reports/competition/round12/RESULTS.md).
+
+## S10 aceita — público 1,71895, informado pelo usuário
+
+Novo melhor score público confirmado. Melhora de 0,01062 sobre S09.
+Upload realizado pelo usuário; classificação atual e privado não verificados.
+
+[submission_10.csv](submission_10.csv), gerada na rodada 11 (a rodada 10 não
+exportou arquivo). Modelo tropical PLS32 com entradas de 1° + contexto
+continental; mistura de 25% com S09 na região tropical e transição espacial.
+Somente dados oficiais. Aprovada nos critérios pré-fixados de desenvolvimento
+e confirmação, sem garantia de ganho público. Nenhum upload pelo agente.
+
+1.885.464 linhas, ordem oficial, valores e reprodução integral conferidos.
+SHA-256: `57862493c62936b291c03cff3bd4c53fd486ab38a08108f908a8f74b5aada46e`.
+[Metadados](submission_10.json), [resultados](../reports/competition/round11/RESULTS.md)
+e [verificação](../reports/competition/round11/verification.json).
+O manifesto mantém as dez submissões com score confirmado e registra S10
+como referência pública. Metadados de geração preservados como snapshot;
+o resultado posterior está no ledger de observações.
+
+## Histórico — S09 aceita com 1,72957
 
 [submission_09.csv](submission_09.csv): 75% S06 + 25% PLS16, somente dados oficiais.
 1.885.464 linhas e ordem do sample oficial conferidas. Hash SHA-256:
@@ -9,11 +44,10 @@ Novo melhor score público confirmado. Ganho de 0,01548 sobre S06 e de 0,00593
 sobre S07. Classificação atual e resultado privado não verificados.
 [Metadados de geração](submission_09.json) e
 [validação temporal](../reports/competition/round9/RESULTS.md).
-O manifesto mantém os nove resultados informados pelo usuário e registra S09
-como melhor pública. Metadados de geração são snapshots anteriores ao upload;
+Naquele momento, S09 tornou-se a melhor pública. Metadados de geração são snapshots anteriores ao upload;
 o score posterior está no ledger de observações, sem modificar esses snapshots.
 
-**Referência para novas candidatas com somente dados oficiais: S09, 1,72957.**
+**Referência para novas candidatas com somente dados oficiais: S10, 1,71895.**
 Restrição solicitada pelo usuário após S08. S07/S08 usam dados externos NOAA;
 seus arquivos e scores são preservados como histórico, não como componentes
 das novas candidatas. Nenhum envio anterior foi retirado ou alterado.
@@ -35,6 +69,7 @@ Em 15/09, o usuário informou S04 aceita com 1,74906 e manutenção do primeiro 
 | **S07** | `submission_07.csv` | **1,73550** | Aceita; score e segundo lugar informados pelo usuário |
 | S08 | `submission_08.csv` | 1,74606 | Aceita; pior que S07 no público, conforme relato do usuário |
 | **S09** | `submission_09.csv` | **1,72957** | Aceita; novo melhor público, somente dados oficiais |
+| **S10** | `submission_10.csv` | **1,71895** | Aceita; melhor público atual, somente dados oficiais |
 
 S08 adiciona TNA/TSA (Atlântico tropical) à S07. Desenvolvimento: 1,765488,
 melhor em quatro blocos e sete anos. Primeira checagem reservada de 2021–2022:

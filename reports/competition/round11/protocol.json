@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "4409f994eeadc589e5e614fae63dbe3554cf8c77750949aebd0777865264cc9a",
+  "script_sha256": "785777d35bcf571b8c2943f6f538f8ab907c0bfdbcd611f7a27a1713306b3167",
+  "dependency_hashes": {
+    "round9.py": "203fc22d2a1a93359a595a84b064706dd1318994fcfd962180a0db61305d867f",
+    "round10.py": "640e35b73652ea380f6adc9905a3df52203a561c22236a49d3ed4f3caa590417",
+    "round2.py": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+    "round3.py": "6c0f9a0968e930007bbab96d4d33e3d16bddaf60890da909f40c40eb45c309fd",
+    "round4.py": "ad8c2f466fe2cdcdc7f5daeacc0c02e421303f1b45f3048c548049b4cee1501f",
+    "competition.py": "52221cff17e1c9137b4b4ef44962a1210ffd6b141670e2934bb7f3293da96154",
+    "submission.py": "e33b8c5889df0039bb53e9f04f822d348e902eda854cf473bf5a545703e0581d"
+  },
+  "configs": {
+    "fine16_0.25": [
+      "fine",
+      16,
+      0.25
+    ],
+    "fine16_0.5": [
+      "fine",
+      16,
+      0.5
+    ],
+    "fine32_0.25": [
+      "fine",
+      32,
+      0.25
+    ],
+    "fine32_0.5": [
+      "fine",
+      32,
+      0.5
+    ],
+    "coarse16_0.25": [
+      "coarse",
+      16,
+      0.25
+    ]
+  },
+  "seed": 20260917,
+  "official_only": true
+}
