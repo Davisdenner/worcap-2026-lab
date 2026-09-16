@@ -1,7 +1,17 @@
 {
   "day_closed": "2026-09-14",
-  "best_submission": "submissions/submission_10.csv",
+  "best_submission": "submissions/submission_11.csv",
   "submissions": [
+    {
+      "file": "submissions/submission_11.csv",
+      "bytes": 63346107,
+      "rows": 1885464,
+      "sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+      "public_rmse": 1.71718,
+      "accepted": true,
+      "score_source": "Score público S11 informado pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_11.json"
+    },
     {
       "file": "submissions/submission_10.csv",
       "bytes": 63345779,

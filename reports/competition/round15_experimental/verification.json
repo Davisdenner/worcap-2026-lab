@@ -1,0 +1,11 @@
+{
+  "full_prediction_reconstruction": true,
+  "netcdf_roundtrip_exact": true,
+  "official_template_verified": true,
+  "s10_and_selection_unchanged": true,
+  "final_calibration_end": "2022-12",
+  "automatic_promotion_passed": false,
+  "experimental_user_authorized": true,
+  "uploaded": false,
+  "csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f"
+}
