@@ -1,0 +1,9 @@
+{
+  "block": 2021,
+  "target_start": "2021-01",
+  "target_end": "2022-12",
+  "sha256": "ba835b1b9e9681125c52e9cf84e179cd02ebdb0c734d057b5de8e6948afba992",
+  "component_record_sha256": "995bbd220a9c4d28bca238cd05a8c97a8dbf3ea0c37031b4cab0549119a97fb7",
+  "uniform_grid_months": true,
+  "official_only": true
+}

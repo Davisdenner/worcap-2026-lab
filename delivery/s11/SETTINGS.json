@@ -1,0 +1,7 @@
+{
+  "raw": "../../data/raw",
+  "cache": "../../data/processed/s11_delivery_clean",
+  "models": "models",
+  "output": "verification",
+  "evidence": "evidence"
+}

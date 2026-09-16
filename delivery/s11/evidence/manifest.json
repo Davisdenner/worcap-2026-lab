@@ -1,0 +1,18 @@
+{
+  "2005_covariance.json": "2ef8269697f20c6fbfa605e6645495392ea956538da3f7179b69f0bbd5958082",
+  "2007_covariance.json": "d6ddbd25b463eb31ab1c0dfcb00e19abe6579a67914839cfd2830fabee345579",
+  "2009_covariance.json": "ea2bee486865bd114ba029ef33dbc3b9853f8044e442c41b398c317c06de30c9",
+  "2011_covariance.json": "82cd766d095bf3283af54953a98cd66a0029fdc3bf6ce99efef1f5f70c2aad97",
+  "2013_covariance.json": "58c1a1b4e7f273d653ac38d2d03892108380a0f43d267c321c51a1ef9ccf3caa",
+  "2015_covariance.json": "ac9e4e78e5bd94050cced1f8f87e998dbffc06c522a5cc166e4580d03aa1a43d",
+  "2017_covariance.json": "9db342bc759581a13be093440754a950d6b2ed52ac233d5dac602285847a842f",
+  "2019_covariance.json": "11e56c178706fd0fdcfb53a009bffbd667595ab8964da3e19512bc5c90e14f7d",
+  "2021_covariance.json": "b17448963840b989ebbfd1b98773b8d039ad19cf5768fac269de0fe251ec5701",
+  "calibration_covariances.npy": "a5e8fc808c097c93f43bc4fa6b6a10dcc8296bb09a78f71ee424e6c48139bbd1",
+  "frozen_weights.json": "62e2820ec5a0819f2adf678617163118e43e78303a7999a2f3ac04966a9fed63",
+  "historical_selection.json": "cb3b93bbb055a685a6ae53cbc8c60a5eea1e3d79a6152ea9c5e1e3f3d1b35aa8",
+  "leaderboard_observations.json": "8d90a7ae46510951c0cd82eeaacb88768e2855c0f1103842b16596efe2658f85",
+  "official_sources.json": "9ab34e23e3ad0f06b1195f559d5d7a93ed747bf8257f9fec9645a2b39556c43a",
+  "reused_confirmation.json": "6106307ddccd474ff444eee0a5a4457b9052110b285623f63c2f71daf1c48145",
+  "s11_generation.json": "00e87b1ff524d2dd21cc2fce9144a1951602d0f2aabab6aa5deda550eb2d891d"
+}
