@@ -1,148 +1,74 @@
-# WORCAP: protocolo de desenvolvimento
+# Protocolo vigente de desenvolvimento
 
-## Referência atual — S10, público 1,71895
+Este documento substitui as instruções operacionais antigas. Os protocolos
+`ROUND*.md` continuam preservados como registros das decisões de cada rodada.
+O texto anterior deste protocolo está em
+`docs/history/antes_da_organizacao_2026-09-16/PROTOCOL.txt`.
 
-Somente dados oficiais. Composição, resultados, hashes e limitações reunidos
-em [S10_BASELINE.md](../docs/S10_BASELINE.md). CSV, modelos e snapshots de geração
-devem ser preservados. A rodada15 testa recalibração conjunta com pesos causais
-e protocolo próprio; não altera a referência pública sem novo resultado confirmado.
-2021–2022 já foi utilizado e não é holdout inédito. Os experimentos anteriores
-e critérios antigos abaixo são histórico, não autorizações para retreinar.
+## Referências e restrições
 
-## Histórico — retorno público da S09
+S10 é o controle aprovado (público informado 1,71895). S11 é a melhor pública
+(1,71718), gerada por exceção explicitamente autorizada após reprovação histórica.
+O resultado público não revoga os critérios nem reclassifica S11 como aprovada.
+Antes de cada rodada, declarar a referência exata e compará-la nos mesmos períodos;
+não trocar a referência depois de observar os resultados.
 
-**S09, público 1,72957**, informado pelo usuário, passa a ser a referência para
-as próximas candidatas: 75% S06 + 25% PLS16, apenas dados oficiais. Nenhum
-novo experimento foi iniciado com o relato do score. A restrição abaixo continua
-vigente; as menções à S06 registram a referência anterior à rodada 9.
+Usar somente dados fornecidos pela organização e atributos derivados deles.
+Não usar NOAA, modelos externos, previsões/resíduos/pseudoalvos de S07/S08 ou
+chuva preparatória em `data/interim`. Nenhum alvo oculto de 2023/2024 pode ser
+usado em treino, seleção ou calibração. A atmosfera de cada mês é permitida
+conforme o alinhamento oficial mês observado → mês seguinte.
 
-## Restrição vigente — somente dados fornecidos pela organização
+## Critérios ativos — todos são necessários
 
-Por decisão explícita do usuário após S08, as próximas candidatas devem usar
-exclusivamente os arquivos oficiais e atributos derivados deles. Não usar NOAA
-ou outras fontes externas, nem modelos pré-treinados em dados externos.
-Também não usar previsões, resíduos, pseudoalvos ou combinações de S07/S08
-como entradas ou base de correção: essas versões incorporam informação externa.
-Bibliotecas de software não são fontes de dados; seu uso continua sujeito às licenças.
+O ganho é relativo: `1 − RMSE_candidata / RMSE_referencia`.
+**0,3% = 0,003**, não uma redução absoluta de 0,3 no RMSE.
+A função congelada `src.round9.passes_gate` continua aplicada e coberta por testes.
 
-A referência compatível passa a ser **S06, público 1,74505**. S07 (1,73550)
-continua sendo o melhor resultado histórico registrado, mas não é a base da
-nova linha restrita. Preservar arquivos e scores anteriores para rastreabilidade;
-esta decisão não declara irregularidade nem altera submissões já enviadas.
+| Desenvolvimento 2009–2020 | Exigência |
+| --- | --- |
+| RMSE agregado | Ganho relativo de pelo menos **0,3%** |
+| Agregado dos segundos anos dos blocos | Menor RMSE que a referência |
+| Blocos de 24 meses melhores | Pelo menos 5 de 6 |
+| Anos melhores | Pelo menos 9 de 12 |
+| Meses melhores | Pelo menos 55% de 144, isto é, 80 meses |
+| Pior degradação anual relativa | No máximo 0,5% |
 
-O próximo experimento proposto é a correção não linear de S06, com previsões
-históricas fora do treino, atmosfera local/regional e memória causal derivadas
-somente dos arquivos oficiais. Verificar a proveniência de cada cache utilizado.
-Nenhuma chuva oculta de 2023/2024 pode entrar no desenvolvimento, inclusive
-arquivos preparatórios fora do pacote oficial. 2021–2022 já foi avaliado.
-Esta atualização registra a restrição; não executa treino ou upload.
+Depois da seleção em desenvolvimento, confirmar somente a candidata escolhida
+em 2021–2022: ganho agregado de pelo menos **0,1%** e melhora nos dois anos.
+Esse período já foi reutilizado; não chamá-lo de holdout independente.
+Não trocar de candidata ou ajustar parâmetros após falhar na confirmação.
 
-## Atualização após a rodada 8
+Antes de exportar, exigir que o RMS da mudança em relação à referência seja,
+em 2023 e 2024 separadamente, no máximo duas vezes o RMS histórico da mudança.
+Isso limita alterações muito maiores no teste; não garante score privado melhor.
+Também verificar proveniência, integridade, causalidade, IDs e valores do CSV.
 
-O bloco 2021–2022 foi aberto **uma única vez** para comparar S07 e a candidata
-S08 já congelada. S08 melhorou o RMSE agregado e os dois anos individualmente.
-Ele não é mais um holdout intocado para futuras rodadas. Não ajustar modelos
-nesse período e continuar chamando seu resultado de teste independente.
-Protocolo e valores: [rodada 8](ROUND8.md).
-O texto abaixo preserva o protocolo original das primeiras rodadas.
+## Ordem de trabalho
 
-## Objetivo e métrica
+1. Congelar hipótese, lista finita de candidatas, parâmetros, sementes,
+   referência, períodos e critérios antes de medir resultados.
+2. Treinar cada bloco apenas com alvos anteriores ao corte. Ajustar médias,
+   escalas e decomposições somente no treino. Aprender pesos em blocos anteriores.
+3. Registrar resultados completos e selecionar pelo menor RMSE entre elegíveis.
+   Se nenhuma passar, encerrar a rodada sem nova candidata exportada.
+4. Aplicar confirmação reutilizada e limite de mudança. Falhas bloqueiam a
+   promoção normal; não afrouxar limiares após ver os resultados.
+5. Gerar uma nova submissão somente com pedido explícito do usuário. Aprovação
+   nos critérios, sozinha, não é autorização de exportação ou upload.
+6. Se o usuário solicitar uma exceção, informar quais critérios falharam e
+   obter autorização explícita para a exceção. Registrar a reprovação e o pedido
+   sem alterar os critérios. Foi esse o caso da S11.
+7. Preservar arquivos enviados, registrar versão, metadados e hash, verificar
+   reprodução e só então atualizar os guias conforme o resultado confirmado.
 
-Prever precipitação média mensal em mm/dia em toda a grade oficial (301 × 261).
-O RMSE agrega os erros quadráticos de todos os pontos e meses, sem ponderação
-por área ou máscara continental. Essa é a interpretação da descrição fornecida;
-o código de avaliação do organizador ainda não foi disponibilizado.
+## Reprodução não é experimento
 
-## Separação temporal
+`src.reproducao` aceita apenas versões registradas e gera cópias verificadas
+contra hashes originais. Não promove modelos, não pesquisa parâmetros e não
+envia arquivos ao Kaggle. Reproduzir S11 não reabre nem dispensa os critérios
+para futuras versões. Consulte o [guia](../docs/REPRODUCAO.md).
 
-| Uso | Meses-alvo | Última chuva observada disponível |
-| --- | --- | --- |
-| Desenvolvimento 1 | 2013-01 a 2014-12 | 2012-12 |
-| Desenvolvimento 2 | 2015-01 a 2016-12 | 2014-12 |
-| Desenvolvimento 3 | 2017-01 a 2018-12 | 2016-12 |
-| Desenvolvimento 4 | 2019-01 a 2020-12 | 2018-12 |
-| Avaliação reservada | 2021-01 a 2022-12 | 2020-12 |
-| Competição | 2023-01 a 2024-12 | 2022-12 |
-
-O treino e qualquer ajuste de atributos precedem cada bloco. Para aprender
-M → M+1, o último par permitido no treino é novembro → dezembro do ano anterior.
-O estado atmosférico de dezembro pode ser usado para prever janeiro, mas seu alvo
-não pode entrar no treino. As nove variáveis atmosféricas são atualizadas a cada
-mês; os alvos de precipitação do bloco são acessados exclusivamente para pontuar.
-
-Não fazer divisão aleatória de pontos de grade. Não usar os arquivos preparatórios
-de precipitação de 2023 em `data/interim`. Não avaliar 2021–2022 nesta primeira
-rodada. Uma vez aberto o bloco reservado, ele deixa de ser um teste intocado.
-
-## Rodada inicial
-
-1. Auditar todos os arquivos: coordenadas, meses, valores ausentes, deslocamento
-   exato do alvo e consistência entre dezembro/2022 e as entradas do teste.
-2. Comparar climatologias por ponto e mês usando todo o passado e janelas de
-   60, 40, 30, 20 e 10 anos. Selecionar por RMSE agrupado dos dois blocos de
-   desenvolvimento, registrando também cada ano e mês separadamente.
-3. Treinar regressão ridge local (nove coeficientes por ponto), desde 1981,
-   sobre anomalias das nove variáveis atmosféricas do mês anterior. As médias
-   mensais e escalas são ajustadas apenas nas entradas de treino de cada bloco.
-   Comparar penalidades 0,1, 1 e 10 sobre X'X/n. Nenhuma chuva do bloco entra
-   como atributo. Coeficientes são compartilhados entre as estações nesta rodada.
-4. Guardar previsões de desenvolvimento para estudar combinações e comparar
-   erros por mês, sem atribuir independência estatística aos pontos espaciais.
-
-Os resultados usados para escolher candidatos são resultados de desenvolvimento,
-não uma estimativa final independente. A climatologia é selecionada nos mesmos
-blocos; isso deve ser considerado ao interpretar a melhoria posterior.
-
-## Critério de próxima rodada
-
-Priorizar melhorias que apareçam em vários blocos e nos segundos anos. Investigar
-degradações mensais, em vez de escolher somente pela média. Introduzir árvores,
-contexto espacial e dados externos um de cada vez. Toda fonte externa deve ter
-disponibilidade compatível com o instante da previsão e cumprir as regras.
-
-## Execução
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-.\.venv\Scripts\python.exe src/competition.py audit
-.\.venv\Scripts\python.exe src/competition.py baselines
-.\.venv\Scripts\python.exe src/competition.py ridge
-.\.venv\Scripts\python.exe src/atmospheric_trees.py
-.\.venv\Scripts\python.exe src/competition.py summarize
-```
-
-As entradas vêm exclusivamente de `data/raw`. O cache derivado em
-`data/processed/official` ocupa aproximadamente 3,1 GB e evita descomprimir os
-NetCDF a cada experimento. Relatórios ficam em `reports/competition`, previsões
-locais em `data/processed/validation`. A leitura do modelo é feita em faixas de
-latitude para limitar memória. Não há download, autenticação ou submissão nesses
-scripts.
-
-### Experimento não linear inicial
-
-HistGradientBoostingRegressor com 150 iterações, 15 folhas e taxa 0,05,
-ajustado sobre resíduos da climatologia. Usa localização, mês-alvo cíclico,
-climatologia e nove variáveis atmosféricas brutas e como anomalias mensais.
-Treino amostra 768 pontos uniformes sem reposição por mês (semente 20260914);
-a pontuação usa todos os pontos. Early stopping aleatório está desabilitado.
-Testar também média 50/50 com a combinação ridge/climatologia da primeira rodada.
-
-O pacote oficial não contém `sample_submission.csv`. Após o usuário confirmar o
-formato, `src/submission.py` permite construir os IDs a partir das coordenadas do
-NetCDF: mês-alvo, latitude e longitude, com longitude variando mais rápido. A
-ordem não foi comparada com o modelo oficial. Se esse arquivo estiver disponível,
-o exportador preserva sua ordem e valida que os IDs cobrem exatamente a grade.
-
-```powershell
-.\.venv\Scripts\python.exe src/submission.py --baseline --output submissions/climatologia_60anos.csv
-```
-
-Esse comando gera uma referência de climatologia de 60 anos, não o ensemble.
-Para previsões de um modelo, usar `--predictions arquivo.nc` contendo a variável
-`tp_mm_day` com coordenadas `time`, `lat`, `lon`. CSVs existentes não são
-sobrescritos. O exportador verifica o arquivo gravado e salva um relatório JSON.
-
-Atualização de fechamento: S01 foi aceita pelo Kaggle, e S02/S03 preservaram seus
-IDs e ordem. O sample oficial continua ausente, mas não bloqueia a exportação.
-Os scores e o estado posterior aos envios estão em
-`reports/competition/leaderboard_observations.json`.
+O ganho mínimo protege o uso das submissões, mas não elimina seleção retrospectiva,
+reutilização de validação ou incerteza sobre 2024. Não prometer 1,70, liderança
+ou significância estatística a partir de pequenas diferenças públicas.
