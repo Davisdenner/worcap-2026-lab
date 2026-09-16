@@ -1,0 +1,9 @@
+{
+  "block": 2005,
+  "target_start": "2005-01",
+  "target_end": "2006-12",
+  "sha256": "e905060b9b5ed313c2ed10ffaeb84ff4e6baa67584084cf157b8aa91b63647a3",
+  "component_record_sha256": "fedbe33f1fcf5aea21e6e665edf0e208909d6b1023634cb4fb2b92ca54ea0b6c",
+  "uniform_grid_months": true,
+  "official_only": true
+}

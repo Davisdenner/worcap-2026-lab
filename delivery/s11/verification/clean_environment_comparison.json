@@ -1,0 +1,42 @@
+{
+  "components": {
+    "s02": {
+      "max_abs_difference": 0.0,
+      "rms_difference": 0.0,
+      "exact": true
+    },
+    "modes": {
+      "max_abs_difference": 0.0,
+      "rms_difference": 0.0,
+      "exact": true
+    },
+    "local18": {
+      "max_abs_difference": 0.0,
+      "rms_difference": 0.0,
+      "exact": true
+    },
+    "pls16": {
+      "max_abs_difference": 0.0,
+      "rms_difference": 0.0,
+      "exact": true
+    },
+    "fine32": {
+      "max_abs_difference": 1.9682033780554775e-12,
+      "rms_difference": 7.477972144198866e-14,
+      "exact": false
+    }
+  },
+  "full_prediction_max_abs_difference": 6.536993168992922e-13,
+  "full_prediction_rms_difference": 1.2960520156143723e-14,
+  "original_csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+  "reproduced_csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+  "exact_csv": true,
+  "exact_netcdf_values": false,
+  "rows": 1885464,
+  "official_id_order": true,
+  "numeric_tolerance": 1e-05,
+  "passed": true,
+  "scope": "Base models refitted from official raw-derived arrays; fixed final calibration from archived OOF sufficient statistics",
+  "new_candidate": false,
+  "uploaded": false
+}

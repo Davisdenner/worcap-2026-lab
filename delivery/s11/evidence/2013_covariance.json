@@ -1,0 +1,9 @@
+{
+  "block": 2013,
+  "target_start": "2013-01",
+  "target_end": "2014-12",
+  "sha256": "98ecca473df9ad1945079376dd73ccc105cfa9d96369314baf34fd0c08907815",
+  "component_record_sha256": "7b5a7cd8cd2bf6625542202014866f996f11780921997b515e3db1cc8024b500",
+  "uniform_grid_months": true,
+  "official_only": true
+}

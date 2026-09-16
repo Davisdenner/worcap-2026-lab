@@ -1,0 +1,19 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\delivery\\s11\\verification\\s11_reproduction.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 5.781e-05,
+  "max_prediction": 105.73650061,
+  "id_order": "official template",
+  "official_template_verified": true,
+  "uploaded": false,
+  "csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+  "reproduction_only": true,
+  "new_candidate": false
+}

@@ -5,6 +5,7 @@ __pycache__/
 # Virtual environment
 .venv/
 venv/
+.venv-s11-clean/
 
 # PyCharm
 .idea/
@@ -23,6 +24,17 @@ submissions/*.csv
 # Modelos
 *.pkl
 *.joblib
+delivery/s11/models/
+delivery/s11/verification/*.csv
+delivery/s11/verification/*.nc
+delivery/s11/verification/*.npy
+delivery/s11/clean_inference/*.csv
+delivery/s11/clean_inference/*.nc
+delivery/s11/clean_inference/*.npy
+delivery/build/
+delivery/*.zip
+delivery/s11/wheels/*.whl
+tmp/pdfs/
 
 # Arquivos temporários
 *.tmp

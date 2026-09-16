@@ -1,0 +1,9 @@
+{
+  "block": 2019,
+  "target_start": "2019-01",
+  "target_end": "2020-12",
+  "sha256": "9abcf7326120aab4959869295c6d723a9bf666a0e0b5619dc741972d86e32073",
+  "component_record_sha256": "1b9fa6f8cdb728c8306234170fdf49ad3931267da023d19f9638c014253bba7c",
+  "uniform_grid_months": true,
+  "official_only": true
+}
