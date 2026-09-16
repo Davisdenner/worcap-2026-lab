@@ -1,0 +1,8 @@
+{
+  "trees_150": {
+    "max_absolute_difference": 0.0
+  },
+  "ridge_0.1_clim_60y": {
+    "max_absolute_difference": 0.0
+  }
+}

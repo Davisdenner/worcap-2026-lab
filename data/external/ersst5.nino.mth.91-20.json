@@ -1,0 +1,8 @@
+{
+  "url": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+  "retrieved_utc": "2026-09-15T22:32:16.594203+00:00",
+  "sha256": "bedcd0683c07f7ccb2ae358a90cb39d57413dcc8881027e0c30a1811f6d58012",
+  "fields": "Raw monthly SST for Nino1+2, Nino3, Nino4, Nino3.4. Published anomaly columns ignored.",
+  "temporal_policy": "Latest predictor month is target minus two months; only dates through 2024-10 consumed.",
+  "vintage_limitation": "Current revised historical SST, not archived real-time releases. Extra lag is not a vintage guarantee."
+}

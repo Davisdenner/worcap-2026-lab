@@ -1,0 +1,177 @@
+{
+  "source": "C:\\Users\\Davis Denner\\worcap-2026-lab\\data\\raw",
+  "files": {
+    "treino_tp.nc": {
+      "bytes": 186685299,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 0.0,
+      "max": 170.2423095703125,
+      "attributes": {
+        "units": "mm/day",
+        "long_name": "precipitacao observada no mes M"
+      }
+    },
+    "treino_tp_alvo.nc": {
+      "bytes": 186509303,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 78561,
+      "negative": 0,
+      "min": 0.0,
+      "max": 170.2423095703125,
+      "attributes": {
+        "units": "mm/day",
+        "long_name": "ALVO: precipitacao de M+1 (NaN no ultimo mes)"
+      }
+    },
+    "treino_t2.nc": {
+      "bytes": 175952066,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 252.75277709960938,
+      "max": 308.44921875,
+      "attributes": {}
+    },
+    "treino_cloud_cover.nc": {
+      "bytes": 190610590,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 1.52587890625e-05,
+      "max": 0.997894287109375,
+      "attributes": {}
+    },
+    "treino_shum_850.nc": {
+      "bytes": 175651693,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 0.00037064962089061737,
+      "max": 0.015693435445427895,
+      "attributes": {}
+    },
+    "treino_surface_pressure.nc": {
+      "bytes": 160228025,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 54248.140625,
+      "max": 103125.328125,
+      "attributes": {}
+    },
+    "treino_u_850.nc": {
+      "bytes": 188451602,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 38959373,
+      "min": -19.70098876953125,
+      "max": 23.177780151367188,
+      "attributes": {}
+    },
+    "treino_v_850.nc": {
+      "bytes": 197354831,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 42587176,
+      "min": -16.235015869140625,
+      "max": 12.48065185546875,
+      "attributes": {}
+    },
+    "treino_temperature_850.nc": {
+      "bytes": 172474226,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 253.98646545410156,
+      "max": 299.599609375,
+      "attributes": {}
+    },
+    "treino_rel_hum_850.nc": {
+      "bytes": 180398147,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 1.6202783584594727,
+      "max": 101.61575317382812,
+      "attributes": {}
+    },
+    "treino_geopotential_850.nc": {
+      "bytes": 159707312,
+      "shape": [
+        996,
+        301,
+        261
+      ],
+      "nonfinite": 0,
+      "negative": 0,
+      "min": 10386.6953125,
+      "max": 15729.47265625,
+      "attributes": {}
+    }
+  },
+  "checks": {
+    "target_shift_exact": true,
+    "test_t2_nonfinite": 0,
+    "test_cloud_cover_nonfinite": 0,
+    "test_shum_850_nonfinite": 0,
+    "test_surface_pressure_nonfinite": 0,
+    "test_u_850_nonfinite": 0,
+    "test_v_850_nonfinite": 0,
+    "test_temperature_850_nonfinite": 0,
+    "test_rel_hum_850_nonfinite": 0,
+    "test_geopotential_850_nonfinite": 0,
+    "test_dates": true,
+    "origin_dates": true,
+    "frozen_precipitation": true,
+    "empty_test_target": true,
+    "grid": true,
+    "december_features_exact": true
+  },
+  "excluded": [
+    "data/interim/precip_jan_2023_america_sul.nc",
+    "data/interim/precip_fev_2023_america_sul.nc"
+  ],
+  "sample_submission_present": false
+}

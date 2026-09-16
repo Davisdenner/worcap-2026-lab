@@ -1,0 +1,56 @@
+{
+  "selected": "memory_0.3_1",
+  "ranking": [
+    {
+      "model": "memory_0.3_1",
+      "rmse": 1.772787806730546,
+      "second_year_rmse": 1.8119893498536368,
+      "folds_improved": 4,
+      "folds_improved_vs_s05": 4,
+      "years_improved_vs_s05": 6,
+      "years_improved": 6
+    },
+    {
+      "model": "memory_0.3_0.5",
+      "rmse": 1.7739167157107385,
+      "second_year_rmse": 1.8130747394361004,
+      "folds_improved": 4,
+      "folds_improved_vs_s05": 3,
+      "years_improved_vs_s05": 5,
+      "years_improved": 7
+    },
+    {
+      "model": "memory_3_0.5",
+      "rmse": 1.7752385977503249,
+      "second_year_rmse": 1.8129510801821227,
+      "folds_improved": 3,
+      "folds_improved_vs_s05": 2,
+      "years_improved_vs_s05": 4,
+      "years_improved": 3
+    },
+    {
+      "model": "memory_3_1",
+      "rmse": 1.7753832621106544,
+      "second_year_rmse": 1.8116930868343808,
+      "folds_improved": 2,
+      "folds_improved_vs_s05": 2,
+      "years_improved_vs_s05": 2,
+      "years_improved": 3
+    },
+    {
+      "model": "submission04",
+      "rmse": 1.77570126177079,
+      "second_year_rmse": 1.8148470838700757,
+      "folds_improved": 0,
+      "folds_improved_vs_s05": 1,
+      "years_improved_vs_s05": 4,
+      "years_improved": 0
+    }
+  ],
+  "submission05_reference": {
+    "rmse": 1.7751769414813594,
+    "second_year_rmse": 1.8135424538750418
+  },
+  "holdout_evaluated": false,
+  "caveat": "Reused retrospective development blocks and S04 cross-fitted weights; not independent test."
+}

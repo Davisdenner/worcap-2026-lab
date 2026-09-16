@@ -13,9 +13,12 @@ venv/
 .ipynb_checkpoints/
 
 # Dados
+previsao-climatica-de-precipitacao-sobre-a-america-do-sul.zip
 data/raw/*
+data/archive/*
 data/interim/*
 data/processed/*
+submissions/*.csv
 
 # Modelos
 *.pkl

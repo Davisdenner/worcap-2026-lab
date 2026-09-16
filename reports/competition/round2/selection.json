@@ -1,0 +1,43 @@
+{
+  "selected": "blend_context_300",
+  "ranking": [
+    {
+      "model": "blend_context_300",
+      "rmse": 1.7950658183018167,
+      "second_year_rmse": 1.827499411600705
+    },
+    {
+      "model": "previous_ensemble",
+      "rmse": 1.7958627521265547,
+      "second_year_rmse": 1.828829655461355
+    },
+    {
+      "model": "blend_context_150",
+      "rmse": 1.7965079490347655,
+      "second_year_rmse": 1.8283051163649275
+    },
+    {
+      "model": "context_300",
+      "rmse": 1.800197316560868,
+      "second_year_rmse": 1.8323812177442547
+    },
+    {
+      "model": "context_150",
+      "rmse": 1.8013749165053419,
+      "second_year_rmse": 1.8322030266463347
+    },
+    {
+      "model": "clim_60y",
+      "rmse": 1.8273933545243637,
+      "second_year_rmse": 1.8484939597819205
+    }
+  ],
+  "folds": [
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "criterion": "pooled full-grid RMSE of four development folds",
+  "holdout_2021_2022_evaluated": false
+}

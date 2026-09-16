@@ -1,0 +1,23 @@
+{
+  "features": [
+    "t2",
+    "cloud_cover",
+    "shum_850",
+    "surface_pressure",
+    "u_850",
+    "v_850",
+    "temperature_850",
+    "rel_hum_850",
+    "geopotential_850"
+  ],
+  "train_start": "1981-01-01",
+  "baseline": "clim_60y",
+  "penalties": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "elapsed_seconds": 29.42199999996228,
+  "holdout_evaluated": false,
+  "precipitation_predictor_used": false
+}

@@ -1,0 +1,78 @@
+{
+  "candidate": "half_trees_half_prior",
+  "baseline": "clim_60y",
+  "folds": {
+    "dev_2017_2018": {
+      "months_improved": 17,
+      "worst_months_by_mse_increase": [
+        {
+          "month": "2018-03-01",
+          "delta_mse": 0.45244799832261906,
+          "baseline_rmse": 1.7301408645246787,
+          "candidate_rmse": 1.8562961534789706
+        },
+        {
+          "month": "2018-04-01",
+          "delta_mse": 0.4414358000983123,
+          "baseline_rmse": 1.9469593573826307,
+          "candidate_rmse": 2.057203572668028
+        },
+        {
+          "month": "2018-02-01",
+          "delta_mse": 0.13465772467116377,
+          "baseline_rmse": 2.180301444388517,
+          "candidate_rmse": 2.2109663301538127
+        },
+        {
+          "month": "2018-10-01",
+          "delta_mse": 0.12225183806635043,
+          "baseline_rmse": 1.6113205834000957,
+          "candidate_rmse": 1.6488195354723254
+        },
+        {
+          "month": "2018-06-01",
+          "delta_mse": 0.08754314928495388,
+          "baseline_rmse": 1.6728918201378533,
+          "candidate_rmse": 1.6988555533561687
+        }
+      ],
+      "year2_rmse_change": 0.008309979827417102
+    },
+    "dev_2019_2020": {
+      "months_improved": 20,
+      "worst_months_by_mse_increase": [
+        {
+          "month": "2019-10-01",
+          "delta_mse": 0.13274011160777244,
+          "baseline_rmse": 1.6033566638816024,
+          "candidate_rmse": 1.6442301247761257
+        },
+        {
+          "month": "2020-09-01",
+          "delta_mse": 0.061002288878893696,
+          "baseline_rmse": 1.3131989785508442,
+          "candidate_rmse": 1.3362237260825278
+        },
+        {
+          "month": "2019-02-01",
+          "delta_mse": 0.04161291196858974,
+          "baseline_rmse": 1.7728605563965028,
+          "candidate_rmse": 1.784558058566632
+        },
+        {
+          "month": "2020-01-01",
+          "delta_mse": 0.011222441785961212,
+          "baseline_rmse": 1.8075061865472657,
+          "candidate_rmse": 1.8106079244807807
+        },
+        {
+          "month": "2019-06-01",
+          "delta_mse": -0.010294672165166219,
+          "baseline_rmse": 1.9525863939071841,
+          "candidate_rmse": 1.9499484489355854
+        }
+      ],
+      "year2_rmse_change": -0.0350972921441608
+    }
+  }
+}

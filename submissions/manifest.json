@@ -1,0 +1,77 @@
+{
+  "day_closed": "2026-09-14",
+  "best_submission": "submissions/submission_07.csv",
+  "submissions": [
+    {
+      "file": "submissions/submission_07.csv",
+      "bytes": 63341519,
+      "rows": 1885464,
+      "sha256": "b2f0122fdcf4a56ca0905fb36bbc96d192b551a1dcf7e09738df19fcdf79e0f8",
+      "public_rmse": 1.7355,
+      "accepted": true,
+      "score_source": "Score S07, segundo lugar e score do líder informados pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_07.json"
+    },
+    {
+      "file": "submissions/submission_06.csv",
+      "bytes": 63341201,
+      "rows": 1885464,
+      "sha256": "7a3c82c9e263f801e97904f0b8dcbd45953097df529844a83d0791522dc5daf0",
+      "public_rmse": 1.74505,
+      "accepted": true,
+      "score_source": "Score informado pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_06.json"
+    },
+    {
+      "file": "submissions/submission_05.csv",
+      "bytes": 63340601,
+      "rows": 1885464,
+      "sha256": "ffc84cc234dbeec02a68b3e14596c5b6ad6eb25029fbd2c63cfef2efb4134bfa",
+      "public_rmse": 1.74613,
+      "accepted": true,
+      "score_source": "Score S05 e classificação informados pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_05.json"
+    },
+    {
+      "file": "submissions/submission_04.csv",
+      "bytes": 63340589,
+      "rows": 1885464,
+      "sha256": "cd3515f6db73b7ccf91f087655093ea582e4824d7ea8b435136da28f529ffbdd",
+      "public_rmse": 1.74906,
+      "accepted": true,
+      "score_source": "Pontuação e liderança informadas pelo usuário nesta conversa em 15/09/2026",
+      "generation_metadata": "submissions/submission_04.json"
+    },
+    {
+      "file": "submissions/climatologia_60anos.csv",
+      "bytes": 63336200,
+      "rows": 1885464,
+      "sha256": "fbfdf9ead48ed4895d2be9d7f44127cc6f61ad83142b17fc418a18071e562fbf",
+      "public_rmse": 1.85468,
+      "accepted": true,
+      "score_source": "Screenshot do leaderboard fornecido pelo usuário nesta conversa",
+      "generation_metadata": "submissions/climatologia_60anos.json"
+    },
+    {
+      "file": "submissions/submission_02.csv",
+      "bytes": 63338604,
+      "rows": 1885464,
+      "sha256": "70cc48fe6e65937b05727f6a4fe4c99a71b366ebd5631e40940cbc6cd8d6d752",
+      "public_rmse": 1.81543,
+      "accepted": true,
+      "score_source": "Pontuação informada pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_02.json"
+    },
+    {
+      "file": "submissions/submission_03.csv",
+      "bytes": 63339490,
+      "rows": 1885464,
+      "sha256": "a53a5187b4560ffc4e209c0e5a122b456c13fd873da7dd9298c4c91d5d08548a",
+      "public_rmse": 1.76467,
+      "accepted": true,
+      "score_source": "Pontuação informada pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_03.json"
+    }
+  ],
+  "no_automatic_uploads": true
+}

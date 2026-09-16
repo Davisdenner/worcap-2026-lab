@@ -1,0 +1,110 @@
+{
+  "archive_at_import": "C:\\Users\\Davis Denner\\worcap-2026-lab\\previsao-climatica-de-precipitacao-sobre-a-america-do-sul.zip",
+  "netcdf": [
+    {
+      "file": "teste_features.nc",
+      "sha256_incoming": "70bcb5c9bb9c011c8901660834b42dc57ff7e54a4f34161d489ec5e9f05c1f23",
+      "sha256_existing": "70bcb5c9bb9c011c8901660834b42dc57ff7e54a4f34161d489ec5e9f05c1f23",
+      "identical": true
+    },
+    {
+      "file": "treino_cloud_cover.nc",
+      "sha256_incoming": "607ee1210615a0ca8a5c954737617e668a5f016eb881554cb1468fda74b4fde1",
+      "sha256_existing": "607ee1210615a0ca8a5c954737617e668a5f016eb881554cb1468fda74b4fde1",
+      "identical": true
+    },
+    {
+      "file": "treino_geopotential_850.nc",
+      "sha256_incoming": "ca3baca0177e2e90b42901803f348a4b4affe88bee202b76af3f293fa7035c17",
+      "sha256_existing": "ca3baca0177e2e90b42901803f348a4b4affe88bee202b76af3f293fa7035c17",
+      "identical": true
+    },
+    {
+      "file": "treino_rel_hum_850.nc",
+      "sha256_incoming": "90f62b44b1b461259e7539249914e26cf09993f3bcd572ba4871931e45264b19",
+      "sha256_existing": "90f62b44b1b461259e7539249914e26cf09993f3bcd572ba4871931e45264b19",
+      "identical": true
+    },
+    {
+      "file": "treino_shum_850.nc",
+      "sha256_incoming": "35cf8071b68d1e924ad87e0f8bd801d0a66d1d78ae75fc3cb623bde85c3f47bb",
+      "sha256_existing": "35cf8071b68d1e924ad87e0f8bd801d0a66d1d78ae75fc3cb623bde85c3f47bb",
+      "identical": true
+    },
+    {
+      "file": "treino_surface_pressure.nc",
+      "sha256_incoming": "f00a5e44a03ea923ac0f693b975ef71cd347f8ad3d07692c602e3ac9a25c10fb",
+      "sha256_existing": "f00a5e44a03ea923ac0f693b975ef71cd347f8ad3d07692c602e3ac9a25c10fb",
+      "identical": true
+    },
+    {
+      "file": "treino_t2.nc",
+      "sha256_incoming": "7d8c53b438289cddf87a11414ad10c8167f52ff33c6eff459a3288975079ef23",
+      "sha256_existing": "7d8c53b438289cddf87a11414ad10c8167f52ff33c6eff459a3288975079ef23",
+      "identical": true
+    },
+    {
+      "file": "treino_temperature_850.nc",
+      "sha256_incoming": "1db7b4fdeba87b6a25f7fb6f1e40abec50964234dd9cc918cd34f902b8e41bac",
+      "sha256_existing": "1db7b4fdeba87b6a25f7fb6f1e40abec50964234dd9cc918cd34f902b8e41bac",
+      "identical": true
+    },
+    {
+      "file": "treino_tp.nc",
+      "sha256_incoming": "012bebbe0e38aefdf4f9e2432c3ca22f71d94ea1a1b5421da9d9e5048632cab0",
+      "sha256_existing": "012bebbe0e38aefdf4f9e2432c3ca22f71d94ea1a1b5421da9d9e5048632cab0",
+      "identical": true
+    },
+    {
+      "file": "treino_tp_alvo.nc",
+      "sha256_incoming": "915f67f2627e37399830d1dd92b209ce1160082b0645662675eab17df957abe4",
+      "sha256_existing": "915f67f2627e37399830d1dd92b209ce1160082b0645662675eab17df957abe4",
+      "identical": true
+    },
+    {
+      "file": "treino_u_850.nc",
+      "sha256_incoming": "73c898f27bea25cf2ab0914bbe5c29acc9794a93f8b6b3affa39854bebccf761",
+      "sha256_existing": "73c898f27bea25cf2ab0914bbe5c29acc9794a93f8b6b3affa39854bebccf761",
+      "identical": true
+    },
+    {
+      "file": "treino_v_850.nc",
+      "sha256_incoming": "7bab583972e5718bb0e0fe0fe6a056bd56c968af1f1497205182f7621e26c241",
+      "sha256_existing": "7bab583972e5718bb0e0fe0fe6a056bd56c968af1f1497205182f7621e26c241",
+      "identical": true
+    }
+  ],
+  "submissions": [
+    {
+      "file": "submissions/climatologia_60anos.csv",
+      "same_ids": true,
+      "same_order": true
+    },
+    {
+      "file": "submissions/submission_02.csv",
+      "same_ids": true,
+      "same_order": true
+    },
+    {
+      "file": "submissions/submission_03.csv",
+      "same_ids": true,
+      "same_order": true
+    }
+  ],
+  "sample_sha256": "34fe449ddb309b0579a87786f76049863833d82c26f183d18e943dc76f1e4c8c",
+  "sample": {
+    "rows": 1885464,
+    "columns": [
+      "id",
+      "tp_mm_day"
+    ],
+    "first_id": "2023_01_-60.00_-90.00",
+    "last_id": "2024_12_15.00_-25.00",
+    "unique_ids": true,
+    "placeholder_values": [
+      0.0
+    ]
+  },
+  "all_netcdf_unchanged": true,
+  "all_submission_ids_and_order_match": true
+}

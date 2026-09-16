@@ -1,0 +1,86 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\submissions\\submission_02.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 4.172e-05,
+  "max_prediction": 107.25328064,
+  "id_order": "first submission accepted by Kaggle",
+  "official_template_verified": false,
+  "uploaded": false,
+  "model": "blend_context_300",
+  "trained_target_last_month": "2022-12",
+  "training_input_last_month": "2022-11",
+  "test_weather_origin_first": "2022-12",
+  "test_weather_origin_last": "2024-11",
+  "id_reference": "first submission accepted by Kaggle",
+  "script_sha256": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+  "tree_parameters": {
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "early_stopping": false,
+    "random_state": 20260914,
+    "loss": "squared_error",
+    "warm_start": true
+  },
+  "samples_per_month": 768,
+  "runtime_threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "train_input_start": "1981-01",
+  "baseline_years": 60,
+  "development_selection": {
+    "selected": "blend_context_300",
+    "ranking": [
+      {
+        "model": "blend_context_300",
+        "rmse": 1.7950658183018167,
+        "second_year_rmse": 1.827499411600705
+      },
+      {
+        "model": "previous_ensemble",
+        "rmse": 1.7958627521265547,
+        "second_year_rmse": 1.828829655461355
+      },
+      {
+        "model": "blend_context_150",
+        "rmse": 1.7965079490347655,
+        "second_year_rmse": 1.8283051163649275
+      },
+      {
+        "model": "context_300",
+        "rmse": 1.800197316560868,
+        "second_year_rmse": 1.8323812177442547
+      },
+      {
+        "model": "context_150",
+        "rmse": 1.8013749165053419,
+        "second_year_rmse": 1.8322030266463347
+      },
+      {
+        "model": "clim_60y",
+        "rmse": 1.8273933545243637,
+        "second_year_rmse": 1.8484939597819205
+      }
+    ],
+    "folds": [
+      2013,
+      2015,
+      2017,
+      2019
+    ],
+    "criterion": "pooled full-grid RMSE of four development folds",
+    "holdout_2021_2022_evaluated": false
+  },
+  "public_score": null,
+  "csv_sha256": "70cc48fe6e65937b05727f6a4fe4c99a71b366ebd5631e40940cbc6cd8d6d752"
+}

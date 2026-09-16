@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "learning_rate": 0.05,
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "early_stopping": false,
+    "random_state": 20260914,
+    "loss": "squared_error"
+  },
+  "baseline": "clim_60y",
+  "samples_per_month": 768,
+  "train_start": "1981-01-01",
+  "features": [
+    "lat",
+    "lon",
+    "target_month_sin",
+    "target_month_cos",
+    "climatology",
+    "t2",
+    "cloud_cover",
+    "shum_850",
+    "surface_pressure",
+    "u_850",
+    "v_850",
+    "temperature_850",
+    "rel_hum_850",
+    "geopotential_850",
+    "t2_monthly_anomaly",
+    "cloud_cover_monthly_anomaly",
+    "shum_850_monthly_anomaly",
+    "surface_pressure_monthly_anomaly",
+    "u_850_monthly_anomaly",
+    "v_850_monthly_anomaly",
+    "temperature_850_monthly_anomaly",
+    "rel_hum_850_monthly_anomaly",
+    "geopotential_850_monthly_anomaly"
+  ],
+  "elapsed_seconds": 48.93800000002375,
+  "holdout_evaluated": false
+}

@@ -1,0 +1,30 @@
+{
+  "criterion": "pooled RMSE across both 24-month development folds; holdout untouched",
+  "ranking": [
+    {
+      "model": "clim_60y",
+      "rmse": 1.8476062586107602
+    },
+    {
+      "model": "clim_20y",
+      "rmse": 1.8495247947968307
+    },
+    {
+      "model": "clim_30y",
+      "rmse": 1.8512041675649162
+    },
+    {
+      "model": "clim_40y",
+      "rmse": 1.854102626986993
+    },
+    {
+      "model": "clim_all",
+      "rmse": 1.8638333627222512
+    },
+    {
+      "model": "clim_10y",
+      "rmse": 1.8874178327334517
+    }
+  ],
+  "selected": "clim_60y"
+}

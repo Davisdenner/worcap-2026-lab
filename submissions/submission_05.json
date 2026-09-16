@@ -1,0 +1,101 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\submissions\\submission_05.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 9.746e-05,
+  "max_prediction": 107.70855819,
+  "id_order": "official template",
+  "official_template_verified": true,
+  "uploaded": false,
+  "model": "complement_0.5",
+  "development_selection": {
+    "selected": "submission04",
+    "ranking": [
+      {
+        "model": "complement_0.5",
+        "rmse": 1.7751769414813594,
+        "second_year_rmse": 1.8135424538750418,
+        "folds_improved": 3,
+        "years_improved": 4
+      },
+      {
+        "model": "regional16_0.5",
+        "rmse": 1.7754488605348466,
+        "second_year_rmse": 1.8142463597139975,
+        "folds_improved": 2,
+        "years_improved": 5
+      },
+      {
+        "model": "broad16_1",
+        "rmse": 1.7755724002677453,
+        "second_year_rmse": 1.8145666410904007,
+        "folds_improved": 2,
+        "years_improved": 4
+      },
+      {
+        "model": "broad16_0.5",
+        "rmse": 1.7756293566725192,
+        "second_year_rmse": 1.814699929628146,
+        "folds_improved": 2,
+        "years_improved": 4
+      },
+      {
+        "model": "submission04",
+        "rmse": 1.77570126177079,
+        "second_year_rmse": 1.8148470838700757,
+        "folds_improved": 0,
+        "years_improved": 0
+      },
+      {
+        "model": "rbf16_0.5",
+        "rmse": 1.7757032028935538,
+        "second_year_rmse": 1.8136268997949312,
+        "folds_improved": 2,
+        "years_improved": 5
+      },
+      {
+        "model": "regional16_1",
+        "rmse": 1.7761236604943655,
+        "second_year_rmse": 1.814531744409412,
+        "folds_improved": 2,
+        "years_improved": 5
+      },
+      {
+        "model": "detail32_0.5",
+        "rmse": 1.776416234853459,
+        "second_year_rmse": 1.8149981656639103,
+        "folds_improved": 1,
+        "years_improved": 3
+      },
+      {
+        "model": "rbf16_1",
+        "rmse": 1.7777451438089127,
+        "second_year_rmse": 1.8144058575513677,
+        "folds_improved": 1,
+        "years_improved": 3
+      },
+      {
+        "model": "detail32_1",
+        "rmse": 1.779597662893715,
+        "second_year_rmse": 1.8175375516709507,
+        "folds_improved": 1,
+        "years_improved": 2
+      }
+    ],
+    "holdout_evaluated": false,
+    "caveat": "Retrospective development selection, inherited cross-fitted S04 weights. Not an independent test."
+  },
+  "promoted": false,
+  "experimental": true,
+  "warning": "Failed stability gate: only 4/8 years improved. S04 remains reference.",
+  "public_score": null,
+  "training_targets_end": "2022-12",
+  "csv_sha256": "ffc84cc234dbeec02a68b3e14596c5b6ad6eb25029fbd2c63cfef2efb4134bfa",
+  "script_sha256": "265efde55af05fb0f398f245de9790584087969b42a4467c428cc16a9d9c0533"
+}

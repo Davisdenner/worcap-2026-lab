@@ -7,3 +7,7 @@ matplotlib
 jupyter
 ipykernel
 scikit-learn
+scipy
+joblib
+kagglehub
+netCDF4

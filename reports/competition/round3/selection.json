@@ -1,0 +1,97 @@
+{
+  "selected": "joint25_modes_seasonal",
+  "ranking": [
+    {
+      "model": "joint25_modes_seasonal",
+      "rmse": 1.7794636297345845,
+      "second_year_rmse": 1.8174067905955276,
+      "folds_improved": 4
+    },
+    {
+      "model": "blend50_modes_0.3",
+      "rmse": 1.7834662198206022,
+      "second_year_rmse": 1.819910658656755,
+      "folds_improved": 3
+    },
+    {
+      "model": "blend25_modes_0.3",
+      "rmse": 1.7843661080440931,
+      "second_year_rmse": 1.8184948657438356,
+      "folds_improved": 4
+    },
+    {
+      "model": "blend50_seasonal_0.3",
+      "rmse": 1.7845227403530006,
+      "second_year_rmse": 1.8237620763343834,
+      "folds_improved": 3
+    },
+    {
+      "model": "blend25_seasonal_0.3",
+      "rmse": 1.7869121087188433,
+      "second_year_rmse": 1.8226921800479652,
+      "folds_improved": 4
+    },
+    {
+      "model": "blend50_seasonal_3",
+      "rmse": 1.787951200710306,
+      "second_year_rmse": 1.821962188426419,
+      "folds_improved": 3
+    },
+    {
+      "model": "seasonal_3",
+      "rmse": 1.7901378269825639,
+      "second_year_rmse": 1.8260968247413154,
+      "folds_improved": 2
+    },
+    {
+      "model": "blend25_seasonal_3",
+      "rmse": 1.7903493866969582,
+      "second_year_rmse": 1.8235237172237089,
+      "folds_improved": 3
+    },
+    {
+      "model": "blend50_modes_3",
+      "rmse": 1.7919531772168615,
+      "second_year_rmse": 1.823074914561298,
+      "folds_improved": 2
+    },
+    {
+      "model": "blend25_modes_3",
+      "rmse": 1.792025990890773,
+      "second_year_rmse": 1.8237261013564445,
+      "folds_improved": 3
+    },
+    {
+      "model": "submission02",
+      "rmse": 1.7950658183018167,
+      "second_year_rmse": 1.827499411600705,
+      "folds_improved": 0
+    },
+    {
+      "model": "seasonal_0.3",
+      "rmse": 1.797073527984872,
+      "second_year_rmse": 1.8434361116456917,
+      "folds_improved": 2
+    },
+    {
+      "model": "modes_3",
+      "rmse": 1.8006953656733278,
+      "second_year_rmse": 1.8311362658510006,
+      "folds_improved": 1
+    },
+    {
+      "model": "modes_0.3",
+      "rmse": 1.810965255586358,
+      "second_year_rmse": 1.8537320513652094,
+      "folds_improved": 1
+    }
+  ],
+  "criterion": "lower pooled RMSE, improvement in at least 3/4 folds and pooled second years",
+  "holdout_evaluated": false,
+  "folds": [
+    2013,
+    2015,
+    2017,
+    2019
+  ]
+}

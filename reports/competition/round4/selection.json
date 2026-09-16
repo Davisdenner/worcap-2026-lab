@@ -1,0 +1,99 @@
+{
+  "selected": "replace0.25_mean3_0.3",
+  "ranking": [
+    {
+      "model": "replace0.25_mean3_0.3",
+      "rmse": 1.7766118079494295,
+      "second_year_rmse": 1.8148694647787211,
+      "folds_improved": 3,
+      "years_improved": 6
+    },
+    {
+      "model": "replace0.25_lags3_0.3",
+      "rmse": 1.776744738467384,
+      "second_year_rmse": 1.8126529242976839,
+      "folds_improved": 3,
+      "years_improved": 5
+    },
+    {
+      "model": "replace0.125_lags3_0.3",
+      "rmse": 1.776911402175995,
+      "second_year_rmse": 1.8138268353209948,
+      "folds_improved": 3,
+      "years_improved": 5
+    },
+    {
+      "model": "replace0.25_mean6trend_0.3",
+      "rmse": 1.7775892887739182,
+      "second_year_rmse": 1.8148302090708324,
+      "folds_improved": 3,
+      "years_improved": 4
+    },
+    {
+      "model": "replace0.125_mean3_0.3",
+      "rmse": 1.7778099875565798,
+      "second_year_rmse": 1.815901943141053,
+      "folds_improved": 4,
+      "years_improved": 6
+    },
+    {
+      "model": "replace0.125_mean6trend_0.3",
+      "rmse": 1.7778394014140968,
+      "second_year_rmse": 1.8154034536643076,
+      "folds_improved": 3,
+      "years_improved": 6
+    },
+    {
+      "model": "submission03",
+      "rmse": 1.7794636297345845,
+      "second_year_rmse": 1.8174067905955276,
+      "folds_improved": 0,
+      "years_improved": 0
+    },
+    {
+      "model": "replace0.125_lags3_3",
+      "rmse": 1.7798382531495132,
+      "second_year_rmse": 1.8164218971804873,
+      "folds_improved": 2,
+      "years_improved": 4
+    },
+    {
+      "model": "replace0.125_mean3_3",
+      "rmse": 1.7806620210320372,
+      "second_year_rmse": 1.8175339413575118,
+      "folds_improved": 0,
+      "years_improved": 3
+    },
+    {
+      "model": "replace0.125_mean6trend_3",
+      "rmse": 1.7808085603238917,
+      "second_year_rmse": 1.8172366986123996,
+      "folds_improved": 0,
+      "years_improved": 1
+    },
+    {
+      "model": "replace0.25_lags3_3",
+      "rmse": 1.7813222077322406,
+      "second_year_rmse": 1.8165905008928105,
+      "folds_improved": 2,
+      "years_improved": 3
+    },
+    {
+      "model": "replace0.25_mean3_3",
+      "rmse": 1.7828046470823493,
+      "second_year_rmse": 1.8186662829449658,
+      "folds_improved": 0,
+      "years_improved": 1
+    },
+    {
+      "model": "replace0.25_mean6trend_3",
+      "rmse": 1.783117063561939,
+      "second_year_rmse": 1.8180727302856503,
+      "folds_improved": 0,
+      "years_improved": 1
+    }
+  ],
+  "holdout_evaluated": false,
+  "criterion": "lower pooled and second-year RMSE; >=3/4 blocks and >=6/8 years improved",
+  "caveat": "Development blocks reused for selection; not independent test"
+}

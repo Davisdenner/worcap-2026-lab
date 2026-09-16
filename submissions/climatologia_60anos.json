@@ -1,0 +1,17 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\submissions\\climatologia_60anos.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 0.00022252,
+  "max_prediction": 107.11116791,
+  "id_order": "test NetCDF time, lat, lon; longitude varies fastest",
+  "official_template_verified": false,
+  "uploaded": false,
+  "model": "clim_60y; reference baseline, NOT the best development ensemble"
+}

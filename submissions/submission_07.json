@@ -1,0 +1,99 @@
+{
+  "file": "C:\\Users\\Davis Denner\\worcap-2026-lab\\submissions\\submission_07.csv",
+  "rows": 1885464,
+  "columns": [
+    "id",
+    "tp_mm_day"
+  ],
+  "unique_ids": true,
+  "first_id": "2023_01_-60.00_-90.00",
+  "last_id": "2024_12_15.00_-25.00",
+  "min_prediction": 7.191e-05,
+  "max_prediction": 107.29850367,
+  "id_order": "official template",
+  "official_template_verified": true,
+  "uploaded": false,
+  "model": "ocean_0.3_1",
+  "development_selection": {
+    "selected": "ocean_0.3_1",
+    "ranking": [
+      {
+        "model": "ocean_0.3_1",
+        "rmse": 1.7680744865276206,
+        "second_year_rmse": 1.8079009237001853,
+        "folds_improved": 4,
+        "years_improved": 8
+      },
+      {
+        "model": "ocean_0.3_0.5",
+        "rmse": 1.7702347370546192,
+        "second_year_rmse": 1.80975096142712,
+        "folds_improved": 4,
+        "years_improved": 8
+      },
+      {
+        "model": "ocean_3_0.5",
+        "rmse": 1.7726246613129912,
+        "second_year_rmse": 1.8109439406481114,
+        "folds_improved": 2,
+        "years_improved": 4
+      },
+      {
+        "model": "joint_3_0.25",
+        "rmse": 1.772703977652469,
+        "second_year_rmse": 1.812505102357943,
+        "folds_improved": 2,
+        "years_improved": 3
+      },
+      {
+        "model": "submission06",
+        "rmse": 1.772787806730546,
+        "second_year_rmse": 1.8119893498536368,
+        "folds_improved": 0,
+        "years_improved": 0
+      },
+      {
+        "model": "joint_0.3_0.25",
+        "rmse": 1.7729950353597337,
+        "second_year_rmse": 1.8150861182374527,
+        "folds_improved": 2,
+        "years_improved": 2
+      },
+      {
+        "model": "joint_3_0.5",
+        "rmse": 1.7740273674277878,
+        "second_year_rmse": 1.8144107205258242,
+        "folds_improved": 1,
+        "years_improved": 3
+      },
+      {
+        "model": "ocean_3_1",
+        "rmse": 1.7742674781695043,
+        "second_year_rmse": 1.8117703849444342,
+        "folds_improved": 1,
+        "years_improved": 4
+      },
+      {
+        "model": "joint_0.3_0.5",
+        "rmse": 1.7781784781439798,
+        "second_year_rmse": 1.8231025461788612,
+        "folds_improved": 1,
+        "years_improved": 2
+      }
+    ],
+    "holdout_evaluated": false,
+    "caveat": "Reused retrospective development blocks; S06 inherited cross-fitted weights. Not an independent test."
+  },
+  "public_score": null,
+  "training_targets_end": "2022-12",
+  "csv_sha256": "b2f0122fdcf4a56ca0905fb36bbc96d192b551a1dcf7e09738df19fcdf79e0f8",
+  "script_sha256": "1e026a85f51fed41c35a259551e3db92758b40acc543807817d64bc27855a99b",
+  "external_source": {
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/ersst5.nino.mth.91-20.ascii",
+    "retrieved_utc": "2026-09-15T22:32:16.594203+00:00",
+    "sha256": "bedcd0683c07f7ccb2ae358a90cb39d57413dcc8881027e0c30a1811f6d58012",
+    "fields": "Raw monthly SST for Nino1+2, Nino3, Nino4, Nino3.4. Published anomaly columns ignored.",
+    "temporal_policy": "Latest predictor month is target minus two months; only dates through 2024-10 consumed.",
+    "vintage_limitation": "Current revised historical SST, not archived real-time releases. Extra lag is not a vintage guarantee."
+  }
+}

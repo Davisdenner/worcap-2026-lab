@@ -1,0 +1,72 @@
+{
+  "observations": [
+    {
+      "submission_file": "submissions/submission_07.csv",
+      "public_rmse": 1.73550,
+      "accepted": true,
+      "source": "Score S07, segundo lugar e score do líder informados pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "reported_rank": 2,
+      "reported_leader_rmse": 1.72921,
+      "note": "Novo melhor score público conhecido. Ganho de 0,00955 sobre S06 (aproximadamente 0,5473%). Diferença de 0,00629 para o líder informado; redução de aproximadamente 60,3% da diferença anterior. Sem verificação independente do leaderboard."
+    },
+    {
+      "submission_file": "submissions/submission_06.csv",
+      "public_rmse": 1.74505,
+      "accepted": true,
+      "source": "Score informado pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Novo melhor score público conhecido. Ganho de 0,00108 sobre S05 (aproximadamente 0,0619%). Distância de 0,01584 ao último score do líder informado, 1,72921; classificação atual não reconfirmada."
+    },
+    {
+      "submission_file": "submissions/submission_05.csv",
+      "public_rmse": 1.74613,
+      "accepted": true,
+      "source": "Score S05 e classificação informados pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "reported_rank": 2,
+      "reported_leader_rmse": 1.72921,
+      "note": "Melhor score público conhecido. S05 permanece experimental pelo critério histórico, apesar do ganho público de 0,00293 sobre S04. Sem verificação independente do leaderboard."
+    },
+    {
+      "submission_file": "submissions/submission_04.csv",
+      "public_rmse": 1.74906,
+      "accepted": true,
+      "source": "Pontuação e liderança informadas pelo usuário nesta conversa em 15/09/2026",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "reported_rank": 1,
+      "note": "Nova referência pública. Redução de 0,01561 (0,8846%) sobre S03. Liderança informada pelo usuário, sem consulta independente ao leaderboard."
+    },
+    {
+      "submission_file": "submissions/climatologia_60anos.csv",
+      "public_rmse": 1.85468,
+      "accepted": true,
+      "source": "Screenshot do leaderboard fornecido pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Pontuação pública observada; não é o RMSE de validação local."
+    },
+    {
+      "submission_file": "submissions/submission_02.csv",
+      "public_rmse": 1.81543,
+      "accepted": true,
+      "source": "Pontuação informada pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Redução de 2,1163% sobre a primeira submissão. Não isola o efeito dos atributos novos, pois o ensemble anterior não foi submetido separadamente."
+    },
+    {
+      "submission_file": "submissions/submission_03.csv",
+      "public_rmse": 1.76467,
+      "accepted": true,
+      "source": "Pontuação informada pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Melhor submissão nossa até este relato. Redução de 2,7960% sobre S02 e 4,8531% sobre a climatologia. A classificação atual do leaderboard não foi verificada."
+    }
+  ]
+}
