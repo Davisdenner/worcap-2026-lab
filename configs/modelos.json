@@ -1,0 +1,27 @@
+{
+  "melhor_publica": "s11",
+  "controle_aprovado": "s10",
+  "criterio_minimo_relativo": 0.003,
+  "sample_sha256": "34fe449ddb309b0579a87786f76049863833d82c26f183d18e943dc76f1e4c8c",
+  "evidencias_sha256": {
+    "frozen_weights.json": "62e2820ec5a0819f2adf678617163118e43e78303a7999a2f3ac04966a9fed63",
+    "calibration_covariances.npy": "a5e8fc808c097c93f43bc4fa6b6a10dcc8296bb09a78f71ee424e6c48139bbd1",
+    "official_sources.json": "9ab34e23e3ad0f06b1195f559d5d7a93ed747bf8257f9fec9645a2b39556c43a"
+  },
+  "versoes": {
+    "s10": {
+      "motor": "s11_delivery",
+      "public_rmse": 1.71895,
+      "situacao": "controle aprovado nos critérios históricos",
+      "csv_sha256": "57862493c62936b291c03cff3bd4c53fd486ab38a08108f908a8f74b5aada46e",
+      "metadados": "submissions/submission_10.json"
+    },
+    "s11": {
+      "motor": "s11_delivery",
+      "public_rmse": 1.71718,
+      "situacao": "melhor pública; exceção autorizada, reprovada nos critérios históricos",
+      "csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+      "metadados": "submissions/submission_11.json"
+    }
+  }
+}
