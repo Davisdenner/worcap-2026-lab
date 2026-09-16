@@ -1,0 +1,155 @@
+{
+  "data": "2026-09-16",
+  "descricao": "Reprodução final S10/S11 após organização da documentação em português",
+  "escopo": "Cache recriado dos arquivos oficiais; todos os componentes finais retreinados; pesos-base e estatísticas históricas de calibração preservados.",
+  "pesquisa_historica_integral_refeita": false,
+  "apenas_dados_oficiais": true,
+  "novo_candidato": false,
+  "upload_realizado": false,
+  "testes_unitarios": {
+    "executados": 72,
+    "aprovados": 72
+  },
+  "auditoria_repositorio": {
+    "registros_submissoes": 11,
+    "aprovada": true
+  },
+  "comparacao_numerica": {
+    "s10": {
+      "valores_netcdf_identicos": true,
+      "diferenca_maxima": 0,
+      "diferenca_rms": 0
+    },
+    "s11": {
+      "valores_netcdf_identicos": true,
+      "diferenca_maxima": 0,
+      "diferenca_rms": 0
+    }
+  },
+  "hashes_do_fluxo": {
+    "src/reproducao.py": "9489d158d77cc285cd12424e22b9a45643200ca4ea45b328593a124eed125973",
+    "src/s11_delivery.py": "63b5f1c2d342c6331abc776ffe767082500e037ebe01e40f5932b0fbbfc0d3d5",
+    "configs/reproducao.json": "e8b056aadc7b1de503fbdb222f422d24f01a67764ba6ebb100acfbf9d0c0b76c",
+    "configs/modelos.json": "5ce8c4477e7471f1105156f67c759effe3ca2b06cd9508e9146282b614b15c5c",
+    "delivery/s11/requirements.txt": "0baa23db074c20215561179872964f6df5c48d06eaed6c2919e269e47182c509"
+  },
+  "execucoes": {
+    "preparacao": {
+      "versao": "s10",
+      "etapa": "preparar",
+      "segundos": 71.44065380000393,
+      "pico_memoria_bytes": 1276379136,
+      "python": "3.11.1",
+      "plataforma": "Windows-10-10.0.26200-SP0",
+      "threads": 1,
+      "cpu_logicos": 8,
+      "ram_bytes": 16969424896,
+      "pacotes": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.0",
+        "pandas": "3.0.5",
+        "xarray": "2026.7.0",
+        "joblib": "1.5.3",
+        "netCDF4": "1.7.4"
+      }
+    },
+    "treinamento": {
+      "versao": "s10",
+      "etapa": "treinar",
+      "segundos": 103.35804900000221,
+      "pico_memoria_bytes": 2431836160,
+      "python": "3.11.1",
+      "plataforma": "Windows-10-10.0.26200-SP0",
+      "threads": 1,
+      "cpu_logicos": 8,
+      "ram_bytes": 16969424896,
+      "pacotes": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.0",
+        "pandas": "3.0.5",
+        "xarray": "2026.7.0",
+        "joblib": "1.5.3",
+        "netCDF4": "1.7.4"
+      }
+    },
+    "s10_previsao": {
+      "versao": "s10",
+      "etapa": "prever",
+      "segundos": 102.69844020000892,
+      "pico_memoria_bytes": 1586069504,
+      "python": "3.11.1",
+      "plataforma": "Windows-10-10.0.26200-SP0",
+      "threads": 1,
+      "cpu_logicos": 8,
+      "ram_bytes": 16969424896,
+      "pacotes": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.0",
+        "pandas": "3.0.5",
+        "xarray": "2026.7.0",
+        "joblib": "1.5.3",
+        "netCDF4": "1.7.4"
+      }
+    },
+    "s11_previsao": {
+      "versao": "s11",
+      "etapa": "prever",
+      "segundos": 97.77048680000007,
+      "pico_memoria_bytes": 1587298304,
+      "python": "3.11.1",
+      "plataforma": "Windows-10-10.0.26200-SP0",
+      "threads": 1,
+      "cpu_logicos": 8,
+      "ram_bytes": 16969424896,
+      "pacotes": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "scikit-learn": "1.9.0",
+        "pandas": "3.0.5",
+        "xarray": "2026.7.0",
+        "joblib": "1.5.3",
+        "netCDF4": "1.7.4"
+      }
+    },
+    "s10_verificacao": {
+      "versao": "s10",
+      "csv_sha256": "57862493c62936b291c03cff3bd4c53fd486ab38a08108f908a8f74b5aada46e",
+      "identico_ao_original": true,
+      "linhas": 1885464,
+      "ordem_oficial": true,
+      "apenas_dados_oficiais": true,
+      "nova_candidata": false,
+      "enviado": false,
+      "escopo": "Treino final + inferência; calibração histórica congelada"
+    },
+    "s11_verificacao": {
+      "versao": "s11",
+      "csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+      "identico_ao_original": true,
+      "linhas": 1885464,
+      "ordem_oficial": true,
+      "apenas_dados_oficiais": true,
+      "nova_candidata": false,
+      "enviado": false,
+      "escopo": "Treino final + inferência; calibração histórica congelada"
+    }
+  },
+  "verificacao_ambiente_separado": "Verificações S10 e S11 repetidas com .venv-s11-clean; treino e inferência desta rodada feitos com .venv no mesmo host Windows.",
+  "diagnostico_corrigido": "A primeira reprodução S10 diferiu em 2 valores do CSV por 1e-8. A causa foi o layout em memória da PCA antes de sua serialização. Recarregar as dependências após salvar, como o código original, reproduziu exatamente os parâmetros e ambas as previsões. Nenhum ajuste de valores do CSV, modelo estatístico ou hash esperado.",
+  "politica": {
+    "ganho_minimo_relativo": 0.003,
+    "controle_aprovado": "s10",
+    "melhor_publica": "s11",
+    "s11_excecao_autorizada": true,
+    "criterios_nao_relaxados": true
+  },
+  "pendencias": [
+    "Licença OSI do código a confirmar",
+    "Identificação da equipe a preencher",
+    "Revisão e fechamento do pacote da versão final",
+    "Commit e publicação pelo mantenedor; índice Git não alterado nesta organização"
+  ]
+}

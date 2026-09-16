@@ -1,23 +1,25 @@
-# Entry points
+# Comandos do pacote autônomo S11
 
-Run these commands from the extracted package root, after editing SETTINGS.json.
-The ZIP includes `src/` and frozen experimental sources. From the working
-repository instead, run at its root and use `--settings delivery/s11/SETTINGS.json`.
+Este documento descreve a interface anterior, preservada para o ZIP de entrega.
+No repositório atual, prefira o [guia S10/S11](../../docs/REPRODUCAO.md).
+O ZIP é um snapshot separado e não incorpora automaticamente mudanças posteriores.
 
-## Use the supplied trained model
+## Inferência com modelos já treinados
+
+Na raiz do pacote extraído, ajuste `SETTINGS.json` e execute:
 
 ```powershell
 .\.venv\Scripts\python.exe -m src.s11_delivery predict --settings SETTINGS.json
 ```
 
-Requires the official `teste_features.nc` and `sample_submission.csv` in `raw`,
-the supplied models and an empty output destination. Produces
-`s11_reproduction.csv` and a labeled NetCDF under the configured output root.
-This is a reproduction of an already submitted candidate, not a new submission.
+Requer modelos do pacote e `teste_features.nc`/`sample_submission.csv` oficiais
+no diretório `raw`. Gera `s11_reproduction.csv`, NetCDF e componentes na pasta
+`output`, sem sobrescrever CSV existente. Não é uma nova candidata.
 
-## Refit the final configuration
+## Retreinar os componentes finais
 
-Set fresh cache, models and output paths in SETTINGS.json, retaining evidence.
+Na configuração, escolha pastas novas para cache, modelos e saídas. Preserve
+`evidence` e a origem oficial dos dados.
 
 ```powershell
 .\.venv\Scripts\python.exe -m src.s11_delivery prepare --settings SETTINGS.json
@@ -25,22 +27,25 @@ Set fresh cache, models and output paths in SETTINGS.json, retaining evidence.
 .\.venv\Scripts\python.exe -m src.s11_delivery predict --settings SETTINGS.json
 ```
 
-Prepare requires the official training files and test file. Train fits every
-final base learner from the resulting raw-derived arrays; it recomputes fixed
-combiner weights from the included historical covariance statistics. It does
-not rerun model selection or regenerate all historical folds from raw data.
-The calibration years, covariance hashes and original generation metadata
-are in evidence. Original source stages are retained for methodological audit,
-not advertised as a clean one-command full historical replay.
+Preparação lê os arquivos oficiais; treinamento refaz os componentes finais.
+A calibração usa estatísticas históricas fora do treino já arquivadas. Não
+reexecuta seleção de modelos ou todos os blocos históricos desde os dados brutos.
+Execute cada etapa somente após a anterior terminar sem erro.
 
-## Integrity checks
+No repositório, os comandos equivalentes usam
+`--settings delivery/s11/SETTINGS.json` a partir da raiz. Esses diretórios podem
+já conter resultados; prefira o fluxo atual e pastas novas para uma repetição.
+
+## Conferir o pacote fechado
+
+Na raiz do ZIP extraído, que contém `PACKAGE_MANIFEST.json`:
 
 ```powershell
 .\.venv\Scripts\python.exe check_delivery.py
 .\.venv\Scripts\python.exe check_delivery.py --predictions work/output/s11_reproduction.csv
 ```
 
-Every inference run verifies serialized model hashes. Compare the resulting
-CSV to the original expected SHA-256 in evidence/s11_generation.json and review
-the numeric comparisons recorded under verification. Never change a model to
-force agreement with the public leaderboard.
+O caminho final deve coincidir com `output` na configuração. O manifesto do
+pacote é gerado ao construir o ZIP; esse verificador não se aplica diretamente
+à pasta `delivery/s11` sem o manifesto. No repositório, use `src.reproducao verificar`.
+Não altere previsões ou hashes esperados para encobrir diferenças numéricas.

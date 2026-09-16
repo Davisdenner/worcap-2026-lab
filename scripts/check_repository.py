@@ -67,11 +67,13 @@ def check(allow_missing):
             failures.append(f"Artifact changed: {record['file']}")
     docs = [ROOT / "README.md", ROOT / "submissions/README.md", ROOT / "src/README.md", ROOT / "reports/README.md"]
     docs += list((ROOT / "docs").glob("*.md")) + list((ROOT / "experiments").glob("*.md"))
+    absent_artifacts = {local_path(p) for p in missing}
     for doc in docs:
         for target in re.findall(r"\[[^\]]*\]\(([^)]+)\)", doc.read_text(encoding="utf-8")):
             if "://" in target or target.startswith("#"):
                 continue
-            if not (doc.parent / target.split("#", 1)[0]).exists():
+            resolved = (doc.parent / target.split("#", 1)[0]).resolve()
+            if not resolved.exists() and not (allow_missing and resolved in absent_artifacts):
                 failures.append(f"Broken link: {doc.relative_to(ROOT)} -> {target}")
     if missing:
         print("Local artifacts absent:", ", ".join(missing))

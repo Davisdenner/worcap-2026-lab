@@ -228,7 +228,10 @@ def train(c):
         if p.exists(): raise FileExistsError(p)
         started=time.perf_counter(); result=fn(); joblib.dump(result,p)
         print('SAVED MODEL',name,round(time.perf_counter()-started,2),'seconds',flush=True)
-        return result
+        # The original tropical pipeline reloads its fitted PCA dependencies.
+        # Preserve serialized array layout before later matrix multiplications;
+        # using the in-memory estimator changes rounding at ~1e-13.
+        return joblib.load(p)
     prep=dict(means=f.means,climatology=f.climo,weather_history=np.stack([w[-3:] for w in f.weather]))
     fitted('preprocessing',lambda:prep)
     fitted('local_tree',lambda:fit_tree(f,False))
@@ -279,11 +282,13 @@ def local_prediction(f,model,seasonal):
 
 def predict(c):
     """Inference reads serialized models and official test fields; never rain labels."""
+    version=c.get('version','s11')
+    if version not in ('s10','s11'): raise ValueError('Unsupported frozen version')
     manifest=read(c['models']/'manifest.json')
     for name,h in manifest['hashes'].items():
         if digest(c['models']/name)!=h: raise ValueError('Model integrity failure')
     c['output'].mkdir(parents=True,exist_ok=True)
-    csv=c['output']/'s11_reproduction.csv'
+    csv=c['output']/f'{version}_reproduction.csv'
     if csv.exists(): raise FileExistsError(csv)
     load=lambda n:joblib.load(c['models']/f'{n}.joblib')
     prep=load('preprocessing'); origins=target_origins(2023); months=(origins+1)%12
@@ -330,11 +335,12 @@ def predict(c):
         s09=.75*s06+.25*cont
         extended=blend(s09,trop,1.)
         pieces=np.stack([s02,modes,local,cont,extended]).astype(float)
-        result=np.sum(pieces*np.asarray(w['weights'])[groups()].transpose(3,0,1,2),axis=0)
+        result=(blend(s09,trop,.25) if version=='s10' else
+                np.sum(pieces*np.asarray(w['weights'])[groups()].transpose(3,0,1,2),axis=0))
         for name,p in [('s02',s02),('modes',modes),('local18',local),('pls16',cont),('fine32',trop)]:
             np.save(c['output']/f'{name}.npy',p)
         da=xr.DataArray(result,dims=('time','lat','lon'),coords={d:test[d] for d in ('time','lat','lon')},name='tp_mm_day')
-        da.to_netcdf(c['output']/'s11_reproduction.nc')
+        da.to_netcdf(c['output']/f'{version}_reproduction.nc')
         meta=export_csv(da,test,csv,c['raw']/'sample_submission.csv')
     meta.update(csv_sha256=digest(csv),reproduction_only=True,new_candidate=False,uploaded=False)
     write(csv.with_suffix('.json'),meta)

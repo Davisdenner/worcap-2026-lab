@@ -1,10 +1,13 @@
 # Índice dos resultados
 
-Referência pública atual: **S10, 1,71895**, conforme retorno do usuário.
-[Composição e resultados consolidados](../docs/S10_BASELINE.md).
+Melhor pública informada: **S11, 1,71718**, uma exceção autorizada aos critérios.
+S10, 1,71895, permanece como controle aprovado. Veja a
+[metodologia central](../docs/METODOLOGIA.md) e o
+[guia de reprodução](../docs/REPRODUCAO.md).
 
 | Registro | Período de avaliação | Finalidade |
 | --- | --- | --- |
+| [Reprodução S10/S11](reproducao/README.md) | Treino final e inferência 2023–2024 | CSVs e previsões idênticos aos originais; 72 testes |
 | [Auditoria](competition/audit.json) | Arquivos oficiais | Integridade, coordenadas e alinhamento |
 | [Atualização 15/09](competition/update_2026-09-15.json) | ZIP atualizado | NetCDF idênticos e sample compatível com S01–S03 |
 | [Rodada inicial](competition/RESULTS.md) | 2017–2020, 48 meses | Climatologias, ridge anual e árvores locais |
@@ -19,7 +22,9 @@ Referência pública atual: **S10, 1,71895**, conforme retorno do usuário.
 
 Cada rodada mantém JSON/CSV com métricas agregadas e por ano; os JSON incluem
 RMSE mensal. Arquivos `selection.json` registram a decisão daquela rodada.
-As seleções antigas são históricas; a referência atual é S10.
+As seleções antigas são históricas. S10 é o controle aprovado; S11 é a melhor
+pública, sem aprovação retroativa. A exceção está documentada nos
+[resultados da S11](competition/round15_experimental/RESULTS.md).
 
 O relatório inicial permanece como registro daquela etapa. Sua referência à
 ausência de submissões descreve o momento da geração. Para o estado atual,

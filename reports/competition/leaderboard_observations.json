@@ -1,6 +1,15 @@
 {
   "observations": [
     {
+      "submission_file": "submissions/submission_11.csv",
+      "public_rmse": 1.71718,
+      "accepted": true,
+      "source": "Score público S11 informado pelo usuário nesta conversa",
+      "public_target_year": 2023,
+      "private_target_year": 2024,
+      "note": "Novo melhor público confirmado, somente dados oficiais. Ganho de 0,00177 (aproximadamente 0,103%) sobre S10. S11 joint1 continua reprovada nos critérios históricos; o ganho público não altera essa avaliação nem demonstra significância estatística ou ganho privado. Diferença de 0,00230 para o último líder informado (1,71488), sem reconfirmação do ranking. Metadados de geração preservados. Nenhuma nova candidata, treino ou upload iniciado com esse relato."
+    },
+    {
       "submission_file": "submissions/submission_10.csv",
       "public_rmse": 1.71895,
       "accepted": true,

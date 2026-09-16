@@ -1,42 +1,50 @@
-# S11 delivery verification status
+# Registro histórico da verificação da entrega S11
 
-## Passed
+Este registro descreve a verificação da entrega técnica anterior à organização
+do repositório. Não substitui o relatório atual de S10/S11 em
+`reports/reproducao/2026-09-16.json`. O ZIP original permanece preservado.
 
-- Official training files were reread into a new isolated cache. No old model
-  prediction array was used to fit the final base learners.
-- Every final base learner was refitted and all inference parameters saved.
-- The resulting CSV is byte-identical to the submitted S11, SHA-256
+## Verificações concluídas naquela entrega
+
+- Arquivos oficiais de treino relidos para um cache novo e isolado, sem usar
+  previsões antigas para ajustar os componentes finais.
+- Todos os componentes finais retreinados e parâmetros de inferência salvos.
+- CSV reproduzido idêntico à S11 enviada, com SHA-256
   `8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f`.
-- A new Python 3.11.1 virtual environment, without system site packages, was
-  installed using the included offline Windows x64 wheels. `pip check` passed.
-- Source copied into a standalone delivery directory was used to refit the
-  models again under that clean environment, then run separate inference.
-  That second CSV also exactly matched S11. The freshly regenerated raw cache
-  was reused for this second training; old research caches were not used.
-- Each offline package retained license files. Packaged files matched the
-  installed distribution RECORD hashes; these are local repacks, not original
-  publisher wheels. The online package-index installation attempt did not resolve
-  the versions in this environment.
-- 67 repository tests passed with the documented single-thread configuration,
-  including unchanged rejection criteria for the historically rejected S11.
-- Original submissions and frozen experimental code remain unchanged.
-- The four-page English PDF was rendered and every page visually inspected.
+- Ambiente Python 3.11.1 novo, sem pacotes do sistema, instalado com wheels
+  offline Windows x64. A verificação `pip check` passou.
+- Código copiado para uma pasta autônoma e utilizado para retreinar nesse ambiente
+  separado, seguido de inferência independente. O segundo CSV também coincidiu
+  exatamente. O cache recém-regenerado foi reutilizado no segundo treino;
+  não foram usados caches antigos da pesquisa.
+- Os pacotes offline preservaram licenças e seus arquivos corresponderam aos
+  hashes RECORD das distribuições instaladas. São cópias reempacotadas localmente,
+  não wheels originais dos editores. A tentativa pelo índice disponível não
+  resolveu as versões nesse ambiente.
+- Passaram 67 testes do repositório **naquela etapa**, incluindo a manutenção
+  da reprovação histórica da S11. O total da verificação atual está no relatório
+  de reprodução S10/S11, separado deste registro.
+- Submissões originais e código científico congelado preservados.
+- PDF de quatro páginas em inglês renderizado e inspecionado visualmente.
 
-## Scope limitations
+## Limitações do escopo
 
-Final ensemble calibration was reproduced from archived official-only OOF
-covariance sufficient statistics and the frozen S10 prior. Historical search
-and all past calibration-fold predictions were not regenerated from raw data.
-Both clean-environment runs used the same Windows host. There is no claim of
-validation on another OS, processor family or independently downloaded packages.
-Inference supports the official 24-month calendar and grid, not arbitrary domains.
+A calibração final foi reproduzida a partir das estatísticas de covariância
+fora do treino arquivadas e do prior S10 congelado. Não se refez a pesquisa
+histórica nem todas as previsões dos blocos de calibração a partir dos dados brutos.
 
-## Pending entrant closeout
+As execuções usaram o mesmo host Windows. Não foi validado outro sistema
+operacional, família de processadores ou instalação com pacotes baixados de
+forma independente. A inferência atende à grade e ao calendário oficial de
+24 meses, não a domínios arbitrários.
 
-- Explicit approval of the code's OSI license (MIT was proposed).
-- Team name, member names, contacts, backgrounds and division of work.
-- Private result and rank when announced; sponsor-specific closeout requirements.
+## Pendências do participante
 
-The archive is therefore a technical draft, not a legal certification or an
-automatically submitted sponsor deliverable. No new candidate or Kaggle upload
-was produced. Internal validation gates remain in force.
+- Confirmar a licença OSI do código; MIT foi proposta, não aprovada automaticamente.
+- Informar equipe, integrantes, contatos, experiência e divisão de trabalho.
+- Registrar resultado privado e classificação quando divulgados e confirmar
+  exigências específicas do patrocinador.
+
+O pacote é um rascunho técnico, não certificação jurídica ou entrega automática.
+Não foi gerada uma nova candidata nem realizado upload ao Kaggle. Os critérios
+internos de validação continuam vigentes.

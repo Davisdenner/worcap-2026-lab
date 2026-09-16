@@ -1,0 +1,20 @@
+# Preservar os bytes dos artefatos científicos e documentos binários.
+*.pdf binary
+*.npy binary
+*.npz binary
+*.nc binary
+*.joblib binary
+*.whl binary
+*.zip binary
+# Código congelado tem hashes registrados: manter LF inclusive no Windows.
+*.py text eol=lf
+configs/*.json text eol=lf
+delivery/s11/requirements.txt text eol=lf
+# Exceções históricas com finais de linha mistos: preservar bytes completos.
+src/round2.py -text
+experiments/ROUND*.md text eol=lf
+experiments/ROUND2.md -text
+# Os hashes originais das evidências JSON incluem finais de linha CRLF.
+# O índice pode continuar em LF; o checkout deve reconstruir os bytes originais.
+delivery/s11/evidence/*.json text eol=crlf
+delivery/s11/evidence/leaderboard_observations.json -text

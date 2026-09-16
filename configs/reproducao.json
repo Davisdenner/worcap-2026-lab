@@ -1,0 +1,7 @@
+{
+  "raw": "../data/raw",
+  "cache": "../data/processed/reproducao/cache",
+  "models": "../data/processed/reproducao/modelos_serializados",
+  "output": "../data/processed/reproducao/saidas_verificadas",
+  "evidence": "../delivery/s11/evidence"
+}

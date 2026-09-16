@@ -1,28 +1,29 @@
-# Pipelines executados
+# Código-fonte
 
-Referência pública atual: **S10, 1,71895**. Consulte a
-[composição consolidada](../docs/S10_BASELINE.md). Os scripts antigos são
-dependências congeladas; não editar para experimentar nem sobrescrever modelos.
+Para o primeiro acesso, use [REPRODUCAO.md](../docs/REPRODUCAO.md).
+A explicação central dos modelos está em [METODOLOGIA.md](../docs/METODOLOGIA.md).
 
-| Pipeline atual | Função |
+| Arquivo | Função |
 | --- | --- |
-| [round9.py](round9.py) | S09 oficial e pesos históricos com cortes temporais |
-| [round11.py](round11.py) | Componente tropical fino e geração da S10 |
-| [round12.py](round12.py) | Reconstrução das bases S10; correção residual rejeitada |
-| [round15.py](round15.py) | Recalibração conjunta dos cinco componentes, sem upload |
+| [reproducao.py](reproducao.py) | Interface em português para listar, preparar, treinar, prever e verificar S10/S11 |
+| [s11_delivery.py](s11_delivery.py) | Motor compartilhado de treino final e inferência; S11 continua sendo o padrão da interface antiga |
+| [submission.py](submission.py) | Exportação de CSV preservando coordenadas e ordem do sample |
+| [competition.py](competition.py) | Auditoria, climatologia e rotinas iniciais |
+| [round2.py](round2.py) | Atributos locais/contextuais e árvores |
+| [round3.py](round3.py) | Sazonalidade e modelos regionais |
+| [round4.py](round4.py) | Memória e grupos da combinação |
+| [round9.py](round9.py) | Linha oficial S09, pesos causais e critério de promoção |
+| [round10.py](round10.py) | Representação atmosférica e PLS continental |
+| [round11.py](round11.py) | PLS tropical e combinação S10 |
+| [round15.py](round15.py) | Recalibração conjunta com restrições |
+| [round15_experimental.py](round15_experimental.py) | Registro da exceção que gerou S11 |
 
-## Pipelines iniciais e dependências
+Os nomes históricos são preservados porque existem dependências e hashes
+registrados. Não renomear ou modificar módulos congelados apenas para organizar
+pastas. O motor novo importa suas rotinas numéricas, não executa suas etapas
+de pesquisa automaticamente. Diretórios vazios do esqueleto inicial não são
+pipelines alternativos.
 
-| Arquivo | Função | Dependências locais principais |
-| --- | --- | --- |
-| [competition.py](competition.py) | Auditoria, cache, climatologias, ridge anual e resumo inicial | NetCDF oficiais |
-| [atmospheric_trees.py](atmospheric_trees.py) | Árvores locais iniciais | Cache e seleção de climatologia |
-| [round2.py](round2.py) | Contexto, validação ampliada e S02 | Rodada inicial e cache |
-| [round3.py](round3.py) | Modos regionais, sazonalidade e S03 | Cache e previsões S02 |
-| [submission.py](submission.py) | Exportação e verificação de CSV com coordenadas | NetCDF de previsões e grade oficial |
-
-Os nomes e caminhos dos pipelines foram mantidos para preservar reprodução e
-metadados. As pastas vazias `data`, `features`, `models`, `validation` e
-`visualization` são do esqueleto inicial; não são módulos usados pelos scripts.
-
-Os comandos completos estão em [docs/REPRODUCAO.md](../docs/REPRODUCAO.md).
+Reprodução verifica versões conhecidas, não promove candidatas. Os testes
+cobrem o limite histórico de 0,3%, estabilidade, evidências e catálogo. Os
+[critérios completos](../experiments/PROTOCOL.md) continuam obrigatórios.
