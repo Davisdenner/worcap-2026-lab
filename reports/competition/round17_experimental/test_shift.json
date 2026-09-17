@@ -1,0 +1,8 @@
+{
+  "candidate": "meta15_a0.25",
+  "historical_rms": 0.07633255136774357,
+  "maximum_allowed_rms": 0.15266510273548714,
+  "public2023_rms": 0.06136330871651063,
+  "private2024_rms": 0.05945463152805738,
+  "passed": true
+}

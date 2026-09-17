@@ -9,13 +9,13 @@ documentação e ambiente capazes de gerar a submissão final.
 
 | Obrigação técnica | Material no repositório |
 | --- | --- |
-| Código de treinamento e inferência | `src/s11_delivery.py` e dependências científicas preservadas |
+| Código de treinamento e inferência | `src/s11_delivery.py`, `src/s12_delivery.py` e dependências científicas preservadas |
 | Execução por um novo usuário | [Guia de reprodução](REPRODUCAO.md) e `src/reproducao.py` |
 | Explicação do método | [Metodologia](METODOLOGIA.md) |
 | Ambiente e recursos | Dependências fixadas, configurações e registros de execução |
 | Rastreabilidade da submissão | Metadados originais, catálogo, manifesto e hashes independentes |
 | Artefatos aprendidos | Evidências de calibração versionadas; componentes finais retreináveis e serializados |
-| Separação de dados | Dados oficiais fora do Git; S10/S11 sem componentes externos S07/S08 |
+| Separação de dados | Dados brutos oficiais fora do Git; S10/S11/S12/S13 sem componentes externos S07/S08 |
 
 Os critérios históricos de 0,3% são uma política interna de seleção, não uma
 regra da competição. A exceção S11 não é, por si, infração às regras; deve
@@ -24,7 +24,9 @@ continuar documentada como exceção, sem afrouxar a política futura.
 ## Escopo que não deve ser exagerado
 
 A reprodução retreina os componentes finais e verifica o CSV. Ela reutiliza
-pesos-base e estatísticas históricas de calibração congelados. Não foi reexecutada
+pesos-base, estatísticas históricas de calibração e exemplos OOF do corretor S12
+congelados. Estes últimos são dados derivados oficiais, incluídos no pacote e
+sujeitos aos termos dos dados, não automaticamente à licença do código. Não foi reexecutada
 toda a pesquisa histórica nem a geração de cada previsão fora do treino.
 O ambiente offline foi testado com distribuições locais reempacotadas; não
 é correto apresentá-las como wheels originais baixados dos editores.

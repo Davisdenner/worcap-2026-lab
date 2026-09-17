@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "official_only": true,
+  "official_array_audit": {
+    "passed": true,
+    "official_only": true,
+    "full_cache_equality": true,
+    "cache_hashes": {
+      "tp": "6539779a2d9930b5f855fc7811a2f21313ef9ce6f5e2a809530f772b7efda105",
+      "t2": "8bdd7e0d543a277e903d310bf11d2df873b819aa1aa52bcf39cc16c04935e796",
+      "cloud_cover": "e04dfbf1033a786670c1c2847989d2b12c46e684bf10f6951be5841a0162036f",
+      "shum_850": "d9d2a1af3f2796a618f345620486a9c07cbf35ecacfbeec019878ac892731991",
+      "surface_pressure": "8e34bdacc4a9ea74bd592b3449087d5a939aa3994c499f11b2b84e6c75965a06",
+      "u_850": "24114091e0202dfd4cde77800ce5be8379210dc2e4cce55886111b1fbc890cf4",
+      "v_850": "bd06ab7276a87856f614c605689229d8b6f90538b0453156fd42e4406ff05675",
+      "temperature_850": "67369ae1920613f3965717a2af4fba922feec9ea2fe13520e10a88ef8d5fbcf9",
+      "rel_hum_850": "0efd4da8a1c0c99f909ca26fadd1463f246ecfbedb5870194dc3473f72c391d9",
+      "geopotential_850": "4ee735e12655b173ee87828a4d96758b0f9d634c6df69d90d3f0a93a577fa240"
+    }
+  },
+  "coarse_sha256": "a3168b2eb4976607f40f8b4ef34b760212181b691f6074927a7d6431e3b6567e",
+  "fine_sha256": "1d5c4560a1c7a0c35cada1cfefd8a330769a1721d2340e0cfe5d9643b65539a5"
+}

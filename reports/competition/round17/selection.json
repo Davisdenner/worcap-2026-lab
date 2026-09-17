@@ -1,0 +1,57 @@
+{
+  "reference": "S11",
+  "reference_rmse": 1.77462175958609,
+  "minimum_relative_gain": 0.003,
+  "ranking": [
+    {
+      "model": "meta15_a0.5",
+      "rmse": 1.770212608560569,
+      "relative_gain": 0.0024845581892050106,
+      "second_year_rmse": 1.7843864825356233,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 86,
+      "worst_annual_relative_change": 0.010321187613198113,
+      "historical_correction_rms": 0.1526400626946399,
+      "passed": false
+    },
+    {
+      "model": "meta15_a0.25",
+      "rmse": 1.7707754911700633,
+      "relative_gain": 0.002167373636241088,
+      "second_year_rmse": 1.7846109894565392,
+      "blocks_improved": 5,
+      "years_improved": 10,
+      "months_improved": 88,
+      "worst_annual_relative_change": 0.003519904505239424,
+      "historical_correction_rms": 0.07633255136774357,
+      "passed": false
+    },
+    {
+      "model": "meta7_a0.5",
+      "rmse": 1.7712675090124053,
+      "relative_gain": 0.001890121405063283,
+      "second_year_rmse": 1.7856894717567782,
+      "blocks_improved": 4,
+      "years_improved": 9,
+      "months_improved": 82,
+      "worst_annual_relative_change": 0.008283738292988119,
+      "historical_correction_rms": 0.12709756472699518,
+      "passed": false
+    },
+    {
+      "model": "meta7_a0.25",
+      "rmse": 1.7718071364320707,
+      "relative_gain": 0.0015860411599347701,
+      "second_year_rmse": 1.785778864239554,
+      "blocks_improved": 5,
+      "years_improved": 9,
+      "months_improved": 86,
+      "worst_annual_relative_change": 0.0029914417144740746,
+      "historical_correction_rms": 0.06356690495648998,
+      "passed": false
+    }
+  ],
+  "selected": null,
+  "periods_reused": true
+}

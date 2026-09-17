@@ -7,9 +7,12 @@ O texto anterior deste protocolo está em
 
 ## Referências e restrições
 
-S10 é o controle aprovado (público informado 1,71895). S11 é a melhor pública
-(1,71718), gerada por exceção explicitamente autorizada após reprovação histórica.
-O resultado público não revoga os critérios nem reclassifica S11 como aprovada.
+S10 é o controle aprovado (público informado 1,71895). S12 tem o melhor score
+público informado (1,71456); S13 marcou 1,71461. S12 é a
+referência reproduzível e teve exceção ao mínimo histórico. S13 foi um teste
+exploratório com exceções explícitas ao mínimo histórico e à confirmação
+reutilizada reprovada. S11 (1,71718) é a referência anterior, também experimental.
+O resultado público não revoga os critérios nem reclassifica S11/S12/S13 como aprovadas.
 Antes de cada rodada, declarar a referência exata e compará-la nos mesmos períodos;
 não trocar a referência depois de observar os resultados.
 
@@ -58,7 +61,8 @@ Também verificar proveniência, integridade, causalidade, IDs e valores do CSV.
    nos critérios, sozinha, não é autorização de exportação ou upload.
 6. Se o usuário solicitar uma exceção, informar quais critérios falharam e
    obter autorização explícita para a exceção. Registrar a reprovação e o pedido
-   sem alterar os critérios. Foi esse o caso da S11.
+   sem alterar os critérios. Foi esse o caso de S11/S12 e, para teste pontual,
+   de S13. As exceções da S13 estão no [protocolo específico](ROUND24_EXPERIMENTAL.md).
 7. Preservar arquivos enviados, registrar versão, metadados e hash, verificar
    reprodução e só então atualizar os guias conforme o resultado confirmado.
 

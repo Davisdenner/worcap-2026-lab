@@ -1,0 +1,13 @@
+{
+  "source": "Classificação e score do líder informados pelo usuário nesta conversa",
+  "independently_verified": false,
+  "our_rank_reported": 3,
+  "leader_public_rmse_reported": 1.70328,
+  "our_best_submission": "S11",
+  "our_public_rmse": 1.71718,
+  "absolute_gap_to_leader": 0.01390,
+  "public_target_year": 2023,
+  "private_target_year": 2024,
+  "private_score_known": false,
+  "note": "Contexto da retomada da pesquisa. Não utilizado como alvo, atributo ou função de ajuste dos modelos. O ganho mínimo histórico continua 0,3%, com os demais critérios."
+}

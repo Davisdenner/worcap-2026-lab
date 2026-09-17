@@ -1,0 +1,59 @@
+{
+  "reference": "S12",
+  "reference_rmse": 1.7707754911700633,
+  "minimum_relative_gain": 0.003,
+  "ranking": [
+    {
+      "model": "start1940_a0.1",
+      "rmse": 1.77142543425032,
+      "relative_gain": -0.0003670386694969441,
+      "second_year_rmse": 1.785140174884276,
+      "blocks_improved": 3,
+      "years_improved": 4,
+      "months_improved": 65,
+      "worst_annual_relative_change": 0.0024370916730347414,
+      "historical_correction_rms": 0.044004773751867954,
+      "passed": false
+    },
+    {
+      "model": "start1960_a0.1",
+      "rmse": 1.7715365909902783,
+      "relative_gain": -0.0004298115848171413,
+      "second_year_rmse": 1.7853393898266106,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 67,
+      "worst_annual_relative_change": 0.0025628531510017982,
+      "historical_correction_rms": 0.042882442947710264,
+      "passed": false
+    },
+    {
+      "model": "start1940_a0.25",
+      "rmse": 1.7744472344938982,
+      "relative_gain": -0.002073522782613635,
+      "second_year_rmse": 1.788148704226174,
+      "blocks_improved": 0,
+      "years_improved": 3,
+      "months_improved": 56,
+      "worst_annual_relative_change": 0.007962382512487265,
+      "historical_correction_rms": 0.11001193437966988,
+      "passed": false
+    },
+    {
+      "model": "start1960_a0.25",
+      "rmse": 1.7746216110836524,
+      "relative_gain": -0.002171997485151289,
+      "second_year_rmse": 1.7885451391738876,
+      "blocks_improved": 1,
+      "years_improved": 3,
+      "months_improved": 62,
+      "worst_annual_relative_change": 0.00789662105926281,
+      "historical_correction_rms": 0.10720610736927565,
+      "passed": false
+    }
+  ],
+  "selected": null,
+  "periods_reused": true,
+  "csv_exported": false,
+  "uploaded": false
+}

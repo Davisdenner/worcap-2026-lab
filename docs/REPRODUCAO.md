@@ -1,8 +1,11 @@
 # Guia de reprodução para o primeiro acesso
 
-Reproduza S10 ou S11 sem consumir envios, pesquisar novos modelos ou alterar
+Reproduza S10, S11 ou S12 sem consumir envios, pesquisar novos modelos ou alterar
 as submissões originais. O método está em [METODOLOGIA.md](METODOLOGIA.md);
 as regras de seleção estão no [protocolo](../experiments/PROTOCOL.md).
+A S13 marcou 1,71461 contra 1,71456 da S12 no público e é um teste exploratório
+que falhou na confirmação e ainda não está integrada a esta interface de
+reprodução. O atalho `melhor` continua fixado na S12 reproduzível.
 
 ## 1. Código e dados
 
@@ -91,14 +94,15 @@ Todos são relativos ao próprio arquivo de configuração:
 | `models` | `data/processed/reproducao/modelos_serializados`, componentes serializados |
 | `output` | `data/processed/reproducao/saidas_verificadas`, subpasta por versão |
 | `evidence` | `delivery/s11/evidence`, calibração histórica congelada |
+| `s12_evidence` | `delivery/s12/evidence`, exemplos históricos OOF do corretor |
 
 ```powershell
 .\.venv\Scripts\python.exe -m src.reproducao listar
 ```
 
-O [catálogo](../configs/modelos.json) distingue S10 (controle aprovado) de S11
-(melhor pública, exceção autorizada). `--versao melhor` resolve atualmente para
-S11; versões desconhecidas são rejeitadas. Para diretórios diferentes, copie
+O [catálogo](../configs/modelos.json) distingue S10 (controle aprovado), S11
+(referência anterior) e S12 (melhor pública e referência reproduzível, exceção autorizada). `--versao melhor`
+resolve atualmente para S12; versões desconhecidas são rejeitadas. Para diretórios diferentes, copie
 a configuração, ajuste os caminhos e passe `--settings caminho/configuracao.json`
 em **todos** os comandos. Prefira caminhos absolutos nessa cópia.
 
@@ -129,18 +133,28 @@ hiperparâmetros nem todos os blocos históricos de calibração. O treino usa
 503 pares com alvos até dezembro de 2022. A inferência atende ao esquema oficial
 de 24 meses; não é um serviço meteorológico para datas arbitrárias.
 
-## 5. Reproduzir a melhor pública (S11)
+## 5. Reproduzir a melhor pública (S12)
 
-Com os componentes do passo 4 já treinados, não é necessário treinar de novo:
+Com os componentes do passo 4 já treinados, o comando de treino S12 verifica
+e reutiliza esses componentes, treinando apenas o corretor adicional:
 
 ```powershell
+.\.venv\Scripts\python.exe -m src.reproducao treinar --versao melhor
 .\.venv\Scripts\python.exe -m src.reproducao prever --versao melhor
 .\.venv\Scripts\python.exe -m src.reproducao verificar --versao melhor
 ```
 
-Para começar diretamente pela S11, execute as quatro etapas do passo 4 com
-`--versao s11`. Não são necessários CSVs anteriores em `submissions` nem
+Para começar diretamente pela S12, execute as quatro etapas do passo 4 com
+`--versao s12`. Nesse caso os componentes-base também são treinados. Para S11,
+use `--versao s11`. Não são necessários CSVs anteriores em `submissions` nem
 caches de experimentos antigos.
+
+S12 requer os nove NPZ e o manifesto de `delivery/s12/evidence`, incluídos no
+repositório/pacote. O corretor é retreinado sobre 442.368 exemplos OOF congelados;
+a reprodução não refaz os nove blocos históricos dos modelos-base. A integridade
+é verificada pelo manifesto e pelo hash das previsões de treino do corretor
+original, seguido da comparação integral do CSV de teste. Veja o
+[escopo das evidências](../delivery/s12/README.md).
 
 ## 6. Saídas e resultados esperados
 
@@ -148,6 +162,7 @@ caches de experimentos antigos.
 | --- | --- |
 | S10 | `data/processed/reproducao/saidas_verificadas/s10/s10_reproduction.csv` |
 | S11 | `data/processed/reproducao/saidas_verificadas/s11/s11_reproduction.csv` |
+| S12 | `data/processed/reproducao/saidas_verificadas/s12/s12_reproduction.csv` |
 
 As pastas também recebem NetCDF, arrays dos componentes, metadados,
 `verificacao.json` e medições de tempo, memória e dependências. São cópias de
@@ -163,6 +178,12 @@ SHA-256 S11:
 
 ```text
 8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f
+```
+
+SHA-256 S12:
+
+```text
+bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8
 ```
 
 São hashes dos arquivos enviados, registrados antes da reprodução, e não hashes

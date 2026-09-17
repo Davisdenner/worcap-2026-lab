@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "full_grid_metrics_recomputed": true,
+  "development_months": 144,
+  "grid_points": 78561,
+  "candidates": 8,
+  "all_candidate_gates_recomputed": true,
+  "selected": null,
+  "protected_submissions_unchanged": true,
+  "verifier_sha256": "704499c800d5119dc61004a28575050d8e44b4797a44668788c05fb3de8dc863",
+  "csv_exported": false,
+  "uploaded": false
+}

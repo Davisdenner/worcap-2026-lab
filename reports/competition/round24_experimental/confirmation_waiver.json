@@ -1,0 +1,16 @@
+{
+  "candidate": "transporte_lag_norte_b0.5",
+  "decision": "user_requested_exploratory_csv_after_confirmation_failure",
+  "waived_gates": [
+    "development_minimum_gain",
+    "confirmation_2021_2022"
+  ],
+  "historical_policy_unchanged": true,
+  "automatic_promotion_passed": false,
+  "upload_authorized": false,
+  "test_shift_mandatory": true,
+  "original_authorization_sha256": "6be8c502632e3e31290b3538c1100cf50628d914f7709a4d020c629c8fa353ff",
+  "failed_confirmation_sha256": "05896380db6230992269bd3b026450d88bc9be5ae9294dd1e3739d18c907bfba",
+  "current_protocol_sha256": "06a30031a83673ef474dca46da02ab7335e9e3f9ea179a3eeeae9011e047a2e1",
+  "current_exporter_sha256": "ed747ee81ee98a6026c22fc1ea532eb12360130218bb92093b6aeb6272aa8860"
+}

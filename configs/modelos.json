@@ -1,5 +1,5 @@
 {
-  "melhor_publica": "s11",
+  "melhor_publica": "s12",
   "controle_aprovado": "s10",
   "criterio_minimo_relativo": 0.003,
   "sample_sha256": "34fe449ddb309b0579a87786f76049863833d82c26f183d18e943dc76f1e4c8c",
@@ -19,9 +19,17 @@
     "s11": {
       "motor": "s11_delivery",
       "public_rmse": 1.71718,
-      "situacao": "melhor pública; exceção autorizada, reprovada nos critérios históricos",
+      "situacao": "referência anterior; exceção autorizada, reprovada nos critérios históricos",
       "csv_sha256": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
       "metadados": "submissions/submission_11.json"
+    },
+    "s12": {
+      "motor": "s12_delivery",
+      "public_rmse": 1.71456,
+      "situacao": "melhor pública; exceção autorizada ao ganho mínimo de desenvolvimento",
+      "csv_sha256": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+      "metadados": "submissions/submission_12.json",
+      "evidencias_sha256": "7e84853bba4b82aed97b7899bc9e181cf4aa84ebdaf6814dedcc29c477935079"
     }
   }
 }

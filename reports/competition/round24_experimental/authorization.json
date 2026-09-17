@@ -1,0 +1,293 @@
+{
+  "candidate": "transporte_lag_norte_b0.5",
+  "user_authorized": true,
+  "waived_gate": "development_minimum_gain_only",
+  "confirmation_and_test_shift_mandatory": true,
+  "automatic_promotion_passed": false,
+  "upload_authorized": false,
+  "official_only": true,
+  "experimental_protocol_sha256": "95dfc2b7d2594df51b461cd0b5cc6e38ca847ba0df091adab7446b0e71265bb0",
+  "exporter_sha256": "6e579bb3145e9c8375ec5bb640510858e6fc74caf11b964a6f50155ba830217b",
+  "research_protocol": {
+    "protocol_sha256": "0b5da797fc2c3e654d8910844f99d10f23fd67f62fa35f227a04e081f1382d64",
+    "source_sha256": "2a46118e852982911a0856662de6bd0e225ec16117ac438966d64f8d30d62920",
+    "parent_protocol": {
+      "protocol_sha256": "17c73ad9c8fe2ca235bd6e4bfd620587f0bbf3bce23e0c592cf43a11f70b1083",
+      "sources": {
+        "round20.py": "49a8b8f1b8d028e0719c5b03f07e0ea3643cbbe38aa9639d8097c9b616f7f25a",
+        "round2.py": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+        "round9.py": "203fc22d2a1a93359a595a84b064706dd1318994fcfd962180a0db61305d867f",
+        "round19.py": "1a4a285e3dc298b12d1a9426be7f40dd59fe634646bb3167cdef6f624be0345e",
+        "round17_experimental.py": "b7d892d984b15aee19bbdae7711b682778284abceec053ad7e4236386ef825b7"
+      },
+      "inherited_protocol": {
+        "protocol_sha256": "68b758b8bae4eb73cc6092186f60e41afde3b508a533b3c597a849fe55ca0275",
+        "source_sha256": "57a9e71d977021c3d3a776dbe19004c2e48dd6944d16a9c675d6786bb376e181",
+        "dependencies": {
+          "round16.py": "460c81dca200a0476219fdda39c2e13aed445ae7b960815b4c5c05dc578d19e8",
+          "diagnose_s11.py": "70853ae2d81231d6f0142fdbb6b4465d0af4d6f661fc83459af624e7e3721ea2",
+          "competition.py": "52221cff17e1c9137b4b4ef44962a1210ffd6b141670e2934bb7f3293da96154",
+          "round2.py": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+          "round9.py": "203fc22d2a1a93359a595a84b064706dd1318994fcfd962180a0db61305d867f",
+          "round11.py": "785777d35bcf571b8c2943f6f538f8ab907c0bfdbcd611f7a27a1713306b3167",
+          "round15.py": "1d3bae7456418fbe809c99c4eb1b9856359039b6604cc30c6cf464087272a4ad"
+        },
+        "configurations": {
+          "meta7_a0.25": [
+            7,
+            0.25
+          ],
+          "meta7_a0.5": [
+            7,
+            0.5
+          ],
+          "meta15_a0.25": [
+            15,
+            0.25
+          ],
+          "meta15_a0.5": [
+            15,
+            0.5
+          ]
+        },
+        "tree_parameters": {
+          "loss": "squared_error",
+          "learning_rate": 0.03,
+          "max_iter": 200,
+          "min_samples_leaf": 300,
+          "l2_regularization": 100.0,
+          "max_bins": 128,
+          "early_stopping": false,
+          "random_state": 20260918
+        },
+        "features": [
+          "latitude",
+          "longitude",
+          "sin_mes_alvo",
+          "cos_mes_alvo",
+          "climatologia",
+          "s11",
+          "desvio_s02",
+          "desvio_modos",
+          "desvio_local18",
+          "desvio_pls16",
+          "desvio_tropical",
+          "dispersao_componentes",
+          "amplitude_componentes",
+          "anomalia_s11",
+          "t2",
+          "cloud_cover",
+          "shum_850",
+          "surface_pressure",
+          "u_850",
+          "v_850",
+          "temperature_850",
+          "rel_hum_850",
+          "geopotential_850"
+        ],
+        "samples_per_month": 2048,
+        "reference": "S11",
+        "official_only": true,
+        "minimum_relative_gain": 0.003
+      },
+      "models": {
+        "local15": [
+          false,
+          15,
+          768,
+          100,
+          10.0
+        ],
+        "global15": [
+          true,
+          15,
+          768,
+          100,
+          10.0
+        ],
+        "global31": [
+          true,
+          31,
+          768,
+          100,
+          10.0
+        ],
+        "global31_dense": [
+          true,
+          31,
+          1536,
+          200,
+          20.0
+        ]
+      },
+      "tree": {
+        "loss": "squared_error",
+        "learning_rate": 0.05,
+        "max_iter": 300,
+        "max_bins": 128,
+        "early_stopping": false,
+        "warm_start": false,
+        "random_state": 20260914
+      },
+      "configurations": {
+        "local15_a0.1": [
+          "local15",
+          0.1
+        ],
+        "local15_a0.25": [
+          "local15",
+          0.25
+        ],
+        "global15_a0.1": [
+          "global15",
+          0.1
+        ],
+        "global15_a0.25": [
+          "global15",
+          0.25
+        ],
+        "global31_a0.1": [
+          "global31",
+          0.1
+        ],
+        "global31_a0.25": [
+          "global31",
+          0.25
+        ],
+        "global31_dense_a0.1": [
+          "global31_dense",
+          0.1
+        ],
+        "global31_dense_a0.25": [
+          "global31_dense",
+          0.25
+        ]
+      },
+      "reference": "S12",
+      "minimum_gain": 0.003,
+      "official_only": true,
+      "transforms": {
+        "2009": {
+          "data/processed/round9/2009_pls16.joblib": "c18c9c1cd9e485d905dd4957d3cf7dc74ef966c5c106dc03b98d64ef77c050c8",
+          "data/processed/round11/2009_fine_weather.joblib": "6b3fa42caa574ebf283187ae539f59f3856767385eb06b4633b00526b9dee1bc"
+        },
+        "2011": {
+          "data/processed/round9/2011_pls16.joblib": "8718e676894cb7a2a29cb90db8f0301ff6083428dbbf2436abf12bae5edb6978",
+          "data/processed/round11/2011_fine_weather.joblib": "c02bb0384ef711a65201675a8a7ab576f59e73eb4004e31db9d4f1d15b1f623d"
+        },
+        "2013": {
+          "data/processed/round9/2013_pls16.joblib": "bafcc88e57b83d7bd2cb5fee98f862f9ab79f74ee078c4b696e49301642a37e4",
+          "data/processed/round11/2013_fine_weather.joblib": "d4d6d0642ac816e365b64ab63922b217c5b6133955d07eb5366663e73682e5af"
+        },
+        "2015": {
+          "data/processed/round9/2015_pls16.joblib": "dd6d8fc28e1887dce8116bdbb57ac171388e2d47b16b83a80ee574307011406a",
+          "data/processed/round11/2015_fine_weather.joblib": "86b835e11d5e28f6359633d86a0fdcf83352411b929e7c2e7f5a1ebc5281d22c"
+        },
+        "2017": {
+          "data/processed/round9/2017_pls16.joblib": "7770c4fe57bda96c01ff3161b402d8777a3479030fa6698c5db63039e6c544f4",
+          "data/processed/round11/2017_fine_weather.joblib": "79fe9abbe9f6491e6beefd1a632b5173701e29be893fca3eb17b980d9c377221"
+        },
+        "2019": {
+          "data/processed/round9/2019_pls16.joblib": "58f6aa46df0e4244f3d167bd78b1fb59f648dfc9f8bb215ab2cfa21e828839f1",
+          "data/processed/round11/2019_fine_weather.joblib": "8e1b6e95484151a5f1a643560e6625649c3806f77dc6b73ee175a786f4f3e681"
+        },
+        "2021": {
+          "data/processed/round9/2021_pls16.joblib": "9e28c58fc08764a6d0ec27196e2186668ffc1fbcc7e4833f3f52e7528d6b26c1",
+          "data/processed/round11/2021_fine_weather.joblib": "c506c8f49d54209772806e16752038d9aa87521ee498ead9c282be4fa624244b"
+        }
+      },
+      "protected": {
+        "submissions/submission_10.csv": "57862493c62936b291c03cff3bd4c53fd486ab38a08108f908a8f74b5aada46e",
+        "submissions/submission_10.json": "f91457a02bebadc4e5588a27b1ca47218e07c8a3d7af4ba5e4efd4eba1c6c3cd",
+        "submissions/submission_11.csv": "8b871e4fa982045ee1c59abb19ff9e4954444aaf96de22052daa3de22e64b26f",
+        "submissions/submission_11.json": "00e87b1ff524d2dd21cc2fce9144a1951602d0f2aabab6aa5deda550eb2d891d",
+        "submissions/submission_12.csv": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+        "submissions/submission_12.json": "3d2941bbc1d6b2adc3d0f2ae6e0aeea56b92e512281b90a633f04a42f7141b6f"
+      }
+    },
+    "kinds": {
+      "produtos": 2,
+      "convergencia": 3,
+      "transporte_lag": 6
+    },
+    "configs": {
+      "convergencia_global_b0.25": [
+        "convergencia",
+        "global",
+        0.25
+      ],
+      "convergencia_global_b0.5": [
+        "convergencia",
+        "global",
+        0.5
+      ],
+      "convergencia_norte_b0.25": [
+        "convergencia",
+        "norte",
+        0.25
+      ],
+      "convergencia_norte_b0.5": [
+        "convergencia",
+        "norte",
+        0.5
+      ],
+      "transporte_lag_global_b0.25": [
+        "transporte_lag",
+        "global",
+        0.25
+      ],
+      "transporte_lag_global_b0.5": [
+        "transporte_lag",
+        "global",
+        0.5
+      ],
+      "transporte_lag_norte_b0.25": [
+        "transporte_lag",
+        "norte",
+        0.25
+      ],
+      "transporte_lag_norte_b0.5": [
+        "transporte_lag",
+        "norte",
+        0.5
+      ]
+    },
+    "tree": {
+      "loss": "squared_error",
+      "learning_rate": 0.03,
+      "max_iter": 200,
+      "min_samples_leaf": 300,
+      "l2_regularization": 100.0,
+      "max_bins": 128,
+      "early_stopping": false,
+      "random_state": 20260918
+    },
+    "seed": 20260918,
+    "reference": "S12",
+    "official_only": true,
+    "minimum_relative_gain": 0.003,
+    "flux_units": "convergence 1e-6 per second"
+  },
+  "historical_candidate": {
+    "model": "transporte_lag_norte_b0.5",
+    "rmse": 1.7706369984022323,
+    "relative_gain": 7.821023530174553e-05,
+    "second_year_rmse": 1.7844003580243937,
+    "blocks_improved": 6,
+    "years_improved": 10,
+    "months_improved": 89,
+    "worst_annual_relative_change": 8.586629924156597e-05,
+    "historical_correction_rms": 0.007452360736388151,
+    "north_rmse": 2.7072896927134806,
+    "outside_rmse": 1.4384414353689943,
+    "passed": false
+  },
+  "protected_hashes": {
+    "reports/competition/round24/selection.json": "2a7f333f4027a61ab2ed903e9dc2772fb65d0747927c5d7573a9db4c5d66f018",
+    "reports/competition/round24/protocol.json": "a49631a95306e1f1b664956d221fcd069eb88b3e4b228c747fc5bedf988b60ab",
+    "submissions/submission_12.csv": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+    "submissions/submission_12.json": "3d2941bbc1d6b2adc3d0f2ae6e0aeea56b92e512281b90a633f04a42f7141b6f"
+  },
+  "test_features_sha256": "70bcb5c9bb9c011c8901660834b42dc57ff7e54a4f34161d489ec5e9f05c1f23",
+  "sample_sha256": "34fe449ddb309b0579a87786f76049863833d82c26f183d18e943dc76f1e4c8c"
+}
