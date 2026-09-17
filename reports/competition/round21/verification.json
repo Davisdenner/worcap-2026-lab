@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "full_grid": true,
+  "official_only": true,
+  "blocks": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "selection_recomputed": true,
+  "csv_exported": false,
+  "uploaded": false
+}

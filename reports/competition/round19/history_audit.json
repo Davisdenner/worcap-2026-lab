@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "official_only": true,
+  "additional_examples": 196608,
+  "blocks": [
+    {
+      "block": 1997,
+      "sha256": "d4d1731065be95e9aaf5e54058a961d7bd192e5c945348ed88dee4dc02257889",
+      "full_atmospheric_sample_equality": true,
+      "residual_plus_reference_matches_official_target_within_float32_quantization": true,
+      "max_reconstruction_error": 3.814697265625e-06,
+      "last_base_training_target": "1996-12"
+    },
+    {
+      "block": 1999,
+      "sha256": "575a4235fc7cb15a3475b40067034d2ad78f97c88d6118366aa8ddde1e15ccee",
+      "full_atmospheric_sample_equality": true,
+      "residual_plus_reference_matches_official_target_within_float32_quantization": true,
+      "max_reconstruction_error": 3.4570693969726562e-06,
+      "last_base_training_target": "1998-12"
+    },
+    {
+      "block": 2001,
+      "sha256": "05be5180acc6068854cc0439197b81ec090548afc888b2e9eea6f13d606b82aa",
+      "full_atmospheric_sample_equality": true,
+      "residual_plus_reference_matches_official_target_within_float32_quantization": true,
+      "max_reconstruction_error": 2.86102294921875e-06,
+      "last_base_training_target": "2000-12"
+    },
+    {
+      "block": 2003,
+      "sha256": "bf22fcc000f12c1c59857d49da72832cb21549b918a9c9cd3a5d743c11ea783f",
+      "full_atmospheric_sample_equality": true,
+      "residual_plus_reference_matches_official_target_within_float32_quantization": true,
+      "max_reconstruction_error": 3.814697265625e-06,
+      "last_base_training_target": "2002-12"
+    }
+  ]
+}

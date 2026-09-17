@@ -1,0 +1,13 @@
+{
+  "candidate": "transporte_lag_norte_b0.5",
+  "official_template_verified": true,
+  "rows": 1885464,
+  "s12_unchanged": true,
+  "confirmation_passed": false,
+  "confirmation_waived": true,
+  "test_shift_passed": true,
+  "experimental_user_authorized": true,
+  "automatic_promotion_passed": false,
+  "uploaded": false,
+  "csv_sha256": "9d907d42d3950bc4faa0f0051655a00a082d25021e207a2596e5745ff9815ecb"
+}

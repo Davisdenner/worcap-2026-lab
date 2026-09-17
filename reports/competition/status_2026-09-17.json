@@ -1,0 +1,12 @@
+{
+  "source": "Último relato do usuário nesta conversa, registrado ao iniciar a hipótese 1",
+  "independently_verified": false,
+  "our_rank_reported": 3,
+  "leader_public_rmse_reported": 1.63223,
+  "our_best_submission": "S12",
+  "our_public_rmse": 1.71456,
+  "absolute_gap_to_leader": 0.08233,
+  "relative_reduction_needed": 0.0480181504292646,
+  "private_score_known": false,
+  "note": "Contexto, não alvo de treino ou critério de ajuste. Rodada 20 compara contra S12 histórica. Saldo de envios do novo dia não verificado."
+}

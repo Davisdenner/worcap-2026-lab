@@ -1,0 +1,8 @@
+{
+  "candidate": "transporte_lag_norte_b0.5",
+  "historical_rms": 0.007452360736388151,
+  "maximum_allowed_rms": 0.014904721472776302,
+  "public2023_rms": 0.004643634770579533,
+  "private2024_rms": 0.0052104226876651775,
+  "passed": true
+}

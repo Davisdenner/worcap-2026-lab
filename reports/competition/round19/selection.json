@@ -1,0 +1,33 @@
+{
+  "reference": "S12",
+  "reference_rmse": 1.7707754911700633,
+  "minimum_relative_gain": 0.003,
+  "ranking": [
+    {
+      "model": "expanded_recent8",
+      "rmse": 1.7707797612682894,
+      "relative_gain": -2.4114283529996783e-06,
+      "second_year_rmse": 1.7851246257404887,
+      "blocks_improved": 4,
+      "years_improved": 6,
+      "months_improved": 74,
+      "worst_annual_relative_change": 0.0013129283278363602,
+      "historical_correction_rms": 0.0414113897844462,
+      "passed": false
+    },
+    {
+      "model": "expanded_uniform",
+      "rmse": 1.7708687089288189,
+      "relative_gain": -5.26423362083861e-05,
+      "second_year_rmse": 1.7849374401469258,
+      "blocks_improved": 4,
+      "years_improved": 6,
+      "months_improved": 71,
+      "worst_annual_relative_change": 0.0015393001763923664,
+      "historical_correction_rms": 0.05115868432910982,
+      "passed": false
+    }
+  ],
+  "selected": null,
+  "periods_reused": true
+}

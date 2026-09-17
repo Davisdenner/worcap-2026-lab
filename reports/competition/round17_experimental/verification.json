@@ -1,0 +1,14 @@
+{
+  "candidate": "meta15_a0.25",
+  "full_model_reload_prediction_match": true,
+  "netcdf_roundtrip_exact": true,
+  "official_template_verified": true,
+  "rows": 1885464,
+  "s10_s11_and_selection_unchanged": true,
+  "confirmation_passed": true,
+  "test_shift_passed": true,
+  "automatic_promotion_passed": false,
+  "experimental_user_authorized": true,
+  "uploaded": false,
+  "csv_sha256": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8"
+}

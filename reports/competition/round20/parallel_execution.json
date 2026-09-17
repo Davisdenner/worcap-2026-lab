@@ -1,0 +1,9 @@
+{
+  "driver_sha256": "514a7be6a7e10387a514de28465735826a6b72a4521f0b7c9d3cad16768a1aa7",
+  "workers": 2,
+  "threads_per_model": 1,
+  "launch_strategy": "subprocess; duas threads apenas para agendamento",
+  "execution_note": "multiprocessing.Pipe indisponível no host; substituído antes de executar blocos paralelos.",
+  "unchanged_numerical_source_sha256": "49a8b8f1b8d028e0719c5b03f07e0ea3643cbbe38aa9639d8097c9b616f7f25a",
+  "changes": "Somente agendamento de blocos independentes; sem alterações de dados, parâmetros, sementes ou critérios."
+}

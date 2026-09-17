@@ -1,0 +1,133 @@
+{
+  "reference": "S12",
+  "reference_rmse": 1.7707754911700633,
+  "minimum_relative_gain": 0.003,
+  "ranking": [
+    {
+      "model": "global31_dense_a0.1",
+      "rmse": 1.7709368110871053,
+      "relative_gain": -9.110128180922494e-05,
+      "second_year_rmse": 1.7850591106031162,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 68,
+      "worst_annual_relative_change": 0.0024044633652355873,
+      "historical_correction_rms": 0.04213159775107444,
+      "passed": false
+    },
+    {
+      "model": "global31_a0.1",
+      "rmse": 1.7710671150373214,
+      "relative_gain": -0.00016468709258310454,
+      "second_year_rmse": 1.7851551080517671,
+      "blocks_improved": 2,
+      "years_improved": 3,
+      "months_improved": 65,
+      "worst_annual_relative_change": 0.003074592565644796,
+      "historical_correction_rms": 0.04293103366249469,
+      "passed": false
+    },
+    {
+      "model": "global15_a0.1",
+      "rmse": 1.7712555858965557,
+      "relative_gain": -0.00027112117198724306,
+      "second_year_rmse": 1.7851859038792475,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 67,
+      "worst_annual_relative_change": 0.0030379496587578103,
+      "historical_correction_rms": 0.042521024242194255,
+      "passed": false
+    },
+    {
+      "model": "local15_a0.1",
+      "rmse": 1.7714276533004394,
+      "relative_gain": -0.0003682918210852204,
+      "second_year_rmse": 1.7851517729055508,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 67,
+      "worst_annual_relative_change": 0.002591009338412942,
+      "historical_correction_rms": 0.04259997771216906,
+      "passed": false
+    },
+    {
+      "model": "global31_dense_a0.25",
+      "rmse": 1.7730568885965041,
+      "relative_gain": -0.0012883606294626926,
+      "second_year_rmse": 1.7878627819365358,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 62,
+      "worst_annual_relative_change": 0.006869810262813747,
+      "historical_correction_rms": 0.1053289943776861,
+      "passed": false
+    },
+    {
+      "model": "global31_a0.25",
+      "rmse": 1.7734541383740865,
+      "relative_gain": -0.0015126972433152641,
+      "second_year_rmse": 1.7880813125212318,
+      "blocks_improved": 2,
+      "years_improved": 3,
+      "months_improved": 61,
+      "worst_annual_relative_change": 0.008718942664962759,
+      "historical_correction_rms": 0.10732758415623675,
+      "passed": false
+    },
+    {
+      "model": "global15_a0.25",
+      "rmse": 1.7738876111147177,
+      "relative_gain": -0.0017574898456484966,
+      "second_year_rmse": 1.7881562887814897,
+      "blocks_improved": 1,
+      "years_improved": 3,
+      "months_improved": 61,
+      "worst_annual_relative_change": 0.008550237053057907,
+      "historical_correction_rms": 0.10630256060548564,
+      "passed": false
+    },
+    {
+      "model": "local15_a0.25",
+      "rmse": 1.774324212166403,
+      "relative_gain": -0.002004049081340442,
+      "second_year_rmse": 1.7880411512390058,
+      "blocks_improved": 1,
+      "years_improved": 4,
+      "months_improved": 63,
+      "worst_annual_relative_change": 0.007612799545063886,
+      "historical_correction_rms": 0.10649994428042264,
+      "passed": false
+    }
+  ],
+  "selected": null,
+  "ablations": [
+    {
+      "model": "global15",
+      "control": "local15",
+      "rmse": 1.8208169374692174,
+      "control_rmse": 1.82265602259855,
+      "relative_gain": 0.0010090138273652904,
+      "blocks_improved": 4
+    },
+    {
+      "model": "global31",
+      "control": "global15",
+      "rmse": 1.8198492594522016,
+      "control_rmse": 1.8208169374692174,
+      "relative_gain": 0.0005314526667138386,
+      "blocks_improved": 5
+    },
+    {
+      "model": "global31_dense",
+      "control": "global31",
+      "rmse": 1.8168972907381702,
+      "control_rmse": 1.8198492594522016,
+      "relative_gain": 0.001622095181070149,
+      "blocks_improved": 4
+    }
+  ],
+  "periods_reused": true,
+  "csv_exported": false,
+  "uploaded": false
+}

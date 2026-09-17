@@ -1,0 +1,36 @@
+{
+  "protocol_sha256": "7e668a3c1b6c46c37b744fda5f91597f89ead4f8590d27cb3306ed2a991f1efe",
+  "source_sha256": "ee01ac4a0aefaf325998eb28d4798467549f8b318e524c576ae45afdf529b559",
+  "dependencies": {
+    "round16.py": "460c81dca200a0476219fdda39c2e13aed445ae7b960815b4c5c05dc578d19e8",
+    "diagnose_s11.py": "70853ae2d81231d6f0142fdbb6b4465d0af4d6f661fc83459af624e7e3721ea2",
+    "competition.py": "52221cff17e1c9137b4b4ef44962a1210ffd6b141670e2934bb7f3293da96154",
+    "round2.py": "906877b207d01d0092e5e54edf9e049dea5c4773faa8235133139f8a6ac663fa",
+    "round3.py": "6c0f9a0968e930007bbab96d4d33e3d16bddaf60890da909f40c40eb45c309fd",
+    "round4.py": "ad8c2f466fe2cdcdc7f5daeacc0c02e421303f1b45f3048c548049b4cee1501f",
+    "round9.py": "203fc22d2a1a93359a595a84b064706dd1318994fcfd962180a0db61305d867f",
+    "round11.py": "785777d35bcf571b8c2943f6f538f8ab907c0bfdbcd611f7a27a1713306b3167",
+    "round15.py": "1d3bae7456418fbe809c99c4eb1b9856359039b6604cc30c6cf464087272a4ad"
+  },
+  "configurations": {
+    "long6_a0.5": [
+      6,
+      0.5
+    ],
+    "long6_a1": [
+      6,
+      1.0
+    ],
+    "long12_a0.5": [
+      12,
+      0.5
+    ],
+    "long12_a1": [
+      12,
+      1.0
+    ]
+  },
+  "reference": "S11",
+  "official_only": true,
+  "minimum_relative_gain": 0.003
+}
