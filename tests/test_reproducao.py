@@ -14,13 +14,13 @@ class ReproducaoTests(unittest.TestCase):
             record = records['submission_' + nome[1:]]
             self.assertEqual(item['csv_sha256'], record['sha256'])
             self.assertEqual(item['public_rmse'], record['public_rmse'])
-        self.assertEqual(r.resolver('melhor')[0], 's11')
+        self.assertEqual(r.resolver('melhor')[0], 's12')
         self.assertEqual(catalogo['controle_aprovado'], 's10')
         self.assertEqual(catalogo['criterio_minimo_relativo'], .003)
 
     def test_versao_desconhecida_nao_cai_na_s11(self):
         with self.assertRaises(ValueError):
-            r.resolver('s12')
+            r.resolver('s13')
 
     def test_criterio_03_e_estabilidade_continuam_ativos(self):
         # Ganho de 0,299% não basta; 0,3% basta somente com todas as condições.

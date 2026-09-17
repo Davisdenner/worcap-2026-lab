@@ -3,5 +3,6 @@
   "cache": "../data/processed/reproducao/cache",
   "models": "../data/processed/reproducao/modelos_serializados",
   "output": "../data/processed/reproducao/saidas_verificadas",
-  "evidence": "../delivery/s11/evidence"
+  "evidence": "../delivery/s11/evidence",
+  "s12_evidence": "../delivery/s12/evidence"
 }

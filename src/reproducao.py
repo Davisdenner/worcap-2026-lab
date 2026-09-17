@@ -22,7 +22,7 @@ def resolver(versao, catalogo=None):
         versao = catalogo['melhor_publica']
     if versao not in catalogo['versoes']:
         raise ValueError(f'Versão não registrada: {versao}')
-    if catalogo['versoes'][versao]['motor'] != 's11_delivery':
+    if catalogo['versoes'][versao]['motor'] not in ('s11_delivery','s12_delivery'):
         raise ValueError('A versão exige um motor de reprodução ainda não implementado')
     return versao, catalogo['versoes'][versao]
 
@@ -66,7 +66,7 @@ def main():
         sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('etapa', choices=('listar', 'preparar', 'treinar', 'prever', 'verificar'))
-    parser.add_argument('--versao', default='melhor', help='s10, s11 ou melhor (melhor score público registrado)')
+    parser.add_argument('--versao', default='melhor', help='s10, s11, s12 ou melhor (melhor score público registrado)')
     parser.add_argument('--settings', type=Path, default=ROOT / 'configs/reproducao.json')
     args = parser.parse_args()
     catalogo = motor.read(CATALOGO)
@@ -78,6 +78,7 @@ def main():
         return
     versao, registro = resolver(args.versao, catalogo)
     c = motor.settings(args.settings)
+    c['s12_evidence'] = (args.settings.resolve().parent / c.get('s12_evidence','../delivery/s12/evidence')).resolve()
     c['version'] = versao
     c['output'] = c['output'] / versao
     validar_entradas(c, catalogo)
@@ -85,7 +86,10 @@ def main():
     if args.etapa == 'verificar':
         verificar(c, registro)
     else:
-        etapa = {'preparar': motor.prepare, 'treinar': motor.train, 'prever': motor.predict}[args.etapa]
+        engine=motor
+        if registro['motor']=='s12_delivery':
+            from . import s12_delivery as engine
+        etapa = {'preparar': engine.prepare, 'treinar': engine.train, 'prever': engine.predict}[args.etapa]
         etapa(c)
         if args.etapa == 'prever':
             verificar(c, registro)

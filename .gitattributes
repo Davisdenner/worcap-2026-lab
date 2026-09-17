@@ -18,3 +18,4 @@ experiments/ROUND2.md -text
 # O índice pode continuar em LF; o checkout deve reconstruir os bytes originais.
 delivery/s11/evidence/*.json text eol=crlf
 delivery/s11/evidence/leaderboard_observations.json -text
+delivery/s12/evidence/*.json text eol=crlf
