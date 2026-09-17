@@ -213,3 +213,55 @@ Para novas versões, mantenha esta explicação central atualizada e arquive a
 configuração de cada versão; nunca modifique a história para fazer uma candidata
 reprovada parecer aprovada. Não se promete RMSE 1,70, liderança ou significância
 estatística com base apenas na validação reutilizada ou no leaderboard público.
+
+## 7. Extensão S12 — corretor não linear de resíduos
+
+S12 mantém a S11 e acrescenta uma correção limitada:
+
+```text
+S12 = máximo(S11 + 0,25 × corretor(atmosfera, componentes, espaço, mês), 0)
+```
+
+O corretor é um HistGradientBoostingRegressor com perda quadrática, 200 iterações,
+taxa 0,03, até 15 folhas, mínimo de 300 exemplos por folha, L2=100 e 128 bins.
+Parada antecipada desativada; semente 20260918. Aprende `observado − previsão
+causal` em 2.048 pontos amostrados por mês, semente de amostragem somada ao ano
+do bloco. O treino final contém 442.368 exemplos dos blocos 2005–2022.
+
+Os 23 atributos são latitude/longitude, seno/cosseno do mês-alvo, climatologia,
+S11, cinco desvios dos componentes em relação à S11, dispersão e amplitude
+dos componentes, anomalia S11 menos climatologia e as nove variáveis atmosféricas
+oficiais do mês anterior ao alvo. Não se fornece intensidade observada do alvo.
+O primeiro bloco usa prior S10, pois não há bloco anterior para calibrar S11;
+os demais usam calibração somente em blocos anteriores completos.
+
+Na validação 2009–2020, S12 obteve 1,770775 contra 1,774622 da S11: ganho de
+0,217%, abaixo do mínimo de 0,3%, apesar de passar na estabilidade. O usuário
+autorizou uma exceção apenas a esse mínimo. Na confirmação reutilizada 2021–2022,
+obteve 1,821386 contra 1,829353, melhorando ambos os anos. O score público
+informado foi 1,71456. Esses resultados não removem sua classificação experimental.
+
+O [motor S12](../src/s12_delivery.py) retreina o corretor a partir dos exemplos
+OOF congelados em [delivery/s12](../delivery/s12/README.md) e refaz a inferência.
+A reprodução foi [verificada por igualdade integral](../reports/reproducao/S12.md).
+Não se regenera toda a pesquisa OOF, nem se usam fontes externas. A rodada 19
+investigou mais histórico e pesos de recência; suas candidatas não passaram
+nos critérios e não fazem parte da S12.
+
+## 8. S13 — transporte de umidade, teste exploratório
+
+A S13 parte da S12 e substitui parcialmente a correção no norte por um modelo
+com seis atributos derivados exclusivamente da umidade específica e dos ventos
+em 850 hPa oficiais: dois fluxos horizontais, convergência atual e defasada,
+média de três convergências e umidade a montante. O peso regional é 0,5.
+Fórmula, máscara e treinamento estão no [protocolo específico](../experiments/ROUND24_EXPERIMENTAL.md).
+
+Na validação 2009–2020, o RMSE caiu de 1,770775 para 1,770637, ganho de
+**0,0078%**, insuficiente para o mínimo de 0,3%. Na confirmação reutilizada
+2021–2022, o ganho foi **0,00247%**, abaixo de 0,1%, e 2022 piorou. O usuário
+autorizou pontualmente dispensar ambos os critérios para conhecer o score
+público. O limite predefinido de mudança nas previsões de 2023 e 2024 passou.
+O score público informado, após correção pelo usuário, foi **1,71461**,
+0,00005 pior que a S12 (1,71456). A S13 não é uma candidata
+aprovada pelo protocolo, o privado é desconhecido e o atalho `melhor` continua
+em S12. Veja o [resultado completo](../reports/competition/round24_experimental/RESULTS.md).

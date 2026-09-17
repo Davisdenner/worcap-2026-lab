@@ -1,5 +1,8 @@
 # Reprodução verificada de S10 e S11
 
+A extensão posterior para S12 está em [S12.md](S12.md): corretor retreinado,
+inferência-base repetida, CSV e valores NetCDF idênticos aos originais.
+
 Em 16/09/2026 foram preparados novos arrays dos arquivos oficiais, retreinados
 todos os componentes finais e executada a inferência para ambas as versões.
 Os artefatos históricos de calibração foram preservados, não regenerados em

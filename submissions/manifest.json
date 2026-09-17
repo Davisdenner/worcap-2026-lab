@@ -1,7 +1,27 @@
 {
   "day_closed": "2026-09-14",
-  "best_submission": "submissions/submission_11.csv",
+  "best_submission": "submissions/submission_12.csv",
   "submissions": [
+    {
+      "file": "submissions/submission_12.csv",
+      "bytes": 63346800,
+      "rows": 1885464,
+      "sha256": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+      "public_rmse": 1.71456,
+      "accepted": true,
+      "score_source": "Score público S12 e segundo lugar informados pelo usuário nesta conversa",
+      "generation_metadata": "submissions/submission_12.json"
+    },
+    {
+      "file": "submissions/submission_13.csv",
+      "bytes": 63346810,
+      "rows": 1885464,
+      "sha256": "9d907d42d3950bc4faa0f0051655a00a082d25021e207a2596e5745ff9815ecb",
+      "public_rmse": 1.71461,
+      "accepted": true,
+      "score_source": "Score público S13 corrigido pelo usuário nesta conversa após o envio manual",
+      "generation_metadata": "submissions/submission_13.json"
+    },
     {
       "file": "submissions/submission_11.csv",
       "bytes": 63346107,
