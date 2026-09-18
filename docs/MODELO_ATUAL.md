@@ -1,18 +1,20 @@
-# Estado atual do modelo
+# Modelo de referência ao encerrar a participação
 
 | Papel | Versão | RMSE público informado |
 | --- | --- | ---: |
 | Controle aprovado na validação histórica | S10 | 1,71895 |
-| Melhor resultado público registrado | S11 | 1,71718 |
+| Melhor resultado público registrado | S12 | 1,71456 |
+| Teste posterior | S13 | 1,71461 |
 
-S11 é uma exceção autorizada, não uma candidata aprovada pelos critérios.
-Seu ganho histórico foi aproximadamente 0,041%, abaixo dos 0,3% exigidos,
-com melhora em 4/6 blocos e 6/12 anos. O critério continua ativo.
-Os scores públicos são relatos do usuário; o privado permanece desconhecido.
+S11 e S12 foram exceções autorizadas ao critério histórico de 0,3%.
+S13 também foi exploratória e ficou 0,00005 acima da S12 no público.
+Após a rodada 29, a participação foi encerrada. Os scores públicos são relatos
+do participante; o privado e a classificação final permanecem desconhecidos.
 
 - [Método completo, centralizado](METODOLOGIA.md).
 - [Reprodução do zero do treino final e inferência](REPRODUCAO.md).
-- [Política vigente de seleção](../experiments/PROTOCOL.md).
+- [Encerramento e trajetória](ENCERRAMENTO.md).
+- [Protocolo histórico de seleção](../experiments/PROTOCOL.md).
 - [Catálogo de versões e hashes](../configs/modelos.json).
 - [Registro dos scores públicos](../reports/competition/leaderboard_observations.json).
 - [Escopo técnico e pendências formais](CONFORMIDADE.md).

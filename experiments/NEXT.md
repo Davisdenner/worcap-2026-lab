@@ -1,11 +1,89 @@
-# Pesquisa atual — rodadas 20–24 avaliadas, sem promoção
+# Registro histórico da pesquisa — rodadas 20–28
+
+**Arquivo de contexto:** a participação terminou após a rodada 29. Consulte
+[encerramento](../docs/ENCERRAMENTO.md) e [índice completo](README.md). As
+propostas de passos seguintes abaixo são registros da época, não um plano ativo.
+O CSV S14 exploratório foi gerado posteriormente ao diagnóstico da rodada 27;
+seu [registro](S14_EXPERIMENTAL_ROUND27_GATE.md) não contém score público.
 
 S12 tem o melhor score público informado, 1,71456; S13 marcou 1,71461,
 piorando 0,00005. A classificação atual não foi informada. S10 permanece
 o controle aprovado, 1,71895. Ganho público de 0,00262 contra S11 (1,71718).
-O último score do líder informado foi 1,63223: a diferença é 0,08233, equivalente
-a uma redução de aproximadamente 4,80% do nosso RMSE. Não houve verificação independente.
+Em novo relato, o usuário informou 1º lugar 1,57591, 2º 1,58124 e 3º
+1,69966. As diferenças da S12 são 0,13865 para o 1º e 0,01490 para o 3º.
+Esses scores não foram verificados independentemente; o privado é desconhecido.
 O resultado não aprova retroativamente S12 no critério histórico de 0,3%.
+
+## Rodada 28 — magnitude da vantagem S12 × Analog
+
+O [protocolo 28](ROUND28.md) decompôs G = perda S12 − perda Analog antes
+dos novos ajustes. Os 10% maiores |G| concentram 65,0% do benefício global
+do oracle, mas misturam grandes vitórias e grandes derrotas do Analog.
+Nenhum regressor de G passou o critério OOF de vantagem **líquida** positiva
+no top 10% em 4/5 blocos. Strong wins tiveram AUC alta e lift consistente,
+mas o top-k predefinido ganhou no máximo 0,040% global em 2011–2020,
+abaixo dos 0,075% do gate da rodada 27; expected-gain gating foi parado
+sem teste porque G bruto não passou seu critério. Analog teve o maior
+oracle **pareado** entre os segundos especialistas congelados, enquanto
+cada oracle triplo adicionou >1 ponto percentual, acionando a classe
+predefinida **D** para um conjunto mais amplo. Isso é diagnóstico, não
+ganho operacional. Nenhuma candidata foi criada. Ver [relatório]
+(../reports/competition/round28/REPORT.md) e [auditoria]
+(../reports/competition/round28/audit.json).
+
+## Rodada 27 — seleção S12 versus análogos
+
+O [protocolo 27](ROUND27.md) testou se atributos disponíveis podem indicar
+qual dos dois previsores terá menor erro, sem corrigir diretamente a S12.
+O oracle, que usa o observado e é apenas diagnóstico, reduziu o RMSE em
+8,49% global e 9,00% no norte. O risco Q90 da rodada 26 **não** separou
+de modo estável as vitórias do análogo. Classificadores do vencedor tiveram
+sinal em parte dos cortes, permitindo o teste predefinido de soft gating.
+O melhor ganho global do gating foi 0,075% em 2011–2020, ante 0,062% da
+mistura fixa global de 10% no mesmo período, mas com só 6/10 anos melhores.
+Conclusão **D — sinal aparente instável**, abaixo do ganho mínimo de 0,3%.
+Nenhuma S14 ou submissão foi criada. Ver [relatório](../reports/competition/round27/REPORT.md)
+e [auditoria](../reports/competition/round27/audit.json).
+
+## Rodada 26 — erro comum S12 no norte
+
+O [protocolo 26](ROUND26.md) investigou 0–15°N sem gerar candidata. Os seis
+blocos 2009–2020 entraram no diagnóstico. A previsão temporalmente OOF do
+resíduo usou cinco blocos 2011–2020, pois não há resíduos S12 OOF anteriores
+a 2009 para treinar o primeiro corte. Todos os grupos testados tiveram R²
+agregado contra resíduo zero negativo; o melhor foi dispersão (−1,11%). A
+direção do erro não teve ganho estável. O risco de erro >Q90 teve AUC
+0,820–0,868 e lift de 3,72–4,46 no decil de maior risco, mas quase toda
+a ordenação já aparecia na climatologia e no valor S12. Resultado **C para
+o valor do resíduo**, com sinal parcial para criticidade. Não houve gating,
+correção, nova candidata, confirmação ou envio. Veja o [relatório científico]
+(../reports/competition/round26/REPORT.md) e a [auditoria]
+(../reports/competition/round26/audit.json).
+
+## Rodada 25 — diagnóstico, ordem dos PCs e análogos
+
+Após auditoria científica do pipeline, o usuário pediu executar os três
+primeiros passos: completar o diagnóstico da S12, testar uma ablação
+estrita da dinâmica dos PCs e medir diversidade de um previsor por análogos.
+O [protocolo 25](ROUND25.md) foi fixado antes das novas métricas.
+
+O diagnóstico confirmou que 0–15°N concentra 47,38% do erro quadrático.
+Os cinco componentes erram no mesmo sentido em 75,58% dos pontos, onde se
+concentra 98,90% do SSE da S12. Isso é descritivo e não demonstra
+previsibilidade do erro comum. Mudança de regime KMeans não concentrou erro.
+
+A ablação direta de 32 PCs do mês anterior piorou o RMSE puro
+1,816897 → 1,819411; suas duas misturas com S12 também pioraram.
+Análogos sazonais de baixa dimensão tiveram RMSE puro 1,847297 e correlação
+de erros 0,9487 com S12. A mistura predefinida de 10% reduziu o RMSE
+histórico de 1,770775 para **1,769921** (ganho **0,0482%**), mas obteve só
+4/6 blocos, 8/12 anos e 79/144 meses melhores: reprovada pelo mínimo de
+0,3% e pela estabilidade. A mistura de 25% piorou. Uma auditoria separada
+refez as métricas e conferiu hashes e cortes.
+
+**Nenhuma candidata foi promovida.** Sem confirmação 2021–2022, treino
+final, CSV ou upload nesta rodada. S12 continua como referência. Ver
+[resultados e decisão](../reports/competition/round25/DECISION.md).
 
 ## Pesquisa executada nesta retomada
 

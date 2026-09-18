@@ -1,0 +1,31 @@
+{
+  "protocol_sha256": "14cf12e1abf920f19b259b9152a51ce5c7f42fa2eb35fcf1da6bed37f216c9bf",
+  "source_sha256": "db8200b57c09127320d3aca6412848b7e4bceb097c0377a11b6b2e4ca01a9ebb",
+  "reference": "S12",
+  "years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "h2_model": "global31_dense_plus_lag1",
+  "h2_blend_weights": [
+    0.1,
+    0.25
+  ],
+  "h4": {
+    "pcs_per_region": 4,
+    "memory": "state_mean3",
+    "season_radius": 1,
+    "neighbors": 10,
+    "weight": "uniform"
+  },
+  "h4_blend_weights": [
+    0.1,
+    0.25
+  ],
+  "official_only": true,
+  "no_test_targets": true
+}

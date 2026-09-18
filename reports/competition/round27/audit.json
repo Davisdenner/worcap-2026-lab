@@ -1,0 +1,43 @@
+{
+  "protocol_and_all_input_hashes_verified": true,
+  "oracle_recomputed_from_frozen_predictions": true,
+  "all_winner_labels_and_advantages_recomputed": true,
+  "all_auc_brier_log_loss_recomputed": true,
+  "all_gated_rmse_and_block_counts_recomputed": true,
+  "all_targets_at_or_before_2020_12": true,
+  "classification": "D",
+  "model_rows": [
+    {
+      "block": 2011,
+      "target_last": "2012-12",
+      "archive_sha256": "9d86827b2efdf622cf3f49de04cd03f3b3da14683e62558dd116c9e29b1bb696",
+      "winner_fraction": 0.49110451604798694
+    },
+    {
+      "block": 2013,
+      "target_last": "2014-12",
+      "archive_sha256": "6a2c2179be86b56787ac25acadc6858002958bf7a4355f5683a54aa78991d0c9",
+      "winner_fraction": 0.4705184975818102
+    },
+    {
+      "block": 2015,
+      "target_last": "2016-12",
+      "archive_sha256": "eb5a9235a96af990277ee7800856eab51461dca8952a24476ade03362c89c841",
+      "winner_fraction": 0.4801415321483156
+    },
+    {
+      "block": 2017,
+      "target_last": "2018-12",
+      "archive_sha256": "747bbbcccd69f2e477f6b4a362f21f871e54ef3317ef339d9a6c0a728c304023",
+      "winner_fraction": 0.4705734564411783
+    },
+    {
+      "block": 2019,
+      "target_last": "2020-12",
+      "archive_sha256": "898e61c0293482e4fa28c2bb562cc3a305f685edddcb626fd3f74c84bfbfe845",
+      "winner_fraction": 0.4525521847455143
+    }
+  ],
+  "source_sha256": "66414e05149614bf9bf5fdf30ede1be36bfabcc7fa32333209a2f155f16bf768",
+  "audit_script_sha256": "8b335d654817dccdb896cc9385364c934f539acbcc7a1d7337ef941c2e7ad416"
+}

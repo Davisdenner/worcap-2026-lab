@@ -1,0 +1,59 @@
+{
+  "all_five_oof_residuals_match_frozen_s12": true,
+  "all_five_previous_block_thresholds_recomputed": true,
+  "all_saved_group_r2_and_binary_auc_recomputed": true,
+  "source_protocol_and_s12_hashes_match": true,
+  "all_targets_end_by_2020": true,
+  "q90_unfitted_rank_baselines_posthoc": [
+    {
+      "cutoff": 2011,
+      "sha256_oof": "d4edab56b25bc1209c6b933acfa2abfd221e047b4814417f07a2fad5122760e9",
+      "q90_previous": 4.387505484468256,
+      "q95_previous": 6.157113577901897,
+      "last_training_target": "2010-12",
+      "auc_q90_climatology_only_unfitted": 0.819362712654982,
+      "auc_q90_s12_only_unfitted": 0.8255319275278339,
+      "auc_q90_full_trained": 0.8204911554856824
+    },
+    {
+      "cutoff": 2013,
+      "sha256_oof": "deda667461a46dff4507cee7d1387378890ec3e31d20f0f7ce8a5cdabb10a145",
+      "q90_previous": 4.194688594288239,
+      "q95_previous": 5.831286865329168,
+      "last_training_target": "2012-12",
+      "auc_q90_climatology_only_unfitted": 0.8488727186039479,
+      "auc_q90_s12_only_unfitted": 0.8536507409911658,
+      "auc_q90_full_trained": 0.8680074882708555
+    },
+    {
+      "cutoff": 2015,
+      "sha256_oof": "ec9e14ee1a400837cb7776b0e78a018c37606b53934c18af6489d5704ee37356",
+      "q90_previous": 4.111423841871664,
+      "q95_previous": 5.711462142412763,
+      "last_training_target": "2014-12",
+      "auc_q90_climatology_only_unfitted": 0.8280183256676868,
+      "auc_q90_s12_only_unfitted": 0.8342608387757564,
+      "auc_q90_full_trained": 0.8345889979226757
+    },
+    {
+      "cutoff": 2017,
+      "sha256_oof": "6b86e0f2dbf5a38d1bfe37d7285811e98c28f4aeb02454abe0e36df3280d4234",
+      "q90_previous": 4.078108898275362,
+      "q95_previous": 5.649316574333432,
+      "last_training_target": "2016-12",
+      "auc_q90_climatology_only_unfitted": 0.8290192262598194,
+      "auc_q90_s12_only_unfitted": 0.8343848662535357,
+      "auc_q90_full_trained": 0.8444624070844429
+    },
+    {
+      "cutoff": 2019,
+      "sha256_oof": "8282662a7f57b3f9d5d086637da29135ad7f49df53b12eed36173b71b0134830",
+      "q90_previous": 4.108450331744744,
+      "q95_previous": 5.687557584362765,
+      "last_training_target": "2018-12",
+      "auc_q90_climatology_only_unfitted": 0.8225325954980938,
+      "auc_q90_s12_only_unfitted": 0.8271662947857977,
+      "auc_q90_full_trained": 0.8356405160259913
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "protocol_sha256": "4b390b135d2cca33183d3d3907a496bfe72c6a1db690e10dec7eb35d684bdf9a",
+  "input_hashes": {
+    "2009": {
+      "s12": "692ea0ee438f083f6545491982c478ce78014e8a3de65b4a8390a2802e538152",
+      "analog": "ae772c34c593ee5dc523af5af8cd1be1fbba90bf3e43f697dc45c8b37028c892"
+    },
+    "2011": {
+      "s12": "872509361fa070c6ab064ddf582d2b1560579d156bbe51318120de156a903668",
+      "analog": "1c535c30bcc468661e254a40ecb90ee758df606bd78163c504d2d87c88d69655",
+      "risk_q90": "d4edab56b25bc1209c6b933acfa2abfd221e047b4814417f07a2fad5122760e9"
+    },
+    "2013": {
+      "s12": "bf809501a1ba81ff2b36bb18ff2e439834798fbfb85f91e2fd29b8f439e50190",
+      "analog": "cdbfaeb42fea27c2d871813a9e5f660b544cc8f385fcc5917f77f7c534309b1e",
+      "risk_q90": "deda667461a46dff4507cee7d1387378890ec3e31d20f0f7ce8a5cdabb10a145"
+    },
+    "2015": {
+      "s12": "e4ff2542182c1893a05344269bf4b12282a311e05cd9582ed83afcff4890f3ea",
+      "analog": "cafc3c0cdebca6989ade8b5615daa44ea66e92b45e76c105e81a63ab7ecd78f5",
+      "risk_q90": "ec9e14ee1a400837cb7776b0e78a018c37606b53934c18af6489d5704ee37356"
+    },
+    "2017": {
+      "s12": "67d97d9ed55a55cbac997dbd537e433f12bfae2bc10e23645b165942f10df58b",
+      "analog": "39b35d40f8718ea65f2121fb3f74e1c35afdf00d02ecc1a5907e8c0da50acbb3",
+      "risk_q90": "6b86e0f2dbf5a38d1bfe37d7285811e98c28f4aeb02454abe0e36df3280d4234"
+    },
+    "2019": {
+      "s12": "5547998e12eb06f472bf0ede6aed513195203cc0cfef0d2e35f47b6e90ea419a",
+      "analog": "8fec88b88ee2a10735b57e83bdad79e953d4b36f49b75cbd004b3f2243490d06",
+      "risk_q90": "8282662a7f57b3f9d5d086637da29135ad7f49df53b12eed36173b71b0134830"
+    }
+  },
+  "reference": "S12",
+  "alternative": "Round25 H4 pure analog",
+  "north_cells": 15921,
+  "descriptive_blocks": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "risk_and_predictive_blocks": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "official_only": true,
+  "no_test_targets": true,
+  "no_submission": true
+}

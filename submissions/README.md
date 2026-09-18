@@ -1,9 +1,11 @@
 # Submissões e rastreabilidade
 
+A participação foi encerrada após a rodada 29. O [resumo final](../docs/ENCERRAMENTO.md) reúne todos os resultados públicos conhecidos.
+
 Melhor público informado: **S12, 1,71456**. A S13 marcou **1,71461**,
-0,00005 acima em RMSE; posição atual não informada.
+0,00005 acima em RMSE; classificação final não informada.
 Controle aprovado: **S10, 1,71895**. S11 e S12 foram exceções autorizadas; os [critérios](../experiments/PROTOCOL.md)
-continuam ativos, incluindo ganho histórico mínimo de 0,3%.
+foram aplicados historicamente, incluindo ganho mínimo de 0,3%.
 
 S12 melhorou o score público em 0,00262 contra S11 (1,71718). Consulte os
 [metadados originais](submission_12.json) e o [guia da S12](../docs/S12_EXPERIMENTAL.md).
@@ -39,5 +41,9 @@ limite de mudança no teste passou. Consulte o [relatório](../reports/competiti
 e os [metadados de geração](submission_13.json). O usuário informou o envio
 manual e score público **1,71461**, corrigindo relato anterior de 1,71456.
 O [manifesto](manifest.json) registra esse relato sem modificar o snapshot
-de geração; score privado e classificação atual permanecem desconhecidos.
+de geração; score privado e classificação final permanecem desconhecidos.
 O atalho de reprodução `melhor` continua em S12, não em S13.
+
+Um [CSV S14 exploratório](S14_experimental_round27_gate.md) foi produzido após
+a rodada 27, sem upload automático e sem score público registrado. Seu registro
+de geração é separado do manifesto de submissões com resultado informado.

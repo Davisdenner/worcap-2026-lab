@@ -3,7 +3,9 @@
 Modelo para prever a precipitação média do mês seguinte na América do Sul,
 em mm/dia. Código de treinamento, inferência, validação e rastreabilidade.
 
-## Estado atual
+## Participação encerrada
+
+A participação no hackathon terminou após a rodada 29. A [documentação de encerramento](docs/ENCERRAMENTO.md) reúne a trajetória, as submissões, os critérios de validação, o resultado final conhecido e os limites das conclusões. O [índice das 29 rodadas](experiments/README.md) permite consultar os experimentos em ordem.
 
 | Versão | RMSE público informado | Situação |
 | --- | ---: | --- |
@@ -15,7 +17,7 @@ em mm/dia. Código de treinamento, inferência, validação e rastreabilidade.
 Os scores são relatos do participante, registrados no
 [histórico público](reports/competition/leaderboard_observations.json).
 O score da S13 foi informado pelo usuário após envio manual; não foi verificado
-independentemente. O score privado e a classificação atual não são conhecidos.
+independentemente. O score privado e a classificação final não são conhecidos.
 S10, S11, S12 e S13 usam
 somente dados oficiais; S07/S08, que usaram informação externa, não participam
 desta linha de modelos.
@@ -26,9 +28,9 @@ desta linha de modelos.
    treinamento, inferência, verificação e solução de problemas.
 2. Leia a [metodologia](docs/METODOLOGIA.md) para entender os atributos,
    componentes e combinações. Este é o documento central do método.
-3. Antes de experimentar, leia o [protocolo vigente](experiments/PROTOCOL.md).
-   O ganho mínimo histórico de **0,3% continua ativo**, junto com os demais
-   critérios de estabilidade e confirmação.
+3. Para interpretar as decisões da pesquisa, leia o [protocolo histórico](experiments/PROTOCOL.md).
+   Ele exigia ganho mínimo de **0,3%**, estabilidade e confirmação; as exceções
+   estão registradas nos respectivos relatórios.
 
 Após preparar o ambiente e os dados oficiais em `data/raw`, execute na raiz:
 
@@ -52,12 +54,10 @@ depois desse treino, ajuste também o corretor da S12:
 `melhor` resolve atualmente para S12, a melhor pública e referência reproduzível;
 não seleciona candidatas automaticamente. A S13 foi um teste
 exploratório e sua [confirmação falhou](reports/competition/round24_experimental/RESULTS.md).
-Reprodução não é promoção nem envio ao Kaggle. Novas candidatas continuam
-dependendo de pedido explícito; exceções precisam ser informadas e autorizadas.
+Reprodução não é promoção nem envio ao Kaggle.
 As hipóteses de aprendizado direto, especialistas regionais, histórico-base
-mais longo, decomposição espacial e transporte de umidade foram avaliadas nas
-[rodadas 20–24](experiments/NEXT.md), sem candidata
-aprovada; a S12 e seus arquivos de reprodução permanecem intactos.
+mais longo, decomposição espacial, transporte de umidade, dinâmica dos PCs e
+análogos, previsibilidade do erro, seleção de especialistas, magnitude da vantagem e novas famílias de modelos foram avaliadas nas [rodadas 20–29](experiments/README.md), sem superar a S12. Um [CSV S14 exploratório](submissions/S14_experimental_round27_gate.md) foi gerado sem score público registrado.
 
 ## Organização
 
@@ -65,8 +65,8 @@ aprovada; a S12 e seus arquivos de reprodução permanecem intactos.
 | --- | --- |
 | [configs](configs/modelos.json) | Versões, hashes e caminhos de reprodução |
 | [src](src/README.md) | Interface de reprodução e código científico histórico |
-| [docs](docs/REPRODUCAO.md) | Guias atuais em português |
-| [experiments](experiments/PROTOCOL.md) | Política vigente e protocolos por rodada |
+| [docs](docs/ENCERRAMENTO.md) | Encerramento, método e guias de reprodução |
+| [experiments](experiments/README.md) | Índice e protocolos por rodada |
 | [reports](reports/README.md) | Métricas e verificações |
 | [submissions](submissions/README.md) | Metadados dos arquivos enviados |
 | [delivery/s11](delivery/s11/README.md) | Evidências e pacote técnico anterior |

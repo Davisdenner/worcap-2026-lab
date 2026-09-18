@@ -1,0 +1,778 @@
+{
+  "classification": "D",
+  "reason": "Há ganho em algumas combinações, mas nenhuma satisfaz amplitude e estabilidade de A.",
+  "gate_tested": true,
+  "eligible_models": [
+    "logistic_base",
+    "ridge_full",
+    "hgb_full"
+  ],
+  "baselines": {
+    "s12": {
+      "global_rmse": 1.7563914221076153,
+      "north_rmse": 2.6873718697123183
+    },
+    "fixed10_global": {
+      "global_rmse": 1.7552977064874868,
+      "north_rmse": 2.684152244813098
+    },
+    "fixed10_north_only": {
+      "global_rmse": 1.7553934043963664,
+      "north_rmse": 2.684152244813098
+    },
+    "oracle": {
+      "global_rmse": 1.6049502322941962,
+      "north_rmse": 2.4433995843358374
+    }
+  },
+  "gates": {
+    "logistic_base_0.1": {
+      "model": "logistic_base",
+      "gmax": 0.1,
+      "global_rmse": 1.7557294924731204,
+      "north_rmse": 2.685236698308435,
+      "gain_vs_s12_percent": 0.03768690886115644,
+      "gain_vs_fixed10_global_percent": -0.024599017251469846,
+      "positive_blocks": 4,
+      "positive_years": 7,
+      "positive_months": 72,
+      "rms_change_global": 0.019656751436908898,
+      "rms_change_north": 0.04366465934015115,
+      "gain_by_north_sector_percent": {
+        "west": 0.1273801469685809,
+        "central": 0.031409030400042504,
+        "east": 0.052870106617275425
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.750796805523339,
+          "gain_vs_s12_percent": 0.07791669597688733
+        },
+        "2013": {
+          "global_rmse": 1.6952660639997217,
+          "gain_vs_s12_percent": -0.006390466488026547
+        },
+        "2015": {
+          "global_rmse": 1.758955145299323,
+          "gain_vs_s12_percent": 0.0662710604136807
+        },
+        "2017": {
+          "global_rmse": 1.8102031377385015,
+          "gain_vs_s12_percent": 0.01288751908921082
+        },
+        "2019": {
+          "global_rmse": 1.7615206977684053,
+          "gain_vs_s12_percent": 0.03638463164090666
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.739407114808693,
+          "gain_vs_s12_percent": 0.08021998246460216
+        },
+        "2012": {
+          "global_rmse": 1.7621128787380096,
+          "gain_vs_s12_percent": 0.0756722319841252
+        },
+        "2013": {
+          "global_rmse": 1.6982268247823407,
+          "gain_vs_s12_percent": -0.013185741688204189
+        },
+        "2014": {
+          "global_rmse": 1.6923001232310733,
+          "gain_vs_s12_percent": 0.00045108879378474853
+        },
+        "2015": {
+          "global_rmse": 1.7259493881100607,
+          "gain_vs_s12_percent": 0.05827455247412461
+        },
+        "2016": {
+          "global_rmse": 1.7913528731192054,
+          "gain_vs_s12_percent": 0.07369259456516675
+        },
+        "2017": {
+          "global_rmse": 1.741518136379271,
+          "gain_vs_s12_percent": 0.052715479080367444
+        },
+        "2018": {
+          "global_rmse": 1.876375596840543,
+          "gain_vs_s12_percent": -0.02145940079534281
+        },
+        "2019": {
+          "global_rmse": 1.7001197172076894,
+          "gain_vs_s12_percent": -0.026775702873904628
+        },
+        "2020": {
+          "global_rmse": 1.8208523510967671,
+          "gain_vs_s12_percent": 0.09134937542351063
+        }
+      }
+    },
+    "logistic_base_0.2": {
+      "model": "logistic_base",
+      "gmax": 0.2,
+      "global_rmse": 1.7552874549716164,
+      "north_rmse": 2.683810330614714,
+      "gain_vs_s12_percent": 0.06285427736114624,
+      "gain_vs_fixed10_global_percent": 0.0005840328869854972,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 70,
+      "rms_change_global": 0.039313502873817796,
+      "rms_change_north": 0.0873293186803023,
+      "gain_by_north_sector_percent": {
+        "west": 0.2269359497861556,
+        "central": 0.04009987342261656,
+        "east": 0.07944393071358524
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.749649441626369,
+          "gain_vs_s12_percent": 0.14339944676290406
+        },
+        "2013": {
+          "global_rmse": 1.6956552977969293,
+          "gain_vs_s12_percent": -0.02935197555904434
+        },
+        "2015": {
+          "global_rmse": 1.758007961307794,
+          "gain_vs_s12_percent": 0.1200846147378698
+        },
+        "2017": {
+          "global_rmse": 1.8101612810583079,
+          "gain_vs_s12_percent": 0.01519948535605442
+        },
+        "2019": {
+          "global_rmse": 1.7610719278068023,
+          "gain_vs_s12_percent": 0.06185164311990343
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.738215513281377,
+          "gain_vs_s12_percent": 0.14867121591322086
+        },
+        "2012": {
+          "global_rmse": 1.761009133012912,
+          "gain_vs_s12_percent": 0.1382624615534067
+        },
+        "2013": {
+          "global_rmse": 1.6987182585291032,
+          "gain_vs_s12_percent": -0.0421276085092126
+        },
+        "2014": {
+          "global_rmse": 1.6925867942393493,
+          "gain_vs_s12_percent": -0.016488561047278694
+        },
+        "2015": {
+          "global_rmse": 1.7252046346734413,
+          "gain_vs_s12_percent": 0.10139977039851367
+        },
+        "2016": {
+          "global_rmse": 1.790210309585008,
+          "gain_vs_s12_percent": 0.13742775063726453
+        },
+        "2017": {
+          "global_rmse": 1.7408175584440368,
+          "gain_vs_s12_percent": 0.09292227380690576
+        },
+        "2018": {
+          "global_rmse": 1.876944846045896,
+          "gain_vs_s12_percent": -0.05180361139904832
+        },
+        "2019": {
+          "global_rmse": 1.7007548449746268,
+          "gain_vs_s12_percent": -0.06414353176449339
+        },
+        "2020": {
+          "global_rmse": 1.819390454826469,
+          "gain_vs_s12_percent": 0.17156240512392618
+        }
+      }
+    },
+    "logistic_base_0.3": {
+      "model": "logistic_base",
+      "gmax": 0.3,
+      "global_rmse": 1.7550654757517312,
+      "north_rmse": 2.683093897059273,
+      "gain_vs_s12_percent": 0.07549264584161275,
+      "gain_vs_fixed10_global_percent": 0.013230276260112195,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 67,
+      "rms_change_global": 0.05897025431072667,
+      "rms_change_north": 0.13099397802045343,
+      "gain_by_north_sector_percent": {
+        "west": 0.29858405729713544,
+        "central": 0.026066604317120934,
+        "east": 0.07970049178156469
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7487203694263203,
+          "gain_vs_s12_percent": 0.19642377801359912
+        },
+        "2013": {
+          "global_rmse": 1.696325243537232,
+          "gain_vs_s12_percent": -0.06887312018575287
+        },
+        "2015": {
+          "global_rmse": 1.7572803991302146,
+          "gain_vs_s12_percent": 0.16142051897353182
+        },
+        "2017": {
+          "global_rmse": 1.8103109013227012,
+          "gain_vs_s12_percent": 0.006935165240029573
+        },
+        "2019": {
+          "global_rmse": 1.76081569108042,
+          "gain_vs_s12_percent": 0.07639268688497403
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.7372292041345432,
+          "gain_vs_s12_percent": 0.20532948305602705
+        },
+        "2012": {
+          "global_rmse": 1.7601365154996116,
+          "gain_vs_s12_percent": 0.18774607833373924
+        },
+        "2013": {
+          "global_rmse": 1.6994769996511043,
+          "gain_vs_s12_percent": -0.08681193197952464
+        },
+        "2014": {
+          "global_rmse": 1.693167620579894,
+          "gain_vs_s12_percent": -0.05081011622114495
+        },
+        "2015": {
+          "global_rmse": 1.724721842457023,
+          "gain_vs_s12_percent": 0.12935602883452635
+        },
+        "2016": {
+          "global_rmse": 1.789246592419878,
+          "gain_vs_s12_percent": 0.1911863925775359
+        },
+        "2017": {
+          "global_rmse": 1.7403351996286658,
+          "gain_vs_s12_percent": 0.12060527793644749
+        },
+        "2018": {
+          "global_rmse": 1.877680620294376,
+          "gain_vs_s12_percent": -0.0910245510906682
+        },
+        "2019": {
+          "global_rmse": 1.7015698017653655,
+          "gain_vs_s12_percent": -0.11209162582495047
+        },
+        "2020": {
+          "global_rmse": 1.8181320099569804,
+          "gain_vs_s12_percent": 0.24061222606095445
+        }
+      }
+    },
+    "ridge_full_0.1": {
+      "model": "ridge_full",
+      "gmax": 0.1,
+      "global_rmse": 1.7558042593357408,
+      "north_rmse": 2.6854779167953624,
+      "gain_vs_s12_percent": 0.03343006373658364,
+      "gain_vs_fixed10_global_percent": -0.028858514791063605,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 72,
+      "rms_change_global": 0.018035805105782107,
+      "rms_change_north": 0.040063959113336406,
+      "gain_by_north_sector_percent": {
+        "west": 0.11871387908655162,
+        "central": 0.03779916614743417,
+        "east": 0.03832929296049281
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.750821417260632,
+          "gain_vs_s12_percent": 0.07651204635888975
+        },
+        "2013": {
+          "global_rmse": 1.6953197854584208,
+          "gain_vs_s12_percent": -0.009559579165485665
+        },
+        "2015": {
+          "global_rmse": 1.7591243497133222,
+          "gain_vs_s12_percent": 0.056657837422080526
+        },
+        "2017": {
+          "global_rmse": 1.810232695583377,
+          "gain_vs_s12_percent": 0.011254882674738287
+        },
+        "2019": {
+          "global_rmse": 1.761617803466163,
+          "gain_vs_s12_percent": 0.03087403126418309
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.7393616620246197,
+          "gain_vs_s12_percent": 0.08283100558110768
+        },
+        "2012": {
+          "global_rmse": 1.76220665046867,
+          "gain_vs_s12_percent": 0.07035470819610756
+        },
+        "2013": {
+          "global_rmse": 1.6983156746901789,
+          "gain_vs_s12_percent": -0.01841835384936985
+        },
+        "2014": {
+          "global_rmse": 1.6923185926518725,
+          "gain_vs_s12_percent": -0.0006402860298626578
+        },
+        "2015": {
+          "global_rmse": 1.7260266001777946,
+          "gain_vs_s12_percent": 0.053803559681475654
+        },
+        "2016": {
+          "global_rmse": 1.79161076436466,
+          "gain_vs_s12_percent": 0.059306752301946375
+        },
+        "2017": {
+          "global_rmse": 1.741595259371436,
+          "gain_vs_s12_percent": 0.04828932153426724
+        },
+        "2018": {
+          "global_rmse": 1.876361046508123,
+          "gain_vs_s12_percent": -0.020683785568942348
+        },
+        "2019": {
+          "global_rmse": 1.699977857586074,
+          "gain_vs_s12_percent": -0.018429372666095567
+        },
+        "2020": {
+          "global_rmse": 1.821172659221239,
+          "gain_vs_s12_percent": 0.07377433564569325
+        }
+      }
+    },
+    "ridge_full_0.2": {
+      "model": "ridge_full",
+      "gmax": 0.2,
+      "global_rmse": 1.7554022180347928,
+      "north_rmse": 2.684180686673254,
+      "gain_vs_s12_percent": 0.05632025187389811,
+      "gain_vs_fixed10_global_percent": -0.005954063912905205,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 70,
+      "rms_change_global": 0.036071610211564215,
+      "rms_change_north": 0.08012791822667281,
+      "gain_by_north_sector_percent": {
+        "west": 0.21404978504403482,
+        "central": 0.05524111104858731,
+        "east": 0.0549073879913875
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7497122783885606,
+          "gain_vs_s12_percent": 0.13981320524906193
+        },
+        "2013": {
+          "global_rmse": 1.6957230118511786,
+          "gain_vs_s12_percent": -0.03334653328253001
+        },
+        "2015": {
+          "global_rmse": 1.7582860305961092,
+          "gain_vs_s12_percent": 0.10428631484421524
+        },
+        "2017": {
+          "global_rmse": 1.8101810824375175,
+          "gain_vs_s12_percent": 0.014105750244763904
+        },
+        "2019": {
+          "global_rmse": 1.7612182796967406,
+          "gain_vs_s12_percent": 0.053546396378956196
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.738129430966919,
+          "gain_vs_s12_percent": 0.15361619161834428
+        },
+        "2012": {
+          "global_rmse": 1.7612189516053902,
+          "gain_vs_s12_percent": 0.12636425567819076
+        },
+        "2013": {
+          "global_rmse": 1.6988506832380932,
+          "gain_vs_s12_percent": -0.04992645894763559
+        },
+        "2014": {
+          "global_rmse": 1.6925895609700332,
+          "gain_vs_s12_percent": -0.016652049672338798
+        },
+        "2015": {
+          "global_rmse": 1.7252971901760485,
+          "gain_vs_s12_percent": 0.09604031044333494
+        },
+        "2016": {
+          "global_rmse": 1.7906672321650035,
+          "gain_vs_s12_percent": 0.11193942453789907
+        },
+        "2017": {
+          "global_rmse": 1.7409175787827933,
+          "gain_vs_s12_percent": 0.08718201704658313
+        },
+        "2018": {
+          "global_rmse": 1.8768902701848031,
+          "gain_vs_s12_percent": -0.04889440852742233
+        },
+        "2019": {
+          "global_rmse": 1.700432502544644,
+          "gain_vs_s12_percent": -0.045178470882567545
+        },
+        "2020": {
+          "global_rmse": 1.8199749893242085,
+          "gain_vs_s12_percent": 0.13948948450656085
+        }
+      }
+    },
+    "ridge_full_0.3": {
+      "model": "ridge_full",
+      "gmax": 0.3,
+      "global_rmse": 1.7551854254160846,
+      "north_rmse": 2.6834810447371362,
+      "gain_vs_s12_percent": 0.06866332164635613,
+      "gain_vs_fixed10_global_percent": 0.006396696753341313,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 66,
+      "rms_change_global": 0.054107415317346315,
+      "rms_change_north": 0.12019187734000918,
+      "gain_by_north_sector_percent": {
+        "west": 0.28594066330625,
+        "central": 0.05231517704137323,
+        "east": 0.04972346190762478
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7488350560884223,
+          "gain_vs_s12_percent": 0.1898783410055671
+        },
+        "2013": {
+          "global_rmse": 1.696367242708116,
+          "gain_vs_s12_percent": -0.07135071681314553
+        },
+        "2015": {
+          "global_rmse": 1.757606866603759,
+          "gain_vs_s12_percent": 0.14287251216621444
+        },
+        "2017": {
+          "global_rmse": 1.8102816316588992,
+          "gain_vs_s12_percent": 0.00855188388658723
+        },
+        "2019": {
+          "global_rmse": 1.760963380929308,
+          "gain_vs_s12_percent": 0.06801151301244479
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.7371073402124966,
+          "gain_vs_s12_percent": 0.21232992371152948
+        },
+        "2012": {
+          "global_rmse": 1.7604846478704255,
+          "gain_vs_s12_percent": 0.1680044979005979
+        },
+        "2013": {
+          "global_rmse": 1.699607746250334,
+          "gain_vs_s12_percent": -0.09451195398073597
+        },
+        "2014": {
+          "global_rmse": 1.6931205371006912,
+          "gain_vs_s12_percent": -0.04802791073830193
+        },
+        "2015": {
+          "global_rmse": 1.7247677872771208,
+          "gain_vs_s12_percent": 0.12669557735918158
+        },
+        "2016": {
+          "global_rmse": 1.7898435336745362,
+          "gain_vs_s12_percent": 0.1578874618023307
+        },
+        "2017": {
+          "global_rmse": 1.7404038197121994,
+          "gain_vs_s12_percent": 0.11666710992688234
+        },
+        "2018": {
+          "global_rmse": 1.8775605759001226,
+          "gain_vs_s12_percent": -0.08462550415873071
+        },
+        "2019": {
+          "global_rmse": 1.7010284415502261,
+          "gain_vs_s12_percent": -0.08024062364779816
+        },
+        "2020": {
+          "global_rmse": 1.818924489632587,
+          "gain_vs_s12_percent": 0.1971295268791473
+        }
+      }
+    },
+    "hgb_full_0.1": {
+      "model": "hgb_full",
+      "gmax": 0.1,
+      "global_rmse": 1.7557900730676328,
+      "north_rmse": 2.6854321488640416,
+      "gain_vs_s12_percent": 0.03423775773516713,
+      "gain_vs_fixed10_global_percent": -0.028050317523131696,
+      "positive_blocks": 5,
+      "positive_years": 8,
+      "positive_months": 70,
+      "rms_change_global": 0.019045416721542873,
+      "rms_change_north": 0.04230666678604357,
+      "gain_by_north_sector_percent": {
+        "west": 0.11387963306437321,
+        "central": 0.028712368436412117,
+        "east": 0.0496223927415107
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7508917986638772,
+          "gain_vs_s12_percent": 0.07249521447072471
+        },
+        "2013": {
+          "global_rmse": 1.6951352473098331,
+          "gain_vs_s12_percent": 0.0013266141793311093
+        },
+        "2015": {
+          "global_rmse": 1.7589859044929148,
+          "gain_vs_s12_percent": 0.06452349969672255
+        },
+        "2017": {
+          "global_rmse": 1.8104318525518042,
+          "gain_vs_s12_percent": 0.0002543878748206829
+        },
+        "2019": {
+          "global_rmse": 1.761588317733377,
+          "gain_vs_s12_percent": 0.03254730166900588
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.739568019030178,
+          "gain_vs_s12_percent": 0.07097688217035936
+        },
+        "2012": {
+          "global_rmse": 1.7621428115860178,
+          "gain_vs_s12_percent": 0.07397482669784239
+        },
+        "2013": {
+          "global_rmse": 1.6979693425483648,
+          "gain_vs_s12_percent": 0.0019780857322571066
+        },
+        "2014": {
+          "global_rmse": 1.6922964058078627,
+          "gain_vs_s12_percent": 0.0006707547023698801
+        },
+        "2015": {
+          "global_rmse": 1.7258679870877642,
+          "gain_vs_s12_percent": 0.06298810820034584
+        },
+        "2016": {
+          "global_rmse": 1.7914917012241902,
+          "gain_vs_s12_percent": 0.06594840295255366
+        },
+        "2017": {
+          "global_rmse": 1.7416224069398358,
+          "gain_vs_s12_percent": 0.04673129828649536
+        },
+        "2018": {
+          "global_rmse": 1.8767201115545729,
+          "gain_vs_s12_percent": -0.03982398864244008
+        },
+        "2019": {
+          "global_rmse": 1.6999200773340397,
+          "gain_vs_s12_percent": -0.015029863648119424
+        },
+        "2020": {
+          "global_rmse": 1.8211695508727497,
+          "gain_vs_s12_percent": 0.07394488813614597
+        }
+      }
+    },
+    "hgb_full_0.2": {
+      "model": "hgb_full",
+      "gmax": 0.2,
+      "global_rmse": 1.7553951661972498,
+      "north_rmse": 2.684157930206994,
+      "gain_vs_s12_percent": 0.056721747659760346,
+      "gain_vs_fixed10_global_percent": -0.005552317957380204,
+      "positive_blocks": 3,
+      "positive_years": 6,
+      "positive_months": 69,
+      "rms_change_global": 0.038090833443085746,
+      "rms_change_north": 0.08461333357208714,
+      "gain_by_north_sector_percent": {
+        "west": 0.2009136370937581,
+        "central": 0.03657118731357212,
+        "east": 0.07503292493928893
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7498608565908662,
+          "gain_vs_s12_percent": 0.1313334984886394
+        },
+        "2013": {
+          "global_rmse": 1.695360971502321,
+          "gain_vs_s12_percent": -0.011989208163276643
+        },
+        "2015": {
+          "global_rmse": 1.7580252219814583,
+          "gain_vs_s12_percent": 0.11910396239553922
+        },
+        "2017": {
+          "global_rmse": 1.810619447506559,
+          "gain_vs_s12_percent": -0.010107475636988994
+        },
+        "2019": {
+          "global_rmse": 1.7611938114839099,
+          "gain_vs_s12_percent": 0.05493493017210138
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.7385579465617458,
+          "gain_vs_s12_percent": 0.1290002270148749
+        },
+        "2012": {
+          "global_rmse": 1.761091224583453,
+          "gain_vs_s12_percent": 0.1336072858829529
+        },
+        "2013": {
+          "global_rmse": 1.698178391812956,
+          "gain_vs_s12_percent": -0.01033339270137823
+        },
+        "2014": {
+          "global_rmse": 1.692538861286839,
+          "gain_vs_s12_percent": -0.013656159416375324
+        },
+        "2015": {
+          "global_rmse": 1.72497688789241,
+          "gain_vs_s12_percent": 0.11458753037466574
+        },
+        "2016": {
+          "global_rmse": 1.790463654610986,
+          "gain_vs_s12_percent": 0.12329550828267255
+        },
+        "2017": {
+          "global_rmse": 1.7410112313508401,
+          "gain_vs_s12_percent": 0.08180721234650745
+        },
+        "2018": {
+          "global_rmse": 1.8776489181122609,
+          "gain_vs_s12_percent": -0.08933464501499344
+        },
+        "2019": {
+          "global_rmse": 1.700356713199848,
+          "gain_vs_s12_percent": -0.04071939443290873
+        },
+        "2020": {
+          "global_rmse": 1.819998442607755,
+          "gain_vs_s12_percent": 0.13820262238924963
+        }
+      }
+    },
+    "hgb_full_0.3": {
+      "model": "hgb_full",
+      "gmax": 0.3,
+      "global_rmse": 1.7552068408397596,
+      "north_rmse": 2.6835501617340283,
+      "gain_vs_s12_percent": 0.06744403627491069,
+      "gain_vs_fixed10_global_percent": 0.005176651652383235,
+      "positive_blocks": 3,
+      "positive_years": 6,
+      "positive_months": 67,
+      "rms_change_global": 0.05713625016462863,
+      "rms_change_north": 0.12692000035813075,
+      "gain_by_north_sector_percent": {
+        "west": 0.2610317341381063,
+        "central": 0.023571538944133774,
+        "east": 0.07621312542628322
+      },
+      "by_block": {
+        "2011": {
+          "global_rmse": 1.7490696291999914,
+          "gain_vs_s12_percent": 0.17649070291919644
+        },
+        "2013": {
+          "global_rmse": 1.695834808975205,
+          "gain_vs_s12_percent": -0.039941620080896634
+        },
+        "2015": {
+          "global_rmse": 1.7572398360445762,
+          "gain_vs_s12_percent": 0.16372508052869827
+        },
+        "2017": {
+          "global_rmse": 1.810999183218808,
+          "gain_vs_s12_percent": -0.03108229143644614
+        },
+        "2019": {
+          "global_rmse": 1.7609784554418944,
+          "gain_vs_s12_percent": 0.0671560573939134
+        }
+      },
+      "by_year": {
+        "2011": {
+          "global_rmse": 1.7377737629404946,
+          "gain_vs_s12_percent": 0.17404744699096586
+        },
+        "2012": {
+          "global_rmse": 1.7602930109544903,
+          "gain_vs_s12_percent": 0.1788716734552609
+        },
+        "2013": {
+          "global_rmse": 1.6986299887122387,
+          "gain_vs_s12_percent": -0.036929159479548446
+        },
+        "2014": {
+          "global_rmse": 1.6930350144375044,
+          "gain_vs_s12_percent": -0.04297429901602978
+        },
+        "2015": {
+          "global_rmse": 1.7242827711922701,
+          "gain_vs_s12_percent": 0.1547806097035309
+        },
+        "2016": {
+          "global_rmse": 1.7895900669520501,
+          "gain_vs_s12_percent": 0.17202649270363635
+        },
+        "2017": {
+          "global_rmse": 1.7406033573803505,
+          "gain_vs_s12_percent": 0.10521546456371267
+        },
+        "2018": {
+          "global_rmse": 1.8787591744325909,
+          "gain_vs_s12_percent": -0.14851760265703895
+        },
+        "2019": {
+          "global_rmse": 1.7009743881323303,
+          "gain_vs_s12_percent": -0.07706038342525368
+        },
+        "2020": {
+          "global_rmse": 1.8190042253878596,
+          "gain_vs_s12_percent": 0.19275449245583776
+        }
+      }
+    }
+  },
+  "stable_gates": [],
+  "evaluation_blocks": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "no_candidate": true,
+  "no_test_targets": true
+}
