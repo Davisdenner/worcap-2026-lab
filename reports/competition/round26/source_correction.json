@@ -1,0 +1,28 @@
+{
+  "current_source_sha256": "a00fa79d41c136c8e6a2e73a3d207b6ed83cf9c0629a62594e582a610e942853",
+  "stage": "after all five OOF files were written, before summary",
+  "oof_files": [
+    {
+      "name": "2011_oof.npz",
+      "sha256": "d4edab56b25bc1209c6b933acfa2abfd221e047b4814417f07a2fad5122760e9"
+    },
+    {
+      "name": "2013_oof.npz",
+      "sha256": "deda667461a46dff4507cee7d1387378890ec3e31d20f0f7ce8a5cdabb10a145"
+    },
+    {
+      "name": "2015_oof.npz",
+      "sha256": "ec9e14ee1a400837cb7776b0e78a018c37606b53934c18af6489d5704ee37356"
+    },
+    {
+      "name": "2017_oof.npz",
+      "sha256": "6b86e0f2dbf5a38d1bfe37d7285811e98c28f4aeb02454abe0e36df3280d4234"
+    },
+    {
+      "name": "2019_oof.npz",
+      "sha256": "8282662a7f57b3f9d5d086637da29135ad7f49df53b12eed36173b71b0134830"
+    }
+  ],
+  "reason": "After five OOF files: fixed summary binary metric lookup, corrected pooled prior Brier label, improved reporting/visualization and added posthoc fixed-score comparison. Training features, models and saved OOF predictions unchanged.",
+  "previous_source_sha256": "b7c75425222336f244537dd64e5af9f2c960c77ee0bd451cab70bcb8fcc3bb61"
+}

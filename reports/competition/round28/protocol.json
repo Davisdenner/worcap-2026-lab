@@ -1,0 +1,37 @@
+{
+  "protocol_sha256": "fdb3fa4e5ff291e800ca886fe885bc65a5acedbc31baf24b8cc4e3f60be34b97",
+  "input_hashes": {
+    "2009": {
+      "s12": "692ea0ee438f083f6545491982c478ce78014e8a3de65b4a8390a2802e538152",
+      "analog": "ae772c34c593ee5dc523af5af8cd1be1fbba90bf3e43f697dc45c8b37028c892"
+    },
+    "2011": {
+      "s12": "872509361fa070c6ab064ddf582d2b1560579d156bbe51318120de156a903668",
+      "analog": "1c535c30bcc468661e254a40ecb90ee758df606bd78163c504d2d87c88d69655",
+      "round27_winner": "9d86827b2efdf622cf3f49de04cd03f3b3da14683e62558dd116c9e29b1bb696"
+    },
+    "2013": {
+      "s12": "bf809501a1ba81ff2b36bb18ff2e439834798fbfb85f91e2fd29b8f439e50190",
+      "analog": "cdbfaeb42fea27c2d871813a9e5f660b544cc8f385fcc5917f77f7c534309b1e",
+      "round27_winner": "6a2c2179be86b56787ac25acadc6858002958bf7a4355f5683a54aa78991d0c9"
+    },
+    "2015": {
+      "s12": "e4ff2542182c1893a05344269bf4b12282a311e05cd9582ed83afcff4890f3ea",
+      "analog": "cafc3c0cdebca6989ade8b5615daa44ea66e92b45e76c105e81a63ab7ecd78f5",
+      "round27_winner": "eb5a9235a96af990277ee7800856eab51461dca8952a24476ade03362c89c841"
+    },
+    "2017": {
+      "s12": "67d97d9ed55a55cbac997dbd537e433f12bfae2bc10e23645b165942f10df58b",
+      "analog": "39b35d40f8718ea65f2121fb3f74e1c35afdf00d02ecc1a5907e8c0da50acbb3",
+      "round27_winner": "747bbbcccd69f2e477f6b4a362f21f871e54ef3317ef339d9a6c0a728c304023"
+    },
+    "2019": {
+      "s12": "5547998e12eb06f472bf0ede6aed513195203cc0cfef0d2e35f47b6e90ea419a",
+      "analog": "8fec88b88ee2a10735b57e83bdad79e953d4b36f49b75cbd004b3f2243490d06",
+      "round27_winner": "898e61c0293482e4fa28c2bb562cc3a305f685edddcb626fd3f74c84bfbfe845"
+    }
+  },
+  "development_only": true,
+  "no_2023_2024_targets": true,
+  "no_s14_or_submission": true
+}

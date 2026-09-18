@@ -1,0 +1,1278 @@
+{
+  "reference": "S12",
+  "region": "latitude 0 to 15N, all longitudes",
+  "years": [
+    2009,
+    2020
+  ],
+  "count": 2292624,
+  "north_rmse": 2.7076659656695874,
+  "north_bias_observed_minus_s12": -0.10282910615205765,
+  "q90_abs_residual_descriptive_only": 4.133531284332275,
+  "q95_abs_residual_descriptive_only": 5.695559811592105,
+  "sse_concentration": {
+    "top_1pct_sse_fraction": 0.24625037002430109,
+    "top_5pct_sse_fraction": 0.5354065523547746,
+    "top_10pct_sse_fraction": 0.6948517263347135
+  },
+  "groups": {
+    "latitude_5deg": [
+      {
+        "group": 0,
+        "count": 751680,
+        "count_fraction": 0.32786885245901637,
+        "rmse": 3.2505900250804727,
+        "bias_observed_minus_s12": -0.10154490522895537,
+        "under_probability": 0.42777910813111963,
+        "sse_fraction": 0.47253543906520185,
+        "critical_probability": 0.1457322264793529
+      },
+      {
+        "group": 1,
+        "count": 751680,
+        "count_fraction": 0.32786885245901637,
+        "rmse": 2.9829975705386724,
+        "bias_observed_minus_s12": -0.09002721763099657,
+        "under_probability": 0.3954009684972329,
+        "sse_fraction": 0.39793834353466667,
+        "critical_probability": 0.12557072158365262
+      },
+      {
+        "group": 2,
+        "count": 789264,
+        "count_fraction": 0.3442622950819672,
+        "rmse": 1.6608453604886781,
+        "bias_observed_minus_s12": -0.11624442342900755,
+        "under_probability": 0.37318565144235644,
+        "sse_fraction": 0.12952621740028203,
+        "critical_probability": 0.03209319061809483
+      }
+    ],
+    "longitude_10deg": [
+      {
+        "group": 0,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 3.2175938112816818,
+        "bias_observed_minus_s12": -0.18731781767305536,
+        "under_probability": 0.375970514571949,
+        "sse_fraction": 0.21641718696787282,
+        "critical_probability": 0.14592725409836066
+      },
+      {
+        "group": 1,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 2.9992736662361925,
+        "bias_observed_minus_s12": -0.385397921557931,
+        "under_probability": 0.3723246812386157,
+        "sse_fraction": 0.18804487458698801,
+        "critical_probability": 0.10874886156648451
+      },
+      {
+        "group": 2,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 1.8476570101396417,
+        "bias_observed_minus_s12": -0.01202257073278685,
+        "under_probability": 0.43294341985428053,
+        "sse_fraction": 0.07136282272393915,
+        "critical_probability": 0.038891734972677595
+      },
+      {
+        "group": 3,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 2.0459385208085124,
+        "bias_observed_minus_s12": 0.11744493983819672,
+        "under_probability": 0.4500882285974499,
+        "sse_fraction": 0.08750129296116593,
+        "critical_probability": 0.0551941029143898
+      },
+      {
+        "group": 4,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 2.4626372441314683,
+        "bias_observed_minus_s12": -0.0759516819115919,
+        "under_probability": 0.4136384335154827,
+        "sse_fraction": 0.12677400144984052,
+        "critical_probability": 0.0885530510018215
+      },
+      {
+        "group": 5,
+        "count": 351360,
+        "count_fraction": 0.1532567049808429,
+        "rmse": 3.1551863720906703,
+        "bias_observed_minus_s12": -0.04747239382745548,
+        "under_probability": 0.3731870446265938,
+        "sse_fraction": 0.20810348191927383,
+        "critical_probability": 0.13942395264116575
+      },
+      {
+        "group": 6,
+        "count": 184464,
+        "count_fraction": 0.08045977011494253,
+        "rmse": 3.045592349612365,
+        "bias_observed_minus_s12": -0.1528427776999665,
+        "under_probability": 0.34515135744643943,
+        "sse_fraction": 0.10179633939102896,
+        "critical_probability": 0.1443100008673779
+      }
+    ],
+    "latitude_x_longitude": [
+      {
+        "group": 0,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.1815272691552132,
+        "bias_observed_minus_s12": -0.31025060735526,
+        "under_probability": 0.3298784722222222,
+        "sse_fraction": 0.06937464478058163,
+        "critical_probability": 0.1384027777777778
+      },
+      {
+        "group": 1,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.7161814747921693,
+        "bias_observed_minus_s12": -0.2580799551884262,
+        "under_probability": 0.4340625,
+        "sse_fraction": 0.09465058457145566,
+        "critical_probability": 0.1553125
+      },
+      {
+        "group": 2,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 2.229824703462963,
+        "bias_observed_minus_s12": 0.06487807948252318,
+        "under_probability": 0.4830815972222222,
+        "sse_fraction": 0.0340777503961199,
+        "critical_probability": 0.06215277777777778
+      },
+      {
+        "group": 3,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 2.6784753243219708,
+        "bias_observed_minus_s12": 0.3576452041459423,
+        "under_probability": 0.5059982638888889,
+        "sse_fraction": 0.049170516696366254,
+        "critical_probability": 0.10871527777777777
+      },
+      {
+        "group": 4,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.1449259976556108,
+        "bias_observed_minus_s12": -0.1681495934031753,
+        "under_probability": 0.4572309027777778,
+        "sse_fraction": 0.06778761180941184,
+        "critical_probability": 0.1545659722222222
+      },
+      {
+        "group": 5,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.9671710911290665,
+        "bias_observed_minus_s12": -0.18260759477196542,
+        "under_probability": 0.3862673611111111,
+        "sse_fraction": 0.10786767889372692,
+        "critical_probability": 0.2172829861111111
+      },
+      {
+        "group": 6,
+        "count": 60480,
+        "count_fraction": 0.026380252496702467,
+        "rmse": 3.71300530929631,
+        "bias_observed_minus_s12": -0.31622102767347177,
+        "under_probability": 0.3709325396825397,
+        "sse_fraction": 0.04960665191749945,
+        "critical_probability": 0.21803902116402116
+      },
+      {
+        "group": 7,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.9754084360173847,
+        "bias_observed_minus_s12": -0.10217650968737363,
+        "under_probability": 0.4022135416666667,
+        "sse_fraction": 0.10831609199644382,
+        "critical_probability": 0.22917534722222221
+      },
+      {
+        "group": 8,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.1617912055560806,
+        "bias_observed_minus_s12": -0.5437195497800782,
+        "under_probability": 0.3547829861111111,
+        "sse_fraction": 0.06851660677496924,
+        "critical_probability": 0.132421875
+      },
+      {
+        "group": 9,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 1.883244570190446,
+        "bias_observed_minus_s12": -0.0159524585035102,
+        "under_probability": 0.4363194444444444,
+        "sse_fraction": 0.024307646974583763,
+        "critical_probability": 0.04171875
+      },
+      {
+        "group": 10,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 1.9924442625825007,
+        "bias_observed_minus_s12": 0.018960961732167804,
+        "under_probability": 0.4325954861111111,
+        "sse_fraction": 0.027208326764519255,
+        "critical_probability": 0.048498263888888886
+      },
+      {
+        "group": 11,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 2.5702484980711624,
+        "bias_observed_minus_s12": -0.0011783326659385235,
+        "under_probability": 0.38071180555555556,
+        "sse_fraction": 0.045277214479242364,
+        "critical_probability": 0.09780381944444444
+      },
+      {
+        "group": 12,
+        "count": 115200,
+        "count_fraction": 0.050248099993718987,
+        "rmse": 3.4562991075958567,
+        "bias_observed_minus_s12": 0.0953498531706203,
+        "under_probability": 0.3807291666666667,
+        "sse_fraction": 0.08187515042508596,
+        "critical_probability": 0.1733420138888889
+      },
+      {
+        "group": 13,
+        "count": 60480,
+        "count_fraction": 0.026380252496702467,
+        "rmse": 3.434231091942304,
+        "bias_observed_minus_s12": -0.07373630344407617,
+        "under_probability": 0.36693121693121694,
+        "sse_fraction": 0.04243730611978335,
+        "critical_probability": 0.1835978835978836
+      },
+      {
+        "group": 14,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 2.3197674970476907,
+        "bias_observed_minus_s12": -0.1513259303430336,
+        "under_probability": 0.3948743386243386,
+        "sse_fraction": 0.03872645019083934,
+        "critical_probability": 0.07380952380952381
+      },
+      {
+        "group": 15,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 1.8592833540192824,
+        "bias_observed_minus_s12": -0.35587062455541446,
+        "under_probability": 0.33023313492063494,
+        "sse_fraction": 0.024877683240546407,
+        "critical_probability": 0.04185681216931217
+      },
+      {
+        "group": 16,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 1.342872820764163,
+        "bias_observed_minus_s12": -0.08151853496572654,
+        "under_probability": 0.3819775132275132,
+        "sse_fraction": 0.01297742535323243,
+        "critical_probability": 0.014045965608465608
+      },
+      {
+        "group": 17,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 1.2431995249702625,
+        "bias_observed_minus_s12": -0.017522951782485814,
+        "under_probability": 0.4135003306878307,
+        "sse_fraction": 0.011122449500276566,
+        "critical_probability": 0.010598544973544973
+      },
+      {
+        "group": 18,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 1.3802135189512337,
+        "bias_observed_minus_s12": -0.059356860724991925,
+        "under_probability": 0.4034804894179894,
+        "sse_fraction": 0.013709175161174422,
+        "critical_probability": 0.01687334656084656
+      },
+      {
+        "group": 19,
+        "count": 120960,
+        "count_fraction": 0.052760504993404934,
+        "rmse": 1.5972933035823136,
+        "bias_observed_minus_s12": -0.05479339006894675,
+        "under_probability": 0.353546626984127,
+        "sse_fraction": 0.018360652600454528,
+        "critical_probability": 0.03296957671957672
+      },
+      {
+        "group": 20,
+        "count": 63504,
+        "count_fraction": 0.027699265121537593,
+        "rmse": 1.6066315837878498,
+        "bias_observed_minus_s12": -0.07258394368319028,
+        "under_probability": 0.2998551272360796,
+        "sse_fraction": 0.009752381353741612,
+        "critical_probability": 0.03667485512723608
+      }
+    ],
+    "sector": [
+      {
+        "group": 0,
+        "count": 702720,
+        "count_fraction": 0.3065134099616858,
+        "rmse": 3.1103498564772574,
+        "bias_observed_minus_s12": -0.28635786961549314,
+        "under_probability": 0.37414759790528235,
+        "sse_fraction": 0.4044620615548634,
+        "critical_probability": 0.12733805783242258
+      },
+      {
+        "group": 1,
+        "count": 702720,
+        "count_fraction": 0.3065134099616858,
+        "rmse": 1.9493205044382138,
+        "bias_observed_minus_s12": 0.05271118455270492,
+        "under_probability": 0.4415158242258652,
+        "sse_fraction": 0.15886411568510975,
+        "critical_probability": 0.0470429189435337
+      },
+      {
+        "group": 2,
+        "count": 887184,
+        "count_fraction": 0.38697318007662834,
+        "rmse": 2.8762937123890016,
+        "bias_observed_minus_s12": -0.08066001347783362,
+        "under_probability": 0.38337819437681475,
+        "sse_fraction": 0.43667382276014827,
+        "critical_probability": 0.12029297192014284
+      }
+    ],
+    "month": [
+      {
+        "group": 0,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.1693121705605383,
+        "bias_observed_minus_s12": -0.34012989642968633,
+        "under_probability": 0.30773297322195003,
+        "sse_fraction": 0.05349001102240864,
+        "critical_probability": 0.0670184033666227
+      },
+      {
+        "group": 1,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.3039382545823877,
+        "bias_observed_minus_s12": -0.034473991420089174,
+        "under_probability": 0.3912076293365157,
+        "sse_fraction": 0.06033513009147174,
+        "critical_probability": 0.07703138412578775
+      },
+      {
+        "group": 2,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.224853529548368,
+        "bias_observed_minus_s12": -0.18327301191161738,
+        "under_probability": 0.3896792496283734,
+        "sse_fraction": 0.05626410719673287,
+        "critical_probability": 0.07065092226200197
+      },
+      {
+        "group": 3,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.6867311984163527,
+        "bias_observed_minus_s12": -0.044774726348563956,
+        "under_probability": 0.40217846450181105,
+        "sse_fraction": 0.0820497039879945,
+        "critical_probability": 0.10755710487197202
+      },
+      {
+        "group": 4,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 3.47494066442171,
+        "bias_observed_minus_s12": 0.04979998831227948,
+        "under_probability": 0.4298149194983565,
+        "sse_fraction": 0.1372534811925959,
+        "critical_probability": 0.1706027678328413
+      },
+      {
+        "group": 5,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.8780003223588677,
+        "bias_observed_minus_s12": -0.20157064360336477,
+        "under_probability": 0.35905407951761825,
+        "sse_fraction": 0.09414781781872619,
+        "critical_probability": 0.11169210476728848
+      },
+      {
+        "group": 6,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.7911335084472655,
+        "bias_observed_minus_s12": 0.032362844799239794,
+        "under_probability": 0.43457278646651176,
+        "sse_fraction": 0.08855025232009169,
+        "critical_probability": 0.10370475053912023
+      },
+      {
+        "group": 7,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.5879972325068725,
+        "bias_observed_minus_s12": -0.12367292555616388,
+        "under_probability": 0.421325084270251,
+        "sse_fraction": 0.07613006436229525,
+        "critical_probability": 0.08602893453091305
+      },
+      {
+        "group": 8,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.411736291363215,
+        "bias_observed_minus_s12": -0.3462448371007831,
+        "under_probability": 0.4005139961895191,
+        "sse_fraction": 0.06611320619667989,
+        "critical_probability": 0.07603165630299605
+      },
+      {
+        "group": 9,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.5832388757114377,
+        "bias_observed_minus_s12": -0.2798636796338618,
+        "under_probability": 0.4098622364591839,
+        "sse_fraction": 0.07585037242145105,
+        "critical_probability": 0.09068735213449741
+      },
+      {
+        "group": 10,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 3.1865444135078063,
+        "bias_observed_minus_s12": 0.2739650885523978,
+        "under_probability": 0.45205493792265977,
+        "sse_fraction": 0.11541666836799906,
+        "critical_probability": 0.1329899713167096
+      },
+      {
+        "group": 11,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.8818397775519697,
+        "bias_observed_minus_s12": -0.03607345868434991,
+        "under_probability": 0.3824299143688629,
+        "sse_fraction": 0.09439918502162574,
+        "critical_probability": 0.10600778845549903
+      }
+    ],
+    "season": [
+      {
+        "group": 0,
+        "count": 573156,
+        "count_fraction": 0.25,
+        "rmse": 2.471102808987095,
+        "bias_observed_minus_s12": -0.13689244884470858,
+        "under_probability": 0.36045683897577624,
+        "sse_fraction": 0.20822432613551436,
+        "critical_probability": 0.08335252531596982
+      },
+      {
+        "group": 1,
+        "count": 573156,
+        "count_fraction": 0.25,
+        "rmse": 2.842751623676156,
+        "bias_observed_minus_s12": -0.059415916649300626,
+        "under_probability": 0.40722421120951363,
+        "sse_fraction": 0.2755672923773354,
+        "critical_probability": 0.11627026498893844
+      },
+      {
+        "group": 2,
+        "count": 573156,
+        "count_fraction": 0.25,
+        "rmse": 2.7550584865503716,
+        "bias_observed_minus_s12": -0.09762690812009629,
+        "under_probability": 0.404983983418127,
+        "sse_fraction": 0.25882813450113085,
+        "critical_probability": 0.10047526327910726
+      },
+      {
+        "group": 3,
+        "count": 573156,
+        "count_fraction": 0.25,
+        "rmse": 2.7473417653751646,
+        "bias_observed_minus_s12": -0.11738114272741572,
+        "under_probability": 0.42081039019045424,
+        "sse_fraction": 0.25738024698614237,
+        "critical_probability": 0.09990299325140102
+      }
+    ],
+    "year": [
+      {
+        "group": 0,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.850605859895749,
+        "bias_observed_minus_s12": -0.6537449909950087,
+        "under_probability": 0.35007223164374096,
+        "sse_fraction": 0.0923640417535994,
+        "critical_probability": 0.11181772501727279
+      },
+      {
+        "group": 1,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.7625767591682444,
+        "bias_observed_minus_s12": 0.18395724753386966,
+        "under_probability": 0.44743839373573685,
+        "sse_fraction": 0.08674756431253075,
+        "critical_probability": 0.1113152440173356
+      },
+      {
+        "group": 2,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.6868179750752526,
+        "bias_observed_minus_s12": 0.32259071287302266,
+        "under_probability": 0.47548834872181395,
+        "sse_fraction": 0.08205500419380718,
+        "critical_probability": 0.09398488369658523
+      },
+      {
+        "group": 3,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.696980157319491,
+        "bias_observed_minus_s12": 0.04172828560156588,
+        "under_probability": 0.43839373573686746,
+        "sse_fraction": 0.08267688095547496,
+        "critical_probability": 0.0945658773527626
+      },
+      {
+        "group": 4,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.527086781717371,
+        "bias_observed_minus_s12": -0.1602751536407852,
+        "under_probability": 0.38110566756694514,
+        "sse_fraction": 0.07258867917212747,
+        "critical_probability": 0.08270523208341185
+      },
+      {
+        "group": 5,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.7342808260273603,
+        "bias_observed_minus_s12": -0.13281946638706862,
+        "under_probability": 0.3881665724514792,
+        "sse_fraction": 0.08497962608033978,
+        "critical_probability": 0.09885266838347675
+      },
+      {
+        "group": 6,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.5265264046025693,
+        "bias_observed_minus_s12": -0.18286586019483528,
+        "under_probability": 0.3884910914306053,
+        "sse_fraction": 0.07255648991383604,
+        "critical_probability": 0.0864162636350313
+      },
+      {
+        "group": 7,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.5694712180124513,
+        "bias_observed_minus_s12": -0.19762882292905687,
+        "under_probability": 0.40152942654355883,
+        "sse_fraction": 0.07504402101087267,
+        "critical_probability": 0.0994179595084061
+      },
+      {
+        "group": 8,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.565662385273417,
+        "bias_observed_minus_s12": 0.10118421378523872,
+        "under_probability": 0.44514058999644074,
+        "sse_fraction": 0.07482170423750277,
+        "critical_probability": 0.08948349140548123
+      },
+      {
+        "group": 9,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 3.060082657561946,
+        "bias_observed_minus_s12": -0.024130632153617392,
+        "under_probability": 0.40979419215710905,
+        "sse_fraction": 0.10643755678505364,
+        "critical_probability": 0.11934970583924795
+      },
+      {
+        "group": 10,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.5892669701452866,
+        "bias_observed_minus_s12": -0.3303484041136851,
+        "under_probability": 0.3143908464711178,
+        "sse_fraction": 0.07620478540150893,
+        "critical_probability": 0.09317882042585265
+      },
+      {
+        "group": 11,
+        "count": 191052,
+        "count_fraction": 0.08333333333333333,
+        "rmse": 2.8684443206304118,
+        "bias_observed_minus_s12": -0.20159637840420316,
+        "under_probability": 0.3404151749261981,
+        "sse_fraction": 0.09352364618341916,
+        "critical_probability": 0.11891526914138559
+      }
+    ],
+    "observed_intensity": [
+      {
+        "group": 0,
+        "count": 331259,
+        "count_fraction": 0.14448902218593193,
+        "rmse": 0.7548843877608007,
+        "bias_observed_minus_s12": -0.38896406842856923,
+        "under_probability": 0.20346315118985447,
+        "sse_fraction": 0.011230667434070295,
+        "critical_probability": 0.0034836789340063215
+      },
+      {
+        "group": 1,
+        "count": 467116,
+        "count_fraction": 0.20374732184605937,
+        "rmse": 1.5269456958233214,
+        "bias_observed_minus_s12": -0.8244878321939035,
+        "under_probability": 0.2503939064386576,
+        "sse_fraction": 0.06479610805022938,
+        "critical_probability": 0.024764726534736554
+      },
+      {
+        "group": 2,
+        "count": 495590,
+        "count_fraction": 0.21616715170040965,
+        "rmse": 2.126514919465367,
+        "bias_observed_minus_s12": -0.9905346006612663,
+        "under_probability": 0.3065981960895095,
+        "sse_fraction": 0.1333326147680012,
+        "critical_probability": 0.05866139349058698
+      },
+      {
+        "group": 3,
+        "count": 583860,
+        "count_fraction": 0.2546688859577497,
+        "rmse": 2.475919621744838,
+        "bias_observed_minus_s12": -0.28831429346169396,
+        "under_probability": 0.479198780529579,
+        "sse_fraction": 0.21294075993127595,
+        "critical_probability": 0.09215736649196725
+      },
+      {
+        "group": 4,
+        "count": 360600,
+        "count_fraction": 0.15728702133450578,
+        "rmse": 3.739162164299032,
+        "bias_observed_minus_s12": 1.650905618773078,
+        "under_probability": 0.6970077648363838,
+        "sse_fraction": 0.2999516925405556,
+        "critical_probability": 0.256885745978924
+      },
+      {
+        "group": 5,
+        "count": 54199,
+        "count_fraction": 0.023640596975343535,
+        "rmse": 9.28092919938504,
+        "bias_observed_minus_s12": 6.312819325720313,
+        "under_probability": 0.8464178305872803,
+        "sse_fraction": 0.27774815727598434,
+        "critical_probability": 0.7570065868373955
+      }
+    ],
+    "abs_observed_anomaly": [
+      {
+        "group": 0,
+        "count": 682949,
+        "count_fraction": 0.2978896670365485,
+        "rmse": 0.5699806903683414,
+        "bias_observed_minus_s12": -0.15210440896557298,
+        "under_probability": 0.37036294071738884,
+        "sse_fraction": 0.013200353236052535,
+        "critical_probability": 0.0003294535902388026
+      },
+      {
+        "group": 1,
+        "count": 391421,
+        "count_fraction": 0.1707305689899434,
+        "rmse": 0.9379314282439107,
+        "bias_observed_minus_s12": -0.3252869025457413,
+        "under_probability": 0.3273636314863025,
+        "sse_fraction": 0.02048628887934238,
+        "critical_probability": 0.001101116189473738
+      },
+      {
+        "group": 2,
+        "count": 502114,
+        "count_fraction": 0.21901279930769285,
+        "rmse": 1.532126456325531,
+        "bias_observed_minus_s12": -0.5041192002833554,
+        "under_probability": 0.3506474625284298,
+        "sse_fraction": 0.07012430141748109,
+        "critical_probability": 0.004755892088250876
+      },
+      {
+        "group": 3,
+        "count": 446877,
+        "count_fraction": 0.19491944601469757,
+        "rmse": 2.7433469313575123,
+        "bias_observed_minus_s12": -0.531685915423665,
+        "under_probability": 0.4209838501422091,
+        "sse_fraction": 0.20009049683091532,
+        "critical_probability": 0.06512082743126185
+      },
+      {
+        "group": 4,
+        "count": 269263,
+        "count_fraction": 0.11744751865111767,
+        "rmse": 6.5918684340673614,
+        "bias_observed_minus_s12": 1.8055905256689653,
+        "under_probability": 0.6240775747131986,
+        "sse_fraction": 0.6960985596363399,
+        "critical_probability": 0.7320649327980451
+      }
+    ],
+    "direction": [
+      {
+        "group": 0,
+        "count": 1379314,
+        "count_fraction": 0.6016311440515322,
+        "rmse": 2.252003922722607,
+        "bias_observed_minus_s12": -1.5155250964321303,
+        "under_probability": 0.0,
+        "sse_fraction": 0.4161773332598336,
+        "critical_probability": 0.07145001065747175
+      },
+      {
+        "group": 1,
+        "count": 913310,
+        "count_fraction": 0.39836885594846777,
+        "rmse": 3.27787866119353,
+        "bias_observed_minus_s12": 2.0306757956614407,
+        "under_probability": 1.0,
+        "sse_fraction": 0.583822666740352,
+        "critical_probability": 0.14311788987309895
+      }
+    ],
+    "all_members_same_error_sign": [
+      {
+        "group": 0,
+        "count": 712203,
+        "count_fraction": 0.310649718401273,
+        "rmse": 0.5502340906681332,
+        "bias_observed_minus_s12": -0.09754197005166781,
+        "under_probability": 0.39442686986715864,
+        "sse_fraction": 0.012828497112117108,
+        "critical_probability": 0.0004366732518677961
+      },
+      {
+        "group": 1,
+        "count": 1580421,
+        "count_fraction": 0.689350281598727,
+        "rmse": 3.2401969759870943,
+        "bias_observed_minus_s12": -0.10521170512662947,
+        "under_probability": 0.40014527774561337,
+        "sse_fraction": 0.9871715028880981,
+        "critical_probability": 0.14486772828252725
+      }
+    ],
+    "consensus_A": [
+      {
+        "group": 0,
+        "count": 1460318,
+        "count_fraction": 0.6369635840853101,
+        "rmse": 2.4746358485443265,
+        "bias_observed_minus_s12": -0.10501919749998818,
+        "under_probability": 0.390724486036603,
+        "sse_fraction": 0.5320433652627511,
+        "critical_probability": 0.08170412197891144
+      },
+      {
+        "group": 1,
+        "count": 659507,
+        "count_fraction": 0.28766470210553496,
+        "rmse": 2.937424900007223,
+        "bias_observed_minus_s12": -0.12470151029017947,
+        "under_probability": 0.40518599499322977,
+        "sse_fraction": 0.3385555571832801,
+        "critical_probability": 0.11984406533971588
+      },
+      {
+        "group": 2,
+        "count": 168125,
+        "count_fraction": 0.07333300183545143,
+        "rmse": 3.532781269426436,
+        "bias_observed_minus_s12": -0.014520475159371026,
+        "under_probability": 0.43534869888475836,
+        "sse_fraction": 0.12483684637074263,
+        "critical_probability": 0.17723122676579925
+      },
+      {
+        "group": 3,
+        "count": 4639,
+        "count_fraction": 0.0020234456238790136,
+        "rmse": 4.049137594728971,
+        "bias_observed_minus_s12": 0.4773301220196134,
+        "under_probability": 0.49342530717827116,
+        "sse_fraction": 0.004525081813809696,
+        "critical_probability": 0.23776676007760295
+      },
+      {
+        "group": 4,
+        "count": 35,
+        "count_fraction": 1.5266349824480594e-05,
+        "rmse": 4.336005933262767,
+        "bias_observed_minus_s12": 2.3254836346421923,
+        "under_probability": 0.6571428571428571,
+        "sse_fraction": 3.9149369609739354e-05,
+        "critical_probability": 0.3142857142857143
+      }
+    ],
+    "consensus_A_by_climatology": [
+      {
+        "group": 0,
+        "count": 495363,
+        "count_fraction": 0.2160681385172623,
+        "rmse": 0.7233608330517893,
+        "bias_observed_minus_s12": -0.071994790590137,
+        "under_probability": 0.34384279810966906,
+        "sse_fraction": 0.015420929010481805,
+        "critical_probability": 0.0036659984698090087
+      },
+      {
+        "group": 1,
+        "count": 369204,
+        "count_fraction": 0.16103992630278668,
+        "rmse": 1.9341010934096712,
+        "bias_observed_minus_s12": -0.15919835691916204,
+        "under_probability": 0.3790397720501403,
+        "sse_fraction": 0.08216781376564276,
+        "critical_probability": 0.033742863024235924
+      },
+      {
+        "group": 2,
+        "count": 396209,
+        "count_fraction": 0.17281900564593233,
+        "rmse": 2.8497088097310006,
+        "bias_observed_minus_s12": -0.11726291517669848,
+        "under_probability": 0.4298362732800113,
+        "sse_fraction": 0.19142660620758625,
+        "critical_probability": 0.11941677246099912
+      },
+      {
+        "group": 3,
+        "count": 199542,
+        "count_fraction": 0.08703651361932876,
+        "rmse": 4.524520016522426,
+        "bias_observed_minus_s12": -0.06244588345540692,
+        "under_probability": 0.4510679455954135,
+        "sse_fraction": 0.24302801627896614,
+        "critical_probability": 0.2892924797786932
+      },
+      {
+        "group": 4,
+        "count": 127092,
+        "count_fraction": 0.05543516948265394,
+        "rmse": 0.8341164526938192,
+        "bias_observed_minus_s12": -0.14757274817439975,
+        "under_probability": 0.3721398671828282,
+        "sse_fraction": 0.0052607611301988995,
+        "critical_probability": 0.003320429295313631
+      },
+      {
+        "group": 5,
+        "count": 179353,
+        "count_fraction": 0.0782304468591448,
+        "rmse": 1.8736188723303284,
+        "bias_observed_minus_s12": -0.18432866404973056,
+        "under_probability": 0.3718365458063149,
+        "sse_fraction": 0.0374583068806911,
+        "critical_probability": 0.03233288542706283
+      },
+      {
+        "group": 6,
+        "count": 215660,
+        "count_fraction": 0.09406688580421387,
+        "rmse": 2.993013284243324,
+        "bias_observed_minus_s12": -0.04065879540031259,
+        "under_probability": 0.4351293703051099,
+        "sse_fraction": 0.11493806544371986,
+        "critical_probability": 0.13282017991282574
+      },
+      {
+        "group": 7,
+        "count": 137402,
+        "count_fraction": 0.05993219995952236,
+        "rmse": 4.704163062456745,
+        "bias_observed_minus_s12": -0.15762382306386988,
+        "under_probability": 0.4322862840424448,
+        "sse_fraction": 0.1808984237286475,
+        "critical_probability": 0.32148731459512964
+      },
+      {
+        "group": 8,
+        "count": 19241,
+        "count_fraction": 0.008392566770652319,
+        "rmse": 1.1092087378513535,
+        "bias_observed_minus_s12": -0.011875771257420524,
+        "under_probability": 0.5070422535211268,
+        "sse_fraction": 0.0014084168011942624,
+        "critical_probability": 0.010082636037627981
+      },
+      {
+        "group": 9,
+        "count": 41955,
+        "count_fraction": 0.018299991625316668,
+        "rmse": 2.3509392900820463,
+        "bias_observed_minus_s12": -0.030986128623662863,
+        "under_probability": 0.3953521630318198,
+        "sse_fraction": 0.01379569382236796,
+        "critical_probability": 0.05505899177690383
+      },
+      {
+        "group": 10,
+        "count": 59212,
+        "count_fraction": 0.025827174451632715,
+        "rmse": 3.3739737854777263,
+        "bias_observed_minus_s12": 0.03885803911393349,
+        "under_probability": 0.4425285415118557,
+        "sse_fraction": 0.040102378508514364,
+        "critical_probability": 0.17060730932919002
+      },
+      {
+        "group": 11,
+        "count": 47717,
+        "count_fraction": 0.020813268987849732,
+        "rmse": 4.948939765237127,
+        "bias_observed_minus_s12": -0.06734690690977388,
+        "under_probability": 0.4326969423895048,
+        "sse_fraction": 0.06953035723866123,
+        "critical_probability": 0.3602699247647589
+      },
+      {
+        "group": 12,
+        "count": 619,
+        "count_fraction": 0.0002699963011815282,
+        "rmse": 1.0434860514462276,
+        "bias_observed_minus_s12": -0.39162221062711783,
+        "under_probability": 0.45395799676898224,
+        "sse_fraction": 4.0099682929362e-05,
+        "critical_probability": 0.0
+      },
+      {
+        "group": 13,
+        "count": 908,
+        "count_fraction": 0.0003960527325893823,
+        "rmse": 2.778906435620384,
+        "bias_observed_minus_s12": 0.7757001825475487,
+        "under_probability": 0.5594713656387665,
+        "sse_fraction": 0.00041716771539883574,
+        "critical_probability": 0.10242290748898679
+      },
+      {
+        "group": 14,
+        "count": 1239,
+        "count_fraction": 0.0005404287837866131,
+        "rmse": 4.714830525235737,
+        "bias_observed_minus_s12": 1.2354817088596415,
+        "under_probability": 0.5286521388216303,
+        "sse_fraction": 0.0016386283827399609,
+        "critical_probability": 0.29136400322841
+      },
+      {
+        "group": 15,
+        "count": 1873,
+        "count_fraction": 0.0008169678063214901,
+        "rmse": 4.668990629259942,
+        "bias_observed_minus_s12": 0.11834008617026287,
+        "under_probability": 0.45114789108382275,
+        "sse_fraction": 0.0024291860327415207,
+        "critical_probability": 0.3465029364655633
+      },
+      {
+        "group": 16,
+        "count": 1,
+        "count_fraction": 4.361814235565884e-07,
+        "rmse": 1.7028381824493408,
+        "bias_observed_minus_s12": -1.7028381824493408,
+        "under_probability": 0.0,
+        "sse_fraction": 1.7251376475418802e-07,
+        "critical_probability": 0.0
+      },
+      {
+        "group": 17,
+        "count": 8,
+        "count_fraction": 3.4894513884527074e-06,
+        "rmse": 2.194243022867363,
+        "bias_observed_minus_s12": 1.1435431204736233,
+        "under_probability": 0.5,
+        "sse_fraction": 2.291587436351615e-06,
+        "critical_probability": 0.125
+      },
+      {
+        "group": 18,
+        "count": 4,
+        "count_fraction": 1.7447256942263537e-06,
+        "rmse": 7.566264872446656,
+        "bias_observed_minus_s12": 5.257234990596771,
+        "under_probability": 0.75,
+        "sse_fraction": 1.3623856667289852e-05,
+        "critical_probability": 0.5
+      },
+      {
+        "group": 19,
+        "count": 22,
+        "count_fraction": 9.595991318244945e-06,
+        "rmse": 4.197523225136039,
+        "bias_observed_minus_s12": 2.4053400213068183,
+        "under_probability": 0.7272727272727273,
+        "sse_fraction": 2.3061411741343706e-05,
+        "critical_probability": 0.36363636363636365
+      }
+    ],
+    "consensus_A_by_predicted_anomaly": [
+      {
+        "group": 0,
+        "count": 1217768,
+        "count_fraction": 0.5311677798016596,
+        "rmse": 2.08252583447577,
+        "bias_observed_minus_s12": -0.0977603495387323,
+        "under_probability": 0.3878136065326072,
+        "sse_fraction": 0.31421169567726104,
+        "critical_probability": 0.057084764914170846
+      },
+      {
+        "group": 1,
+        "count": 187049,
+        "count_fraction": 0.08158729909483631,
+        "rmse": 3.5343897753958036,
+        "bias_observed_minus_s12": -0.11660174927522209,
+        "under_probability": 0.40049933439900776,
+        "sse_fraction": 0.13901487337267038,
+        "critical_probability": 0.177343904538383
+      },
+      {
+        "group": 2,
+        "count": 50759,
+        "count_fraction": 0.022140132878308873,
+        "rmse": 4.63467888366767,
+        "bias_observed_minus_s12": -0.2158264011783854,
+        "under_probability": 0.41635966035579897,
+        "sse_fraction": 0.06486782692154387,
+        "critical_probability": 0.2881656455012904
+      },
+      {
+        "group": 3,
+        "count": 4742,
+        "count_fraction": 0.0020683723105053425,
+        "rmse": 7.03156162934643,
+        "bias_observed_minus_s12": -0.32615483342684637,
+        "under_probability": 0.4782792070856179,
+        "sse_fraction": 0.013948969291203171,
+        "critical_probability": 0.4215520877266976
+      },
+      {
+        "group": 4,
+        "count": 168775,
+        "count_fraction": 0.07361651976076321,
+        "rmse": 1.6526559049739245,
+        "bias_observed_minus_s12": -0.10864738864490549,
+        "under_probability": 0.40056880462153754,
+        "sse_fraction": 0.027425211750989106,
+        "critical_probability": 0.029180862094504517
+      },
+      {
+        "group": 5,
+        "count": 269616,
+        "count_fraction": 0.11760149069363315,
+        "rmse": 2.4252957109744813,
+        "bias_observed_minus_s12": -0.09796419008564061,
+        "under_probability": 0.40197169307459496,
+        "sse_fraction": 0.09435220458627339,
+        "critical_probability": 0.07881950626075604
+      },
+      {
+        "group": 6,
+        "count": 171568,
+        "count_fraction": 0.07483477447675677,
+        "rmse": 3.7794323760858406,
+        "bias_observed_minus_s12": -0.10977033836792337,
+        "under_probability": 0.416167350554882,
+        "sse_fraction": 0.14580299335996647,
+        "critical_probability": 0.21288934999533712
+      },
+      {
+        "group": 7,
+        "count": 49548,
+        "count_fraction": 0.021611917174381844,
+        "rmse": 4.90683653968678,
+        "bias_observed_minus_s12": -0.376579588301516,
+        "under_probability": 0.4003794300476306,
+        "sse_fraction": 0.07097514748602557,
+        "critical_probability": 0.329720674901106
+      },
+      {
+        "group": 8,
+        "count": 6321,
+        "count_fraction": 0.0027571027783011956,
+        "rmse": 1.4598968740736815,
+        "bias_observed_minus_s12": -0.014165835609927053,
+        "under_probability": 0.5116279069767442,
+        "sse_fraction": 0.0008015066703987338,
+        "critical_probability": 0.02040816326530612
+      },
+      {
+        "group": 9,
+        "count": 47901,
+        "count_fraction": 0.020893526369784143,
+        "rmse": 2.2191871346132217,
+        "bias_observed_minus_s12": 0.03144685396173471,
+        "under_probability": 0.4453142940648421,
+        "sse_fraction": 0.014034903321583664,
+        "critical_probability": 0.057284816600906036
+      },
+      {
+        "group": 10,
+        "count": 69178,
+        "count_fraction": 0.030174158518797674,
+        "rmse": 3.483686529656408,
+        "bias_observed_minus_s12": 0.07774271485651152,
+        "under_probability": 0.42987655034837663,
+        "sse_fraction": 0.04994857859991077,
+        "critical_probability": 0.17259822486917806
+      },
+      {
+        "group": 11,
+        "count": 44725,
+        "count_fraction": 0.01950821416856842,
+        "rmse": 4.7506119008781935,
+        "bias_observed_minus_s12": -0.2065094224537443,
+        "under_probability": 0.4223588596981554,
+        "sse_fraction": 0.06005185777884418,
+        "critical_probability": 0.3350251537171604
+      },
+      {
+        "group": 12,
+        "count": 0,
+        "count_fraction": 0.0,
+        "rmse": null,
+        "bias_observed_minus_s12": null,
+        "under_probability": null,
+        "sse_fraction": 0.0,
+        "critical_probability": null
+      },
+      {
+        "group": 13,
+        "count": 798,
+        "count_fraction": 0.00034807277599815755,
+        "rmse": 2.1563921099496426,
+        "bias_observed_minus_s12": 0.41918689673264653,
+        "under_probability": 0.5964912280701754,
+        "sse_fraction": 0.00022076760843357712,
+        "critical_probability": 0.06641604010025062
+      },
+      {
+        "group": 14,
+        "count": 1776,
+        "count_fraction": 0.0007746582082365011,
+        "rmse": 3.8494244808803937,
+        "bias_observed_minus_s12": 0.02091699059101384,
+        "under_probability": 0.40596846846846846,
+        "sse_fraction": 0.0015657108556501463,
+        "critical_probability": 0.19594594594594594
+      },
+      {
+        "group": 15,
+        "count": 2065,
+        "count_fraction": 0.0009007146396443551,
+        "rmse": 4.721348329761476,
+        "bias_observed_minus_s12": 0.89233642477806,
+        "under_probability": 0.5288135593220339,
+        "sse_fraction": 0.0027386033497259583,
+        "critical_probability": 0.33995157384987895
+      },
+      {
+        "group": 16,
+        "count": 0,
+        "count_fraction": 0.0,
+        "rmse": null,
+        "bias_observed_minus_s12": null,
+        "under_probability": null,
+        "sse_fraction": 0.0,
+        "critical_probability": null
+      },
+      {
+        "group": 17,
+        "count": 0,
+        "count_fraction": 0.0,
+        "rmse": null,
+        "bias_observed_minus_s12": null,
+        "under_probability": null,
+        "sse_fraction": 0.0,
+        "critical_probability": null
+      },
+      {
+        "group": 18,
+        "count": 2,
+        "count_fraction": 8.723628471131769e-07,
+        "rmse": 3.233747245150718,
+        "bias_observed_minus_s12": -1.4121307134628296,
+        "under_probability": 0.5,
+        "sse_fraction": 1.2442828995319051e-06,
+        "critical_probability": 0.5
+      },
+      {
+        "group": 19,
+        "count": 33,
+        "count_fraction": 1.4393986977367418e-05,
+        "rmse": 4.3939314844595,
+        "bias_observed_minus_s12": 2.5520057163455268,
+        "under_probability": 0.6666666666666666,
+        "sse_fraction": 3.790508671020745e-05,
+        "critical_probability": 0.30303030303030304
+      }
+    ]
+  },
+  "s12_prediction_hashes": {
+    "2009": "692ea0ee438f083f6545491982c478ce78014e8a3de65b4a8390a2802e538152",
+    "2011": "872509361fa070c6ab064ddf582d2b1560579d156bbe51318120de156a903668",
+    "2013": "bf809501a1ba81ff2b36bb18ff2e439834798fbfb85f91e2fd29b8f439e50190",
+    "2015": "e4ff2542182c1893a05344269bf4b12282a311e05cd9582ed83afcff4890f3ea",
+    "2017": "67d97d9ed55a55cbac997dbd537e433f12bfae2bc10e23645b165942f10df58b",
+    "2019": "5547998e12eb06f472bf0ede6aed513195203cc0cfef0d2e35f47b6e90ea419a"
+  },
+  "development_periods_reused": true,
+  "no_test_targets": true
+}

@@ -1,0 +1,54 @@
+{
+  "protocol_sha256": "b415399807609c9d0d67866d4edc2d8ba81d3c1767e303bba5b599a5a302f5ee",
+  "years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "reference": "S12",
+  "inputs_sha256": {
+    "2009": {
+      "s12": "692ea0ee438f083f6545491982c478ce78014e8a3de65b4a8390a2802e538152",
+      "pls16": "b7c65dd5a4cb068f7fda4658bf61f9807a39a3765768ca0bac72b573e09b7998",
+      "continental_transform": "c18c9c1cd9e485d905dd4957d3cf7dc74ef966c5c106dc03b98d64ef77c050c8",
+      "tropical_transform": "6b3fa42caa574ebf283187ae539f59f3856767385eb06b4633b00526b9dee1bc"
+    },
+    "2011": {
+      "s12": "872509361fa070c6ab064ddf582d2b1560579d156bbe51318120de156a903668",
+      "pls16": "14573183a678661770d4dbc5736530f07571f58c5939ac4081b3b6c3a8a7118c",
+      "continental_transform": "8718e676894cb7a2a29cb90db8f0301ff6083428dbbf2436abf12bae5edb6978",
+      "tropical_transform": "c02bb0384ef711a65201675a8a7ab576f59e73eb4004e31db9d4f1d15b1f623d"
+    },
+    "2013": {
+      "s12": "bf809501a1ba81ff2b36bb18ff2e439834798fbfb85f91e2fd29b8f439e50190",
+      "pls16": "e82c05b551ff4142ba220902f510e9fcb7b8727d9c3fe3e842465e7603c5b42b",
+      "continental_transform": "bafcc88e57b83d7bd2cb5fee98f862f9ab79f74ee078c4b696e49301642a37e4",
+      "tropical_transform": "d4d6d0642ac816e365b64ab63922b217c5b6133955d07eb5366663e73682e5af"
+    },
+    "2015": {
+      "s12": "e4ff2542182c1893a05344269bf4b12282a311e05cd9582ed83afcff4890f3ea",
+      "pls16": "8c039aae104d012060d6be7b8205aa8656dfe6425fc775fd50431e4407eb9849",
+      "continental_transform": "dd6d8fc28e1887dce8116bdbb57ac171388e2d47b16b83a80ee574307011406a",
+      "tropical_transform": "86b835e11d5e28f6359633d86a0fdcf83352411b929e7c2e7f5a1ebc5281d22c"
+    },
+    "2017": {
+      "s12": "67d97d9ed55a55cbac997dbd537e433f12bfae2bc10e23645b165942f10df58b",
+      "pls16": "6bc563d2b372de2c83118dab6d02747f886cc4b416b193b511b208197cdfb5b1",
+      "continental_transform": "7770c4fe57bda96c01ff3161b402d8777a3479030fa6698c5db63039e6c544f4",
+      "tropical_transform": "79fe9abbe9f6491e6beefd1a632b5173701e29be893fca3eb17b980d9c377221"
+    },
+    "2019": {
+      "s12": "5547998e12eb06f472bf0ede6aed513195203cc0cfef0d2e35f47b6e90ea419a",
+      "pls16": "1df83ec96cf6a6cd1065f3df4a6b085fa91ffeb789e140d7f1eef7619c0549c7",
+      "continental_transform": "58f6aa46df0e4244f3d167bd78b1fb59f648dfc9f8bb215ab2cfa21e828839f1",
+      "tropical_transform": "8e1b6e95484151a5f1a643560e6625649c3806f77dc6b73ee175a786f4f3e681"
+    }
+  },
+  "historical_target_cache_sha256": "6539779a2d9930b5f855fc7811a2f21313ef9ce6f5e2a809530f772b7efda105",
+  "official_only": true,
+  "no_2023_2024_targets": true,
+  "no_submission": true
+}

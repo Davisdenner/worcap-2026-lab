@@ -1,0 +1,208 @@
+{
+  "year_start": 2019,
+  "model": "s12",
+  "prediction_sha256": "5547998e12eb06f472bf0ede6aed513195203cc0cfef0d2e35f47b6e90ea419a",
+  "global_moments": {
+    "n": 1885464,
+    "sse_s12": 5854769.962024107,
+    "sse_model": 5854769.962024107,
+    "sse_oracle": 5854769.962024106,
+    "sse_blend10": 5854769.962024107,
+    "sum_e12": -262684.9097310939,
+    "sum_emodel": -262684.9097310939,
+    "sum_cross": 5854769.962024107,
+    "sum_e12_sq": 5854769.962024107,
+    "sum_emodel_sq": 5854769.962024107
+  },
+  "global": {
+    "n": 1885464,
+    "rmse_s12": 1.7621618538678518,
+    "rmse_model": 1.7621618538678518,
+    "rmse_oracle": 1.7621618538678516,
+    "rmse_blend10": 1.7621618538678518,
+    "gain_model_percent": 0.0,
+    "gain_oracle_percent": 1.1102230246251565e-14,
+    "gain_blend10_percent": 0.0,
+    "residual_covariance": 3.085804031616263,
+    "residual_correlation": 1.0
+  },
+  "region_moments": {
+    "north": {
+      "n": 382104,
+      "sse_s12": 2852841.2450177036,
+      "sse_model": 2852841.2450177036,
+      "sse_oracle": 2852841.2450177036,
+      "sse_blend10": 2852841.2450177036,
+      "sum_e12": -101629.11456826242,
+      "sum_emodel": -101629.11456826242,
+      "sum_cross": 2852841.2450177036,
+      "sum_e12_sq": 2852841.2450177036,
+      "sum_emodel_sq": 2852841.2450177036
+    },
+    "lat_-60_-45": {
+      "n": 375840,
+      "sse_s12": 220770.89625017677,
+      "sse_model": 220770.89625017677,
+      "sse_oracle": 220770.89625017683,
+      "sse_blend10": 220770.89625017677,
+      "sum_e12": 5362.995013335723,
+      "sum_emodel": 5362.995013335723,
+      "sum_cross": 220770.89625017677,
+      "sum_e12_sq": 220770.89625017677,
+      "sum_emodel_sq": 220770.89625017677
+    },
+    "lat_-45_-30": {
+      "n": 375840,
+      "sse_s12": 595860.4564271657,
+      "sse_model": 595860.4564271657,
+      "sse_oracle": 595860.4564271657,
+      "sse_blend10": 595860.4564271657,
+      "sum_e12": -70515.28373869904,
+      "sum_emodel": -70515.28373869904,
+      "sum_cross": 595860.4564271657,
+      "sum_e12_sq": 595860.4564271657,
+      "sum_emodel_sq": 595860.4564271657
+    },
+    "lat_-30_-15": {
+      "n": 375840,
+      "sse_s12": 937508.4343923733,
+      "sse_model": 937508.4343923733,
+      "sse_oracle": 937508.4343923732,
+      "sse_blend10": 937508.4343923733,
+      "sum_e12": -76259.97206438868,
+      "sum_emodel": -76259.97206438868,
+      "sum_cross": 937508.4343923733,
+      "sum_e12_sq": 937508.4343923733,
+      "sum_emodel_sq": 937508.4343923733
+    },
+    "lat_-15_0": {
+      "n": 375840,
+      "sse_s12": 1247788.9299366856,
+      "sse_model": 1247788.9299366856,
+      "sse_oracle": 1247788.9299366856,
+      "sse_blend10": 1247788.9299366856,
+      "sum_e12": -19643.534373079536,
+      "sum_emodel": -19643.534373079536,
+      "sum_cross": 1247788.9299366856,
+      "sum_e12_sq": 1247788.9299366856,
+      "sum_emodel_sq": 1247788.9299366856
+    },
+    "lat_0_15.01": {
+      "n": 382104,
+      "sse_s12": 2852841.2450177036,
+      "sse_model": 2852841.2450177036,
+      "sse_oracle": 2852841.2450177036,
+      "sse_blend10": 2852841.2450177036,
+      "sum_e12": -101629.11456826242,
+      "sum_emodel": -101629.11456826242,
+      "sum_cross": 2852841.2450177036,
+      "sum_e12_sq": 2852841.2450177036,
+      "sum_emodel_sq": 2852841.2450177036
+    }
+  },
+  "by_region": {
+    "north": {
+      "n": 382104,
+      "rmse_s12": 2.7324234907123444,
+      "rmse_model": 2.7324234907123444,
+      "rmse_oracle": 2.7324234907123444,
+      "rmse_blend10": 2.7324234907123444,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 7.395396819714347,
+      "residual_correlation": 1.0
+    },
+    "lat_-60_-45": {
+      "n": 375840,
+      "rmse_s12": 0.7664245554640212,
+      "rmse_model": 0.7664245554640212,
+      "rmse_oracle": 0.7664245554640213,
+      "rmse_blend10": 0.7664245554640212,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 0.5872029846782584,
+      "residual_correlation": 1.0
+    },
+    "lat_-45_-30": {
+      "n": 375840,
+      "rmse_s12": 1.2591306123533912,
+      "rmse_model": 1.2591306123533912,
+      "rmse_oracle": 1.2591306123533912,
+      "rmse_blend10": 1.2591306123533912,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 1.5502084519185377,
+      "residual_correlation": 1.0
+    },
+    "lat_-30_-15": {
+      "n": 375840,
+      "rmse_s12": 1.579378028658244,
+      "rmse_model": 1.579378028658244,
+      "rmse_oracle": 1.5793780286582437,
+      "rmse_blend10": 1.579378028658244,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 1.1102230246251565e-14,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 2.453264349010255,
+      "residual_correlation": 1.0
+    },
+    "lat_-15_0": {
+      "n": 375840,
+      "rmse_s12": 1.8220868106990424,
+      "rmse_model": 1.8220868106990424,
+      "rmse_oracle": 1.8220868106990424,
+      "rmse_blend10": 1.8220868106990424,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 3.31726864408327,
+      "residual_correlation": 1.0
+    },
+    "lat_0_15.01": {
+      "n": 382104,
+      "rmse_s12": 2.7324234907123444,
+      "rmse_model": 2.7324234907123444,
+      "rmse_oracle": 2.7324234907123444,
+      "rmse_blend10": 2.7324234907123444,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 7.395396819714347,
+      "residual_correlation": 1.0
+    }
+  },
+  "by_year": {
+    "2019": {
+      "n": 942732,
+      "rmse_s12": 1.6996646200591694,
+      "rmse_model": 1.6996646200591694,
+      "rmse_oracle": 1.6996646200591694,
+      "rmse_blend10": 1.6996646200591694,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 2.8729826135078174,
+      "residual_correlation": 1.0
+    },
+    "2020": {
+      "n": 942732,
+      "rmse_s12": 1.822517209184343,
+      "rmse_model": 1.822517209184343,
+      "rmse_oracle": 1.822517209184343,
+      "rmse_blend10": 1.822517209184343,
+      "gain_model_percent": 0.0,
+      "gain_oracle_percent": 0.0,
+      "gain_blend10_percent": 0.0,
+      "residual_covariance": 3.2982708017629503,
+      "residual_correlation": 1.0
+    }
+  },
+  "train_seconds": 0.0,
+  "predict_seconds": 0.0,
+  "extra": {
+    "immutable_reference": true
+  }
+}

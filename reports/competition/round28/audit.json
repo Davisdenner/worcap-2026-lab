@@ -1,0 +1,16 @@
+{
+  "protocol_and_input_hashes_verified": true,
+  "global_and_block_oracle_decomposition_recomputed": true,
+  "all_prior_strong_thresholds_recomputed": true,
+  "regression_and_strong_win_scores_recomputed": true,
+  "all_topk_policies_recomputed": true,
+  "component_oracles_recomputed": true,
+  "all_targets_by_2020_12": true,
+  "regression_checks": 30,
+  "strong_checks": 10,
+  "policy_block_checks": 150,
+  "max_saved_G_float32_rounding": 0.00038811427771179297,
+  "classification": "D",
+  "source_sha256": "64e8e91847b6d60ce916b7f200040069acaf38b49b5991228d886bad1a3bd4b1",
+  "audit_script_sha256": "77413cfc794383d8c2b5fcb4d399c4f5fbc7ae49b881ada81718af5e0b5b345b"
+}

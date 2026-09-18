@@ -1,0 +1,120 @@
+{
+  "reference": "S12",
+  "reference_rmse": 1.7707754911700633,
+  "minimum_relative_gain": 0.003,
+  "ranking": [
+    {
+      "model": "h4_a0.1",
+      "rmse": 1.7699214475940241,
+      "relative_gain": 0.00048229918490394486,
+      "second_year_rmse": 1.7845373575017296,
+      "blocks_improved": 4,
+      "years_improved": 8,
+      "months_improved": 79,
+      "worst_annual_relative_change": 0.0014441307974626394,
+      "passed": false
+    },
+    {
+      "model": "h2_a0.1",
+      "rmse": 1.7711400129190498,
+      "relative_gain": -0.00020585429988395632,
+      "second_year_rmse": 1.7850484368499584,
+      "blocks_improved": 2,
+      "years_improved": 4,
+      "months_improved": 66,
+      "worst_annual_relative_change": 0.0031446355308026863,
+      "passed": false
+    },
+    {
+      "model": "h4_a0.25",
+      "rmse": 1.772253325136066,
+      "relative_gain": -0.0008345687939390611,
+      "second_year_rmse": 1.7881300481531608,
+      "blocks_improved": 2,
+      "years_improved": 6,
+      "months_improved": 68,
+      "worst_annual_relative_change": 0.006380673411430449,
+      "passed": false
+    },
+    {
+      "model": "h2_a0.25",
+      "rmse": 1.7735870709483328,
+      "relative_gain": -0.0015877675020290472,
+      "second_year_rmse": 1.7877571182685046,
+      "blocks_improved": 1,
+      "years_improved": 4,
+      "months_improved": 61,
+      "worst_annual_relative_change": 0.008827772182021798,
+      "passed": false
+    }
+  ],
+  "selected": null,
+  "h2_direct_by_block": [
+    {
+      "year": 2009,
+      "control_rmse": 1.8928857123089966,
+      "new_rmse": 1.898134071915258
+    },
+    {
+      "year": 2011,
+      "control_rmse": 1.80762025289417,
+      "new_rmse": 1.8037214390566076
+    },
+    {
+      "year": 2013,
+      "control_rmse": 1.734047114451927,
+      "new_rmse": 1.7371257981898351
+    },
+    {
+      "year": 2015,
+      "control_rmse": 1.823734217707185,
+      "new_rmse": 1.823653697682942
+    },
+    {
+      "year": 2017,
+      "control_rmse": 1.8241538675914424,
+      "new_rmse": 1.8255629808478133
+    },
+    {
+      "year": 2019,
+      "control_rmse": 1.815412919252693,
+      "new_rmse": 1.8246143724867807
+    }
+  ],
+  "h4_direct_by_block": [
+    {
+      "year": 2009,
+      "climatology_rmse": 1.975282149621942,
+      "new_rmse": 1.9367529870400204
+    },
+    {
+      "year": 2011,
+      "climatology_rmse": 1.8497633934790625,
+      "new_rmse": 1.8062354924791273
+    },
+    {
+      "year": 2013,
+      "climatology_rmse": 1.7507490908411116,
+      "new_rmse": 1.7794807215968407
+    },
+    {
+      "year": 2015,
+      "climatology_rmse": 1.861463331855598,
+      "new_rmse": 1.816724998616197
+    },
+    {
+      "year": 2017,
+      "climatology_rmse": 1.848137936661873,
+      "new_rmse": 1.8857883567939933
+    },
+    {
+      "year": 2019,
+      "climatology_rmse": 1.8470744275167954,
+      "new_rmse": 1.854264061459871
+    }
+  ],
+  "confirmation_run": false,
+  "csv_exported": false,
+  "uploaded": false,
+  "development_periods_reused": true
+}

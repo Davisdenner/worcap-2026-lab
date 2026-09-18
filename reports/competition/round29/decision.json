@@ -1,0 +1,12 @@
+{
+  "family_class": {
+    "ExtraTrees": "C",
+    "LightGBM": "C",
+    "RRR": "C",
+    "CCA regularizada": "C",
+    "CNN/U-Net": "D"
+  },
+  "followup_families": [],
+  "no_submission": true,
+  "no_automatic_promotion": true
+}
