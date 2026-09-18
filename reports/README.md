@@ -1,9 +1,11 @@
 # Índice dos resultados
 
+Participação encerrada após a rodada 29. Consulte o [resumo final](../docs/ENCERRAMENTO.md) e o [índice cronológico de experimentos](../experiments/README.md).
+
 Melhor pública informada: **S12, 1,71456**. A S13 marcou **1,71461**,
 0,00005 acima em RMSE. S12 permanece a referência reproduzível; S13 foi
 um teste exploratório cuja confirmação reutilizada falhou. A classificação
-atual não foi informada.
+final não foi informada.
 S10, 1,71895, permanece como controle aprovado. Veja a
 [metodologia central](../docs/METODOLOGIA.md) e o
 [guia de reprodução](../docs/REPRODUCAO.md).
@@ -20,6 +22,12 @@ S10, 1,71895, permanece como controle aprovado. Veja a
 | [Saída ampla + detalhe — rodada 23](competition/round23/RESULTS.md) | 2009–2020 | Reconstrução 9×9; mistura reprovada |
 | [Transporte de umidade — rodada 24](competition/round24/RESULTS.md) | 2009–2020 | Convergência e lags de 850 hPa; ganho 0,0078%, sem promoção |
 | [S13 experimental](competition/round24_experimental/RESULTS.md) | 2021–2022 reutilizado e público 2023 | Exceções autorizadas; 1,71461 informado, pior que S12 por 0,00005 |
+| [Diagnóstico, PCs e análogos — rodada 25](competition/round25/DECISION.md) | 2009–2020 | H2 piorou; análogo +10% ganhou 0,0482%, abaixo do gate; nenhum promovido |
+| [Previsibilidade do erro S12 — rodada 26](competition/round26/REPORT.md) | Descritivo 2009–2020; OOF 2011–2020 | Valor do resíduo sem ganho; Q90 discriminável, sobretudo pelo regime chuvoso; classe C |
+| [Seleção S12 × análogos — rodada 27](competition/round27/REPORT.md) | Oracle 2009–2020; gating OOF 2011–2020 | Oracle forte, risco Q90 não indica vencedor; melhor gate +0,075%, instável; classe D |
+| [Magnitude da vantagem — rodada 28](competition/round28/REPORT.md) | Decomposição 2009–2020; ranking OOF 2011–2020 | Top 10% de G em módulo responde por 65% do benefício oracle; strong wins previsíveis, top-k +0,040%; classe D diagnóstica |
+| [Novas famílias — rodada 29](competition/round29/REPORT.md) | OOF histórico auditado | ExtraTrees, LightGBM, RRR e CCA sem benefício estável; CNN/U-Net sem avaliação preditiva por limite de infraestrutura |
+| [CSV S14 exploratório](competition/s14_experimental_round27_gate/REPORT.md) | Geração após a rodada 27 | Artefato local auditado, sem score público registrado |
 | [Reprodução S10/S11](reproducao/README.md) | Treino final e inferência 2023–2024 | CSVs e previsões idênticos aos originais; 72 testes |
 | [Reprodução S12](reproducao/S12.md) | Retreino do corretor e inferência completa | CSV e valores NetCDF idênticos; exemplos OOF oficiais empacotados |
 | [Auditoria](competition/audit.json) | Arquivos oficiais | Integridade, coordenadas e alinhamento |

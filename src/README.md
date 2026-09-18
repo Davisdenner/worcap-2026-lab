@@ -13,6 +13,11 @@ A explicação central dos modelos está em [METODOLOGIA.md](../docs/METODOLOGIA
 | [round21.py](round21.py) | Especialistas regionais não lineares, âncora global e transições suaves; sem promoção |
 | [round22_23.py](round22_23.py) | Testes controlados de início 1940/1960/1981 e saída ampla + detalhe; sem promoção |
 | [round24.py](round24.py) | Fluxos q·u/q·v, convergência e lags de 850 hPa em ablação causal contra S12 |
+| [round25.py](round25.py) | Diagnóstico S12, ablação da ordem dos PCs e análogos sazonais; sem promoção |
+| [round26.py](round26.py) | Sondas OOF para o resíduo S12 em 0–15°N, geografia do SSE, direção, Q90/Q95 e consenso; sem nova candidata |
+| [round27.py](round27.py) | Oracle S12 × análogos, vantagem D, previsão OOF do vencedor e soft gating diagnóstico; sem S14 |
+| [round28.py](round28.py) | Decomposição de G, regressão/ranking OOF, strong wins, top-k e oracles de componentes congelados; sem candidata |
+| [round29.py](round29.py) | ExtraTrees, LightGBM, RRR e CCA sobre mapas OOF; CNN/U-Net verificada apenas quanto à viabilidade do ambiente |
 | [diagnose_s11.py](diagnose_s11.py) | Diagnóstico de erro por região, estação e intensidade, sem exportação |
 | [diagnose_s12.py](diagnose_s12.py) | Diagnóstico histórico da S12 em grade integral; somente descritivo |
 | [round16.py](round16.py) | Correção espacial/sazonal causal; oito candidatas reprovadas |
