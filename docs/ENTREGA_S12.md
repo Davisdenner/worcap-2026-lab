@@ -169,9 +169,10 @@ executa exatamente esse teste:
 
 Ele clona o repositório num diretório novo, lista **quais arquivos exigidos pela
 reprodução não vieram no clone**, liga `data/raw` por junção de diretório (os
-dados brutos não são copiados nem redistribuídos), monta um `.venv` limpo a
-partir do `requirements.txt`, roda as quatro etapas com cronometragem e compara
-o sha256 final. O relatório sai em
+dados brutos não são copiados nem redistribuídos), monta um `.venv` limpo com
+`py -3.11` a partir das dependências fixadas de `delivery/s11/requirements.txt`,
+fixa as bibliotecas numéricas em uma thread, roda as quatro etapas com
+cronometragem e compara o sha256 final. O relatório sai em
 `reports/competition/reproducao_clone_limpo.json`.
 
 O diagnóstico decisivo é o segundo: se os NPZ de `delivery/s12/evidence`

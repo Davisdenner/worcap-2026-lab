@@ -65,7 +65,7 @@ Etapa "2. Arquivos exigidos pela reproducao que faltam no clone"
 $exigidos = @(
     "configs/modelos.json",
     "configs/reproducao.json",
-    "requirements.txt",
+    "delivery/s11/requirements.txt",
     "src/reproducao.py",
     "src/s11_delivery.py",
     "src/s12_delivery.py",
@@ -119,13 +119,40 @@ $relatorio.arquivos_netcdf = $nc
 Etapa "4. Ambiente virtual limpo"
 $py = Join-Path $repo ".venv\Scripts\python.exe"
 if (-not $PularInstalacao) {
-    python -m venv (Join-Path $repo ".venv")
+    # `python` no PATH pode ser qualquer coisa -- nesta maquina e um Python 2.7
+    # do windows-build-tools, que nem tem o modulo venv. O REPRODUCAO.md manda
+    # usar `py -3.11`; usamos o mesmo lancador, com o interpretador atual como
+    # ultimo recurso apenas se ele for 3.11.
+    $criador = $null
+    if (Get-Command py -ErrorAction SilentlyContinue) {
+        & py -3.11 -c "import sys" 2>$null
+        if ($LASTEXITCODE -eq 0) { $criador = @("py", "-3.11") }
+    }
+    if (-not $criador) {
+        throw ("Nao encontrei Python 3.11 via `py -3.11`. O REPRODUCAO.md fixa " +
+               "3.11.1 como referencia; instale-o ou passe -PularInstalacao " +
+               "apontando um .venv ja pronto.")
+    }
+    Write-Host ("criando .venv com: " + ($criador -join " "))
+    & $criador[0] $criador[1] -m venv (Join-Path $repo ".venv")
+    if ($LASTEXITCODE -ne 0) { throw "criacao do venv falhou" }
+}
+if (-not (Test-Path $py)) { throw "Nao existe interpretador em $py" }
+if (-not $PularInstalacao) {
     & $py -m pip install --quiet --upgrade pip
-    & $py -m pip install --quiet -r (Join-Path $repo "requirements.txt")
+    # Dependencias FIXADAS. O requirements.txt da raiz e exploratorio, sem
+    # versoes, e nao serve para comparacao byte a byte (REPRODUCAO.md, secao 2).
+    & $py -m pip install --quiet -r (Join-Path $repo "delivery\s11\requirements.txt")
     if ($LASTEXITCODE -ne 0) { throw "pip install falhou" }
+    & $py -m pip check
+    $relatorio.pip_check_ok = ($LASTEXITCODE -eq 0)
 }
 $relatorio.python = (& $py --version)
 Write-Host $relatorio.python
+if ($relatorio.python -notmatch "3\.11\.1") {
+    Write-Host ("AVISO: a referencia verificada e 3.11.1; diferencas de patch, " +
+                "plataforma ou BLAS podem mudar o hash.") -ForegroundColor Yellow
+}
 
 # -------------------------------------------------------------- 5. etapas
 Etapa "5. Reproducao da S12"
