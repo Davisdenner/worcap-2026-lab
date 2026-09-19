@@ -13,6 +13,7 @@ do participante; o privado e a classificação final permanecem desconhecidos.
 
 - [Método completo, centralizado](METODOLOGIA.md).
 - [Reprodução do zero do treino final e inferência](REPRODUCAO.md).
+- [Documentação de entrega da S12, Seção 2.8](ENTREGA_S12.md).
 - [Encerramento e trajetória](ENCERRAMENTO.md).
 - [Protocolo histórico de seleção](../experiments/PROTOCOL.md).
 - [Catálogo de versões e hashes](../configs/modelos.json).
