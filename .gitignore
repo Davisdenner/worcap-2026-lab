@@ -34,7 +34,11 @@ delivery/s11/clean_inference/*.npy
 delivery/build/
 delivery/*.zip
 delivery/s11/wheels/*.whl
-tmp/pdfs/
+
+# Areas de trabalho locais, fora da entrega
+tmp/
+kaggle_bundle/
+Claude outputs/
 
 # Arquivos temporários
 *.tmp

@@ -177,10 +177,16 @@ cronometragem e compara o sha256 final. O relatório sai em
 
 O diagnóstico decisivo é o segundo: se os NPZ de `delivery/s12/evidence`
 estiverem fora do controle de versão, a entrega da Seção 2.8 estaria incompleta
-mesmo com o código inteiramente correto, e é melhor descobrir isso agora do que
-depois de uma eventual premiação. O script segue a execução copiando o que
-faltou, mas registra a ressalva no relatório e não apaga a distinção entre
+mesmo com o código inteiramente correto. O script segue a execução copiando o
+que faltou, mas registra a ressalva no relatório e não apaga a distinção entre
 "reproduziu" e "reproduziu com arquivos de fora do clone".
+
+**Resultado da primeira execução, commit `547d428`: nenhum arquivo faltou.** O
+clone continha os nove NPZ, o manifesto, as evidências da S11, as configurações
+e as dependências fixadas. A pendência que motivou este teste — "reprodução
+completa da S12 em clone vazio ainda não integrada" — está, nessa dimensão,
+resolvida: um terceiro que receba apenas o repositório tem o material
+necessário. Falta a confirmação do hash, que depende de completar a execução.
 
 ## A8. Achados relevantes
 

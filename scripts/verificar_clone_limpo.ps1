@@ -65,6 +65,7 @@ Etapa "2. Arquivos exigidos pela reproducao que faltam no clone"
 $exigidos = @(
     "configs/modelos.json",
     "configs/reproducao.json",
+    "requirements.txt",
     "delivery/s11/requirements.txt",
     "src/reproducao.py",
     "src/s11_delivery.py",
@@ -139,10 +140,33 @@ if (-not $PularInstalacao) {
 }
 if (-not (Test-Path $py)) { throw "Nao existe interpretador em $py" }
 if (-not $PularInstalacao) {
+    # O requirements.txt da raiz e a lista FIXADA, e delivery/s11 carrega uma
+    # copia congelada dentro do pacote tecnico. Se as duas divergirem, uma
+    # reproducao futura instalaria versoes diferentes conforme o caminho
+    # escolhido -- exatamente o tipo de armadilha que este verificador existe
+    # para pegar. Comparamos so as linhas de pacote, ignorando comentarios.
+    function Pacotes($caminho) {
+        Get-Content $caminho |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -and -not $_.StartsWith("#") } |
+            Sort-Object
+    }
+    $raiz = Pacotes (Join-Path $repo "requirements.txt")
+    $pacote = Pacotes (Join-Path $repo "delivery\s11\requirements.txt")
+    $divergencia = Compare-Object $raiz $pacote
+    $relatorio.requisitos_coerentes = ($null -eq $divergencia)
+    if ($divergencia) {
+        Write-Host "DIVERGENCIA entre requirements.txt e delivery/s11/requirements.txt:" -ForegroundColor Red
+        $divergencia | ForEach-Object {
+            $lado = if ($_.SideIndicator -eq "<=") { "so na raiz" } else { "so em delivery/s11" }
+            Write-Host ("  {0,-18} {1}" -f $lado, $_.InputObject)
+        }
+        throw "As duas listas de dependencias fixadas precisam ser identicas"
+    }
+    Write-Host "requirements.txt e delivery/s11/requirements.txt: $($raiz.Count) pacotes identicos"
+
     & $py -m pip install --quiet --upgrade pip
-    # Dependencias FIXADAS. O requirements.txt da raiz e exploratorio, sem
-    # versoes, e nao serve para comparacao byte a byte (REPRODUCAO.md, secao 2).
-    & $py -m pip install --quiet -r (Join-Path $repo "delivery\s11\requirements.txt")
+    & $py -m pip install --quiet -r (Join-Path $repo "requirements.txt")
     if ($LASTEXITCODE -ne 0) { throw "pip install falhou" }
     & $py -m pip check
     $relatorio.pip_check_ok = ($LASTEXITCODE -eq 0)
@@ -156,6 +180,13 @@ if ($relatorio.python -notmatch "3\.11\.1") {
 
 # -------------------------------------------------------------- 5. etapas
 Etapa "5. Reproducao da S12"
+# O ambiente de referencia e "CPU com uma thread numerica". Sem isso o BLAS
+# pode somar em ordem diferente e mudar os ultimos bits -- e o veredito da
+# etapa 6 e byte a byte.
+$env:OMP_NUM_THREADS = '1'
+$env:OPENBLAS_NUM_THREADS = '1'
+$env:MKL_NUM_THREADS = '1'
+$relatorio.threads_numericas = 1
 $tempos = [ordered]@{}
 foreach ($etapa in "listar", "preparar", "treinar", "prever") {
     Write-Host ""

@@ -58,14 +58,26 @@ requisito mínimo universal.
 
 ```powershell
 py -3.11 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r delivery/s11/requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m pip check
 ```
 
-Use as [dependências fixadas](../delivery/s11/requirements.txt), não o arquivo
-exploratório sem versões na raiz. `py -3.11` seleciona o Python 3.11 instalado;
-para comparação estrita de bytes, use a versão 3.11.1 de referência.
-Outras plataformas e implementações BLAS podem produzir diferenças numéricas.
+O `requirements.txt` da raiz tem as **versões exatas** e é o arquivo a usar.
+Há outros dois, que não servem para reprodução e dizem isso no próprio
+cabeçalho: `requirements-pesquisa.txt` é a lista exploratória sem versões, do
+ambiente de notebooks, e `requirements-lock-windows.txt` é o retrato completo
+da máquina de desenvolvimento. [delivery/s11/requirements.txt](../delivery/s11/requirements.txt)
+é a cópia congelada dentro do pacote técnico da S11 e tem conteúdo idêntico ao
+da raiz; o [verificador de clone vazio](../scripts/verificar_clone_limpo.ps1)
+compara as duas a cada execução e falha se divergirem.
+
+Use `py -3.11`, não `python`. Na máquina de referência, `python` no PATH
+resolvia para um Python 2.7 deixado por outra ferramenta — o erro aparece como
+`No module named venv`, e um interpretador errado que *consiga* instalar é pior,
+porque produz um CSV diferente sem avisar. Para comparação estrita de bytes,
+use a versão 3.11.1. Outras plataformas e implementações BLAS podem produzir
+diferenças numéricas; fixe as bibliotecas numéricas em uma thread, como na
+seção 7.
 
 ### Instalação offline
 
@@ -193,6 +205,14 @@ ser recalculado localmente sem os alvos ocultos de 2023/2024.
 A execução verificada de S10/S11, incluindo comparação numérica, tempos e
 limitações, está em [reports/reproducao](../reports/reproducao/README.md).
 
+A S12 foi reproduzida **byte a byte a partir de um clone vazio**, sem nenhum
+arquivo copiado de fora do repositório: 11,2 s em `listar`, 69,9 s em
+`preparar`, 116,5 s em `treinar` e 166,6 s em `prever`, num total de 6,1
+minutos na máquina de referência. O teste está automatizado em
+[verificar_clone_limpo.ps1](../scripts/verificar_clone_limpo.ps1) e o resultado
+em [reproducao_clone_limpo.json](../reports/competition/reproducao_clone_limpo.json).
+Repita-o depois de qualquer mudança que possa afetar a reprodução.
+
 ## 7. Testes e auditoria
 
 ```powershell
@@ -211,6 +231,9 @@ são verificados por hash antes da inferência.
 
 ## 8. Problemas frequentes
 
+- **`No module named venv` ou pip instalando na pasta errada:** o `python` do
+  PATH não é o 3.11. Confira com `py -3.11 --version` e use sempre `py -3.11`
+  para criar o ambiente e `.\.venv\Scripts\python.exe` para tudo depois.
 - **Modelo ou CSV já existe:** proteção contra sobrescrita. Para repetir, use
   pastas novas na configuração. Não apague os originais enviados.
 - **Hash de entrada diferente:** confira pacote oficial, extração e nomes.

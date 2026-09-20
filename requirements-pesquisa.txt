@@ -1,0 +1,21 @@
+# Lista exploratoria do desenvolvimento, SEM versoes fixadas.
+#
+# NAO use este arquivo para reproduzir uma submissao: sem versoes, a instalacao
+# muda com o tempo e o CSV pode deixar de bater byte a byte com o enviado.
+# Para reproducao use requirements.txt, que tem as versoes exatas.
+#
+# Isto aqui cobre o ambiente de pesquisa: notebooks, graficos e o acesso ao
+# Kaggle, que a reproducao nao usa.
+xarray
+zarr
+gcsfs
+pandas
+numpy
+matplotlib
+jupyter
+ipykernel
+scikit-learn
+scipy
+joblib
+kagglehub
+netCDF4

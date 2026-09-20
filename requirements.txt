@@ -1,13 +1,39 @@
-xarray
-zarr
-gcsfs
-pandas
-numpy
-matplotlib
-jupyter
-ipykernel
-scikit-learn
-scipy
-joblib
-kagglehub
-netCDF4
+# Dependencias EXATAS para reproduzir S10/S11/S12 (Python 3.11.1).
+#
+# Este e o arquivo que a reproducao usa. Instale a partir dele:
+#
+#     py -3.11 -m venv .venv
+#     .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#     .\.venv\Scripts\python.exe -m pip check
+#
+# Os outros dois arquivos de requisitos do repositorio NAO servem para
+# reproduzir, e estao aqui documentados para que ninguem os use por engano:
+#
+#   requirements-pesquisa.txt      lista exploratoria sem versoes, usada no
+#                                  desenvolvimento e nos notebooks; inclui
+#                                  matplotlib, jupyter e kagglehub, que a
+#                                  reproducao nao precisa.
+#   requirements-lock-windows.txt  retrato completo do ambiente Windows de
+#                                  desenvolvimento, gerado por
+#                                  scripts/snapshot_environment.py; e um
+#                                  registro, nao uma receita de instalacao.
+#
+# delivery/s11/requirements.txt e a copia congelada dentro do pacote tecnico
+# da S11 e tem exatamente o mesmo conteudo desta lista. O verificador de clone
+# vazio compara as duas a cada execucao; se divergirem, ele falha.
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.0
+narwhals==2.24.0
+pandas==3.0.5
+xarray==2026.7.0
+joblib==1.5.3
+netCDF4==1.7.4
+cftime==1.6.5
+certifi==2026.7.22
+packaging==26.3
+python-dateutil==2.9.0.post0
+six==1.17.0
+threadpoolctl==3.6.0
+tzdata==2026.3
+psutil==7.2.2
