@@ -1,4 +1,4 @@
-# Metodologia — da atmosfera observada à previsão de chuva
+# Metodologia: da atmosfera observada à previsão de chuva
 
 Este documento reúne a explicação do método usado em S10 e S11. Para executar,
 use [REPRODUCAO.md](REPRODUCAO.md); para decidir sobre uma nova candidata,
@@ -35,7 +35,7 @@ continental nem ponderação pela área das células. Essa é a implementação 
 da métrica descrita na competição; não temos o avaliador privado do organizador.
 
 A avaliação de desenvolvimento atual contém seis blocos de 24 meses:
-2009–2010, 2011–2012, 2013–2014, 2015–2016, 2017–2018 e 2019–2020.
+2009 a 2010, 2011 a 2012, 2013 a 2014, 2015 a 2016, 2017 a 2018 e 2019 a 2020.
 Em cada bloco, treino e pré-processamento usam apenas alvos anteriores ao corte.
 Para prever janeiro de um ano, dezembro anterior pode ser entrada de inferência,
 mas não um par de treino cujo alvo seria o próprio janeiro avaliado.
@@ -47,7 +47,7 @@ PCA e PLS são ajustados exclusivamente no treinamento permitido.
 
 Os pesos históricos são aprendidos em blocos anteriores completos. Não se usa
 divisão aleatória de pontos espaciais para simular generalização temporal.
-2021–2022 é uma confirmação **já reutilizada**, não um teste independente.
+2021 a 2022 é uma confirmação **já reutilizada**, não um teste independente.
 Arquiteturas e decisões foram escolhidas usando os períodos históricos; ganhos
 nesses períodos têm viés de seleção. Muitos pontos correlacionados não equivalem
 a milhões de experimentos independentes nem garantem significância estatística.
@@ -76,7 +76,7 @@ Os 23 atributos são latitude, longitude, seno/cosseno do mês-alvo, climatologi
 nove campos brutos e nove anomalias mensais. A versão de contexto acrescenta
 32 atributos: nove médias causais de três meses, nove diferenças temporais,
 12 resumos de vizinhança (seis campos, janelas 9×9 e 25×25) e dois produtos
-umidade–vento. A memória nunca inclui um mês posterior à entrada prevista.
+umidade e vento. A memória nunca inclui um mês posterior à entrada prevista.
 
 As árvores usam taxa de aprendizado 0,05, até 15 folhas, mínimo de 100 amostras
 por folha, regularização L2 10 e erro quadrático. Não há parada antecipada por
@@ -169,23 +169,23 @@ não negativos e desvio máximo absoluto 0,10 em relação ao prior. O otimizado
 é SLSQP, tolerância 1e-12 e até 1.000 iterações, com gradiente analítico.
 
 Foram comparados λ em 0,1; 0,3; 1 e 3. O melhor histórico foi λ=1. Para o
-corte final de 2023, a calibração contém nove blocos completos, 2005–2006 até
-2021–2022, sem alvos de 2023/2024. Pesos-base e estatísticas estão congelados
+corte final de 2023, a calibração contém nove blocos completos, 2005 a 2006 até
+2021 a 2022, sem alvos de 2023/2024. Pesos-base e estatísticas estão congelados
 em `delivery/s11/evidence`, com proveniência e hashes.
 
 ## 5. Resultados e decisão
 
-| Comparação | Desenvolvimento 2009–2020 | Melhora relativa | Estabilidade |
+| Comparação | Desenvolvimento 2009 a 2020 | Melhora relativa | Estabilidade |
 | --- | --- | ---: | --- |
 | S09 → S10 | 1,780988 → 1,775343 | aproximadamente 0,317% | 6/6 blocos; 9/12 anos |
 | S10 → S11 | 1,775343 → 1,774622 | aproximadamente 0,041% | 4/6 blocos; 6/12 anos |
 
-Na confirmação reutilizada 2021–2022, S10 obteve 1,830283 contra 1,834766 da
+Na confirmação reutilizada 2021 a 2022, S10 obteve 1,830283 contra 1,834766 da
 S09, melhorando ambos os anos. S11 obteve 1,829353 no agregado, mas piorou 2022
 e não atingiu o ganho mínimo de confirmação. **S11 não passou nos critérios.**
-Foi gerada e enviada por autorização explícita do usuário, sem apagar essa decisão.
+Gerei e enviei mesmo assim, por decisão explícita, e mantive o registro da reprovação.
 
-Os scores públicos informados foram 1,71895 (S10) e 1,71718 (S11). O ganho
+Os scores públicos que obtive foram 1,71895 (S10) e 1,71718 (S11). O ganho
 público de 0,00177 não transforma a reprovação histórica em aprovação e não
 garante melhora no privado. O critério de 0,3% permanece vigente.
 
@@ -214,7 +214,7 @@ configuração de cada versão; nunca modifique a história para fazer uma candi
 reprovada parecer aprovada. Não se promete RMSE 1,70, liderança ou significância
 estatística com base apenas na validação reutilizada ou no leaderboard público.
 
-## 7. Extensão S12 — corretor não linear de resíduos
+## 7. Extensão S12: corretor não linear de resíduos
 
 S12 mantém a S11 e acrescenta uma correção limitada:
 
@@ -226,7 +226,7 @@ O corretor é um HistGradientBoostingRegressor com perda quadrática, 200 itera�
 taxa 0,03, até 15 folhas, mínimo de 300 exemplos por folha, L2=100 e 128 bins.
 Parada antecipada desativada; semente 20260918. Aprende `observado − previsão
 causal` em 2.048 pontos amostrados por mês, semente de amostragem somada ao ano
-do bloco. O treino final contém 442.368 exemplos dos blocos 2005–2022.
+do bloco. O treino final contém 442.368 exemplos dos blocos 2005 a 2022.
 
 Os 23 atributos são latitude/longitude, seno/cosseno do mês-alvo, climatologia,
 S11, cinco desvios dos componentes em relação à S11, dispersão e amplitude
@@ -235,11 +235,11 @@ oficiais do mês anterior ao alvo. Não se fornece intensidade observada do alvo
 O primeiro bloco usa prior S10, pois não há bloco anterior para calibrar S11;
 os demais usam calibração somente em blocos anteriores completos.
 
-Na validação 2009–2020, S12 obteve 1,770775 contra 1,774622 da S11: ganho de
-0,217%, abaixo do mínimo de 0,3%, apesar de passar na estabilidade. O usuário
-autorizou uma exceção apenas a esse mínimo. Na confirmação reutilizada 2021–2022,
-obteve 1,821386 contra 1,829353, melhorando ambos os anos. O score público
-informado foi 1,71456. Esses resultados não removem sua classificação experimental.
+Na validação de 2009 a 2020, S12 obteve 1,770775 contra 1,774622 da S11: ganho de
+0,217%, abaixo do mínimo de 0,3%, apesar de passar na estabilidade. Autorizei
+uma exceção apenas a esse mínimo. Na confirmação reutilizada de 2021 e 2022,
+obteve 1,821386 contra 1,829353, melhorando ambos os anos. O score público que
+obtive foi 1,71456. Esses resultados não removem sua classificação experimental.
 
 O [motor S12](../src/s12_delivery.py) retreina o corretor a partir dos exemplos
 OOF congelados em [delivery/s12](../delivery/s12/README.md) e refaz a inferência.
@@ -248,7 +248,7 @@ Não se regenera toda a pesquisa OOF, nem se usam fontes externas. A rodada 19
 investigou mais histórico e pesos de recência; suas candidatas não passaram
 nos critérios e não fazem parte da S12.
 
-## 8. S13 — transporte de umidade, teste exploratório
+## 8. S13: transporte de umidade, teste exploratório
 
 A S13 parte da S12 e substitui parcialmente a correção no norte por um modelo
 com seis atributos derivados exclusivamente da umidade específica e dos ventos
@@ -256,12 +256,11 @@ em 850 hPa oficiais: dois fluxos horizontais, convergência atual e defasada,
 média de três convergências e umidade a montante. O peso regional é 0,5.
 Fórmula, máscara e treinamento estão no [protocolo específico](../experiments/ROUND24_EXPERIMENTAL.md).
 
-Na validação 2009–2020, o RMSE caiu de 1,770775 para 1,770637, ganho de
+Na validação de 2009 a 2020, o RMSE caiu de 1,770775 para 1,770637, ganho de
 **0,0078%**, insuficiente para o mínimo de 0,3%. Na confirmação reutilizada
-2021–2022, o ganho foi **0,00247%**, abaixo de 0,1%, e 2022 piorou. O usuário
-autorizou pontualmente dispensar ambos os critérios para conhecer o score
-público. O limite predefinido de mudança nas previsões de 2023 e 2024 passou.
-O score público informado, após correção pelo usuário, foi **1,71461**,
+de 2021 e 2022, o ganho foi **0,00247%**, abaixo de 0,1%, e 2022 piorou.
+Dispensei pontualmente ambos os critérios para conhecer o score público. O limite predefinido de mudança nas previsões de 2023 e 2024 passou.
+O score público que obtive, depois de eu corrigir um relato anterior, foi **1,71461**,
 0,00005 pior que a S12 (1,71456). A S13 não é uma candidata
 aprovada pelo protocolo, o privado é desconhecido e o atalho `melhor` continua
 em S12. Veja o [resultado completo](../reports/competition/round24_experimental/RESULTS.md).

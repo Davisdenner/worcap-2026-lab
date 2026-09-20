@@ -1,6 +1,6 @@
 # Índice das rodadas experimentais
 
-O [resumo final](../docs/ENCERRAMENTO.md) consolida resultados e limites até a rodada 29; a [síntese das rodadas 25–34](../docs/SINTESE_RODADAS_25_34.md) explica por que o platô se manteve. Os documentos abaixo preservam hipóteses, protocolos e decisões contemporâneas. **S12** permanece a melhor submissão pública informada (1,71456).
+O [resumo final](../docs/ENCERRAMENTO.md) consolida resultados e limites até a rodada 29; a [síntese das rodadas](../docs/SINTESE_RODADAS_25_34.md) explica por que o platô se manteve. Os documentos abaixo preservam hipóteses, protocolos e decisões contemporâneas. **S12** permanece a melhor submissão pública informada (1,71456).
 
 | Rodada | Tema | Evidência principal |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ O [resumo final](../docs/ENCERRAMENTO.md) consolida resultados e limites até a 
 | [33](ROUND33.md) | Volume de células do corretor, 10,7× | [Relatório](../reports/competition/round33/REPORT.md) |
 | [34](ROUND34.md) | Capacidade do corretor em número de folhas | [Protocolo congelado](../reports/competition/round34/protocol.json) |
 | [35](ROUND35.md) | Persistência de precipitação como preditor | [Decisão](../reports/competition/round35/decision.json) |
-| [36](ROUND36.md) | Corretor máximo: 127 atributos, 8.192 células, 255 folhas | [Decisão](../reports/competition/round36/decision.json) |
+| [36](ROUND36.md) | Corretor máximo: 127 atributos, 8.192 células, 255 folhas, início 1981 e 1940 | [Relatório](../reports/competition/round36/REPORT.md) |
 
 Não existe rodada 31: o número foi consumido por um diagnóstico de recalibração de amplitude, registrado em [slope_diagnostic](../reports/competition/slope_diagnostic/RESULTS.md) e citado na síntese como "31-diag".
 
@@ -53,5 +53,6 @@ Investigações que mediram o tamanho de uma oportunidade **antes** de construir
 | [oni](../reports/competition/oni_diagnostic/RESULTS.md) | O ENSO explica o resíduo? | [RESULTS.md](../reports/competition/oni_diagnostic/RESULTS.md) |
 | [clim](../reports/competition/clim_diagnostic/RESULTS.md) | A janela de climatologia está no tamanho certo? | [RESULTS.md](../reports/competition/clim_diagnostic/RESULTS.md) |
 | [persist](../reports/competition/persist_diagnostic/RESULTS.md) | A chuva observada na origem carrega sinal ausente? | [RESULTS.md](../reports/competition/persist_diagnostic/RESULTS.md) |
+| [combinacao](../reports/competition/combinacao_diagnostic/RESULTS.md) | As submissões que já existem se combinam melhor que qualquer uma delas? | [RESULTS.md](../reports/competition/combinacao_diagnostic/RESULTS.md) |
 
 O [protocolo geral](PROTOCOL.md) define o gate histórico. O [registro cronológico](NEXT.md) contém a discussão de hipóteses e decisões, inclusive as direções que ainda estavam abertas quando foi escrito. Nenhuma rodada posterior à S12 produziu melhora pública registrada.

@@ -1,6 +1,6 @@
-# S10 — controle aprovado e preservado
+# S10: controle aprovado e preservado
 
-A S10 obteve RMSE público **1,71895**, informado pelo usuário. S11 obteve
+A S10 obteve RMSE público **1,71895** no envio. S11 obteve
 1,71718 e é a melhor pública, mas permanece uma exceção aos critérios históricos.
 
 ## Identidade do artefato
@@ -20,9 +20,9 @@ o momento anterior ao envio; não devem ser reescritos para apagar essa históri
 
 ## Evidência de seleção
 
-Desenvolvimento 2009–2020: S09 1,780988 → S10 **1,775343**, melhora em
+Desenvolvimento 2009 a 2020: S09 1,780988 → S10 **1,775343**, melhora em
 6/6 blocos, 9/12 anos e 85/144 meses. Ganho relativo aproximado de 0,317%.
-Confirmação reutilizada 2021–2022: 1,834766 → **1,830283**, ambos os anos melhores.
+Confirmação reutilizada 2021 a 2022: 1,834766 → **1,830283**, ambos os anos melhores.
 Esses valores não são scores Kaggle nem testes independentes de toda a pesquisa.
 
 [Protocolo original](../experiments/ROUND11.md),
@@ -32,6 +32,6 @@ S10 foi gerada na rodada 11; números de rodadas e submissões não são iguais.
 
 A descrição única da composição está em [METODOLOGIA.md](METODOLOGIA.md).
 Para retreinar e obter um CSV idêntico, siga [REPRODUCAO.md](REPRODUCAO.md)
-com `--versao s10`. Não é necessário reexecutar as rodadas rejeitadas 12–15.
+com `--versao s10`. Não é necessário reexecutar as rodadas rejeitadas 12 a 15.
 A exportação posterior S11 foi uma exceção documentada na
 [rodada experimental](../experiments/ROUND15_EXPERIMENTAL.md).

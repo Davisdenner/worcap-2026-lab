@@ -72,7 +72,7 @@ da raiz; o [verificador de clone vazio](../scripts/verificar_clone_limpo.ps1)
 compara as duas a cada execução e falha se divergirem.
 
 Use `py -3.11`, não `python`. Na máquina de referência, `python` no PATH
-resolvia para um Python 2.7 deixado por outra ferramenta — o erro aparece como
+resolvia para um Python 2.7 deixado por outra ferramenta. O erro aparece como
 `No module named venv`, e um interpretador errado que *consiga* instalar é pior,
 porque produz um CSV diferente sem avisar. Para comparação estrita de bytes,
 use a versão 3.11.1. Outras plataformas e implementações BLAS podem produzir
@@ -243,7 +243,7 @@ são verificados por hash antes da inferência.
 - **Versão indisponível no índice:** obtenha o pacote offline documentado.
   Um clone não contém automaticamente wheels, modelos ou ZIP de entrega.
 - **Recursos:** cada etapa registra medições. A reprodução anterior S11 levou
-  cerca de 1–2 minutos por etapa principal, com pico de processo próximo de
+  cerca de 1 a 2 minutos por etapa principal, com pico de processo próximo de
   2,3 GiB no treino na máquina de referência; não é garantia de desempenho.
 
 A reprodução inclui os artefatos históricos de calibração congelados. Não

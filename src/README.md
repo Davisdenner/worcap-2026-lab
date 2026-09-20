@@ -58,14 +58,14 @@ explica o padrão em conjunto.
 | Arquivo | Função |
 | --- | --- |
 | [round19.py](round19.py) | Duas variantes de histórico ampliado, com critérios estritos contra S12 |
-| [round19_history.py](round19_history.py) | Geração causal dos blocos adicionais 1997–2004 e construção dos 23 atributos |
+| [round19_history.py](round19_history.py) | Geração causal dos blocos adicionais de 1997 a 2004 e construção dos 23 atributos |
 | [round20.py](round20.py) | Árvores de aprendizado direto local/global; comparações controladas contra S12 |
 | [round21.py](round21.py) | Especialistas regionais não lineares, âncora global e transições suaves |
 | [round22_23.py](round22_23.py) | Testes controlados de início 1940/1960/1981 e saída ampla + detalhe |
 | [round24.py](round24.py) | Fluxos q·u/q·v, convergência e lags de 850 hPa em ablação causal contra S12 |
 | [round24_experimental.py](round24_experimental.py) | Exceção que gerou a S13; confirmação falhou |
 | [round25.py](round25.py) | Diagnóstico S12, ablação da ordem dos PCs e análogos sazonais |
-| [round26.py](round26.py) | Sondas OOF para o resíduo S12 em 0–15°N, geografia do SSE, direção, Q90/Q95 e consenso |
+| [round26.py](round26.py) | Sondas OOF para o resíduo S12 entre 0 e 15°N, geografia do SSE, direção, Q90/Q95 e consenso |
 | [round27.py](round27.py) | Oracle S12 × análogos, vantagem D, previsão OOF do vencedor e soft gating |
 | [round28.py](round28.py) | Decomposição de G, regressão/ranking OOF, strong wins, top-k e oracles congelados |
 | [round29.py](round29.py) | ExtraTrees, LightGBM, RRR e CCA sobre mapas OOF; viabilidade de CNN/U-Net |

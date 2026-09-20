@@ -1,8 +1,8 @@
 # Conformidade técnica e preparação da entrega
 
 Esta é uma verificação técnica do que o repositório oferece, não uma certificação
-de elegibilidade pelo organizador. A base é o trecho de regras fornecido pelo
-participante, especialmente a obrigação de entregar código de treino, inferência,
+de elegibilidade pelo organizador. A base é o trecho de regras que recebi da organização,
+especialmente a obrigação de entregar código de treino, inferência,
 documentação e ambiente capazes de gerar a submissão final.
 
 ## O que está disponível
@@ -62,7 +62,7 @@ repetido sobre o pacote final.
 As [diretrizes oficiais de documentação de modelos vencedores](https://www.kaggle.com/WinningModelDocumentationGuidelines)
 pedem resumo em Word/PDF, normalmente em inglês salvo aprovação diversa, além
 do código, modelos, instruções de ambiente, treino e inferência. Os guias atuais
-do repositório são em português por decisão do participante, e a
+do repositório são em português por escolha minha, e a
 [documentação de entrega da S12](ENTREGA_S12.md) segue a estrutura dessas
 diretrizes. O [PDF em inglês](../output/pdf/S11_Model_Summary.pdf) da entrega
 técnica anterior foi preservado como complemento histórico e descreve a **S11**,

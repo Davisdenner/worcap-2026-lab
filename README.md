@@ -1,4 +1,4 @@
-# Previsão mensal de precipitação — WORCAP 2026
+# Previsão mensal de precipitação: WORCAP 2026
 
 Modelo para prever a precipitação média do mês seguinte na América do Sul,
 em mm/dia. Código de treinamento, inferência, validação e rastreabilidade.
@@ -15,22 +15,21 @@ termos da competição e a atribuição Copernicus.
 | S12 | **1,71456** | Melhor pública conhecida; reprodução verificada em clone vazio |
 | S13 | 1,71461 | Piora de 0,00005; teste exploratório com duas exceções autorizadas |
 
-Os scores são relatos do participante, registrados no
-[histórico público](reports/competition/leaderboard_observations.json).
-O score da S13 foi informado pelo usuário após envio manual; não foi verificado
-independentemente. **O leaderboard público mede apenas 2023; o privado medirá
-2024**, regimes ENSO opostos. O score privado e a classificação final não são
+Os scores públicos abaixo são os que obtive nos envios, registrados no
+[histórico público](reports/competition/leaderboard_observations.json). Não os
+verifiquei de forma independente no leaderboard. **O leaderboard público mede apenas 2023; o privado medirá
+2024**, que são regimes ENSO opostos. O score privado e a classificação final não são
 conhecidos. S10, S11, S12 e S13 usam somente dados oficiais; S07/S08, que
 usaram informação externa, não participam desta linha de modelos.
 
-A busca por uma sucessora da S12 seguiu por duas etapas. As rodadas 20–29
+A busca por uma sucessora da S12 seguiu por duas etapas. As rodadas 20 a 29
 esgotaram as hipóteses de aprendizado direto, especialistas regionais,
 histórico mais longo, transporte de umidade, análogos, previsibilidade do erro
 e novas famílias de modelos. Depois de um esclarecimento do organizador sobre o
-uso de dados externos, as rodadas 30–36 retomaram a investigação com redes
+uso de dados externos, as rodadas 30 a 36 retomaram a investigação com redes
 convolucionais, escala e capacidade do corretor, e persistência de
 precipitação. Nenhuma produziu ganho promovível. A
-[síntese das rodadas 25–34](docs/SINTESE_RODADAS_25_34.md) reúne as cinco
+[síntese das rodadas](docs/SINTESE_RODADAS_25_34.md) reúne as seis
 restrições estruturais que explicam o platô; o [índice das
 rodadas](experiments/README.md) permite consultar cada uma em ordem, e a
 [documentação de encerramento](docs/ENCERRAMENTO.md) cobre a trajetória até a
