@@ -1,4 +1,4 @@
-# Rodada 18 — memória longa no PLS tropical S11
+# Rodada 18: memória longa no PLS tropical S11
 
 Referência histórica S11: 1.774622. Somente dados oficiais.
 Ganho mínimo 0,3% e todos os critérios de estabilidade.

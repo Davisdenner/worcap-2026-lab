@@ -1,4 +1,4 @@
-# Diagnóstico histórico S11 — 2009–2020
+# Diagnóstico histórico S11: 2009 a 2020
 
 Previsões fora do treino, períodos já reutilizados na seleção. Somente dados oficiais.
 RMSE: 1.774622; viés médio: 0.027293 mm/dia.

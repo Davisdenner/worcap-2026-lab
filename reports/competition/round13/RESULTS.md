@@ -1,6 +1,6 @@
-# Rodada 13 — componente tropical não linear
+# Rodada 13: componente tropical não linear
 
-Somente dados oficiais; RMSE em toda a grade de 2009–2020, não score Kaggle.
+Somente dados oficiais; RMSE em toda a grade de 2009 a 2020, não score Kaggle.
 Referência histórica S10: 1.775343; público informado 1,71895.
 
 | Candidata | RMSE | Ganho | Blocos | Anos | Meses | Aprovada |
@@ -13,7 +13,7 @@ Referência histórica S10: 1.775343; público informado 1,71895.
 Selecionada: nenhuma.
 Regressão de saída tropical substituída por kernel; pesos, PLS32 e representação S10 preservados.
 Controle linear reproduzido. Parâmetros e mínimo de ganho 0,3% fixados antes dos resultados.
-Arquitetura e períodos reutilizados; 2021–2022 não é holdout inédito.
+Arquitetura e períodos reutilizados; 2021 a 2022 não é holdout inédito.
 Nenhuma chuva oculta 2023/2024, fonte externa, upload ou garantia de 1,70.
 
 [Protocolo](../../../experiments/ROUND13.md) · [Seleção](selection.json) · [Auditoria](audit.json)

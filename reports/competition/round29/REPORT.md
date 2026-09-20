@@ -1,6 +1,6 @@
-# Rodada 29 — famílias fora do HistBoost
+# Rodada 29: famílias fora do HistBoost
 
-Comparação OOF causal nos seis blocos 2009–2020, sempre contra a S12
+Comparação OOF causal nos seis blocos 2009 a 2020, sempre contra a S12
 inalterada. Dados e transformações de cada corte foram ajustados antes
 do bloco avaliado. Nenhum alvo 2023/24, submission ou score público foi usado.
 
@@ -67,7 +67,7 @@ fixada, não escolha de um fold para ajustar o próximo.
 - **CNN/U-Net: D.**
 
 A classe C significa que as configurações testadas não entregaram
-ganho individual nem complementar estável. Os oracles de 5–7%
+ganho individual nem complementar estável. Os oracles de 5 a 7%
 mostram diferenças pontuais, mas dependem do observado e não se
 converteram no blend fixo causal. Não provam ausência de qualquer
 estrutura nova em arquiteturas ou decisões ainda não testadas.
@@ -85,7 +85,7 @@ virtual local; nenhuma outra família de boosting foi adicionada.
 
 ## Limitações e rastreabilidade
 
-Os blocos 2009–2020 já foram reutilizados em várias decisões; a
+Os blocos 2009 a 2020 já foram reutilizados em várias decisões; a
 melhor linha de uma pequena grade ainda sofre viés de seleção.
 Correlação e oracle por pixel descrevem diversidade, mas pixels
 de um mesmo mês não são observações temporais independentes.

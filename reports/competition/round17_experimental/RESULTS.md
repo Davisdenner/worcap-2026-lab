@@ -1,8 +1,8 @@
-# S12 experimental — variante conservadora autorizada
+# S12 experimental: variante conservadora autorizada
 
 ## Resultado público posterior à geração
 
-O usuário informou **1,71456 e segundo lugar**. Melhora de 0,00262 (0,153%)
+O envio devolveu **1,71456 e segundo lugar**. Melhora de 0,00262 (0,153%)
 contra S11. É a nova melhor pública informada, sem verificação independente
 do leaderboard. Se o último score do líder, 1,70328, permanecer, faltam 0,01128.
 O resultado não altera a reprovação automática nem informa o desempenho privado.
@@ -17,8 +17,8 @@ não linear de resíduos da S11 com fração 0,25 e somente dados oficiais.
 
 | Período | RMSE S11 | RMSE S12 | Resultado |
 | --- | ---: | ---: | --- |
-| Desenvolvimento 2009–2020 | 1,774621760 | 1,770775491 | Ganho 0,216737%; abaixo de 0,3% |
-| Confirmação 2021–2022 | 1,829353225 | 1,821385840 | Ganho 0,435530%; passou |
+| Desenvolvimento 2009 a 2020 | 1,774621760 | 1,770775491 | Ganho 0,216737%; abaixo de 0,3% |
+| Confirmação 2021 a 2022 | 1,829353225 | 1,821385840 | Ganho 0,435530%; passou |
 | 2021 | 1,816626645 | 1,807099476 | Melhorou |
 | 2022 | 1,841991876 | 1,835561015 | Melhorou |
 
@@ -26,7 +26,7 @@ Desenvolvimento: 5/6 blocos, 10/12 anos e 88/144 meses melhores; pior perda
 anual de 0,351990%, dentro do limite de 0,5%. A autorização dispensa somente
 o mínimo de ganho de desenvolvimento para esta exportação. A seleção original
 continua `selected: null`; **não houve promoção automática**. O critério geral
-de 0,3% continua ativo. A confirmação 2021–2022 é reutilizada, não independente.
+de 0,3% continua ativo. A confirmação 2021 a 2022 é reutilizada, não independente.
 
 Não se ajustaram candidata, fração ou hiperparâmetros depois da confirmação.
 O corretor de confirmação usou alvos até dezembro de 2020. O final usou

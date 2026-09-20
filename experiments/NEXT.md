@@ -1,4 +1,4 @@
-# Registro histórico da pesquisa — rodadas 20–28
+# Registro histórico da pesquisa: rodadas 20 a 28
 
 **Arquivo de contexto:** a participação terminou após a rodada 29. Consulte
 [encerramento](../docs/ENCERRAMENTO.md) e [índice completo](README.md). As
@@ -9,19 +9,19 @@ seu [registro](S14_EXPERIMENTAL_ROUND27_GATE.md) não contém score público.
 S12 tem o melhor score público informado, 1,71456; S13 marcou 1,71461,
 piorando 0,00005. A classificação atual não foi informada. S10 permanece
 o controle aprovado, 1,71895. Ganho público de 0,00262 contra S11 (1,71718).
-Em novo relato, o usuário informou 1º lugar 1,57591, 2º 1,58124 e 3º
+Em novo relato, anotei 1º lugar 1,57591, 2º 1,58124 e 3º
 1,69966. As diferenças da S12 são 0,13865 para o 1º e 0,01490 para o 3º.
 Esses scores não foram verificados independentemente; o privado é desconhecido.
 O resultado não aprova retroativamente S12 no critério histórico de 0,3%.
 
-## Rodada 28 — magnitude da vantagem S12 × Analog
+## Rodada 28: magnitude da vantagem S12 × Analog
 
 O [protocolo 28](ROUND28.md) decompôs G = perda S12 − perda Analog antes
 dos novos ajustes. Os 10% maiores |G| concentram 65,0% do benefício global
 do oracle, mas misturam grandes vitórias e grandes derrotas do Analog.
 Nenhum regressor de G passou o critério OOF de vantagem **líquida** positiva
 no top 10% em 4/5 blocos. Strong wins tiveram AUC alta e lift consistente,
-mas o top-k predefinido ganhou no máximo 0,040% global em 2011–2020,
+mas o top-k predefinido ganhou no máximo 0,040% global em 2011 a 2020,
 abaixo dos 0,075% do gate da rodada 27; expected-gain gating foi parado
 sem teste porque G bruto não passou seu critério. Analog teve o maior
 oracle **pareado** entre os segundos especialistas congelados, enquanto
@@ -31,7 +31,7 @@ ganho operacional. Nenhuma candidata foi criada. Ver [relatório]
 (../reports/competition/round28/REPORT.md) e [auditoria]
 (../reports/competition/round28/audit.json).
 
-## Rodada 27 — seleção S12 versus análogos
+## Rodada 27: seleção S12 versus análogos
 
 O [protocolo 27](ROUND27.md) testou se atributos disponíveis podem indicar
 qual dos dois previsores terá menor erro, sem corrigir diretamente a S12.
@@ -39,35 +39,35 @@ O oracle, que usa o observado e é apenas diagnóstico, reduziu o RMSE em
 8,49% global e 9,00% no norte. O risco Q90 da rodada 26 **não** separou
 de modo estável as vitórias do análogo. Classificadores do vencedor tiveram
 sinal em parte dos cortes, permitindo o teste predefinido de soft gating.
-O melhor ganho global do gating foi 0,075% em 2011–2020, ante 0,062% da
+O melhor ganho global do gating foi 0,075% em 2011 a 2020, ante 0,062% da
 mistura fixa global de 10% no mesmo período, mas com só 6/10 anos melhores.
-Conclusão **D — sinal aparente instável**, abaixo do ganho mínimo de 0,3%.
+Conclusão **D, sinal aparente instável**, abaixo do ganho mínimo de 0,3%.
 Nenhuma S14 ou submissão foi criada. Ver [relatório](../reports/competition/round27/REPORT.md)
 e [auditoria](../reports/competition/round27/audit.json).
 
-## Rodada 26 — erro comum S12 no norte
+## Rodada 26: erro comum S12 no norte
 
-O [protocolo 26](ROUND26.md) investigou 0–15°N sem gerar candidata. Os seis
-blocos 2009–2020 entraram no diagnóstico. A previsão temporalmente OOF do
-resíduo usou cinco blocos 2011–2020, pois não há resíduos S12 OOF anteriores
+O [protocolo 26](ROUND26.md) investigou 0 a 15°N sem gerar candidata. Os seis
+blocos 2009 a 2020 entraram no diagnóstico. A previsão temporalmente OOF do
+resíduo usou cinco blocos 2011 a 2020, pois não há resíduos S12 OOF anteriores
 a 2009 para treinar o primeiro corte. Todos os grupos testados tiveram R²
 agregado contra resíduo zero negativo; o melhor foi dispersão (−1,11%). A
 direção do erro não teve ganho estável. O risco de erro >Q90 teve AUC
-0,820–0,868 e lift de 3,72–4,46 no decil de maior risco, mas quase toda
+0,820 a 0,868 e lift de 3,72 a 4,46 no decil de maior risco, mas quase toda
 a ordenação já aparecia na climatologia e no valor S12. Resultado **C para
 o valor do resíduo**, com sinal parcial para criticidade. Não houve gating,
 correção, nova candidata, confirmação ou envio. Veja o [relatório científico]
 (../reports/competition/round26/REPORT.md) e a [auditoria]
 (../reports/competition/round26/audit.json).
 
-## Rodada 25 — diagnóstico, ordem dos PCs e análogos
+## Rodada 25: diagnóstico, ordem dos PCs e análogos
 
-Após auditoria científica do pipeline, o usuário pediu executar os três
+Após auditoria científica do pipeline, decidi executar os três
 primeiros passos: completar o diagnóstico da S12, testar uma ablação
 estrita da dinâmica dos PCs e medir diversidade de um previsor por análogos.
 O [protocolo 25](ROUND25.md) foi fixado antes das novas métricas.
 
-O diagnóstico confirmou que 0–15°N concentra 47,38% do erro quadrático.
+O diagnóstico confirmou que 0 a 15°N concentra 47,38% do erro quadrático.
 Os cinco componentes erram no mesmo sentido em 75,58% dos pontos, onde se
 concentra 98,90% do SSE da S12. Isso é descritivo e não demonstra
 previsibilidade do erro comum. Mudança de regime KMeans não concentrou erro.
@@ -81,13 +81,13 @@ histórico de 1,770775 para **1,769921** (ganho **0,0482%**), mas obteve só
 0,3% e pela estabilidade. A mistura de 25% piorou. Uma auditoria separada
 refez as métricas e conferiu hashes e cortes.
 
-**Nenhuma candidata foi promovida.** Sem confirmação 2021–2022, treino
+**Nenhuma candidata foi promovida.** Sem confirmação 2021 a 2022, treino
 final, CSV ou upload nesta rodada. S12 continua como referência. Ver
 [resultados e decisão](../reports/competition/round25/DECISION.md).
 
 ## Pesquisa executada nesta retomada
 
-Em 17/09, o usuário autorizou testar a hipótese 1: árvores com atributos locais
+Em 17/09, autorizei testar a hipótese 1: árvores com atributos locais
 e estado atmosférico continental/tropical. O [protocolo 20](ROUND20.md) fixa
 quatro modelos, amostragem aninhada e duas misturas por modelo contra S12.
 Nenhum CSV ou upload automático está autorizado por este pedido de pesquisa.
@@ -95,15 +95,15 @@ Critérios de 0,3%, estabilidade e confirmação continuam obrigatórios.
 
 A hipótese 1 foi concluída: a melhor mistura teve RMSE 1,770937 contra
 1,770775 da S12, piora de 0,009%, e melhorou apenas 2/6 blocos.
-Com autorização do usuário, a hipótese 2 testou especialistas regionais
+Com autorização registrada, a hipótese 2 testou especialistas regionais
 não lineares com referência global e transições suaves. Antes do treino,
 atualizamos o [diagnóstico da S12](../reports/competition/s12_diagnostic/RESULTS.md):
-a latitude 0°–15°N responde por 47,38% do erro quadrático com 20,27% dos
+a latitude 0° a 15°N responde por 47,38% do erro quadrático com 20,27% dos
 pontos. O [protocolo 21](ROUND21.md) fixou quatro candidatas antes de medir
 seus resultados. A melhor teve RMSE 1,770455 (ganho de 0,018%), 5/6 blocos,
 7/12 anos e 80/144 meses melhores. Falhou o ganho mínimo e a estabilidade
 por ano. A verificação integral refez métricas e seleção; **nenhuma foi
-promovida**. Não fizemos confirmação 2021–2022 nem criamos S13.
+promovida**. Não fizemos confirmação 2021 a 2022 nem criamos S13.
 
 Esses blocos já foram reutilizados em várias rodadas e não são teste
 independente. Não tentar contornar os critérios escolhendo a região ou os
@@ -111,9 +111,9 @@ pesos depois de observar essas quatro candidatas. A S12 segue como melhor
 submissão pública informada. Ver [rodada 20](../reports/competition/round20/RESULTS.md)
 e [rodada 21](../reports/competition/round21/RESULTS.md).
 
-## Hipóteses 3 e 4 — 17/09/2026
+## Hipóteses 3 e 4: 17/09/2026
 
-O usuário pediu testar treino-base mais antigo e decomposição espacial da
+Decidi testar treino-base mais antigo e decomposição espacial da
 saída. Fixamos [protocolo 22](ROUND22.md) e [protocolo 23](ROUND23.md) antes
 de medir os resultados. A comparação controlada da família de árvores locais
 usou inícios 1940, 1960 e 1981, com parâmetros e amostras comuns nos meses
@@ -131,9 +131,9 @@ não alegar que todas as variantes de PLS ou multiescala foram exauridas.
 Ver [resultados 22](../reports/competition/round22/RESULTS.md) e
 [resultados 23](../reports/competition/round23/RESULTS.md).
 
-## Rodada 24 — transporte de umidade
+## Rodada 24: transporte de umidade
 
-Após as hipóteses anteriores, o usuário autorizou testar proxies derivados
+Após as hipóteses anteriores, autorizei testar proxies derivados
 somente dos campos oficiais de umidade específica e vento de 850 hPa.
 O [protocolo 24](ROUND24.md) comparou produtos q·u/q·v, convergência espacial
 e lags/a montante, mantendo iguais as amostras, árvores e S12 de referência.
@@ -144,19 +144,19 @@ avaliação. A melhor reduziu o RMSE histórico de 1,770775 para **1,770637**
 mínimo de 0,3%; **nenhuma passou**. A ablação sugere que os lags ajudam mais
 que a convergência isolada, sem impacto bastante para promoção.
 Ver [resultados e verificação](../reports/competition/round24/RESULTS.md).
-Nenhuma confirmação 2021–22, S13, CSV ou upload foi executado.
+Nenhuma confirmação 2021 a 22, S13, CSV ou upload foi executado.
 
-Após pedido explícito de S13 experimental, a confirmação de 2021–2022 foi
+Após pedido explícito de S13 experimental, a confirmação de 2021 a 2022 foi
 executada com a candidata fixa. O ganho foi apenas 0,00247% (mínimo 0,1%) e
 2022 piorou. O primeiro pedido dispensava somente o mínimo histórico de 0,3%,
-e a exportação parou. O usuário posteriormente autorizou também dispensar a
+e a exportação parou. Depois autorizei também dispensar a
 confirmação para gerar a [S13 exploratória](../reports/competition/round24_experimental/RESULTS.md).
-O limite de mudança no teste passou e o CSV foi gerado. O usuário informou
+O limite de mudança no teste passou e o CSV foi gerado. Registrei
 envio manual e score público corrigido de 1,71461: piora de 0,00005 contra
 S12 (1,71456). S12 continua a
 referência reproduzível; o resultado privado segue desconhecido.
 
-Diagnóstico da S11 em 2009–2020 e 16 candidatas, em três protocolos congelados:
+Diagnóstico da S11 em 2009 a 2020 e 16 candidatas, em três protocolos congelados:
 
 | Rodada | Hipótese | Melhor ganho histórico | Decisão |
 | --- | --- | ---: | --- |
@@ -165,8 +165,8 @@ Diagnóstico da S11 em 2009–2020 e 16 candidatas, em três protocolos congelad
 | 18 | Memória longa no PLS tropical | 0,006% | Reprovada |
 
 Nenhuma passou conjuntamente os critérios de promoção automática. Posteriormente,
-o usuário autorizou uma exceção para `meta15_a0.25`: dispensar apenas o mínimo
-de desenvolvimento para uma S12 experimental. A confirmação reutilizada 2021–2022
+autorizei uma exceção para `meta15_a0.25`: dispensar apenas o mínimo
+de desenvolvimento para uma S12 experimental. A confirmação reutilizada 2021 a 2022
 passou (ganho de 0,436%, ambos os anos melhores), assim como o limite de mudança
 por ano de teste. Os critérios gerais de 0,3% e estabilidade continuam ativos.
 Veja os [resultados da exceção](../reports/competition/round17_experimental/RESULTS.md).
@@ -179,7 +179,7 @@ Modelos-base vieram da reprodução já verificada de S10/S11; não se repetiu t
 a pesquisa OOF. Consulte o [relatório](../reports/reproducao/S12.md).
 
 A ampliação do histórico abaixo foi testada na rodada 19, após autorização:
-196.608 exemplos adicionais de 1997–2004 e duas ponderações predefinidas.
+196.608 exemplos adicionais de 1997 a 2004 e duas ponderações predefinidas.
 A melhor ficou em 1,770779761 contra 1,770775491 da S12, com 4/6 blocos,
 6/12 anos e 74/144 meses melhores. **Nenhuma passou; S13 não foi gerada.**
 Confirmação e treino final dessas candidatas não foram executados.
@@ -205,7 +205,7 @@ rodada 19 mostrou que a ampliação e as ponderações testadas não bastaram.
 Antes de novos resultados, registrar em outro protocolo os blocos adicionais,
 a disponibilidade de treinamento dos modelos-base, o tratamento do aquecimento,
 a comparação controle e o conjunto finito de candidatas. Não alterar os protocolos
-16–18, escolher períodos favoráveis ou remover 2009–2010 para fazer passar o ganho.
+16 a 18, escolher períodos favoráveis ou remover 2009 a 2010 para fazer passar o ganho.
 
 ## Registros
 

@@ -1,4 +1,4 @@
-# Entrega técnica S11 — documentação em português
+# Entrega técnica S11: documentação em português
 
 S11: RMSE público informado **1,71718**. Este diretório reúne evidências,
 dependências, instruções e registros da entrega técnica. Não certifica vitória,
@@ -23,9 +23,9 @@ anterior, use [entry_points.md](entry_points.md).
   Os wheels, modelos treinados e ZIP são locais e **não estão no Git**.
 - `MODEL_SUMMARY.pdf`: resumo em inglês preservado da entrega anterior,
   complementar aos guias atuais em português.
-- `TEAM_INFO.json`: identificação pendente de preenchimento pelo participante.
+- `TEAM_INFO.json`: identificação que ainda preciso preencher.
 
-Os dados oficiais devem ser obtidos pelo participante após aceitar as regras;
+Os dados oficiais precisam ser baixados da competição depois de aceitar as regras;
 não são incluídos no pacote. Nenhuma credencial é necessária no pipeline local.
 As [licenças de terceiros](THIRD_PARTY_NOTICES.md) continuam aplicáveis.
 

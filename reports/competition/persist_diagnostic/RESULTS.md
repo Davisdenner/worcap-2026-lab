@@ -1,16 +1,16 @@
 # Diagnóstico de persistência de precipitação
 
-**Resultado: aprovado com folga.** R² conjunto de 0,0281 no trópico contra um limiar declarado de 0,006 — teto de 1,4% de RMSE.
+**Resultado: aprovado com folga.** R² conjunto de 0,0281 no trópico contra um limiar declarado de 0,006, teto de 1,4% de RMSE.
 
 ## Contexto
 
 O organizador esclareceu o critério de validade: para prever o mês T vale qualquer dado que em tese estaria disponível até o fim de T−1, incluindo dados externos, escala diária ou semanal, índices climáticos e informação de fora do domínio. O que não vale é usar o próprio mês T para estimar T.
 
-Isso libera a precipitação observada em T−1 como preditor — e o pipeline **nunca a usou**. `round2.Features.matrix` tem 55 colunas sem nenhuma de chuva; `round6.local_memory` usa as nove variáveis *atmosféricas* em três defasagens, como o docstring declara. Em trinta e quatro rodadas a precipitação apareceu apenas como rótulo.
+Isso libera a precipitação observada em T−1 como preditor, e o pipeline **nunca a usou**. `round2.Features.matrix` tem 55 colunas sem nenhuma de chuva; `round6.local_memory` usa as nove variáveis *atmosféricas* em três defasagens, como o docstring declara. Em trinta e quatro rodadas a precipitação apareceu apenas como rótulo.
 
 ## Método e conformidade
 
-Somente dado oficial. O `tp.npy` cobre 1940–2022, então todas as origens dos seis blocos já têm chuva observada e nenhum download foi necessário. Cinco atributos na origem `o`, todos em anomalia contra `f.climo` (climatologia causal de 60 anos), correlacionados com o resíduo da S12 — que é, por definição, o que o pipeline não explicou. Reporta-se também o **R² conjunto** dos cinco, que é o que importa quando os atributos são correlacionados entre si.
+Somente dado oficial. O `tp.npy` cobre 1940 a 2022, então todas as origens dos seis blocos já têm chuva observada e nenhum download foi necessário. Cinco atributos na origem `o`, todos em anomalia contra `f.climo` (climatologia causal de 60 anos), correlacionados com o resíduo da S12, que é, por definição, o que o pipeline não explicou. Reporta-se também o **R² conjunto** dos cinco, que é o que importa quando os atributos são correlacionados entre si.
 
 Critério declarado antes de rodar: o teto de RMSE de um preditor com R² conjunto vale `1 − √(1−R²)`; para os 0,3% do limiar de promoção é preciso **R² ≥ 0,006**.
 
@@ -35,7 +35,7 @@ R² conjunto médio na faixa tropical: **0,0281**, teto de RMSE **1,417%**. Em t
 
 ## Três propriedades que sustentam o achado
 
-**A suavização espacial vence no trópico.** Em MAM/lat≥−10 a correlação sobe de 0,154 sem suavizar para 0,157 com 3×3 e 0,164 com 9×9; em DJF tropical, de 0,103 para 0,112. Essa é a assinatura de um sinal espacialmente coerente: filtrar reduz ruído sem destruir estrutura. No teste sintético de validação, onde o campo plantado era espacialmente branco, a suavização diluía o sinal — o comportamento oposto, e o esperado naquele caso.
+**A suavização espacial vence no trópico.** Em MAM/lat≥−10 a correlação sobe de 0,154 sem suavizar para 0,157 com 3×3 e 0,164 com 9×9; em DJF tropical, de 0,103 para 0,112. Essa é a assinatura de um sinal espacialmente coerente: filtrar reduz ruído sem destruir estrutura. No teste sintético de validação, onde o campo plantado era espacialmente branco, a suavização diluía o sinal, o comportamento oposto, e o esperado naquele caso.
 
 **O sinal mais forte está onde o erro mora.** MAM/lat≥−10 tem o maior R² entre os grupos tropicais, 0,0494, e é o grupo que carrega a maior fatia isolada do erro quadrático total, 18,9%, conforme a radiografia do [diagnóstico de amplitude](../slope_diagnostic/RESULTS.md).
 
@@ -43,7 +43,7 @@ R² conjunto médio na faixa tropical: **0,0281**, teto de RMSE **1,417%**. Em t
 
 ## Por que é diferente dos nove diagnósticos anteriores
 
-Todos os anteriores morreram na parede de estimação: eram correções calibradas em cinco blocos de resíduo. Persistência não é correção — é **atributo do modelo base**, ajustado em 335 a 455 meses de treino. Está do lado certo da restrição.
+Todos os anteriores morreram na parede de estimação: eram correções calibradas em cinco blocos de resíduo. Persistência não é correção, é **atributo do modelo base**, ajustado em 335 a 455 meses de treino. Está do lado certo da restrição.
 
 ## Ressalvas
 

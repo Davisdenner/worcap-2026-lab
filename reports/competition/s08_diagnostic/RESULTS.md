@@ -5,7 +5,7 @@
 Manter S07 como referência pública: **1,73550** contra **1,74606** da S08.
 A S08 piorou o RMSE em 0,01056, aproximadamente 0,61%. Não foi gerada nova
 submissão, não houve novo treinamento nem upload durante esta auditoria.
-Os scores e os três envios restantes são informações fornecidas pelo usuário.
+Os scores e os três envios restantes são anotações minhas.
 Não foi consultada a classificação atual.
 
 ## O que foi verificado
@@ -25,7 +25,7 @@ com `scripts/verify_candidate.py`.
 
 ## Instabilidade observada
 
-O RMS da diferença S08−S07 foi 0,04379 mm/dia nos anos históricos 2013–2022
+O RMS da diferença S08−S07 foi 0,04379 mm/dia nos anos históricos 2013 a 2022
 e 0,08923 em 2023: **2,04 vezes maior**. Em 2024, foi 0,07845.
 A faixa de latitude −10° a 15° concentrou 85,2% da soma dos quadrados das
 mudanças em 2023, incluindo terra e oceano. Isso localiza as mudanças de
@@ -33,26 +33,26 @@ previsão, **não os erros reais**, pois os alvos do teste são desconhecidos.
 
 Historicamente, S08 ganhou em 9/10 anos, mas somente em **67/120 meses**.
 O ganho anual não era evidência suficiente de estabilidade mensal. Os blocos
-2013–2020 já foram reutilizados na seleção de modelos. O bloco 2021–2022 foi
+2013 a 2020 já foram reutilizados na seleção de modelos. O bloco 2021 a 2022 foi
 aberto para S08 e também não pode voltar a ser descrito como intocado.
 
 Nas quatro entradas atlânticas, nenhum valor de 2023 saiu dos intervalos
 individuais de treinamento. A distância multivariada regularizada ficou acima
-do percentil 95 histórico em agosto–dezembro/2023, mas abaixo do máximo
+do percentil 95 histórico em agosto a dezembro/2023, mas abaixo do máximo
 histórico. Portanto, não há suporte para explicar a piora simplesmente como
 extrapolação fora dos intervalos observados em 2023.
 
 Em 2024, 9/12 meses superaram o máximo histórico dessa distância atlântica.
 É um alerta de mudança de distribuição, não uma estimativa do score privado.
-A referência é o treino final 1981–2022; a distância usa covariância com
+A referência é o treino final 1981 a 2022; a distância usa covariância com
 regularização fixa de 0,05 e não constitui teste probabilístico calibrado.
 Adicionar índices correlacionados também reajusta os coeficientes antigos;
 não é possível atribuir causalmente a piora apenas ao termo atlântico direto.
 
 ## Um envio que podemos evitar: mistura parcial S07/S08
 
-Assumindo exatamente o protocolo informado — RMSE uniforme sobre todos os
-pontos de 2023, mesmos alvos para ambas as submissões — seja `d = S08−S07`:
+Assumindo exatamente o protocolo informado, RMSE uniforme sobre todos os
+pontos de 2023, mesmos alvos para ambas as submissões, seja `d = S08−S07`:
 
 ```text
 MSE(S07 + a*d) = MSE(S07) + a*(MSE8−MSE7−mean(d²)) + a²*mean(d²)

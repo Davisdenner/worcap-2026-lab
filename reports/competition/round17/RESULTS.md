@@ -1,4 +1,4 @@
-# Rodada 17 — correção não linear condicionada à S11
+# Rodada 17: correção não linear condicionada à S11
 
 Referência histórica S11: 1.774622. Somente dados oficiais.
 Ganho mínimo 0,3%, junto com todos os critérios de estabilidade.

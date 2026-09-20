@@ -1,8 +1,8 @@
 # Segunda submissão: seleção local
 
-RMSE em mm/dia, grade completa. Período reservado 2021–2022 não avaliado.
+RMSE em mm/dia, grade completa. Período reservado 2021 a 2022 não avaliado.
 
-| Modelo | 2013–14 | 2015–16 | 2017–18 | 2019–20 | Agrupado | Segundos anos |
+| Modelo | 2013 a 14 | 2015 a 16 | 2017 a 18 | 2019 a 20 | Agrupado | Segundos anos |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | blend_context_300 | 1.724317 | 1.818349 | 1.827790 | 1.807918 | 1.795066 | 1.827499 |
 | previous_ensemble | 1.727005 | 1.813265 | 1.832125 | 1.809236 | 1.795863 | 1.828830 |

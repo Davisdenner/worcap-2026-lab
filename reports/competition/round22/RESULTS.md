@@ -1,4 +1,4 @@
-# Rodada 22 — início do treino-base
+# Rodada 22: início do treino-base
 
 S12 histórica: 1.770775 mm/dia.
 Somente dados oficiais. Períodos reutilizados; sem teste independente.

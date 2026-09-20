@@ -15,6 +15,15 @@ Há uma exceção legítima, e por isso existe a lista de permitidos abaixo:
 quando o texto se refere a OUTRA pessoa de verdade, como alguém que clona o
 repositório para reproduzir a submissão, "usuário" está correto.
 
+ARQUIVOS QUE NÃO PODEM SER CORRIGIDOS. Os protocolos `experiments/ROUND*.md`
+ficam de fora da verificação porque **são congelados por hash**. Cada módulo
+de rodada guarda `protocol_sha256` no seu `protocol.json` e compara a cada
+execução; mudar uma vírgula num protocolo faz a rodada correspondente falhar
+com "Código ou protocolo congelado mudou". Isso é proposital: o protocolo
+registra o que foi decidido ANTES de a rodada rodar, e um texto que pode ser
+editado depois não serve como registro. Estilo perde para rastreabilidade,
+e por isso esses arquivos mantêm o estilo antigo.
+
 Uso (na raiz do repositório):
 
     .\.venv\Scripts\python.exe scripts\verificar_estilo_docs.py
@@ -33,8 +42,14 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Documentação escrita à mão. Os JSON de resultado ficam de fora: são registros
 # gerados por código, não texto para leitura.
-ALVOS = ["README.md", "src/README.md", "experiments/README.md"]
-PASTAS = [("docs", "*.md"), ("experiments", "*.md"), ("reports", "**/*.md")]
+ALVOS = ["README.md", "src/README.md", "experiments/README.md",
+         "submissions/README.md", "delivery/s11/README.md",
+         "delivery/s12/README.md", "experiments/PROTOCOL.md",
+         "experiments/NEXT.md"]
+PASTAS = [("docs", "*.md"), ("reports", "**/*.md")]
+
+# Protocolos congelados por hash: ver a explicação no cabeçalho.
+CONGELADOS = re.compile(r"^ROUND\d+(_[A-Z_]+)?\.md$")
 
 TRACOS = {"—": "travessão (—)", "–": "meia-risca (–)"}
 
@@ -58,7 +73,8 @@ def arquivos() -> list[Path]:
         if base.is_dir():
             encontrados += [p for p in sorted(base.glob(padrao))
                             if "history" not in p.parts]
-    return [p for p in encontrados if p.is_file()]
+    return [p for p in dict.fromkeys(encontrados)
+            if p.is_file() and not CONGELADOS.match(p.name)]
 
 
 def permitido(linha: str) -> bool:

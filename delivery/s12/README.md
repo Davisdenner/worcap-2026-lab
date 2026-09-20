@@ -7,7 +7,7 @@ com 23 atributos e resíduo-alvo, não um modelo previamente ajustado. O
 [manifesto](evidence/manifest.json) registra hashes, cortes e fontes oficiais.
 
 Essas evidências devem acompanhar o código no commit/pacote técnico; os NC brutos
-continuam obtidos pelo participante na competição. Os exemplos são dados
+continuam sendo baixados da própria competição. Os exemplos são dados
 derivados e não recebem automaticamente a licença do código. Respeitar os termos
 dos dados na distribuição do pacote. Nenhuma publicação ou push foi feito.
 

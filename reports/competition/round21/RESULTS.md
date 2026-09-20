@@ -1,4 +1,4 @@
-# Rodada 21 — especialistas regionais
+# Rodada 21: especialistas regionais
 
 S12 histórica: 1.770775 mm/dia.
 Períodos reutilizados; sem teste independente. Somente dados oficiais.

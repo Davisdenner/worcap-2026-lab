@@ -1,6 +1,6 @@
 # Terceira rodada: validação histórica
 
-RMSE em mm/dia, 96 meses na grade completa. 2021–2022 não foi avaliado.
+RMSE em mm/dia, 96 meses na grade completa. 2021 a 2022 não foi avaliado.
 
 | Modelo | Agrupado | Segundos anos | Blocos melhores que S02 |
 | --- | ---: | ---: | ---: |

@@ -10,10 +10,10 @@ O motivo para revisitar era uma inversão nos dois blocos originais:
 
 | | clim_60y | clim_20y | vencedora |
 | --- | ---: | ---: | --- |
-| 2017–2018 | 1.848138 | 1.857508 | 60 anos, por 0,51% |
-| 2019–2020 | 1.847074 | 1.841507 | 20 anos, por 0,30% |
+| 2017 a 2018 | 1.848138 | 1.857508 | 60 anos, por 0,51% |
+| 2019 a 2020 | 1.847074 | 1.841507 | 20 anos, por 0,30% |
 
-A inversão foi na direção da janela curta conforme o alvo ficou mais recente, o que seria compatível com tendência climática. O teste é 2023–2024, quatro anos mais recente ainda.
+A inversão foi na direção da janela curta conforme o alvo ficou mais recente, o que seria compatível com tendência climática. O teste é 2023 a 2024, quatro anos mais recente ainda.
 
 ## Mecanismo: não confirmado
 
@@ -31,7 +31,7 @@ RMSE da climatologia pura por janela e bloco. A coluna final é a correlação e
 | clim_15y | 1.9890 | 1.8129 | 1.7400 | 1.9041 | 1.8579 | 1.8583 | −0.363 |
 | clim_10y | 2.0305 | 1.8286 | 1.7788 | 1.9478 | 1.8891 | 1.8857 | −0.245 |
 
-**Todas as tendências vieram negativas.** A vantagem da janela curta *encolhe* conforme o alvo fica mais recente — o oposto do mecanismo previsto. Bloco a bloco fica claro: as janelas curtas ganham forte em 2011 e 2013, que estão no meio da série, e perdem em 2009 e 2017. A inversão observada nos dois blocos originais era ruído.
+**Todas as tendências vieram negativas.** A vantagem da janela curta *encolhe* conforme o alvo fica mais recente, o oposto do mecanismo previsto. Bloco a bloco fica claro: as janelas curtas ganham forte em 2011 e 2013, que estão no meio da série, e perdem em 2009 e 2017. A inversão observada nos dois blocos originais era ruído.
 
 ## Efeito na S12
 
@@ -39,7 +39,7 @@ RMSE da climatologia pura por janela e bloco. A coluna final é a correlação e
 
 | variante | alpha | RMSE | ganho | blocos | meses |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| s12 | — | 1.756391 | +0.000% | — | — |
+| s12 | - | 1.756391 | +0.000% | - | - |
 | clim_all causal | 0.119 | 1.756696 | −0.017% | 3/5 | 54/120 |
 | clim_all oracle | −0.154 | 1.755759 | +0.036% | 5/5 | 64/120 |
 | clim_50y causal | 0.722 | 1.756983 | −0.034% | 1/5 | 58/120 |
@@ -59,7 +59,7 @@ RMSE da climatologia pura por janela e bloco. A coluna final é a correlação e
 
 ## Conclusão
 
-Nenhuma janela atinge 0,3% causal com 4/5 blocos. `clim_60y` fica, e agora com seis blocos de evidência em vez de dois — a escolha deixou de ser herdada e passou a ser confirmada.
+Nenhuma janela atinge 0,3% causal com 4/5 blocos. `clim_60y` fica, e agora com seis blocos de evidência em vez de dois, a escolha deixou de ser herdada e passou a ser confirmada.
 
 **O achado mais importante está na coluna alpha, e é sobre o projeto inteiro, não sobre climatologia.** Para `clim_50y` o alpha causal deu 0,722 contra 0,346 do oracle, errando por um fator de dois e entregando −0,034%. Para `clim_10y`, 0,070 contra 0,108. Os oracle são estáveis entre 0,25 e 0,35; os causais oscilam de 0,07 a 0,72.
 

@@ -1,4 +1,4 @@
-# S14_experimental_round27_gate — leaderboard probe
+# S14_experimental_round27_gate: leaderboard probe
 
 Submission **experimental / não promovida**. A referência oficial permanece S12.
 O objetivo é obter uma observação externa depois de várias rodadas históricas reutilizadas;
@@ -6,29 +6,29 @@ nenhum score de leaderboard foi consultado durante a geração.
 
 ## Evidência e escolha congelada
 
-Na janela OOF 2011–2020 da Rodada 27, S12 teve RMSE 1,756391 e
+Na janela OOF 2011 a 2020 da Rodada 27, S12 teve RMSE 1,756391 e
 `logistic_base_0.3` teve 1,755065: ganho 0,075%, 4/5 blocos,
 6/10 anos e 67/120 meses positivos. O gate histórico exigia pelo
 menos 0,3% global, além de estabilidade. O ganho observado foi
 insuficiente; a classificação permaneceu D. O melhor valor veio de
 uma tabela de alternativas, com viés de seleção acumulado.
-O score público conhecido de S12 é 1,71456, relatado pelo usuário;
+O score público conhecido de S12 é 1,71456, anotado por mim;
 nenhum score público desta probe está disponível no momento.
 
 ## Configuração final
 
 - Analog: H4 puro da Rodada 25, 10 vizinhos sazonais, média uniforme
-  das anomalias, climatologia de 60 anos. A reconstrução de 2019–20
+  das anomalias, climatologia de 60 anos. A reconstrução de 2019 a 20
   foi idêntica ao arquivo congelado.
 - Gate: regressão logística L2 `C=0.3`, `lbfgs`, 200 iterações no
   máximo, tolerância `1e-4`; latitude, longitude, seno/cosseno do mês,
   climatologia, S12 e Analog−S12; padronização pelo treino.
 - Treino final: 86.016 linhas (512 células norte × 24 meses × 7 blocos),
-  OOF 2009–2022. O Analog 2021–22 foi gerado com o mesmo H4 e corte 2021.
+  OOF 2009 a 2022. O Analog 2021 a 22 foi gerado com o mesmo H4 e corte 2021.
   Toda climatologia e padronização final usa informação disponível
-  até dezembro de 2022. Os alvos de 2023–24 no arquivo oficial são NaN.
+  até dezembro de 2022. Os alvos de 2023 a 24 no arquivo oficial são NaN.
 - Inferência: `g=0.3×P(Analog vence S12)` apenas nas 15.921 células
-  de 0–15°N; no restante, S12 exatamente. A saída é um blend convexo
+  de 0 a 15°N; no restante, S12 exatamente. A saída é um blend convexo
   de previsões não negativas, sem clipping adicional.
 
 ## Arquivo e validações

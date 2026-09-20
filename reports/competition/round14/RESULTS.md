@@ -1,6 +1,6 @@
-# Rodada 14 — transporte e convergência de umidade
+# Rodada 14: transporte e convergência de umidade
 
-Somente dados oficiais; RMSE em toda a grade de 2009–2020, não score Kaggle.
+Somente dados oficiais; RMSE em toda a grade de 2009 a 2020, não score Kaggle.
 Referência histórica S10: 1.775343; público informado 1,71895.
 
 | Candidata | RMSE | Ganho | Blocos | Anos | Meses | Aprovada |
@@ -14,7 +14,7 @@ Selecionada: nenhuma.
 Novos atributos físicos concatenados à representação S10; PLS32 reajustado e pesos preservados.
 Produtos de médias mensais em um nível são proxies, não fluxos reais integrados na coluna.
 Máscara de pressão e vizinhança evita usar indicadores abaixo do terreno; unidades ERA5 assumidas.
-Controle S10 reproduzido. Arquitetura e períodos reutilizados; 2021–2022 não é holdout inédito.
+Controle S10 reproduzido. Arquitetura e períodos reutilizados; 2021 a 2022 não é holdout inédito.
 Nenhuma chuva oculta 2023/2024, fonte externa, upload ou garantia de 1,70.
 
 [Protocolo](../../../experiments/ROUND14.md) · [Seleção](selection.json) · [Auditoria](audit.json)

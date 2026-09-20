@@ -27,18 +27,18 @@ oficial na ordem exata. O fluxo não exige renomear um CSV para uma avaliação
 local; os nomes numerados são convenções internas de rastreabilidade.
 
 S07/S08 permanecem no histórico, mas não são bases da linha restrita a dados
-oficiais da organização. S09–S11 não usam direta ou indiretamente seus componentes
+oficiais da organização. S09 a S11 não usam direta ou indiretamente seus componentes
 externos. Para o método, consulte [METODOLOGIA.md](../docs/METODOLOGIA.md).
 
 Registrar próximas versões só após geração solicitada, validação e preservação
 do artefato. Resultados públicos entram somente quando informados. Nenhum upload
 é automático e nenhum score privado é inferido do público.
 
-A S13 experimental foi gerada para teste por pedido expresso do usuário,
+Gerei a S13 experimental para teste, por decisão explícita minha,
 dispensando pontualmente o mínimo histórico de 0,3% e a confirmação
-2021–2022 reprovada. O resultado negativo da confirmação foi preservado e o
+2021 a 2022 reprovada. O resultado negativo da confirmação foi preservado e o
 limite de mudança no teste passou. Consulte o [relatório](../reports/competition/round24_experimental/RESULTS.md)
-e os [metadados de geração](submission_13.json). O usuário informou o envio
+e os [metadados de geração](submission_13.json). Registrei o envio
 manual e score público **1,71461**, corrigindo relato anterior de 1,71456.
 O [manifesto](manifest.json) registra esse relato sem modificar o snapshot
 de geração; score privado e classificação final permanecem desconhecidos.

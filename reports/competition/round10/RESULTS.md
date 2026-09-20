@@ -1,6 +1,6 @@
-# Rodada 10 — correção residual da S09
+# Rodada 10: correção residual da S09
 
-Somente dados oficiais. RMSE local em 144 meses de 2009–2020; não é score do Kaggle.
+Somente dados oficiais. RMSE local em 144 meses de 2009 a 2020; não é score do Kaggle.
 Referência S09 histórica: **1.780988**.
 
 | Candidata | RMSE | Ganho relativo | Blocos melhores | Anos melhores | Meses melhores | Aprovada |
@@ -19,7 +19,7 @@ Se nenhuma passou, não gerar S10 e preservar os envios restantes. Não afrouxar
 
 Os resíduos de treino vêm de previsões com cortes temporais anteriores, e o corretor só usa blocos passados.
 A arquitetura da S09 foi escolhida retrospectivamente. Os períodos de desenvolvimento são reutilizados.
-2021–2022 já foi consumido nas rodadas 8/9; não é holdout inédito.
+2021 a 2022 já foi consumido nas rodadas 8/9; não é holdout inédito.
 Nenhuma chuva oculta de 2023/2024 foi acessada. Nenhum score local garante 1,70 ou liderança.
 Nenhum upload foi realizado.
 
@@ -28,6 +28,6 @@ Nenhum upload foi realizado.
 ## Decisão desta execução
 
 Melhor candidata: residual8_0.25, ganho relativo 0.207%; mínimo exigido: 0,300%.
-Não houve nova pontuação de 2021–2022, treino final, exportação S10 ou upload. S09 permanece a referência.
+Não houve nova pontuação de 2021 a 2022, treino final, exportação S10 ou upload. S09 permanece a referência.
 Diagnóstico histórico: 63,1% do erro quadrático na faixa de 10°S a 15°N, incluindo oceano e terra.
 Esse diagnóstico não revela a distribuição dos erros ocultos do teste.

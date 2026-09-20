@@ -1,4 +1,4 @@
-# Rodada 24 — transporte de umidade de 850 hPa
+# Rodada 24: transporte de umidade de 850 hPa
 
 S12 histórica: 1.770775 mm/dia.
 Somente dados oficiais. Períodos reutilizados; sem teste independente.

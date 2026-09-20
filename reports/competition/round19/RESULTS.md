@@ -1,11 +1,11 @@
-# Rodada 19 — histórico ampliado: nenhuma candidata aprovada
+# Rodada 19: histórico ampliado: nenhuma candidata aprovada
 
 Referência fixa S12 `meta15_a0.25`, RMSE histórico **1,770775491**.
-Foram adicionados 196.608 exemplos OOF oficiais de 1997–2004. O conjunto final
+Foram adicionados 196.608 exemplos OOF oficiais de 1997 a 2004. O conjunto final
 potencial teria 26 anos, mas **não houve treinamento final para uma S13**.
 As duas configurações foram congeladas antes de avaliar resultados.
 
-## Desenvolvimento completo: 2009–2020
+## Desenvolvimento completo: 2009 a 2020
 
 | Candidata | RMSE | Ganho relativo contra S12 | Blocos melhores | Anos melhores | Meses melhores |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -20,17 +20,17 @@ anual ficou abaixo de 0,5%, mas isso não compensa os demais critérios reprovad
 
 | Bloco | S12 | Pesos iguais | Recência 8 anos |
 | --- | ---: | ---: | ---: |
-| 2009–2010 | 1,841011 | 1,839862 | 1,840477 |
-| 2011–2012 | 1,752162 | 1,754141 | 1,753591 |
-| 2013–2014 | 1,695158 | 1,695639 | 1,695034 |
-| 2015–2016 | 1,760122 | 1,759923 | 1,759923 |
-| 2017–2018 | 1,810436 | 1,810062 | 1,809916 |
-| 2019–2020 | 1,762162 | 1,762075 | 1,762175 |
+| 2009 a 2010 | 1,841011 | 1,839862 | 1,840477 |
+| 2011 a 2012 | 1,752162 | 1,754141 | 1,753591 |
+| 2013 a 2014 | 1,695158 | 1,695639 | 1,695034 |
+| 2015 a 2016 | 1,760122 | 1,759923 | 1,759923 |
+| 2017 a 2018 | 1,810436 | 1,810062 | 1,809916 |
+| 2019 a 2020 | 1,762162 | 1,762075 | 1,762175 |
 
 ## Decisão
 
 - `selected: null`, sem exceção ao critério de 0,3%.
-- Não consultar confirmação 2021–2022 para escolher outra configuração.
+- Não consultar confirmação 2021 a 2022 para escolher outra configuração.
 - Não treinar candidata final nem gerar previsão/CSV S13.
 - Nenhum upload ou consumo de envio pelo assistente.
 - S12 continua a melhor pública informada: 1,71456; seu CSV não foi alterado.

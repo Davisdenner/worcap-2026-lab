@@ -1,4 +1,4 @@
-# Diagnóstico histórico da S12 — 2009–2020
+# Diagnóstico histórico da S12: 2009 a 2020
 
 Previsões fora do treino, períodos já reutilizados; somente dados oficiais.
 RMSE total: 1.770775 mm/dia.

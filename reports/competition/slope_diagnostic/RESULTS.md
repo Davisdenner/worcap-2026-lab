@@ -1,4 +1,4 @@
-# Diagnóstico de amplitude — a anomalia da S12 está calibrada?
+# Diagnóstico de amplitude: a anomalia da S12 está calibrada?
 
 **Resultado: não há ganho causal.** O sinal existe e o teto é de 0,401%, mas nenhum estimador causal sobrevive a cinco blocos.
 
@@ -8,9 +8,9 @@ A amplitude da anomalia prevista pela S12 corresponde à skill que ela tem? Se o
 
 ## Hipótese descartada
 
-Os slopes não são sistematicamente menores que 1 — eles orbitam 1 e espalham de −0,17 a 1,85. Cruzando com a correlação (0,001 a 0,521), a explicação aparece: com slope ≈ 1 e correlação ≈ 0,2, a amplitude da anomalia prevista já é cerca de um quinto da observada. **O pipeline já é fortemente amortecido**, e não há superdispersão global a corrigir.
+Os slopes não são sistematicamente menores que 1, eles orbitam 1 e espalham de −0,17 a 1,85. Cruzando com a correlação (0,001 a 0,521), a explicação aparece: com slope ≈ 1 e correlação ≈ 0,2, a amplitude da anomalia prevista já é cerca de um quinto da observada. **O pipeline já é fortemente amortecido**, e não há superdispersão global a corrigir.
 
-## Radiografia por grupo (blocos 2011–2020)
+## Radiografia por grupo (blocos 2011 a 2020)
 
 Doze grupos, três bandas de latitude por quatro estações, os mesmos de `round4.groups()`.
 
@@ -31,7 +31,7 @@ Doze grupos, três bandas de latitude por quatro estações, os mesmos de `round
 
 Dois achados estruturais saem daqui e são reutilizados nas rodadas seguintes.
 
-**A climatologia praticamente nunca vence a S12** — 0/5 blocos em nove dos doze grupos. A S12 agrega valor real sobre climatologia em quase todo o domínio, o que fecha a ideia de encolhimento.
+**A climatologia praticamente nunca vence a S12**, 0/5 blocos em nove dos doze grupos. A S12 agrega valor real sobre climatologia em quase todo o domínio, o que fecha a ideia de encolhimento.
 
 **62,4% de todo o erro quadrático mora na faixa lat ≥ −10**, que são 101 das 301 linhas da grade. Um terço do mapa concentra quase dois terços da perda, com RMSE de 2,2 a 2,6 contra 1,0 a 1,4 no sul.
 
@@ -39,7 +39,7 @@ Dois achados estruturais saem daqui e são reutilizados nas rodadas seguintes.
 
 | variante | RMSE | ganho | blocos | anos | meses |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| s12 | 1.756391 | +0.000% | — | — | — |
+| s12 | 1.756391 | +0.000% | - | - | - |
 | slope único global (causal) | 1.755733 | +0.037% | 4/5 | 7/10 | 71/120 |
 | 12 grupos, sem encolher | 1.757338 | −0.054% | 3/5 | 4/10 | 60/120 |
 | 12 grupos, encolhido | 1.756424 | −0.002% | 3/5 | 6/10 | 60/120 |
@@ -50,7 +50,7 @@ Quando a variante deixa um grupo intacto (`a = 1`), a previsão fica idêntica �
 
 ## Conclusão
 
-O teto de 0,401% é real e os padrões são fisicamente coerentes: JJA na faixa −30 a −10 tem slope 0,380 com lambda 0,87, e JJA no trópico tem 1,319 com lambda 0,93 — amortecer onde não há skill, amplificar onde há. Mas nenhum estimador causal converte isso. O primeiro diagnóstico, com intercepto livre e sem truncamento, chegou a exibir teto de 0,760%; metade daquilo era artefato de parametrização, e o valor honesto sempre foi 0,4%.
+O teto de 0,401% é real e os padrões são fisicamente coerentes: JJA na faixa −30 a −10 tem slope 0,380 com lambda 0,87, e JJA no trópico tem 1,319 com lambda 0,93, amortecer onde não há skill, amplificar onde há. Mas nenhum estimador causal converte isso. O primeiro diagnóstico, com intercepto livre e sem truncamento, chegou a exibir teto de 0,760%; metade daquilo era artefato de parametrização, e o valor honesto sempre foi 0,4%.
 
 O diagnóstico decisivo está nos alphas: para `clim_50y` o causal deu 0,722 contra 0,346 do oracle. **Isso é um único escalar global, um parâmetro, e mesmo ele não se deixa estimar a partir de cinco blocos anteriores.** Essa observação é a origem da "parede de estimação" descrita na síntese do projeto.
 

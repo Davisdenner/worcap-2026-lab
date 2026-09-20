@@ -1,11 +1,11 @@
-# S11 experimental — joint1, solicitada pelo usuário
+# S11 experimental: joint1, gerada por decisão explícita
 
 ## Retorno público posterior à geração
 
 Usuário informou **1,71718**, melhora de 0,00177 (0,103%) sobre S10 (1,71895).
 S11 passa a ser a melhor pública confirmada. Isso não altera a reprovação
 histórica, não demonstra significância estatística e não informa o privado.
-O upload foi feito pelo usuário. CSV, metadados e avaliações originais
+Fiz o upload manualmente. CSV, metadados e avaliações originais
 preservados; aceitação registrada separadamente no ledger e manifesto.
 Nenhuma nova candidata ou envio iniciado com esse retorno.
 
@@ -18,11 +18,11 @@ Nenhum upload foi realizado; score público e privado da S11 são desconhecidos.
 
 ## Evidência e risco
 
-Desenvolvimento 2009–2020: RMSE **1,775343 → 1,774622**, ganho **0,041%**,
+Desenvolvimento 2009 a 2020: RMSE **1,775343 → 1,774622**, ganho **0,041%**,
 melhora em **4/6 blocos e 6/12 anos**. Reprovada nos critérios de ganho,
 blocos e anos. A seleção original continua `selected: null`.
 
-Diagnóstico adicional no período já reutilizado de 2021–2022:
+Diagnóstico adicional no período já reutilizado de 2021 a 2022:
 
 | Período | S10 | S11 experimental |
 | --- | ---: | ---: |
@@ -47,10 +47,10 @@ Isso verifica magnitude, não qualidade nas respostas ocultas.
 
 Cinco componentes oficiais existentes, lambda 1, 12 grupos fixos, pesos
 convexos limitados a 0,10 de mudança do prior S10. Calibração final com blocos
-2005–2022, sem chuva oculta de 2023/2024 e sem fontes externas.
+2005 a 2022, sem chuva oculta de 2023/2024 e sem fontes externas.
 1.885.464 linhas, colunas `id,tp_mm_day`, ordem oficial do sample, valores
 finitos e não negativos. Previsões reconstruídas integralmente dos componentes
 e pesos salvos; S10 e seleção original preservadas por hash.
 
-Gerar novas submissões somente quando o usuário pedir. Aguardar resultado
-informado pelo usuário; não promover S11 nem consumir envios automaticamente.
+Gerar novas submissões somente por decisão explícita. Aguardar o resultado
+do envio; não promover S11 nem consumir envios automaticamente.

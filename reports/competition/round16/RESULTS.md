@@ -1,4 +1,4 @@
-# Rodada 16 — correção espacial/sazonal S11
+# Rodada 16: correção espacial/sazonal S11
 
 Referência histórica S11: 1.774622. Somente dados oficiais.
 Ganho mínimo relativo: 0,3%, com todos os demais critérios de estabilidade.

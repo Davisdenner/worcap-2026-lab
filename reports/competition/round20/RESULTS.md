@@ -1,4 +1,4 @@
-# Rodada 20 — árvores locais/globais, hipótese 1
+# Rodada 20: árvores locais/globais, hipótese 1
 
 Referência S12: RMSE 1.770775491. Somente dados oficiais.
 

@@ -1,6 +1,6 @@
-# Rodada 11 — resolução atmosférica tropical
+# Rodada 11: resolução atmosférica tropical
 
-Somente dados oficiais; RMSE da grade completa em 2009–2020, não score Kaggle.
+Somente dados oficiais; RMSE da grade completa em 2009 a 2020, não score Kaggle.
 Referência S09: 1.780988.
 
 | Candidata | RMSE | Ganho | Blocos | Anos | Meses | Aprovada |
@@ -14,9 +14,9 @@ Referência S09: 1.780988.
 Selecionada: fine32_0.25.
 coarse16_0.25 é controle diagnóstico, não elegível para exportação.
 Critérios definidos antes dos resultados; mínimo de ganho agregado de 0,3%.
-Períodos e arquitetura S09 reutilizados; 2021–2022 não é holdout novo.
+Períodos e arquitetura S09 reutilizados; 2021 a 2022 não é holdout novo.
 Nenhuma chuva oculta de 2023/2024 foi acessada. Nenhum upload ou garantia de 1,70.
 
 [Protocolo](../../../experiments/ROUND11.md) · [Seleção](selection.json) · [Auditoria](audit.json)
 
-Confirmação reutilizada 2021–2022: 1.834766 → 1.830283; aprovada: True.
+Confirmação reutilizada 2021 a 2022: 1.834766 → 1.830283; aprovada: True.

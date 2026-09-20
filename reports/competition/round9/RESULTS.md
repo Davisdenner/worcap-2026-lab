@@ -1,6 +1,6 @@
-# Rodada 9 — resultados com dados oficiais
+# Rodada 9: resultados com dados oficiais
 
-RMSE em mm/dia, 144 meses de 2009–2020, grade inteira e pesos uniformes.
+RMSE em mm/dia, 144 meses de 2009 a 2020, grade inteira e pesos uniformes.
 Referência S06-forward: componentes da S06, pesos calibrados somente no passado.
 Não comparar estes números diretamente ao score público de 2023.
 
@@ -26,12 +26,12 @@ Se nenhuma candidata passou, não gerar submissão nem gastar envio.
 
 | Bloco | S06-forward | Melhor entre as oito (seleção retrospectiva) | RMSE |
 | --- | ---: | --- | ---: |
-| 2009–2010 | 1.857270 | pls8_0.5 | 1.835412 |
-| 2011–2012 | 1.782766 | tree15_0.5 | 1.768763 |
-| 2013–2014 | 1.709222 | tree15_0.5 | 1.697323 |
-| 2015–2016 | 1.774118 | pls8_0.5 | 1.761442 |
-| 2017–2018 | 1.820857 | pls16_0.25 | 1.817036 |
-| 2019–2020 | 1.785689 | pls16_0.5 | 1.771543 |
+| 2009 a 2010 | 1.857270 | pls8_0.5 | 1.835412 |
+| 2011 a 2012 | 1.782766 | tree15_0.5 | 1.768763 |
+| 2013 a 2014 | 1.709222 | tree15_0.5 | 1.697323 |
+| 2015 a 2016 | 1.774118 | pls8_0.5 | 1.761442 |
+| 2017 a 2018 | 1.820857 | pls16_0.25 | 1.817036 |
+| 2019 a 2020 | 1.785689 | pls16_0.5 | 1.771543 |
 
 A melhor candidata de cada bloco acima não é um modelo selecionável em tempo real.
 A decisão usa uma única configuração entre todos os blocos, não escolhe um vencedor por ano.
@@ -42,13 +42,13 @@ A decisão usa uma única configuração entre todos os blocos, não escolhe um 
 - Sem NOAA, S07/S08, modelos externos ou chuva oculta do teste.
 - Corretores treinados somente em blocos anteriores de previsões fora do treino.
 - Seleção anterior de arquitetura e desenvolvimento reutilizado impedem alegar teste inteiramente independente.
-- 2021–2022 já foi consumido na rodada 8. Se usado aqui, serve apenas como confirmação adicional.
+- 2021 a 2022 já foi consumido na rodada 8. Se usado aqui, serve apenas como confirmação adicional.
 - Nenhum RMSE local garante score 1,70, liderança pública ou resultado privado.
 - Nenhum upload automático foi realizado.
 
 [Protocolo congelado](../../../experiments/ROUND9.md) · [Seleção detalhada](selection.json) · [Auditoria](audit.json)
 
-## Confirmação 2021–2022 (período previamente utilizado)
+## Confirmação 2021 a 2022 (período previamente utilizado)
 
 pls16_0.25: 1.841795 → 1.834766.
 Passou: sim. Nenhum ajuste posterior autorizado pelo protocolo.

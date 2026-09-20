@@ -22,13 +22,13 @@ chuva preparatória em `data/interim`. Nenhum alvo oculto de 2023/2024 pode ser
 usado em treino, seleção ou calibração. A atmosfera de cada mês é permitida
 conforme o alinhamento oficial mês observado → mês seguinte.
 
-## Critérios ativos — todos são necessários
+## Critérios ativos: todos são necessários
 
 O ganho é relativo: `1 − RMSE_candidata / RMSE_referencia`.
 **0,3% = 0,003**, não uma redução absoluta de 0,3 no RMSE.
 A função congelada `src.round9.passes_gate` continua aplicada e coberta por testes.
 
-| Desenvolvimento 2009–2020 | Exigência |
+| Desenvolvimento 2009 a 2020 | Exigência |
 | --- | --- |
 | RMSE agregado | Ganho relativo de pelo menos **0,3%** |
 | Agregado dos segundos anos dos blocos | Menor RMSE que a referência |
@@ -38,7 +38,7 @@ A função congelada `src.round9.passes_gate` continua aplicada e coberta por te
 | Pior degradação anual relativa | No máximo 0,5% |
 
 Depois da seleção em desenvolvimento, confirmar somente a candidata escolhida
-em 2021–2022: ganho agregado de pelo menos **0,1%** e melhora nos dois anos.
+em 2021 a 2022: ganho agregado de pelo menos **0,1%** e melhora nos dois anos.
 Esse período já foi reutilizado; não chamá-lo de holdout independente.
 Não trocar de candidata ou ajustar parâmetros após falhar na confirmação.
 
@@ -57,9 +57,9 @@ Também verificar proveniência, integridade, causalidade, IDs e valores do CSV.
    Se nenhuma passar, encerrar a rodada sem nova candidata exportada.
 4. Aplicar confirmação reutilizada e limite de mudança. Falhas bloqueiam a
    promoção normal; não afrouxar limiares após ver os resultados.
-5. Gerar uma nova submissão somente com pedido explícito do usuário. Aprovação
+5. Gerar uma nova submissão somente por decisão explícita minha. Aprovação
    nos critérios, sozinha, não é autorização de exportação ou upload.
-6. Se o usuário solicitar uma exceção, informar quais critérios falharam e
+6. Ao abrir uma exceção, registrar quais critérios falharam e
    obter autorização explícita para a exceção. Registrar a reprovação e o pedido
    sem alterar os critérios. Foi esse o caso de S11/S12 e, para teste pontual,
    de S13. As exceções da S13 estão no [protocolo específico](ROUND24_EXPERIMENTAL.md).

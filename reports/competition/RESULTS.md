@@ -1,8 +1,8 @@
 # Primeira rodada de desenvolvimento
 
-RMSE em mm/dia, grade completa. Menor é melhor. Nenhuma avaliação de 2021–2022 foi executada.
+RMSE em mm/dia, grade completa. Menor é melhor. Nenhuma avaliação de 2021 a 2022 foi executada.
 
-| Modelo | 2017–2018 | 2019–2020 | Agrupado | 2018 | 2020 |
+| Modelo | 2017 a 2018 | 2019 a 2020 | Agrupado | 2018 | 2020 |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | half_trees_half_prior | 1.832125 | 1.809236 | 1.820717 | 1.899532 | 1.846897 |
 | half_ridge_0.1_clim_60y | 1.833584 | 1.812849 | 1.823246 | 1.895624 | 1.852360 |

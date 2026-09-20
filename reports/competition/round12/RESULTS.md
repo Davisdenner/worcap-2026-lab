@@ -1,6 +1,6 @@
-# Rodada 12 — correção residual da S10
+# Rodada 12: correção residual da S10
 
-Somente dados oficiais; RMSE da grade completa em 2009–2020, não score Kaggle.
+Somente dados oficiais; RMSE da grade completa em 2009 a 2020, não score Kaggle.
 Referência histórica S10: 1.775343. Público S10 informado: 1,71895.
 
 | Candidata | RMSE | Ganho | Blocos | Anos | Meses | Aprovada |
@@ -15,7 +15,7 @@ Referência histórica S10: 1.775343. Público S10 informado: 1,71895.
 Selecionada: nenhuma.
 Critérios definidos antes dos resultados; mínimo de ganho agregado de 0,3%.
 Treino dos resíduos usa somente blocos encerrados. Arquitetura S10 e períodos reutilizados.
-2021–2022 não é holdout inédito. Nenhuma chuva oculta 2023/2024 foi acessada.
+2021 a 2022 não é holdout inédito. Nenhuma chuva oculta 2023/2024 foi acessada.
 Nenhum upload ou garantia de 1,70. Usuário informou um envio restante hoje.
 
 [Protocolo](../../../experiments/ROUND12.md) · [Seleção](selection.json) · [Auditoria](audit.json)
