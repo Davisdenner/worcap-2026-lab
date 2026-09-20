@@ -1,0 +1,135 @@
+{
+  "pergunta": "A combinacao de S10 e S12 bate a S12 sozinha?",
+  "criterios_declarados": {
+    "ganho_oracle_minimo": 0.003,
+    "amplitude_maxima_peso": 0.5,
+    "faixa_peso": [
+      0.0,
+      1.5
+    ]
+  },
+  "estabilidade_peso": {
+    "minimo": 0.752865231039638,
+    "maximo": 1.1202265065907835,
+    "amplitude": 0.3673612755511455,
+    "estavel": true
+  },
+  "blocos": {
+    "2009": {
+      "rmse_s12": 1.8410108371504523,
+      "rmse_s11": 1.839799729072348,
+      "rmse_s10": 1.8878202909303388,
+      "rho_s12_s10": 0.9801559859743373,
+      "rho_s12_s11": 0.9983258280575711,
+      "peso_otimo_s12": 1.1202265065907835,
+      "rmse_oracle": 1.8404583715342373
+    },
+    "2011": {
+      "rmse_s12": 1.7521620322870584,
+      "rmse_s11": 1.7608031966672046,
+      "rmse_s10": 1.7714598538127293,
+      "rho_s12_s10": 0.9784022554362376,
+      "rho_s12_s11": 0.9990641584272015,
+      "peso_otimo_s12": 0.752865231039638,
+      "rmse_oracle": 1.7498170875182832
+    },
+    "2013": {
+      "rmse_s12": 1.6951577355127145,
+      "rmse_s11": 1.701708191092446,
+      "rmse_s10": 1.7242821842300335,
+      "rho_s12_s10": 0.9836354203140731,
+      "rho_s12_s11": 0.9990900510641577,
+      "peso_otimo_s12": 1.0156325930552872,
+      "rmse_oracle": 1.6951507746164851
+    },
+    "2015": {
+      "rmse_s12": 1.7601215965459243,
+      "rmse_s11": 1.761861279470138,
+      "rmse_s10": 1.8032371792948667,
+      "rho_s12_s10": 0.978334985306269,
+      "rho_s12_s11": 0.9991607886636935,
+      "peso_otimo_s12": 1.0489035547498406,
+      "rmse_oracle": 1.760026516869957
+    },
+    "2017": {
+      "rmse_s12": 1.8104364580826346,
+      "rmse_s11": 1.8125223765746974,
+      "rmse_s10": 1.8368237460544026,
+      "rho_s12_s10": 0.9844736612593771,
+      "rho_s12_s11": 0.9994234570580522,
+      "peso_otimo_s12": 0.9623491966378979,
+      "rmse_oracle": 1.810395710532653
+    },
+    "2019": {
+      "rmse_s12": 1.7621618538678516,
+      "rmse_s11": 1.7678235476933732,
+      "rmse_s10": 1.8037071218400256,
+      "rho_s12_s10": 0.980841872709587,
+      "rho_s12_s11": 0.999482918327393,
+      "peso_otimo_s12": 1.102500132772407,
+      "rmse_oracle": 1.7617953166848193
+    }
+  },
+  "agregado": {
+    "rmse_s12": 1.7707754911700633,
+    "rmse_s10": 1.8052714336819593,
+    "rho": 0.9809293479093931,
+    "peso_otimo": 1.0009814700296304,
+    "rmse_oracle": 1.7707754576827615,
+    "ganho_oracle_percent": 1.8911094030488045e-06
+  },
+  "causal": {
+    "blocos": [
+      {
+        "bloco": 2011,
+        "peso_estimado": 1.1202265065907784,
+        "peso_otimo": 0.752865231039638,
+        "rmse_s12": 1.7521620322870584,
+        "rmse_combinacao": 1.75499435450165,
+        "melhorou": false
+      },
+      {
+        "bloco": 2013,
+        "peso_estimado": 0.9407211561527438,
+        "peso_otimo": 1.0156325930552872,
+        "rmse_s12": 1.6951577355127145,
+        "rmse_combinacao": 1.6953106125243758,
+        "melhorou": false
+      },
+      {
+        "bloco": 2015,
+        "peso_estimado": 0.9601817483949057,
+        "peso_otimo": 1.0489035547498406,
+        "rmse_s12": 1.7601215965459243,
+        "rmse_combinacao": 1.7603394421940308,
+        "melhorou": false
+      },
+      {
+        "bloco": 2017,
+        "peso_estimado": 0.9844476354145528,
+        "peso_otimo": 0.9623491966378979,
+        "rmse_s12": 1.8104364580826349,
+        "rmse_combinacao": 1.810409747697345,
+        "melhorou": true
+      },
+      {
+        "bloco": 2019,
+        "peso_estimado": 0.9807124722552607,
+        "peso_otimo": 1.102500132772407,
+        "rmse_s12": 1.7621618538678514,
+        "rmse_combinacao": 1.762312753304788,
+        "melhorou": false
+      }
+    ],
+    "rmse_s12": 1.7563914221076156,
+    "rmse_combinacao": 1.7570548030174071,
+    "ganho_percent": -0.03776953709985272,
+    "blocos_positivos": 1,
+    "blocos_avaliados": 5
+  },
+  "veredito": "Oracle de 0.000% abaixo dos 0.3% declarados. Nem sabendo o peso de antemao vale a pena. Linha encerrada pelo criterio 1.",
+  "somente_dado_oficial": true,
+  "treino_novo": false,
+  "alvo_de_teste_lido": false,
+  "csv_gerado": false
+}

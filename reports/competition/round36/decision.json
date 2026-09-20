@@ -4,6 +4,20 @@
   "baseline_rmse": 1.7563914221076156,
   "target_direct_rmse": 1.765,
   "variants": {
+    "r36_s1940_a0.25": {
+      "rmse": 1.7537113398308044,
+      "gain_vs_s12_percent": 0.15259026223182204,
+      "positive_blocks": 4,
+      "positive_years": 7,
+      "positive_months": 71
+    },
+    "r36_s1940_a0.1": {
+      "rmse": 1.754459805255381,
+      "gain_vs_s12_percent": 0.10997644533681239,
+      "positive_blocks": 5,
+      "positive_years": 9,
+      "positive_months": 76
+    },
     "r36_s1981_a0.1": {
       "rmse": 1.7550579959799002,
       "gain_vs_s12_percent": 0.07591850603069217,
@@ -52,6 +66,13 @@
       "positive_blocks": 1,
       "positive_years": 3,
       "positive_months": 49
+    },
+    "r36_s1940_direto": {
+      "rmse": 1.7883554055687538,
+      "gain_vs_s12_percent": -1.8198667483118491,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 44
     },
     "r35_124_direto": {
       "rmse": 1.793046954657243,
