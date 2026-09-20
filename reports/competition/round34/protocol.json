@@ -1,0 +1,75 @@
+{
+  "protocol_sha256": "3371b817702ea170a89a50f66455887796ace7ec14b0febfe5f191ba6837bce7",
+  "reference": "S12",
+  "inherits": "round33_scale (mesmo sorteio, atributos e alvo)",
+  "cells": 8192,
+  "features": 119,
+  "base_leaves": 31,
+  "new_leaves": [
+    127,
+    511
+  ],
+  "seed": 20261101,
+  "fractions": [
+    0.1,
+    0.25
+  ],
+  "target_direct_rmse": 1.765,
+  "trees": {
+    "31": {
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 100,
+      "l2_regularization": 10.0,
+      "loss": "squared_error",
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "max_bins": 128,
+      "early_stopping": false,
+      "warm_start": false,
+      "random_state": 20260914
+    },
+    "127": {
+      "max_leaf_nodes": 127,
+      "min_samples_leaf": 100,
+      "l2_regularization": 10.0,
+      "loss": "squared_error",
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "max_bins": 128,
+      "early_stopping": false,
+      "warm_start": false,
+      "random_state": 20260914
+    },
+    "511": {
+      "max_leaf_nodes": 511,
+      "min_samples_leaf": 100,
+      "l2_regularization": 10.0,
+      "loss": "squared_error",
+      "learning_rate": 0.05,
+      "max_iter": 300,
+      "max_bins": 128,
+      "early_stopping": false,
+      "warm_start": false,
+      "random_state": 20260914
+    }
+  },
+  "years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "eval_years": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "minimum_gain": 0.003,
+  "official_only": true,
+  "no_test_targets": true,
+  "no_submission": true
+}

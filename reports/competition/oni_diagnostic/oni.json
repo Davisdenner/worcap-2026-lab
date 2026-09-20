@@ -1,0 +1,119 @@
+{
+  "pergunta": "O ENSO carrega informacao ausente do residuo da S12?",
+  "fonte": "NOAA CPC oni.ascii.txt",
+  "sha256": "93f8c86c7a660f46318abe33b38c0479d184812d95a479a1fe869c0c2363a9e4",
+  "causalidade": "ONI centrado em o-1 ou anterior; nunca o proprio mes de origem",
+  "limiar_declarado_abs_r": 0.077,
+  "correlacao_por_grupo": {
+    "DJF/lat<-30": {
+      "oni_lag1": 0.0067853501700144495,
+      "oni_lag3": -0.006474052801136316,
+      "oni_tendencia": 0.025264504642089226
+    },
+    "DJF/-30a-10": {
+      "oni_lag1": -0.023580458224575242,
+      "oni_lag3": -0.015503127499560504,
+      "oni_tendencia": -0.030752880402539963
+    },
+    "DJF/lat>=-10": {
+      "oni_lag1": -0.18046885889136172,
+      "oni_lag3": -0.16366912162678346,
+      "oni_tendencia": -0.1679709538611371
+    },
+    "MAM/lat<-30": {
+      "oni_lag1": -0.07189257965433826,
+      "oni_lag3": -0.08510981806693846,
+      "oni_tendencia": 0.06455389284515202
+    },
+    "MAM/-30a-10": {
+      "oni_lag1": -0.007681055256589904,
+      "oni_lag3": -0.01388728680011952,
+      "oni_tendencia": 0.03389820736364423
+    },
+    "MAM/lat>=-10": {
+      "oni_lag1": -0.018777990613941926,
+      "oni_lag3": -0.02623211320749684,
+      "oni_tendencia": 0.03638426256495994
+    },
+    "JJA/lat<-30": {
+      "oni_lag1": 0.007332103666629953,
+      "oni_lag3": -0.06370030507401012,
+      "oni_tendencia": 0.09717438286316916
+    },
+    "JJA/-30a-10": {
+      "oni_lag1": -0.05124185899064893,
+      "oni_lag3": -0.0618740169992613,
+      "oni_tendencia": 0.03523101157989973
+    },
+    "JJA/lat>=-10": {
+      "oni_lag1": -0.03568431831778987,
+      "oni_lag3": -0.01666570281590056,
+      "oni_tendencia": -0.004176451957628681
+    },
+    "SON/lat<-30": {
+      "oni_lag1": 0.03344428668648597,
+      "oni_lag3": 0.0024119603898628845,
+      "oni_tendencia": 0.07152439558521705
+    },
+    "SON/-30a-10": {
+      "oni_lag1": -0.039993415525847245,
+      "oni_lag3": -0.05177153507961937,
+      "oni_tendencia": 0.005765318216743376
+    },
+    "SON/lat>=-10": {
+      "oni_lag1": -0.13689245018926385,
+      "oni_lag3": -0.11208411810920604,
+      "oni_tendencia": -0.10656276199913797
+    }
+  },
+  "maior_abs_r": 0.18046885889136172,
+  "rmse_s12": 1.7563914221076156,
+  "resultados": {
+    "oni_lag1_causal": {
+      "rmse": 1.7777021272495188,
+      "ganho_percent": -1.2133232304409214,
+      "blocos": 1,
+      "anos": 2,
+      "meses": 48
+    },
+    "oni_lag1_oracle": {
+      "rmse": 1.7189969119849284,
+      "ganho_percent": 2.129053333556763,
+      "blocos": 5,
+      "anos": 10,
+      "meses": 91
+    },
+    "oni_lag3_causal": {
+      "rmse": 1.7891740415747037,
+      "ganho_percent": -1.8664757214396976,
+      "blocos": 0,
+      "anos": 0,
+      "meses": 37
+    },
+    "oni_lag3_oracle": {
+      "rmse": 1.7170306945730927,
+      "ganho_percent": 2.240999758885831,
+      "blocos": 5,
+      "anos": 10,
+      "meses": 88
+    },
+    "oni_tendencia_causal": {
+      "rmse": 1.768929503087849,
+      "ganho_percent": -0.7138546011109526,
+      "blocos": 1,
+      "anos": 1,
+      "meses": 48
+    },
+    "oni_tendencia_oracle": {
+      "rmse": 1.7134345409566554,
+      "ganho_percent": 2.4457464668902307,
+      "blocos": 5,
+      "anos": 10,
+      "meses": 99
+    }
+  },
+  "aprovadas": [],
+  "treino_novo": false,
+  "alvo_de_teste_lido": false,
+  "csv_gerado": false
+}

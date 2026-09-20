@@ -1,0 +1,99 @@
+{
+  "classification": "B",
+  "reason": "Toda combinacao piora a S12.",
+  "baseline_rmse": 1.7563914221076156,
+  "variants": {
+    "s12": {
+      "rmse": 1.7563914221076156,
+      "gain_vs_s12_percent": 0.0,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 0
+    },
+    "c8192_a0.1": {
+      "rmse": 1.7573656649978215,
+      "gain_vs_s12_percent": -0.05546843818202696,
+      "positive_blocks": 1,
+      "positive_years": 3,
+      "positive_months": 53
+    },
+    "c768_a0.1": {
+      "rmse": 1.7576266210492142,
+      "gain_vs_s12_percent": -0.07032594933287228,
+      "positive_blocks": 1,
+      "positive_years": 3,
+      "positive_months": 52
+    },
+    "c8192_a0.25": {
+      "rmse": 1.7604619634757368,
+      "gain_vs_s12_percent": -0.23175593531632455,
+      "positive_blocks": 1,
+      "positive_years": 3,
+      "positive_months": 49
+    },
+    "c768_a0.25": {
+      "rmse": 1.7612395381907908,
+      "gain_vs_s12_percent": -0.2760270872512738,
+      "positive_blocks": 1,
+      "positive_years": 2,
+      "positive_months": 45
+    },
+    "c8192_direto": {
+      "rmse": 1.8048047310585231,
+      "gain_vs_s12_percent": -2.756407731302457,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 25
+    },
+    "c768_direto": {
+      "rmse": 1.8102978917484942,
+      "gain_vs_s12_percent": -3.0691603797627476,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 22
+    }
+  },
+  "stable_variants": [],
+  "control": {
+    "2009": {
+      "round20_rmse": 1.89585272284314,
+      "round33_rmse": 1.8987451134537223,
+      "difference": 0.0028923906105822184
+    },
+    "2011": {
+      "round20_rmse": 1.8039503341787864,
+      "round33_rmse": 1.8084343014396034,
+      "difference": 0.004483967260817012
+    },
+    "2013": {
+      "round20_rmse": 1.73258320399587,
+      "round33_rmse": 1.7382190961258266,
+      "difference": 0.005635892129956632
+    },
+    "2015": {
+      "round20_rmse": 1.824410960570539,
+      "round33_rmse": 1.8395755924639905,
+      "difference": 0.015164631893451519
+    },
+    "2017": {
+      "round20_rmse": 1.8252670891077794,
+      "round33_rmse": 1.834453623676609,
+      "difference": 0.009186534568829563
+    },
+    "2019": {
+      "round20_rmse": 1.8332195038997257,
+      "round33_rmse": 1.8288776825626964,
+      "difference": -0.004341821337029206
+    }
+  },
+  "evaluation_blocks": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "no_candidate": true,
+  "no_test_targets": true,
+  "no_submission": true
+}

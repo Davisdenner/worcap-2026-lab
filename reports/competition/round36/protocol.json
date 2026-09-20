@@ -1,0 +1,63 @@
+{
+  "protocol_sha256": "239d5bed483e19136f9cd81b4621279faa23f4d4dafd60262fba37e5e1c1190a",
+  "reference": "S12",
+  "combines_three_levers": true,
+  "attribution_sacrificed": true,
+  "persistence": [
+    "anom_o",
+    "anom_media3",
+    "anom_suave3x3",
+    "anom_suave9x9",
+    "tendencia",
+    "anom_suave15x15",
+    "anom_media6",
+    "anom_ano_anterior"
+  ],
+  "features": 127,
+  "cells": 8192,
+  "leaves": 255,
+  "starts": [
+    "1981-01-01",
+    "1940-01-01"
+  ],
+  "min_origin": 11,
+  "seed": 20261101,
+  "tree": {
+    "max_leaf_nodes": 255,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "loss": "squared_error",
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_bins": 128,
+    "early_stopping": false,
+    "warm_start": false,
+    "random_state": 20260914
+  },
+  "fractions": [
+    0.1,
+    0.25
+  ],
+  "target_direct_rmse": 1.765,
+  "years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "eval_years": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "external_data_used": false,
+  "s12_unmodified": true,
+  "oof_only": true,
+  "minimum_gain": 0.003,
+  "no_test_targets": true,
+  "no_submission": true
+}

@@ -178,6 +178,25 @@ if ($relatorio.python -notmatch "3\.11\.1") {
                 "plataforma ou BLAS podem mudar o hash.") -ForegroundColor Yellow
 }
 
+# --------------------------------------------- 4b. links contra o que foi commitado
+Etapa "4b. Integridade da documentacao DENTRO do clone"
+# check_repository.py valida todos os links markdown. Rodado na pasta de
+# trabalho ele enxerga arquivos que existem no disco mas nunca foram
+# versionados, e passa. Rodado aqui, ele so ve o que um terceiro receberia --
+# que e a pergunta que interessa. Um arquivo esquecido no `git add` aparece
+# como link quebrado, e nao meses depois na mao de quem clonou.
+Push-Location $repo
+try {
+    & $py scripts/check_repository.py --allow-missing-artifacts
+    $relatorio.documentacao_integra = ($LASTEXITCODE -eq 0)
+} finally { Pop-Location }
+if (-not $relatorio.documentacao_integra) {
+    Write-Host ""
+    Write-Host ("Os links acima apontam para arquivos que existem na sua pasta de " +
+                "trabalho mas NAO no clone: faltou versiona-los.") -ForegroundColor Red
+    throw "Documentacao do clone tem links quebrados"
+}
+
 # -------------------------------------------------------------- 5. etapas
 Etapa "5. Reproducao da S12"
 # O ambiente de referencia e "CPU com uma thread numerica". Sem isso o BLAS

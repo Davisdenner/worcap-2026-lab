@@ -1,0 +1,48 @@
+{
+  "protocol_sha256": "389f5670a7e69cfdacde76207e5a49f56872a7e7e1dd753bc9600ff99dba14c2",
+  "reference": "S12",
+  "base_model": "global31",
+  "round20_cells": 768,
+  "features": 119,
+  "cell_counts": [
+    768,
+    8192
+  ],
+  "fractions": [
+    0.1,
+    0.25
+  ],
+  "tree": {
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 100,
+    "l2_regularization": 10.0,
+    "loss": "squared_error",
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_bins": 128,
+    "early_stopping": false,
+    "warm_start": false,
+    "random_state": 20260914
+  },
+  "seed": 20261101,
+  "years": [
+    2009,
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "eval_years": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "training_start": "1981-01-01 (Features.idx, inalterado)",
+  "minimum_gain": 0.003,
+  "official_only": true,
+  "no_test_targets": true,
+  "no_submission": true
+}

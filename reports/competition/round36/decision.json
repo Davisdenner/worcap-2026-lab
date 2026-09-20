@@ -1,0 +1,91 @@
+{
+  "classification": "D",
+  "reason": "Ha ganho, mas sem amplitude (0,3%) e estabilidade simultaneas.",
+  "baseline_rmse": 1.7563914221076156,
+  "target_direct_rmse": 1.765,
+  "variants": {
+    "r36_s1981_a0.1": {
+      "rmse": 1.7550579959799002,
+      "gain_vs_s12_percent": 0.07591850603069217,
+      "positive_blocks": 3,
+      "positive_years": 8,
+      "positive_months": 70
+    },
+    "r36_s1981_a0.25": {
+      "rmse": 1.7551983021227864,
+      "gain_vs_s12_percent": 0.06793018741787504,
+      "positive_blocks": 3,
+      "positive_years": 8,
+      "positive_months": 62
+    },
+    "r35_124_a0.1": {
+      "rmse": 1.7555391580735589,
+      "gain_vs_s12_percent": 0.04852358212010799,
+      "positive_blocks": 4,
+      "positive_years": 6,
+      "positive_months": 70
+    },
+    "r35_124_a0.25": {
+      "rmse": 1.7561595387313413,
+      "gain_vs_s12_percent": 0.013202260803346633,
+      "positive_blocks": 2,
+      "positive_years": 5,
+      "positive_months": 64
+    },
+    "s12": {
+      "rmse": 1.7563914221076156,
+      "gain_vs_s12_percent": 0.0,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 0
+    },
+    "r33_119_a0.1": {
+      "rmse": 1.7573656649978215,
+      "gain_vs_s12_percent": -0.05546843818202696,
+      "positive_blocks": 1,
+      "positive_years": 3,
+      "positive_months": 53
+    },
+    "r33_119_a0.25": {
+      "rmse": 1.7604619634757368,
+      "gain_vs_s12_percent": -0.23175593531632455,
+      "positive_blocks": 1,
+      "positive_years": 3,
+      "positive_months": 49
+    },
+    "r35_124_direto": {
+      "rmse": 1.793046954657243,
+      "gain_vs_s12_percent": -2.086979706701242,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 32
+    },
+    "r36_s1981_direto": {
+      "rmse": 1.7940094198695413,
+      "gain_vs_s12_percent": -2.141777583768034,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 37
+    },
+    "r33_119_direto": {
+      "rmse": 1.8048047310585231,
+      "gain_vs_s12_percent": -2.756407731302457,
+      "positive_blocks": 0,
+      "positive_years": 0,
+      "positive_months": 25
+    }
+  },
+  "stable_variants": [],
+  "evaluation_blocks": [
+    2011,
+    2013,
+    2015,
+    2017,
+    2019
+  ],
+  "external_data_used": false,
+  "s12_unmodified": true,
+  "no_candidate": true,
+  "no_test_targets": true,
+  "no_submission": true
+}

@@ -1,0 +1,24 @@
+﻿{
+    "origem":  "C:\\Users\\Davis Denner\\worcap-2026-lab",
+    "destino":  "C:\\Users\\jamyl\\AppData\\Local\\Temp\\worcap_clone_20260919_211542\\repo",
+    "inicio":  "2026-09-19T21:15:42.7943026-03:00",
+    "commit":  "1d720a7b8f30ffdc55c2c0769b4316dc0771a582",
+    "faltando_no_clone":  [
+
+                          ],
+    "arquivos_netcdf":  12,
+    "requisitos_coerentes":  true,
+    "pip_check_ok":  true,
+    "python":  "Python 3.11.1",
+    "threads_numericas":  1,
+    "segundos_por_etapa":  {
+                               "listar":  12.9,
+                               "preparar":  116.5,
+                               "treinar":  151.8,
+                               "prever":  136.2
+                           },
+    "csv_sha256_esperado":  "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+    "csv_sha256_obtido":  "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+    "identico":  true,
+    "fim":  "2026-09-19T21:24:31.5006215-03:00"
+}
