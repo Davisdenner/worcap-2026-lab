@@ -16,13 +16,19 @@ pessoa, recebendo apenas o pacote, regenere o CSV enviado.
 
 ## A1. Identificação
 
-Participação individual, sem equipe. Os campos formais de identificação ainda
-não estão preenchidos: o [TEAM_INFO.json](../delivery/s11/TEAM_INFO.json)
-segue em branco. Deixei assim de propósito, para não inventar dados; é uma
-pendência registrada em [CONFORMIDADE.md](CONFORMIDADE.md) e precisa ser
-resolvida antes de qualquer entrega ao organizador.
+Davis Denner, participação individual, sem equipe. Modelagem, validação,
+engenharia de reprodutibilidade e documentação são todas minhas. Perfil em
+[github.com/Davisdenner](https://github.com/Davisdenner); os campos formais
+estão em [TEAM_INFO.json](../delivery/s11/TEAM_INFO.json).
 
-O código está sob licença MIT, aprovada pela OSI.
+Os dados de contato não entram neste repositório, porque ele é público e
+endereço exposto em repositório vira alvo de coleta automática. Envio direto
+ao organizador quando ele pedir.
+
+O código está sob licença MIT, aprovada pela OSI, com o direito autoral em meu
+nome no arquivo `LICENSE`. Ela cobre apenas o código: as licenças das
+dependências valem separadamente e os dados oficiais da competição não são
+cobertos por ela.
 
 ## A2. Resumo do modelo
 

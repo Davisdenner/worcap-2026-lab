@@ -3,6 +3,9 @@
 Modelo para prever a precipitação média do mês seguinte na América do Sul,
 em mm/dia. Código de treinamento, inferência, validação e rastreabilidade.
 
+Autoria de Davis Denner ([github.com/Davisdenner](https://github.com/Davisdenner)),
+participação individual no WORCAP 2026.
+
 Código sob licença MIT. Os dados oficiais não são redistribuídos e mantêm os
 termos da competição e a atribuição Copernicus.
 

@@ -49,15 +49,19 @@ arquivo copiado de fora do repositório. O teste está automatizado em
 [verificar_clone_limpo.ps1](../scripts/verificar_clone_limpo.ps1) e deve ser
 repetido sobre o pacote final.
 
+**Identificação.** O [TEAM_INFO.json](../delivery/s11/TEAM_INFO.json) está
+preenchido: participação individual de Davis Denner, com perfil do GitHub,
+atribuição de papéis, licença MIT e o score público da S12. Os dados de contato
+ficam fora, por ser um repositório público, e vão diretamente ao organizador
+quando solicitados.
+
 ## Pendências antes da entrega definitiva
 
-1. Preencher equipe, integrantes, contatos e atribuições em
-   [TEAM_INFO.json](../delivery/s11/TEAM_INFO.json), sem inventar dados pessoais.
-2. Selecionar a versão final conforme as regras e conservar seus modelos,
+1. Selecionar a versão final conforme as regras e conservar seus modelos,
    evidências, código, configurações e hashes em um pacote fechado.
-3. Atualizar o inventário e o relatório da entrega para a versão escolhida.
-4. Confirmar exigências específicas do patrocinador e registrar o resultado
-   privado/classificação somente quando conhecidos.
+2. Atualizar o inventário e o relatório da entrega para a versão escolhida.
+3. Confirmar exigências específicas do patrocinador e registrar o resultado
+   privado e a classificação somente quando conhecidos.
 
 As [diretrizes oficiais de documentação de modelos vencedores](https://www.kaggle.com/WinningModelDocumentationGuidelines)
 pedem resumo em Word/PDF, normalmente em inglês salvo aprovação diversa, além

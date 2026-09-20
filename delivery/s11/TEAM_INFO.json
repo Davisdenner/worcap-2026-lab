@@ -1,10 +1,30 @@
 {
   "competition": "Previsão Climática de Precipitação sobre a América do Sul",
-  "team_name": null,
-  "members": [],
-  "public_score_reported": 1.71718,
+  "event": "WORCAP 2026",
+  "team_name": "Davis Denner",
+  "team_type": "individual",
+  "members": [
+    {
+      "name": "Davis Denner",
+      "role": "Participação individual: modelagem, validação, engenharia de reprodutibilidade e documentação",
+      "github": "https://github.com/Davisdenner"
+    }
+  ],
+  "contact": "Dados de contato enviados diretamente ao organizador; não incluídos neste repositório público.",
+  "delivered_version": "S12",
+  "public_score_reported": 1.71456,
+  "public_target_year": 2023,
   "private_score": null,
   "private_rank": null,
-  "license_approval": "pending user choice",
-  "note": "Complete entrant identity, contact details, background and role descriptions before sponsor delivery. Do not invent private results."
+  "private_target_year": 2024,
+  "license_approval": "MIT",
+  "license_scope": "Cobre apenas o código deste repositório. As licenças das dependências valem separadamente e os dados oficiais da competição não são cobertos por ela.",
+  "reproduction_verified": {
+    "method": "Clone vazio, ambiente virtual novo e dependências fixadas",
+    "csv_sha256": "bba1f8b279447868170b6b2f9b18ee2cc723b891c25627c91438c7725d3aead8",
+    "identical_to_submitted": true,
+    "script": "scripts/verificar_clone_limpo.ps1",
+    "report": "reports/competition/reproducao_clone_limpo.json"
+  },
+  "note": "Score público é o obtido no envio, sem verificação independente do leaderboard. O público mede 2023 e o privado medirá 2024. Resultado privado e classificação final preenchidos somente quando conhecidos; não inventar valores."
 }
