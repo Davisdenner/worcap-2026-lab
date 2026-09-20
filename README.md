@@ -19,7 +19,7 @@ Os scores são relatos do participante, registrados no
 [histórico público](reports/competition/leaderboard_observations.json).
 O score da S13 foi informado pelo usuário após envio manual; não foi verificado
 independentemente. **O leaderboard público mede apenas 2023; o privado medirá
-2024** — regimes ENSO opostos. O score privado e a classificação final não são
+2024**, regimes ENSO opostos. O score privado e a classificação final não são
 conhecidos. S10, S11, S12 e S13 usam somente dados oficiais; S07/S08, que
 usaram informação externa, não participam desta linha de modelos.
 
