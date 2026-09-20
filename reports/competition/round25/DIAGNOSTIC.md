@@ -1,6 +1,6 @@
-# Rodada 25 — diagnóstico da S12
+# Rodada 25: diagnóstico da S12
 
-Previsões causais 2009–2020; períodos reutilizados. Viés = previsão − observado.
+Previsões causais 2009 a 2020; períodos reutilizados. Viés = previsão − observado.
 
 ## latitude
 
@@ -132,7 +132,7 @@ Previsões causais 2009–2020; períodos reutilizados. Viés = previsão − ob
 | mixed | 0.3756 | 0.0489 | 1.10 | 24.42 |
 | all_over | 1.7212 | 1.2003 | 40.53 | 42.89 |
 
-## Componentes — global
+## Componentes: global
 
 | Componente | RMSE | Viés | E[e_comp e_S12] | Corr(e_comp,e_S12) |
 | --- | ---: | ---: | ---: | ---: |
@@ -142,7 +142,7 @@ Previsões causais 2009–2020; períodos reutilizados. Viés = previsão − ob
 | pls16 | 1.8068 | 0.0249 | 3.1406 | 0.9816 |
 | tropical_extension | 1.8053 | 0.0171 | 3.1358 | 0.9810 |
 
-## Componentes — north
+## Componentes: north
 
 | Componente | RMSE | Viés | E[e_comp e_S12] | Corr(e_comp,e_S12) |
 | --- | ---: | ---: | ---: | ---: |

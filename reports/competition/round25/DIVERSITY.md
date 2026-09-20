@@ -1,4 +1,4 @@
-# Rodada 25 — auditoria da diversidade de erro
+# Rodada 25: auditoria da diversidade de erro
 
 RMSE das 24 misturas por bloco refeito a partir das previsões arquivadas: PASS.
 Hashes das previsões, cortes e anos dos análogos: PASS.
