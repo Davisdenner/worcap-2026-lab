@@ -9,7 +9,7 @@
       "private_target_year": 2024,
       "reported_rank": 2,
       "independently_verified": false,
-      "note": "Novo melhor público informado, somente dados oficiais. Ganho de 0,00262 (aproximadamente 0,153%) sobre S11. Distância de 0,01128 para o último score do líder informado, 1,70328, não reconfirmado neste relato. S12 continua uma exceção autorizada ao mínimo histórico de 0,3%; os critérios gerais permanecem ativos. O resultado público não demonstra significância estatística nem ganho privado. Metadados de geração preservados; reprodução completa da S12 em clone vazio ainda não integrada. Nenhum novo treino, CSV ou upload iniciado com este relato."
+      "note": "Novo melhor público informado, somente dados oficiais. Ganho de 0,00262 (aproximadamente 0,153%) sobre S11. Distância de 0,01128 para o último score do líder informado, 1,70328, não reconfirmado neste relato. S12 continua uma exceção autorizada ao mínimo histórico de 0,3%; os critérios gerais permanecem ativos. O resultado público não demonstra significância estatística nem ganho privado. Metadados de geração preservados. A reprodução completa da S12 em clone vazio foi verificada depois deste relato: CSV idêntico byte a byte, sem nenhum arquivo copiado de fora do repositório (reports/competition/reproducao_clone_limpo.json). Nenhum novo treino, CSV ou upload iniciado com este relato."
     },
     {
       "submission_file": "submissions/submission_13.csv",

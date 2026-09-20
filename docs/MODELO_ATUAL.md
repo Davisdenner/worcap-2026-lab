@@ -8,7 +8,8 @@
 
 S11 e S12 foram exceções autorizadas ao critério histórico de 0,3%.
 S13 também foi exploratória e ficou 0,00005 acima da S12 no público.
-Após a rodada 29, a participação foi encerrada. Os scores públicos são os que obtive
+A busca por uma sucessora foi até a rodada 36, sem resultado promovível; a
+[síntese das rodadas](SINTESE_RODADAS_25_34.md) explica por quê. Os scores públicos são os que obtive
 nos envios; o privado e a classificação final permanecem desconhecidos.
 
 - [Método completo, centralizado](METODOLOGIA.md).

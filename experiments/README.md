@@ -37,7 +37,7 @@ O [resumo final](../docs/ENCERRAMENTO.md) consolida resultados e limites até a 
 | [32](ROUND32.md) | U-Net ponta a ponta sobre os campos atmosféricos | [Relatório](../reports/competition/round32/REPORT.md) |
 | [33](ROUND33.md) | Volume de células do corretor, 10,7× | [Relatório](../reports/competition/round33/REPORT.md) |
 | [34](ROUND34.md) | Capacidade do corretor em número de folhas | [Protocolo congelado](../reports/competition/round34/protocol.json) |
-| [35](ROUND35.md) | Persistência de precipitação como preditor | [Decisão](../reports/competition/round35/decision.json) |
+| [35](ROUND35.md) | Persistência de precipitação como preditor | [Relatório](../reports/competition/round35/REPORT.md) |
 | [36](ROUND36.md) | Corretor máximo: 127 atributos, 8.192 células, 255 folhas, início 1981 e 1940 | [Relatório](../reports/competition/round36/REPORT.md) |
 
 Não existe rodada 31: o número foi consumido por um diagnóstico de recalibração de amplitude, registrado em [slope_diagnostic](../reports/competition/slope_diagnostic/RESULTS.md) e citado na síntese como "31-diag".
