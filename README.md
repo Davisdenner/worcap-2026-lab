@@ -1,5 +1,7 @@
 # Previsão mensal de precipitação: WORCAP 2026
 
+*[English summary of this project](README.en.md), with the results, the reproduction and the main findings.*
+
 Modelo para prever a precipitação média do mês seguinte na América do Sul,
 em mm/dia. Código de treinamento, inferência, validação e rastreabilidade.
 
